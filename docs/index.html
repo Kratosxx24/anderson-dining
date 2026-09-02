@@ -16,6 +16,13 @@
     --accent:#a68b2c; --accent-soft:#f5efd8; --on-accent:#fcfcfb;
     --veg:#2f8f55; --alrt:#c0532c; --maxw:1080px;
     --spectrum:linear-gradient(90deg,#c9a227,#2f8f55,#3f6dc7,#7d5bc0,#c94f93,#2f8f8f);
+
+    /* Per-hall identity hues. Fixed-order categorical palette, validated
+       (CVD + normal-vision separation) against this surface. Light mode puts
+       aqua/yellow/magenta under 3:1, so color is never the only cue — every
+       card shows its hall name, and the hue rides on the stripe and dot. */
+    --h1:#2a78d6; --h2:#eb6834; --h3:#1baf7a; --h4:#eda100;
+    --h5:#e87ba4; --h6:#008300; --h7:#4a3aa7; --h8:#e34948;
   }
   [data-theme="dark"] {
     --bg:#131312; --surface:#1c1c1a; --sunken:#232320; --text:#ededea; --muted:#8a8a81;
@@ -23,6 +30,10 @@
     --accent:#d4b64a; --accent-soft:#2a2418; --on-accent:#131312;
     --veg:#5cc483; --alrt:#e08a5f;
     --spectrum:linear-gradient(90deg,#d4b64a,#5cc483,#7aa0e8,#a98fe0,#e589c0,#5ec0c0);
+
+    /* Same eight hues re-stepped for the dark surface, not an automatic flip. */
+    --h1:#3987e5; --h2:#d95926; --h3:#199e70; --h4:#c98500;
+    --h5:#d55181; --h6:#008300; --h7:#9085e9; --h8:#e66767;
   }
   * { box-sizing:border-box; }
   html { -webkit-text-size-adjust:100%; }
@@ -81,12 +92,19 @@
   /* Hall cards */
   .halls { margin-top:26px; display:flex; flex-direction:column; gap:16px; }
   .hall { background:var(--surface); border:1px solid var(--border); border-radius:14px;
-    overflow:hidden; }
+    overflow:hidden; border-left:4px solid var(--hall,var(--border)); }
+  .hall-dot { width:9px; height:9px; border-radius:50%; background:var(--hall,var(--faint));
+    display:inline-block; flex:none; }
+  .hall-head:hover { background:color-mix(in srgb, var(--hall,var(--text)) 7%, var(--surface)); }
+  .hall[data-open="true"] > .hall-head {
+    background:color-mix(in srgb, var(--hall,var(--text)) 6%, var(--surface)); }
+  .count { font-family:"Space Mono",monospace; font-size:10px; border-radius:100px;
+    padding:3px 9px; color:var(--text);
+    background:color-mix(in srgb, var(--hall,var(--text)) 14%, var(--surface)); }
   .hall-head { display:flex; align-items:center; justify-content:space-between; gap:12px;
     padding:16px 20px; cursor:pointer; user-select:none; }
-  .hall-head:hover { background:var(--sunken); }
   .hall-name { font-family:"Fraunces",Georgia,serif; font-size:19px; font-weight:600;
-    letter-spacing:-.01em; }
+    letter-spacing:-.01em; display:flex; align-items:center; gap:9px; }
   .hall-meta { font-family:"Space Mono",monospace; font-size:11px; color:var(--faint);
     display:flex; align-items:center; gap:10px; }
   .status { font-size:10px; letter-spacing:.1em; text-transform:uppercase;
@@ -99,8 +117,13 @@
   .hall[data-open="true"] .caret { transform:rotate(90deg); }
 
   .meal { padding-top:14px; }
+  /* Meal headings stay in ink, not the hall hue: at small uppercase sizes
+     several of the light-mode hues fall under readable contrast. */
   .meal-head { font-family:"Space Mono",monospace; font-size:11px; letter-spacing:.12em;
-    text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+    text-transform:uppercase; color:var(--muted); margin-bottom:8px;
+    display:flex; align-items:center; gap:7px; }
+  .meal-head::before { content:""; width:14px; height:2px; border-radius:2px;
+    background:var(--hall,var(--accent)); flex:none; }
   .cat { margin:10px 0 0; }
   .cat-name { font-size:12px; font-weight:600; color:var(--muted); margin-bottom:4px; }
   ul.items { list-style:none; margin:0; padding:0; }
@@ -169,6 +192,33 @@
 </div>
 
 <script>
+
+// Hall identity colors. Keyed by NetNutrition unit id so a hall keeps its hue
+// even if the site reorders its nav. Slots are the fixed categorical order
+// validated for both themes; satellites share their parent hall's hue
+// (Commons Munchie reads as Commons, Kissam Munchie as Kissam, and so on).
+const HALL_HUE = {
+  1:1,   // Rand
+  2:2,   // The Commons
+  3:3,   // Kissam
+  11:7,  // E. Bronson Ingram
+  19:8,  // Rothschild
+  20:5,  // Cafe Carmichael
+  4:6,   // The Pub at Overcup Oak
+  18:4,  // Zeppos
+  12:2,  // Commons Munchie  -> Commons
+  13:3,  // Kissam Munchie   -> Kissam
+  14:1,  // Highland Munchie -> Highland
+  15:1,  // Highland Hotline -> Highland
+  16:6,  // Local Java Cafe
+  5:5,   // VandyBlenz
+  17:8,  // Wasabi
+  6:7, 7:7, 8:7, 9:7,  // the Suzie's locations
+  10:4,  // Holy Smokes food truck
+};
+// Anything the site adds later still gets a stable color rather than none.
+const hallHue = id => HALL_HUE[id] || ((id % 8) + 1);
+
 const state = { data:null, date:null, meal:null, include:new Set(), exclude:new Set(), q:"" };
 
 // Tags that read as "I want this" rather than "this contains an allergen".
@@ -266,6 +316,7 @@ function render() {
     const el = document.createElement("section");
     el.className = "hall";
     el.dataset.hall = hall.name;
+    el.style.setProperty("--hall", `var(--h${hallHue(hall.id)})`);
     // Default: expand everything when a filter is narrowing results, otherwise
     // keep whatever the reader had open.
     const filtering = state.q || state.include.size || state.exclude.size;
@@ -274,9 +325,9 @@ function render() {
     const isOpen = /open/i.test(hall.status || "");
     el.innerHTML =
       `<div class="hall-head" role="button" tabindex="0" aria-expanded="${el.dataset.open}">
-         <div class="hall-name"><span class="caret">›</span> ${esc(hall.name)}</div>
+         <div class="hall-name"><span class="caret">›</span><span class="hall-dot"></span>${esc(hall.name)}</div>
          <div class="hall-meta">
-           <span>${count} item${count === 1 ? "" : "s"}</span>
+           <span class="count">${count} item${count === 1 ? "" : "s"}</span>
            <span class="status ${isOpen ? "open" : "closed"}">${esc(hall.status || "—")}</span>
          </div>
        </div>
