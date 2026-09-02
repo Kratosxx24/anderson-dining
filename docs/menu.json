@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T21:09:16.039566+00:00",
+  "generated_at": "2026-09-02T23:23:33.371380+00:00",
   "campus_date": "2026-09-02",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -292,7 +292,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -361,7 +361,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -426,7 +426,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -516,7 +516,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -681,7 +681,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -874,7 +874,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -919,7 +919,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1019,7 +1019,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
