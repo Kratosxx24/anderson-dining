@@ -18,10 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-import config
-import fetcher
-import nutrition
-import restaurants
+from scraper import config, fetcher, nutrition, restaurants
 
 OUTPUT_PATH = os.path.join("docs", "menu.json")
 

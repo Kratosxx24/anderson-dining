@@ -14,17 +14,17 @@ No servers, no database, no API keys, no accounts, $0/month.
 
 ## What it does
 
-`fetcher.py` walks Vanderbilt's NetNutrition site and pulls today's and
+`scraper/fetcher.py` walks Vanderbilt's NetNutrition site and pulls today's and
 tomorrow's menus for every dining facility that publishes one — dining hall,
 meal period, course/station, item name, serving size, and the dietary and
 allergen tags Vanderbilt attaches to each item (Vegan, Halal, Gluten, Tree
 Nut, …).
 
-`nutrition.py` then fills in the numbers: calories, fat, saturated fat, trans
+`scraper/nutrition.py` then fills in the numbers: calories, fat, saturated fat, trans
 fat, cholesterol, sodium, carbs, fiber, sugars, protein, plus the full
 ingredient list and allergen line for each recipe.
 
-`restaurants.py` scrapes the Taste of Nashville partner list — the off-campus
+`scraper/restaurants.py` scrapes the Taste of Nashville partner list — the off-campus
 restaurants where Meal Money works — from Vanderbilt's dining site.
 
 `main.py` writes `docs/menu.json` and `docs/nutrition.json`. `docs/index.html`
@@ -93,7 +93,7 @@ Two consequences worth knowing:
   labels one run will fetch, so a menu-wide rollover can't stretch an Action run
   past its timeout. Whatever is skipped is picked up by the next run; with eight
   runs a day the cache fills within a day and stays full.
-- **`recipe_key()` in `nutrition.py` and `nkey()` in `index.html` must agree
+- **`recipe_key()` in `scraper/nutrition.py` and `nkey()` in `index.html` must agree
   exactly.** They are the join between the two JSON files. Both use plain
   lowercasing — not Python's `casefold()`, which is more aggressive.
 
@@ -106,7 +106,7 @@ nothing published" — that's cached too, or every run would retry it forever.
 
 These are off-campus restaurants, so they are not in NetNutrition at all — no
 menus, no items, no nutrition. Vanderbilt publishes them as a plain
-neighborhood-grouped list, which `restaurants.py` scrapes: inside the "Taste of
+neighborhood-grouped list, which `scraper/restaurants.py` scrapes: inside the "Taste of
 Nashville" section, a `<p>` ending in a colon names a neighborhood and the
 `<li>` elements after it are that neighborhood's restaurants.
 
@@ -177,6 +177,21 @@ months later never rewrites your history.
 }
 ```
 
+## Layout
+
+```
+main.py               entry point — wires the pipeline together, writes docs/
+scraper/
+  config.py           every tunable knob, and nothing else
+  fetcher.py          the NetNutrition session: halls, menus, item rows
+  nutrition.py        FDA labels, their parsing, and the recipe-keyed cache
+  restaurants.py      the Taste of Nashville partner list
+docs/                 the published site (GitHub Pages serves this folder)
+  index.html          the whole front-end: three views, no build step, no deps
+  menu.json           written each run
+  nutrition.json      the recipe cache; also what the browser loads
+```
+
 ## Running it
 
 ```bash
@@ -192,7 +207,7 @@ ship it.
 
 ## Configuration
 
-Everything lives in `config.py`:
+Everything lives in `scraper/config.py`:
 
 | Knob | Does |
 | --- | --- |
@@ -223,4 +238,4 @@ guess — the footer says what fraction of the day's items have real numbers
 behind them. Facilities with no published menu for the captured window (Wasabi,
 the Suzie's locations, the food truck) simply don't appear. If a run suddenly
 returns zero menus, CBORD changed their markup — check the selectors in
-`fetcher.py`.
+`scraper/fetcher.py`.

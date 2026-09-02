@@ -32,7 +32,7 @@ from datetime import datetime, timedelta, timezone
 import requests
 from bs4 import BeautifulSoup
 
-import config
+from . import config
 
 try:  # Python 3.9+; the Action pins 3.11.
     from zoneinfo import ZoneInfo

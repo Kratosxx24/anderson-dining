@@ -16,7 +16,7 @@ the alcohol policy), which is what RESTAURANTS_STOP_HEADINGS lists.
 import requests
 from bs4 import BeautifulSoup
 
-import config
+from . import config
 
 # The heading that opens the section we want.
 START_HEADING = "Taste of Nashville"

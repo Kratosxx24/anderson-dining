@@ -30,7 +30,7 @@ import re
 
 from bs4 import BeautifulSoup
 
-import config
+from . import config
 
 # "28g" -> 28.0, "1430mg" -> 1430.0, "0.0mcg" -> 0.0, "NA" -> None.
 AMOUNT_RE = re.compile(r"(-?\d+(?:\.\d+)?)\s*(mcg|mg|g|kcal)?", re.I)
