@@ -32,8 +32,31 @@ from bs4 import BeautifulSoup
 
 from . import config
 
-# "28g" -> 28.0, "1430mg" -> 1430.0, "0.0mcg" -> 0.0, "NA" -> None.
-AMOUNT_RE = re.compile(r"(-?\d+(?:\.\d+)?)\s*(mcg|mg|g|kcal)?", re.I)
+# "28g" -> 28.0, "1,430mg" -> 1430.0, "0.0mcg" -> 0.0, "NA" -> None.
+# The comma group matters: without it "1,430mg" parsed as 1.0, and a
+# high-sodium item got published as containing one milligram of salt.
+AMOUNT_RE = re.compile(r"(-?\d+(?:,\d{3})*(?:\.\d+)?)\s*(mcg|mg|g|kcal)?", re.I)
+
+# "less than 1g" / "<1g" — the FDA wording for a trace amount. Dropping the row
+# loses real information; taking the bound overstates it. The bound means
+# "somewhere in (0, 1)", so record its midpoint.
+TRACE_RE = re.compile(r"^(?:less\s+than|<)\s*", re.I)
+
+# "5 oz. portion (142g)" -> 142.0. The gram weight is what makes two servings
+# comparable when one is "1 slice" and the other is "4 oz. portion".
+GRAMS_RE = re.compile(r"\((\d+(?:\.\d+)?)\s*g\)")
+
+# "1 Servings per container"
+PER_CONTAINER_RE = re.compile(r"([\d.]+)\s+Servings?\s+per\s+container", re.I)
+
+# "Include 5g Added Sugars" — the one row whose name and value share a span.
+ADDED_SUGARS_RE = re.compile(r"Include\s+(.+?)\s+Added\s+Sugars", re.I)
+
+# NetNutrition marks a value it could not fully compute — a recipe where some
+# component has no data behind it — with this class. The number is still the
+# best available answer, but it is a floor rather than a total, and saying so
+# is the difference between an honest number and a wrong one.
+INCOMPLETE_CLASS = "cbo_nn_LabelPrimaryDetailIncomplete"
 
 
 def recipe_key(name: str, serving_size: str) -> str:
@@ -56,8 +79,17 @@ def _amount(text):
     text = (text or "").replace("\xa0", " ").strip()
     if not text or text.upper() == "NA":
         return None
-    match = AMOUNT_RE.match(text)
-    return float(match.group(1)) if match else None
+    trace = bool(TRACE_RE.match(text))
+    match = AMOUNT_RE.match(TRACE_RE.sub("", text))
+    if not match:
+        return None
+    value = float(match.group(1).replace(",", ""))
+    return value / 2 if trace else value
+
+
+def _is_incomplete(el) -> bool:
+    """True if the site flagged this value as computed from partial data."""
+    return el is not None and INCOMPLETE_CLASS in (el.get("class") or [])
 
 
 def parse_label(html: str):
@@ -85,8 +117,28 @@ def parse_label(html: str):
         if left.get_text(strip=True).rstrip(":") == "Serving Size":
             right = left.find_next_sibling(class_="inline-div-right")
             if right:
-                data["serving"] = right.get_text(" ", strip=True).replace("\xa0", " ")
+                serving = right.get_text(" ", strip=True).replace("\xa0", " ")
+                data["serving"] = serving
+                # "(142g)" — the only thing on the label that makes portions
+                # comparable across "1 slice", "4 oz. portion" and "1 bagel".
+                grams = GRAMS_RE.search(serving)
+                if grams:
+                    data["grams"] = float(grams.group(1))
             break
+
+    # "1 Servings per container". Usually 1, but a shared item (a whole pizza,
+    # a pitcher) says otherwise, and then every number on the label is per
+    # serving rather than per the thing you actually took.
+    per = PER_CONTAINER_RE.search(label.get_text(" ", strip=True))
+    if per:
+        try:
+            data["servings_per_container"] = float(per.group(1))
+        except ValueError:
+            pass
+
+    # Nutrients the site computed from incomplete recipe data. Collected as we
+    # go and attached at the end.
+    incomplete = []
 
     # Calories are the odd one out: the number lives in the sibling right-hand
     # div rather than in a second span of the same row.
@@ -100,15 +152,32 @@ def parse_label(html: str):
 
     # Every other nutrient is a two-span row: <span>Name</span><span> 28g</span>.
     # "Trans Fat" arrives as <span><i>Trans</i> Fat</span>, so read the whole
-    # span rather than its first string.
+    # span rather than its first string. The vitamins and minerals in the
+    # label's secondary table use the same shape, which is why adding them to
+    # NUTRIENT_FIELDS was all it took to start capturing them.
     for left in label.select(".inline-div-left"):
         spans = left.find_all("span", recursive=False)
+
+        # Added sugars is the one row that breaks the pattern: the site writes
+        # name and value into a single span, "Include 5g Added Sugars".
+        if "addedSugarRow" in (left.get("class") or []):
+            match = ADDED_SUGARS_RE.search(left.get_text(" ", strip=True))
+            if match and "added_sugars" not in data:
+                data["added_sugars"] = _amount(match.group(1))
+                if data["added_sugars"] is not None and _is_incomplete(left):
+                    incomplete.append("added_sugars")
+            continue
+
         if len(spans) < 2:
             continue
         name = spans[0].get_text(" ", strip=True).rstrip(":")
         key = config.NUTRIENT_FIELDS.get(name)
         if key and key not in data:
             data[key] = _amount(spans[-1].get_text(" ", strip=True))
+            # A flagged row with an actual number is a partial total. A flagged
+            # row reading "NA" is just absent, and is already recorded as null.
+            if data[key] is not None and _is_incomplete(spans[-1]):
+                incomplete.append(key)
 
     # Ingredients and the "Contains:" allergen line are plain text blocks that
     # follow their own bold headings.
@@ -128,6 +197,8 @@ def parse_label(html: str):
     macro_keys = ("calories",) + tuple(config.NUTRIENT_FIELDS.values())
     if not any(k in data for k in macro_keys):
         return None
+    if incomplete:
+        data["incomplete"] = sorted(set(incomplete))
     return data
 
 
@@ -201,6 +272,17 @@ def save_cache(items: dict, generated_at: str, path: str = None) -> None:
     os.replace(tmp, path)
 
 
+def _current(entry) -> bool:
+    """True if a cached entry was written by the parser we are running now.
+
+    Without this a parser improvement only ever reaches recipes Vanderbilt
+    happens to add afterwards: everything already cached keeps being a hit and
+    is never re-read. Stale entries go back into the refetch queue and drain
+    through the normal per-run budget over a couple of runs.
+    """
+    return isinstance(entry, dict) and entry.get("_v") == config.NUTRITION_SCHEMA
+
+
 def backfill(nn, menus: list, cache: dict, today: str) -> dict:
     """Fetch a label for every recipe on `menus` we don't already have.
 
@@ -218,7 +300,7 @@ def backfill(nn, menus: list, cache: dict, today: str) -> dict:
                 if oid is None:
                     continue
                 key = recipe_key(item["name"], item["serving_size"])
-                if key in cache:
+                if key in cache and _current(cache[key]):
                     # Still on a menu today, so keep it alive through pruning.
                     if isinstance(cache[key], dict):
                         cache[key]["_seen"] = today
@@ -247,10 +329,11 @@ def backfill(nn, menus: list, cache: dict, today: str) -> dict:
         if parsed is None:
             # Remember the miss too, or every future run retries this recipe
             # forever. No macro keys reads as "asked, nothing published".
-            cache[key] = {"_seen": today}
+            cache[key] = {"_seen": today, "_v": config.NUTRITION_SCHEMA}
             skipped += 1
             continue
         parsed["_seen"] = today
+        parsed["_v"] = config.NUTRITION_SCHEMA
         cache[key] = parsed
         added += 1
 

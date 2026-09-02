@@ -32,7 +32,7 @@ from datetime import datetime, timedelta, timezone
 import requests
 from bs4 import BeautifulSoup
 
-from . import config
+from . import config, hours
 
 try:  # Python 3.9+; the Action pins 3.11.
     from zoneinfo import ZoneInfo
@@ -150,24 +150,34 @@ class NetNutrition:
         panels = self._post_panels("Menu/SelectMenu", {"menuOid": menu_oid})
         return parse_items(panels.get("itemPanel", ""))
 
-    # -- step 4: one item's nutrition label -------------------------------
+    # -- the endpoints that answer with bare HTML -------------------------
 
-    def fetch_nutrition_label(self, detail_oid: int, menu_oid: int) -> str:
-        """Fetch the raw FDA-label HTML for one item.
+    def post_raw(self, path: str, data: dict) -> str:
+        """POST an endpoint that returns a bare HTML fragment, not the envelope.
 
-        Unlike the other endpoints this one answers with a bare HTML fragment,
-        not the {"success":..., "panels":[...]} envelope, so it bypasses
-        _post_panels. Returns "" when the site has no label for the item.
+        Two of NetNutrition's endpoints skip the {"success":..., "panels":[...]}
+        wrapper and hand back markup destined straight for a modal: the item
+        nutrition label and the hours-of-operation table.
         """
         time.sleep(config.REQUEST_DELAY)
         resp = self.session.post(
-            f"{self.base}/NutritionDetail/ShowItemNutritionLabel",
-            data={"detailOid": detail_oid, "menuOid": menu_oid},
+            f"{self.base}/{path}",
+            data=data,
             headers=self.ajax_headers,
             timeout=config.TIMEOUT,
         )
         resp.raise_for_status()
         return resp.text
+
+    def fetch_nutrition_label(self, detail_oid: int, menu_oid: int) -> str:
+        """Fetch the raw FDA-label HTML for one item.
+
+        Returns "" when the site has no label for the item.
+        """
+        return self.post_raw(
+            "NutritionDetail/ShowItemNutritionLabel",
+            {"detailOid": detail_oid, "menuOid": menu_oid},
+        )
 
 
 def parse_items(html: str) -> list[dict]:
@@ -280,10 +290,21 @@ def fetch_all() -> dict:
     halls = []
     menus = []
     for unit in units:
+        # The site's own Open/Closed pill is a snapshot of whenever this run
+        # happened; the week's hours are what let the browser answer the
+        # question against the reader's clock instead. Keep both — `status`
+        # is the fallback when a venue publishes no hours at all.
+        try:
+            week = hours.fetch_hours(nn, unit["oid"])
+        except Exception as exc:
+            print(f"  ! {unit['name']}: hours fetch failed ({exc})")
+            week = {}
+
         hall = {
             "id": unit["oid"],
             "name": unit["name"],
             "status": unit["status"],
+            "hours": week,
             "menu_count": 0,
         }
         halls.append(hall)

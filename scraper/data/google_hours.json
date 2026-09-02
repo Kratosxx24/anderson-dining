@@ -1,0 +1,222 @@
+{
+  "_comment": "Weekly opening hours for the Taste of Nashville partners, read from each restaurant's own Google Maps listing (the source Vanderbilt's page links students to). Collected by hand in a browser session, not scraped in CI - Google's terms do not allow automated scraping, and hours change rarely enough that an occasional manual refresh keeps this accurate. Hours use OpenStreetMap opening_hours syntax because docs/index.html already parses it. Entries are matched to restaurants by normalized name (see places.normalize). 'Hours might differ' holiday annotations were treated as regular hours; days Google showed only holiday-specific hours are noted.",
+  "checked": "2026-09-01",
+  "source": "Google Maps",
+  "restaurants": [
+    {
+      "name": "Biscuit Love",
+      "gm_name": "Biscuit Love",
+      "hours": "Mo-Su 07:00-15:00",
+      "address": "2001 Belcourt Ave, Nashville"
+    },
+    {
+      "name": "Grain & Berry",
+      "gm_name": "Grain and Berry - Nashville",
+      "hours": "Mo-Su 07:00-21:00",
+      "address": "1806 20th Ave S, Nashville"
+    },
+    {
+      "name": "Sushi 88",
+      "gm_name": "Sushi & Pho 88",
+      "hours": "Mo 11:00-14:30,16:00-21:00; Tu off; We-Th 11:00-14:30,16:00-21:00; Fr 11:00-14:30,16:00-22:00; Sa 11:30-22:00; Su 12:00-21:00"
+    },
+    {
+      "name": "The Grilled Cheeserie",
+      "gm_name": "Grilled Cheeserie",
+      "permanently_closed": true,
+      "note": "Google lists the Hillsboro Village melt shop (2003 Belcourt Ave) as permanently closed; their remaining shop is in East Nashville."
+    },
+    {
+      "name": "Hopdoddy Burger Bar",
+      "gm_name": "Hopdoddy Burger Bar",
+      "hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+      "address": "1805 21st Ave S, Nashville"
+    },
+    {
+      "name": "Jeni's Splendid Ice Creams",
+      "gm_name": "Jeni's Splendid Ice Creams",
+      "hours": "Mo-Su 12:00-00:00",
+      "address": "1819 21st Ave S, Nashville"
+    },
+    {
+      "name": "The Urban Juicer",
+      "gm_name": "The Urban Juicer",
+      "hours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00",
+      "address": "1622 21st Ave S, Nashville"
+    },
+    {
+      "name": "Taco Mama",
+      "gm_name": "Taco Mama - Hillsboro Village",
+      "hours": "Mo-Sa 11:00-21:00; Su 11:00-20:00",
+      "address": "1612 21st Ave S, Nashville"
+    },
+    {
+      "name": "Dumpling House",
+      "gm_name": "Dumpling House",
+      "hours": "Mo-Th 11:30-21:30; Fr-Sa 11:30-22:30; Su 11:30-21:30",
+      "address": "2117 Belcourt Ave, Nashville"
+    },
+    {
+      "name": "Meet Noodles",
+      "gm_name": "Meet Noodles",
+      "hours": "Mo-Su 11:30-21:00",
+      "address": "2121 Belcourt Ave #100, Nashville"
+    },
+    {
+      "name": "The Horn",
+      "gm_name": "The Horn - Midtown",
+      "hours": "Mo-Th 07:00-17:30; Fr 07:00-12:30,14:00-17:30; Sa 09:00-17:30; Su 09:00-15:00",
+      "address": "2059 Scarritt Pl, Nashville"
+    },
+    {
+      "name": "Ben & Jerry's",
+      "gm_name": "Ben & Jerry's",
+      "hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-22:30; Su 11:00-22:00",
+      "address": "416-A 21st Ave S, Nashville"
+    },
+    {
+      "name": "8th and Roast",
+      "gm_name": "8th & Roast - Midtown",
+      "hours": "Mo-Su 07:00-16:00",
+      "address": "116 20th Ave S, Nashville",
+      "note": "Monday showed Labor Day holiday hours (08:00-14:00); regular Monday assumed equal to the rest of the week."
+    },
+    {
+      "name": "Helen's Hot Chicken",
+      "gm_name": "Helen's Hot Chicken",
+      "hours": "Mo-Fr 10:30-20:00; Sa 10:30-19:00; Su off",
+      "address": "2010 Scarritt Pl, Nashville"
+    },
+    {
+      "name": "Two Boots Pizza",
+      "gm_name": "Two Boots Nashville",
+      "hours": "Mo-Th 11:00-21:00; Fr 11:00-00:00; Sa 12:00-00:00; Su 12:00-21:00",
+      "address": "1925 Broadway, Nashville"
+    },
+    {
+      "name": "Sarabha's Creamery",
+      "gm_name": "Sarabhas creamery - Ice cream & chai/coffee shoppe",
+      "hours": "Mo-Th 11:00-23:00; Fr 11:00-23:30; Sa 12:00-23:30; Su 12:00-23:00",
+      "address": "400 21st Ave S #201, Nashville"
+    },
+    {
+      "name": "The Slider House",
+      "gm_name": "The Slider House",
+      "hours": "Mo-Su 11:00-22:00",
+      "address": "1907 Division St, Nashville"
+    },
+    {
+      "name": "Torchy's Tacos",
+      "gm_name": "Torchy's Tacos",
+      "hours": "Mo-We 10:00-22:00; Th 10:00-23:00; Fr-Sa 10:00-00:00; Su 10:00-21:00",
+      "address": "1929 Broadway, Nashville"
+    },
+    {
+      "name": "Hattie B's",
+      "gm_name": "Hattie B's Hot Chicken - Nashville - Midtown",
+      "hours": "Mo-Th 10:45-22:00; Fr-Sa 10:45-00:00; Su 10:45-22:00",
+      "address": "112 19th Ave S, Nashville",
+      "note": "Monday showed a Labor Day holiday closure; regular Monday assumed equal to Tue-Thu."
+    },
+    {
+      "name": "Sitar",
+      "gm_name": "Sitar Indian Cuisine",
+      "hours": "Mo-Su 11:00-22:00",
+      "address": "116 21st Ave N, Nashville"
+    },
+    {
+      "name": "Wendy's",
+      "gm_name": "Wendy's",
+      "hours": "Mo-Su 06:30-03:00",
+      "address": "2603 West End Ave, Nashville"
+    },
+    {
+      "name": "Sun & Fork",
+      "gm_name": "Sun & Fork",
+      "hours": "Mo-Su 07:00-14:30",
+      "address": "2507 West End Ave, Nashville"
+    },
+    {
+      "name": "Inchin's Bamboo Garden",
+      "gm_name": "Inchin's Bamboo Garden",
+      "hours": "Mo-Th 11:00-14:15,17:00-21:45; Fr 11:00-14:15,17:00-02:00; Sa 12:00-02:00; Su 12:00-21:45",
+      "address": "1800 West End Ave, Nashville"
+    },
+    {
+      "name": "Papa John's Pizza",
+      "gm_name": "Papa Johns Pizza",
+      "hours": "Mo-Th 10:00-00:00; Fr-Sa 10:00-01:00; Su 10:00-00:00",
+      "address": "2316 West End Ave, Nashville"
+    },
+    {
+      "name": "Woodlands Indian Cuisine",
+      "gm_name": "Woodlands Indian Vegetarian Cuisine",
+      "hours": "Mo-Su 10:45-14:30,17:00-21:30",
+      "address": "3415 West End Ave, Nashville"
+    },
+    {
+      "name": "Nawabi Hyderabad House",
+      "gm_name": "Nawabi Hyderabad House - Biryani Place Nashville",
+      "hours": "Mo-Su 11:00-14:30,17:00-21:30",
+      "address": "106 29th Ave N, Nashville"
+    },
+    {
+      "name": "Elliston Place Soda Shop",
+      "gm_name": "Elliston Place Soda Shop",
+      "hours": "Mo-Sa 07:30-16:00; Su 09:00-15:00",
+      "address": "2105 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Wild Berry",
+      "gm_name": "Wild Berry Acai - Midtown",
+      "hours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
+      "address": "2424 Elliston Pl, Nashville"
+    },
+    {
+      "name": "I Love Sushi",
+      "gm_name": "I Love Sushi",
+      "hours": "Mo-Th 11:00-14:30,16:30-21:30; Fr 11:00-14:30,16:30-22:30; Sa 11:30-14:30,16:30-22:30; Su 11:30-14:30,16:30-21:30",
+      "address": "2300 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Roma Pizza & Pasta",
+      "gm_name": "Roma Pizza & Pasta",
+      "hours": "Mo-Th 10:00-04:00; Fr-Sa 10:00-04:30; Su 10:00-04:00",
+      "address": "2418 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Michaelangelo's Pizza",
+      "gm_name": "Michaelangelo's Pizza - Nashville Midtown",
+      "hours": "Mo-Su 08:00-03:00",
+      "note": "Google's only Nashville listing is at 327 Union St downtown despite the 'Midtown' name; Vanderbilt lists this partner under Elliston Place, so the address is deliberately not published here."
+    },
+    {
+      "name": "Oscar's Taco Shop",
+      "gm_name": "Oscar's Taco Shops - Vandy",
+      "hours": "Mo-Sa 08:00-21:00; Su off",
+      "address": "2323 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Poke Bros.",
+      "gm_name": "Poke Bros.",
+      "hours": "Mo-Su 11:00-21:00",
+      "address": "2414 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Satay Thai Grill",
+      "gm_name": "Thai Satay",
+      "hours": "Mo off; Tu-Fr 11:00-15:00,16:00-21:00; Sa-Su 12:00-15:00,16:00-21:00",
+      "address": "2412 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Sweet Dots Bubble Tea",
+      "gm_name": "Sweet Dots",
+      "hours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-21:00",
+      "address": "2217 Elliston Pl, Nashville"
+    },
+    {
+      "name": "Red Bicycle",
+      "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
+    }
+  ]
+}

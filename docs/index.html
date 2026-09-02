@@ -89,6 +89,11 @@
 
   /* Filters */
   .filters { margin:22px 0 4px; display:flex; flex-direction:column; gap:12px; }
+  /* The day/meal/search rows follow you down a 1,200-item page. Only the menus
+     view: the restaurant list is short enough not to need it. */
+  #view-menus .filters { position:sticky; top:0; z-index:20;
+    background:var(--bg); padding:10px 0 10px;
+    border-bottom:1px solid var(--border); }
   .frow { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
   .flabel { font-family:"Space Mono",monospace; font-size:10px; letter-spacing:.12em;
     text-transform:uppercase; color:var(--faint); min-width:74px; }
@@ -123,7 +128,7 @@
   .hall-name { font-family:"Fraunces",Georgia,serif; font-size:19px; font-weight:600;
     letter-spacing:-.01em; display:flex; align-items:center; gap:9px; }
   .hall-meta { font-family:"Space Mono",monospace; font-size:11px; color:var(--faint);
-    display:flex; align-items:center; gap:10px; }
+    display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:6px 10px; }
   .status { font-size:10px; letter-spacing:.1em; text-transform:uppercase;
     border-radius:100px; padding:3px 9px; border:1px solid var(--border); }
   .status.open { color:var(--veg); border-color:currentColor; }
@@ -152,7 +157,12 @@
   /* Ranked lists drop the station headings, so each row carries its own. */
   .station { font-size:10px; color:var(--muted); background:var(--sunken);
     border-radius:100px; padding:2px 8px; white-space:nowrap; }
-  .tags { display:flex; flex-wrap:wrap; gap:4px; margin-left:auto; }
+  /* Name, serving and station read left-to-right; the numbers and the tags
+     form one right-aligned group, so a column of rows lines up on the
+     calorie count instead of raggedly wherever each name happens to end. */
+  .tags { display:flex; flex-wrap:wrap; gap:4px; }
+  li.item .macros { margin-left:auto; }
+  li.item .macros ~ .tags { margin-left:0; }
   .tag { font-size:10px; letter-spacing:.04em; color:var(--muted);
     background:var(--sunken); border-radius:100px; padding:2px 8px; white-space:nowrap; }
   .tag.good { color:var(--veg); background:transparent; border:1px solid currentColor; }
@@ -171,7 +181,27 @@
     transition:border-color .15s,color .15s,background .15s; }
   .add:hover { border-color:var(--veg); color:var(--veg); }
   .add:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  .add.done { background:var(--veg); border-color:var(--veg); color:#fff; }
+  /* Logged state is sticky, not a 1.2s flash: the button is a checkbox, so it
+     has to keep showing whether the thing is checked. A second click removes
+     what the first one logged. */
+  .add[aria-pressed="true"] { background:var(--veg); border-color:var(--veg); color:#fff; }
+  .add[aria-pressed="true"]:hover { background:var(--alrt); border-color:var(--alrt); }
+  .add .n { font-family:"Space Mono",monospace; font-size:10px; }
+
+  /* An all-day menu shown under a meal filter says why it is there. */
+  .allday { font-family:"Space Mono",monospace; font-size:9.5px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--faint); border:1px solid var(--border);
+    border-radius:100px; padding:1px 7px; }
+  .hall-hours { font-family:"Space Mono",monospace; font-size:10.5px; color:var(--faint); }
+
+  /* Filters. Day, meal and search stay out; the long tag/sort rows fold away,
+     because seven stacked rows of chips pushed the actual menu off-screen. */
+  .fmore { display:flex; flex-direction:column; gap:12px; }
+  .fmore[hidden] { display:none; }
+  .fbar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .fbar .spacer { flex:1; }
+  .badge-n { font-family:"Space Mono",monospace; font-size:9.5px; background:var(--accent);
+    color:var(--on-accent); border-radius:100px; padding:1px 6px; margin-left:6px; }
 
   /* The full label, revealed by clicking an item name. Everything the scrape
      captured that the one-line macro badge has no room for. */
@@ -195,12 +225,29 @@
   .hood-name { font-family:"Fraunces",Georgia,serif; font-size:19px; font-weight:600;
     letter-spacing:-.01em; margin:0 0 10px; display:flex; align-items:baseline; gap:9px; }
   .hood-name .n { font-family:"Space Mono",monospace; font-size:11px; color:var(--faint); }
-  .rests { display:grid; gap:8px;
-    grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
-  .rest { background:var(--surface); border:1px solid var(--border); border-radius:11px;
-    padding:11px 14px; font-size:14px; display:flex; align-items:center; gap:9px; }
-  .rest .pin { width:7px; height:7px; border-radius:50%; background:var(--hood-hue,var(--accent));
-    flex:none; }
+  .rests { display:grid; gap:10px;
+    grid-template-columns:repeat(auto-fill,minmax(256px,1fr)); }
+  .rest { background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:12px 14px; font-size:14px; display:flex; flex-direction:column; gap:5px;
+    border-left:3px solid var(--hood-hue,var(--accent)); }
+  .rest .rtop { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }
+  .rest .rname { font-weight:500; }
+  .rest .rmeta { font-size:11.5px; color:var(--faint); }
+  .rest .rmeta .cuisine { text-transform:capitalize; }
+  .rest .rhours { font-family:"Space Mono",monospace; font-size:11px; color:var(--muted); }
+  .rest .rlinks { display:flex; gap:10px; margin-top:2px; font-size:11.5px; }
+  .rest .rlinks a { color:var(--accent); text-decoration:none;
+    border-bottom:1px solid transparent; }
+  .rest .rlinks a:hover { border-bottom-color:currentColor; }
+  .rest .rlinks a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  /* Open/closed is a claim about right now, so it gets the loudest treatment
+     on the card — and it only ever appears when real hours back it. */
+  .badge { font-family:"Space Mono",monospace; font-size:9.5px; letter-spacing:.08em;
+    text-transform:uppercase; border-radius:100px; padding:2px 8px; white-space:nowrap;
+    border:1px solid currentColor; flex:none; }
+  .badge.open { color:var(--veg); }
+  .badge.shut { color:var(--faint); }
+  .badge.unknown { color:var(--faint); border-style:dashed; }
   .note { background:var(--sunken); border:1px solid var(--border); border-radius:12px;
     padding:14px 16px; font-size:13px; color:var(--muted); margin-top:20px; }
   .note b { color:var(--text); }
@@ -287,6 +334,12 @@
     .flabel { min-width:100%; }
     .tags { margin-left:0; width:100%; }
     .tabs { flex-wrap:wrap; }
+    /* Three pieces of metadata do not fit beside a hall name on a phone. The
+       open/closed pill is the one worth the width; the hours are one tap away
+       inside the card. */
+    .hall-hours { display:none; }
+    .hall-head { padding:14px 16px; }
+    .hall-name { font-size:17px; }
   }
   @media (prefers-reduced-motion:reduce) {
     * { animation:none !important; transition:none !important; }
@@ -321,22 +374,31 @@
         <div class="chips" id="f-meal"></div>
       </div>
       <div class="frow">
-        <span class="flabel">Only show</span>
-        <div class="chips" id="f-include"></div>
-      </div>
-      <div class="frow">
-        <span class="flabel">Hide</span>
-        <div class="chips" id="f-exclude"></div>
-      </div>
-      <div class="frow">
-        <span class="flabel">Sort by</span>
-        <div class="chips" id="f-sort"></div>
-      </div>
-      <div class="frow">
         <span class="flabel">Search</span>
         <input class="search" id="q" type="search" placeholder="chicken, tofu, waffle…" />
       </div>
-      <div class="frow"><span class="flabel"></span><span class="hint" id="hint"></span></div>
+      <div class="frow fbar">
+        <span class="flabel"></span>
+        <button class="btn-ghost" id="fmore-btn" type="button"
+                aria-expanded="false" aria-controls="fmore">Diet &amp; sort</button>
+        <button class="btn-ghost" id="fclear" type="button" hidden>Clear filters</button>
+        <span class="spacer"></span>
+        <span class="hint" id="hint"></span>
+      </div>
+      <div class="fmore" id="fmore" hidden>
+        <div class="frow">
+          <span class="flabel">Only show</span>
+          <div class="chips" id="f-include"></div>
+        </div>
+        <div class="frow">
+          <span class="flabel">Hide</span>
+          <div class="chips" id="f-exclude"></div>
+        </div>
+        <div class="frow">
+          <span class="flabel">Sort by</span>
+          <div class="chips" id="f-sort"></div>
+        </div>
+      </div>
     </section>
 
     <main class="halls" id="halls"></main>
@@ -350,14 +412,22 @@
         <span class="flabel">Search</span>
         <input class="search" id="rq" type="search" placeholder="sushi, tacos, pizza…" />
       </div>
+      <div class="frow">
+        <span class="flabel">Filter</span>
+        <div class="chips" id="f-rest"></div>
+      </div>
       <div class="frow"><span class="flabel"></span><span class="hint" id="rhint"></span></div>
     </section>
     <div id="hoods"></div>
     <div class="note">
       <b>Meal Money, off campus.</b> These are the Taste of Nashville partners — swipe your
-      Commodore Card like a debit card. Vanderbilt does not publish menus or nutrition for
-      them, so nothing here can be logged with macros; use the tracker's manual entry for
-      an off-campus meal.
+      Commodore Card like a debit card. Vanderbilt publishes only their names, so hours come
+      from each restaurant's own Google Maps listing (checked by hand, refreshed
+      occasionally), with addresses filled in from
+      <a href="https://www.openstreetmap.org/" rel="noopener">OpenStreetMap</a>:
+      <span id="oscov"></span> Where hours are missing the card says so rather than
+      guessing — the map link always works. Nothing here has published nutrition, so use the tracker's manual
+      entry for an off-campus meal.
     </div>
   </div>
 
@@ -436,7 +506,9 @@
 
   <footer>
     Menus and nutrition scraped from <a id="src" href="#">Vanderbilt NetNutrition</a> ·
-    restaurants from <a id="rsrc" href="#">Campus Dining</a> · updates every three hours ·
+    restaurants from <a id="rsrc" href="#">Campus Dining</a> ·
+    restaurant hours hand-checked on Google Maps · addresses from <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> ·
+    updates every three hours ·
     <span id="cov"></span> ·
     always confirm allergens with dining staff.
   </footer>
@@ -471,9 +543,104 @@ const HALL_HUE = {
 // Anything the site adds later still gets a stable color rather than none.
 const hallHue = id => HALL_HUE[id] || ((id % 8) + 1);
 
+/* ── hours ───────────────────────────────────────────────────────────────
+   Each hall carries a week of published service hours, scraped from the same
+   pop-up Vanderbilt's own site points students at. Two jobs here.
+
+   One: the open/closed pill. NetNutrition's own pill is a snapshot of whenever
+   the scraper ran, so a page opened at noon was showing a 3 a.m. verdict.
+   Computing it here answers against the reader's clock instead.
+
+   Two, and the reason this exists: The Pub, the Munchie Marts and Local Java
+   publish a single "Daily Offerings" menu with no meal period on it. Filtering
+   by "Lunch" hid them outright, even though the Pub is open 11 AM to 10 PM and
+   is serving that exact food at lunch and at dinner. Hours are what let an
+   all-day menu answer "yes, I'm available then". */
+const HALL_DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+// "07:00" -> 420. Everything below is prefixed `hall` because the Taste of
+// Nashville view parses a completely different hours format (OpenStreetMap's)
+// and the two must not collide.
+const hallMins = text => {
+  const parts = String(text || "").split(":");
+  return parts.length === 2 ? (+parts[0]) * 60 + (+parts[1]) : null;
+};
+const clockLabel = m => {
+  const h = Math.floor(m / 60), mm = m % 60;
+  const ampm = h >= 12 ? "PM" : "AM";
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return mm ? `${h12}:${String(mm).padStart(2, "0")} ${ampm}` : `${h12} ${ampm}`;
+};
+// Ranges for one calendar date, as [openMinutes, closeMinutes] pairs.
+function hallRanges(hall, iso) {
+  const week = hall && hall.hours;
+  if (!week) return null;                       // venue publishes no hours
+  const day = HALL_DAYS[new Date(iso + "T12:00:00").getDay()];
+  const list = week[day];
+  if (!list) return null;                       // nothing said about this day
+  return list.map(([o, c]) => [hallMins(o), hallMins(c)]).filter(r => r[0] != null && r[1] != null);
+}
+
+// Does an all-day menu count as `meal` at this venue on this date?
+function hallServesMeal(hall, iso, meal) {
+  const win = (state.data.meal_windows || {})[meal];
+  if (!win) return true;                        // not a windowed meal
+  const ranges = hallRanges(hall, iso);
+  // Unknown hours show the menu under every meal: hiding a venue that is
+  // actually open and serving is the worse of the two mistakes.
+  if (ranges === null) return true;
+  if (!ranges.length) return false;             // published, and closed
+  const [from, to] = [hallMins(win[0]), hallMins(win[1])];
+  return ranges.some(([o, c]) => o < to && c > from);
+}
+
+// Live open/closed for the pill, against the reader's own clock.
+function hallOpenState(hall) {
+  const now = new Date();
+  const iso = dayKey(now.getTime());
+  const ranges = hallRanges(hall, iso);
+  if (ranges === null) {
+    // No published hours — fall back to the pill the scrape happened to catch,
+    // and don't dress a stale snapshot up as a live answer.
+    return { known:false, open:/open/i.test(hall.status || ""), text:hall.status || "—" };
+  }
+  const at = now.getHours() * 60 + now.getMinutes();
+  for (const [o, c] of ranges) {
+    if (at >= o && at < c) return { known:true, open:true, text:`Open · til ${clockLabel(c)}` };
+  }
+  // Still to come today. The header already prints the day's full schedule
+  // beside this, so the pill only needs the next edge of it.
+  const next = ranges.filter(([o]) => o > at).sort((a, b) => a[0] - b[0])[0];
+  if (next) return { known:true, open:false, text:`Opens ${clockLabel(next[0])}` };
+
+  // Done for the day. Look ahead to the next day that actually opens — usually
+  // tomorrow, but over a break it can be several days out, and which day is
+  // the whole point. Nothing beside the pill says this, so it goes in the pill.
+  const from = new Date();
+  for (let i = 1; i <= 7; i++) {
+    const ahead = new Date(from.getFullYear(), from.getMonth(), from.getDate() + i);
+    const list = (hall.hours || {})[HALL_DAYS[ahead.getDay()]] || [];
+    if (!list.length) continue;
+    const opens = Math.min(...list.map(([o]) => hallMins(o)));
+    const when = i === 1 ? "tomorrow"
+      : ahead.toLocaleDateString(undefined, { weekday:"short" });
+    return { known:true, open:false, text:`Opens ${clockLabel(opens)} ${when}` };
+  }
+  return { known:true, open:false, text:"Closed" };
+}
+
+// The week, for the hall header's expanded body.
+function hallHoursLine(hall, iso) {
+  const ranges = hallRanges(hall, iso);
+  if (ranges === null) return "";
+  if (!ranges.length) return "Closed today";
+  return ranges.map(([o, c]) => `${clockLabel(o)} – ${clockLabel(c)}`).join(", ");
+}
+
 const state = {
   data:null, nutri:{}, view:"menus",
-  date:null, meal:null, include:new Set(), exclude:new Set(), q:"", sort:"menu", rq:"",
+  date:null, meal:null, include:new Set(), exclude:new Set(), q:"", sort:"menu",
+  rq:"", openNow:false,
+  openNow:false, showMore:false,
 };
 
 // Tags that read as "I want this" rather than "this contains an allergen".
@@ -577,6 +744,58 @@ function addEntry(entry) {
   if (state.view === "track") renderTracker();
 }
 
+/* ── logged-or-not, per menu row ─────────────────────────────────────────
+   The + button used to be write-only: it logged, flashed a tick for 1.2s and
+   went back to "+". So clicking it twice — which is what unchecking looks
+   like — logged the same cheesecake twice, and the only way back was to hunt
+   it down in the tracker's table.
+
+   It is a checkbox now. The row knows how many of itself are in today's log,
+   shows that, and a click on a logged row removes the most recent one rather
+   than adding another. */
+const entryKey = (name, serving, hall, meal) =>
+  [name || "", serving || "", hall || "", meal || ""].join("\u0000");
+const rowKey = e => entryKey(e.name, e.serving, e.hall, e.meal);
+
+// Today's entries, bucketed by row. Rebuilt on demand — the log is small and
+// this keeps it from going stale behind a delete in the tracker.
+function loggedToday() {
+  const key = todayKey();
+  const map = new Map();
+  for (const e of log.entries) {
+    if (dayKey(e.ts) !== key) continue;
+    const k = rowKey(e);
+    if (!map.has(k)) map.set(k, []);
+    map.get(k).push(e);
+  }
+  return map;
+}
+
+function addButtonHTML(item, hallName, meal) {
+  const n = (loggedToday().get(entryKey(item.name, item.serving_size, hallName, meal)) || []).length;
+  const label = n ? `Remove ${item.name} from today's log` : `Log ${item.name}`;
+  return `<button class="add" type="button" aria-pressed="${n ? "true" : "false"}"` +
+    ` title="${esc(label)}" aria-label="${esc(label)}"` +
+    ` data-name="${esc(item.name)}" data-serving="${esc(item.serving_size)}"` +
+    ` data-hall="${esc(hallName)}" data-meal="${esc(meal)}">` +
+    (n > 1 ? `<span class="n">${n}</span>` : n ? "✓" : "+") + `</button>`;
+}
+
+// Repaint every + button from the log. Called after a log change anywhere,
+// including a delete in the tracker, so the two views never disagree.
+function syncAddButtons() {
+  const counts = loggedToday();
+  for (const btn of document.querySelectorAll("#halls .add")) {
+    const n = (counts.get(entryKey(btn.dataset.name, btn.dataset.serving,
+                                   btn.dataset.hall, btn.dataset.meal)) || []).length;
+    const label = n ? `Remove ${btn.dataset.name} from today's log` : `Log ${btn.dataset.name}`;
+    btn.setAttribute("aria-pressed", n ? "true" : "false");
+    btn.setAttribute("aria-label", label);
+    btn.title = label;
+    btn.innerHTML = n > 1 ? `<span class="n">${n}</span>` : n ? "✓" : "+";
+  }
+}
+
 function totalsFor(entries) {
   return entries.reduce((t, e) => ({
     calories: t.calories + (e.calories || 0),
@@ -598,10 +817,23 @@ function renderFilters() {
   dates.forEach(dt => fd.appendChild(
     chip(dayLabel(dt, d.campus_date), state.date === dt, () => { state.date = dt; render(); })));
 
+  // All-day menus are not a meal period, they are an availability. Offering
+  // "Daily Offerings" as its own chip alongside Lunch and Dinner implied it was
+  // a fourth mealtime; it isn't, so it's dropped from the chips and folded into
+  // the three real ones instead.
+  const allDay = new Set(d.all_day_meals || []);
   const fm = $("f-meal"); fm.innerHTML = "";
-  fm.appendChild(chip("All", state.meal === null, () => { state.meal = null; render(); }));
-  meals.forEach(ml => fm.appendChild(
+  fm.appendChild(chip("All day", state.meal === null, () => { state.meal = null; render(); }));
+  meals.filter(ml => !allDay.has(ml)).forEach(ml => fm.appendChild(
     chip(ml, state.meal === ml, () => { state.meal = ml; render(); })));
+  // "Open now" is a question about right now, so it only makes sense on today.
+  if (state.date === d.campus_date) {
+    fm.appendChild(chip("Open now", state.openNow, () => {
+      state.openNow = !state.openNow; render();
+    }));
+  } else if (state.openNow) {
+    state.openNow = false;
+  }
 
   const positives = d.tags.filter(t => POSITIVE.has(t));
   const allergens = d.tags.filter(t => !POSITIVE.has(t));
@@ -619,7 +851,28 @@ function renderFilters() {
   const fs = $("f-sort"); fs.innerHTML = "";
   SORTS.forEach(([key, label]) => fs.appendChild(
     chip(label, state.sort === key, () => { state.sort = key; render(); })));
+
+  // The diet and sort rows are three more rows of chips that most visits never
+  // touch, and together they pushed the actual menu below the fold. Folded away
+  // by default, but the toggle carries a count so a filter can never be on and
+  // invisible at the same time.
+  const extras = state.include.size + state.exclude.size + (state.sort !== "menu" ? 1 : 0);
+  const btn = $("fmore-btn");
+  btn.innerHTML = "Diet &amp; sort" + (extras ? `<span class="badge-n">${extras}</span>` : "");
+  btn.setAttribute("aria-expanded", String(state.showMore));
+  $("fmore").hidden = !state.showMore;
+
+  const active = extras + (state.q ? 1 : 0) + (state.openNow ? 1 : 0) + (state.meal ? 1 : 0);
+  $("fclear").hidden = !active;
 }
+
+$("fmore-btn").addEventListener("click", () => { state.showMore = !state.showMore; render(); });
+$("fclear").addEventListener("click", () => {
+  state.include.clear(); state.exclude.clear();
+  state.sort = "menu"; state.meal = null; state.openNow = false; state.q = "";
+  $("q").value = "";
+  render();
+});
 
 function itemPasses(item) {
   // "Only show" is an AND: an item must carry every requested trait.
@@ -672,11 +925,25 @@ function render() {
 
   let shownItems = 0, shownHalls = 0;
 
+  const allDay = new Set(d.all_day_meals || []);
+
+  // Open/closed is a question about right now. On tomorrow's menu the pill
+  // would be answering a different day's question, so it gives way to that
+  // day's hours instead.
+  const isToday = state.date === d.campus_date;
+
   for (const hall of d.halls) {
-    const menus = d.menus.filter(m =>
-      m.hall === hall.name &&
-      m.date === state.date &&
-      (state.meal === null || m.meal === state.meal));
+    const status = isToday ? hallOpenState(hall) : null;
+    if (state.openNow && status && !status.open) continue;
+
+    const menus = d.menus.filter(m => {
+      if (m.hall !== hall.name || m.date !== state.date) return false;
+      if (state.meal === null || m.meal === state.meal) return true;
+      // The Pub bug: a "Daily Offerings" menu carries no meal period, so an
+      // exact-match filter dropped it even at hours the venue was open and
+      // serving. It counts as lunch if it is open at lunch.
+      return allDay.has(m.meal) && hallServesMeal(hall, m.date, state.meal);
+    });
     if (!menus.length) continue;
 
     // Filter down to what survives the tag/search filters before drawing.
@@ -708,28 +975,36 @@ function render() {
     const filtering = state.q || state.include.size || state.exclude.size;
     el.dataset.open = (filtering || openHalls.has(hall.name)) ? "true" : "false";
 
-    const isOpen = /open/i.test(hall.status || "");
+    const today = hallHoursLine(hall, state.date);
     el.innerHTML =
       `<div class="hall-head" role="button" tabindex="0" aria-expanded="${el.dataset.open}">
          <div class="hall-name"><span class="caret">›</span><span class="hall-dot"></span>${esc(hall.name)}</div>
          <div class="hall-meta">
-           <span class="count">${count} item${count === 1 ? "" : "s"}</span>
-           <span class="status ${isOpen ? "open" : "closed"}">${esc(hall.status || "—")}</span>
+           ${today ? `<span class="hall-hours">${esc(today)}</span>` : ""}
+           <span class="count">${count} item${count === 1 ? "" : "s"}</span>` +
+           (status
+             ? `<span class="status ${status.open ? "open" : "closed"}"
+                  title="${status.known ? "Computed from Vanderbilt&#39;s published hours"
+                                        : "As reported when the menus were scraped"}"
+                >${esc(status.text)}</span>`
+             : "") + `
          </div>
        </div>
        <div class="hall-body">` +
       kept.map(m =>
-        `<div class="meal"><div class="meal-head">${esc(m.meal)}</div>` +
+        `<div class="meal"><div class="meal-head">${esc(m.meal)}` +
+        // Say why an all-day menu is showing up under a meal filter, rather
+        // than leaving "Daily Offerings" looking like a filter that leaked.
+        (allDay.has(m.meal) && state.meal
+          ? `<span class="allday">served at ${esc(state.meal.toLowerCase())}</span>` : "") +
+        `</div>` +
         m.categories.map(c =>
           `<div class="cat">` +
           (c.name ? `<div class="cat-name">${esc(c.name)}</div>` : "") +
           `<ul class="items">` +
           c.items.map(i =>
             `<li class="item">` +
-            `<button class="add" type="button" title="Log ${esc(i.name)}"` +
-            ` aria-label="Log ${esc(i.name)}"` +
-            ` data-name="${esc(i.name)}" data-serving="${esc(i.serving_size)}"` +
-            ` data-hall="${esc(hall.name)}" data-meal="${esc(m.meal)}">+</button>` +
+            addButtonHTML(i, hall.name, m.meal) +
             `<span class="item-name${macrosFor(i) ? " has-detail" : ""}"` +
             (macrosFor(i) ? ` role="button" tabindex="0" aria-expanded="false"` +
               ` title="Full nutrition label"` : "") +
@@ -769,16 +1044,27 @@ function render() {
 const DETAIL_ROWS = [
   ["calories","Calories",""], ["protein","Protein","g"], ["carbs","Carbs","g"],
   ["fat","Fat","g"], ["sat_fat","Sat. fat","g"], ["trans_fat","Trans fat","g"],
-  ["fiber","Fiber","g"], ["sugars","Sugars","g"],
+  ["fiber","Fiber","g"], ["sugars","Sugars","g"], ["added_sugars","Added sugars","g"],
   ["sodium","Sodium","mg"], ["cholesterol","Cholesterol","mg"],
+  ["calcium","Calcium","mg"], ["iron","Iron","mg"], ["potassium","Potassium","mg"],
+  ["vitamin_c","Vitamin C","mg"], ["vitamin_d","Vitamin D","mcg"],
 ];
 function detailHTML(m) {
+  // Vanderbilt flags a value it computed from a recipe with gaps in it. Those
+  // are floors, not totals, so mark them rather than presenting a partial
+  // sodium count as the real one.
+  const partial = new Set(m.incomplete || []);
   const rows = DETAIL_ROWS
     .filter(([k]) => m[k] != null)
     .map(([k, label, unit]) =>
-      `<div><dt>${label}</dt><dd>${round(m[k])}${unit}</dd></div>`).join("");
+      `<div><dt>${label}${partial.has(k) ? "*" : ""}</dt>` +
+      `<dd>${round(m[k])}${unit}</dd></div>`).join("");
   return `<div class="detail">` +
     (m.serving ? `<div class="ing" style="margin-bottom:8px"><b>Serving</b> ${esc(m.serving)}</div>` : "") +
+    (partial.size
+      ? `<div class="ing" style="margin-bottom:8px">* Vanderbilt computed this from an ` +
+        `incomplete recipe — treat it as a minimum.</div>`
+      : "") +
     (rows ? `<dl>${rows}</dl>` : "") +
     (m.contains ? `<div class="contains">Contains: ${esc(m.contains)}</div>` : "") +
     (m.ingredients ? `<div class="ing"><b>Ingredients</b> ${esc(m.ingredients)}</div>` : "") +
@@ -809,6 +1095,23 @@ $("halls").addEventListener("click", e => {
   const btn = e.target.closest(".add");
   if (!btn) return;
   const name = btn.dataset.name;
+  const key = entryKey(name, btn.dataset.serving, btn.dataset.hall, btn.dataset.meal);
+  const already = loggedToday().get(key) || [];
+
+  if (already.length) {
+    // Un-log. Drop the most recent one, so clicking a row twice leaves the log
+    // exactly where it started instead of counting the item twice.
+    const newest = already.reduce((a, b) => (b.ts > a.ts ? b : a));
+    log.entries = log.entries.filter(x => x !== newest);
+    saveLog();
+    syncAddButtons();
+    if (state.view === "track") renderTracker();
+    toast(already.length > 1
+      ? `Removed one ${name} — ${already.length - 1} still logged`
+      : `Removed ${name}`);
+    return;
+  }
+
   const m = state.nutri[nkey(name, btn.dataset.serving)] || {};
   addEntry({
     name,
@@ -820,21 +1123,171 @@ $("halls").addEventListener("click", e => {
     carbs: m.carbs ?? null,
     fat: m.fat ?? null,
   });
-  btn.classList.add("done");
-  btn.textContent = "✓";
-  setTimeout(() => { btn.classList.remove("done"); btn.textContent = "+"; }, 1200);
+  syncAddButtons();
   toast(m.calories != null
-    ? `Logged ${name} — ${round(m.calories)} cal`
+    ? `Logged ${name} — ${round(m.calories)} cal · click again to undo`
     : `Logged ${name} (no published macros)`);
 });
 
-/* ── Taste of Nashville view ────────────────────────────────────────── */
+/* ── Taste of Nashville view ──────────────────────────────────────────
+   Hours arrive as raw OpenStreetMap `opening_hours` strings. The full grammar
+   is large (holidays, seasons, sunset offsets, week numbers); this parses the
+   subset these restaurants actually use — day selectors, comma-separated time
+   ranges, semicolon rules, and windows running past midnight — and returns
+   null on anything it does not understand, so an unparsed string is shown
+   verbatim rather than silently misread as "closed". */
+
+const OSM_DAYS = { su:0, mo:1, tu:2, we:3, th:4, fr:5, sa:6 };
+const DAY_RE = /^((?:mo|tu|we|th|fr|sa|su)(?:\s*-\s*(?:mo|tu|we|th|fr|sa|su))?(?:\s*,\s*(?:mo|tu|we|th|fr|sa|su)(?:\s*-\s*(?:mo|tu|we|th|fr|sa|su))?)*)\s+(.*)$/;
+const TIME_RE = /^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/;
+
+function expandDays(spec) {
+  const out = new Set();
+  for (const part of spec.split(",")) {
+    const [a, b] = part.split("-").map(x => x.trim());
+    const start = OSM_DAYS[a];
+    if (start === undefined) continue;
+    if (b === undefined) { out.add(start); continue; }
+    const end = OSM_DAYS[b];
+    if (end === undefined) continue;
+    for (let i = 0; i < 7; i++) {
+      const d = (start + i) % 7;
+      out.add(d);
+      if (d === end) break;
+    }
+  }
+  return out;
+}
+
+// -> array[7] of [[startMin, endMin], …]; endMin can exceed 1440 (past midnight).
+function parseHours(spec) {
+  if (!spec) return null;
+  const s = String(spec).trim().toLowerCase();
+  if (!s) return null;
+  if (s === "24/7") return Array.from({ length:7 }, () => [[0, 1440]]);
+
+  const week = Array.from({ length:7 }, () => []);
+  let sawAnything = false;
+
+  for (const rawRule of s.split(";")) {
+    let rule = rawRule.trim();
+    if (!rule) continue;
+    let days = null;
+    const m = rule.match(DAY_RE);
+    if (m) { days = expandDays(m[1]); rule = m[2].trim(); }
+
+    if (/^(off|closed)$/.test(rule)) {
+      if (days) { for (const d of days) week[d] = []; sawAnything = true; }
+      continue;
+    }
+
+    const ranges = [];
+    for (const chunk of rule.split(",")) {
+      const t = chunk.trim().match(TIME_RE);
+      if (!t) continue;
+      const start = (+t[1]) * 60 + (+t[2]);
+      let end = (+t[3]) * 60 + (+t[4]);
+      if (end <= start) end += 1440;   // 10:00-01:00 and 10:00-00:00 both wrap
+      ranges.push([start, end]);
+    }
+    if (!ranges.length) continue;
+    sawAnything = true;
+
+    if (days) {
+      // An explicit day selector replaces what an earlier rule said.
+      for (const d of days) week[d] = ranges.slice();
+    } else {
+      // No selector: a continuation like "Mo-Su 11:00-14:30; 17:00-21:30".
+      // Additive on every day rather than a wipe, which is the mapper's intent.
+      for (let d = 0; d < 7; d++) week[d] = week[d].concat(ranges);
+    }
+  }
+  return sawAnything ? week : null;
+}
+
+const hhmm = mins => {
+  const m = ((mins % 1440) + 1440) % 1440;
+  const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, "0");
+  const ap = h < 12 ? "am" : "pm";
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return mm === "00" ? `${h12}${ap}` : `${h12}:${mm}${ap}`;
+};
+
+function openState(spec, now) {
+  const week = parseHours(spec);
+  if (!week) return null;
+  const day = now.getDay();
+  const mins = now.getHours() * 60 + now.getMinutes();
+
+  for (const [start, end] of week[day]) {
+    if (mins >= start && mins < end) return { open:true, until:end % 1440, week, day };
+  }
+  // A window opened yesterday can still be running (Fr 10:00-01:00 at 00:30).
+  for (const [start, end] of week[(day + 6) % 7]) {
+    if (end > 1440 && mins < end - 1440) return { open:true, until:end % 1440, week, day };
+  }
+  const next = week[day].map(r => r[0]).filter(m => m > mins).sort((a, b) => a - b)[0];
+  return { open:false, next: next === undefined ? null : next, week, day };
+}
+
+function todayLine(week, day) {
+  const ranges = week[day];
+  if (!ranges.length) return "Closed today";
+  return "Today " + ranges.map(([a, b]) => `${hhmm(a)}–${hhmm(b)}`).join(", ");
+}
+
+function restCard(r, now) {
+  const st = r.hours ? openState(r.hours, now) : null;
+  let badge, hours;
+  if (r.permanently_closed) {
+    // Google says this location is gone for good — worth more than any hours.
+    badge = `<span class="badge shut">Permanently closed</span>`;
+    hours = r.note ? `<div class="rhours">${esc(r.note)}</div>` : "";
+  } else if (st) {
+    badge = st.open
+      ? `<span class="badge open">Open · till ${hhmm(st.until)}</span>`
+      : `<span class="badge shut">Closed${st.next != null ? " · opens " + hhmm(st.next) : ""}</span>`;
+    hours = `<div class="rhours">${esc(todayLine(st.week, st.day))}</div>`;
+  } else if (r.hours) {
+    // Parsed as nothing we understand — show the raw string and claim nothing.
+    badge = "";
+    hours = `<div class="rhours">${esc(r.hours)}</div>`;
+  } else {
+    badge = `<span class="badge unknown">Hours n/a</span>`;
+    hours = "";
+  }
+
+  const meta = [
+    r.cuisine ? `<span class="cuisine">${esc(r.cuisine.replace(/[_;]/g, " "))}</span>` : "",
+    r.address ? esc(r.address) : "",
+  ].filter(Boolean).join(" · ");
+
+  return `<div class="rest">
+    <div class="rtop"><span class="rname">${esc(r.name)}</span>${badge}</div>
+    ${meta ? `<div class="rmeta">${meta}</div>` : ""}
+    ${hours}
+    <div class="rlinks">
+      <a href="${esc(r.maps)}" target="_blank" rel="noopener noreferrer">Map</a>
+      ${r.website ? `<a href="${esc(r.website)}" target="_blank" rel="noopener noreferrer">Website</a>` : ""}
+      ${r.phone ? `<a href="tel:${esc(r.phone.replace(/[^+\d]/g, ""))}">Call</a>` : ""}
+    </div>
+  </div>`;
+}
 
 function renderNash() {
   const list = state.data.restaurants || [];
   const q = state.rq;
-  const shown = q ? list.filter(r =>
-    r.name.toLowerCase().includes(q) || r.neighborhood.toLowerCase().includes(q)) : list;
+  const now = new Date();
+  let shown = q ? list.filter(r =>
+    r.name.toLowerCase().includes(q) || r.neighborhood.toLowerCase().includes(q) ||
+    (r.cuisine || "").toLowerCase().includes(q) ||
+    (r.address || "").toLowerCase().includes(q)) : list;
+  if (state.openNow) {
+    shown = shown.filter(r => {
+      const o = r.hours ? openState(r.hours, now) : null;
+      return o && o.open;
+    });
+  }
 
   // Group in first-seen order so the page mirrors the dining site's own
   // geography rather than an alphabetical reshuffle.
@@ -850,13 +1303,23 @@ function renderNash() {
         `<section class="hood" style="--hood-hue:var(--h${(idx % 8) + 1})">
            <h2 class="hood-name">${esc(h)}<span class="n">${byHood.get(h).length}</span></h2>
            <div class="rests">` +
-        byHood.get(h).map(r =>
-          `<div class="rest"><span class="pin"></span>${esc(r.name)}</div>`).join("") +
+        byHood.get(h).map(r => restCard(r, now)).join("") +
         `</div></section>`).join("")
     : `<div class="empty">No restaurant matches “${esc(q)}”.</div>`;
 
   $("rhint").textContent = `${shown.length} restaurant${shown.length === 1 ? "" : "s"} across ` +
     `${hoods.length} neighborhood${hoods.length === 1 ? "" : "s"}`;
+
+  const fr = $("f-rest"); fr.innerHTML = "";
+  fr.appendChild(chip("Open now", state.openNow, () => {
+    state.openNow = !state.openNow; renderNash();
+  }));
+
+  const checked = (list.find(r => r.hours_checked) || {}).hours_checked;
+  $("oscov").textContent =
+    `${list.filter(r => r.hours).length} of ${list.length} have hours, ` +
+    `${list.filter(r => r.address).length} have a street address` +
+    (checked ? ` (hours last checked ${checked}).` : ".");
 }
 
 /* ── tracker view ───────────────────────────────────────────────────── */
@@ -1015,9 +1478,13 @@ $("logtable").addEventListener("click", e => {
   const btn = e.target.closest(".del");
   if (!btn) return;
   const ts = Number(btn.dataset.ts);
-  log.entries = log.entries.filter(x => x.ts !== ts);
+  // Remove the one row, not every row that happens to share a millisecond.
+  const at = log.entries.findIndex(x => x.ts === ts);
+  if (at < 0) return;
+  log.entries.splice(at, 1);
   saveLog();
   renderTracker();
+  syncAddButtons();   // the menu row for it has to stop reading as logged
   toast("Removed.");
 });
 
@@ -1062,6 +1529,7 @@ $("wipe").addEventListener("click", () => {
   log.entries = [];
   saveLog();
   renderTracker();
+  syncAddButtons();
   toast("Log erased.");
 });
 
@@ -1085,8 +1553,12 @@ VIEWS.forEach(([key, tabId]) => $(tabId).addEventListener("click", () => setView
 /* ── boot ───────────────────────────────────────────────────────────── */
 
 function boot(d, nutri) {
-  // meal_order is derived here so the JSON stays purely data.
-  d.meal_order = ["Breakfast", "Lunch", "Dinner", "Daily Offerings"];
+  // These come from config.py now, so a meal window is defined once. The
+  // fallbacks keep an older menu.json rendering rather than blanking the page.
+  d.meal_order = d.meal_order || ["Breakfast", "Lunch", "Dinner", "Daily Offerings"];
+  d.all_day_meals = d.all_day_meals || ["Daily Offerings"];
+  d.meal_windows = d.meal_windows ||
+    { Breakfast:["06:30","10:45"], Lunch:["10:45","16:00"], Dinner:["16:00","21:30"] };
   state.data = d;
   state.nutri = nutri || {};
   const dates = [...new Set(d.menus.map(m => m.date))].sort();

@@ -1,10 +1,11 @@
 """
 scraper — the data pipeline behind Anderson Dining.
 
-Four modules, each owning one source or concern:
+Each module owns one source or concern:
 
   config       every tunable knob, and nothing else
   fetcher      the NetNutrition session: halls, menus, item rows
+  hours        each venue's published service hours
   nutrition    FDA labels, their parsing, and the recipe-keyed cache
   restaurants  the Taste of Nashville partner list
 

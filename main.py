@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from scraper import config, fetcher, nutrition, restaurants
+from scraper import config, fetcher, nutrition, places, restaurants
 
 OUTPUT_PATH = os.path.join("docs", "menu.json")
 
@@ -54,6 +54,36 @@ def scrape_restaurants(previous: list) -> list:
 
     print(f"Taste of Nashville: {len(found)} restaurants")
     return found
+
+
+def enrich_places(partners: list, previous: dict, now: datetime) -> tuple:
+    """Attach OpenStreetMap detail, re-querying Overpass only when it's stale.
+
+    Overpass is a free, donation-funded, shared service and this data barely
+    changes, so eight runs a day should not mean eight queries. If the last
+    lookup is recent, carry the stored detail forward by name and skip the
+    network entirely.
+    """
+    stamp = previous.get("places_checked")
+    if stamp:
+        try:
+            age = (now - datetime.fromisoformat(stamp)).total_seconds() / 3600
+        except ValueError:
+            age = None
+        if age is not None and 0 <= age < config.PLACES_REFRESH_HOURS:
+            stored = {r["name"]: r for r in previous.get("restaurants", [])}
+            merged = []
+            for entry in partners:
+                old_row = stored.get(entry["name"])
+                merged.append({**old_row, **entry} if old_row else
+                              {**entry, "maps": places.maps_link(entry["name"], None)})
+            print(
+                f"OpenStreetMap: reusing detail from {age:.1f}h ago "
+                f"(refresh every {config.PLACES_REFRESH_HOURS}h)"
+            )
+            return merged, stamp
+
+    return places.enrich(partners), now.isoformat()
 
 
 def load_previous() -> dict:
@@ -106,6 +136,10 @@ def main():
 
     # -- taste of nashville ------------------------------------------------
     partners = scrape_restaurants(previous.get("restaurants", []))
+    partners, places_checked = enrich_places(partners, previous, started)
+    # Always overlay the hand-checked Google Maps hours last, so they win over
+    # OSM whether the Overpass detail above was fresh or reused.
+    partners = places.apply_google_hours(partners)
 
     # -- assemble ----------------------------------------------------------
     # Only surface tags the scrape actually saw, but keep KNOWN_TAGS' order so
@@ -129,8 +163,16 @@ def main():
             "recipes_total": len(recipes),
         },
         "tags": tags,
+        # The front-end used to hardcode its own copy of these. Publishing them
+        # keeps one definition: change a meal window in config.py and the site
+        # follows on the next run.
+        "meal_order": config.MEAL_ORDER,
+        "all_day_meals": config.ALL_DAY_MEALS,
+        "meal_windows": config.MEAL_WINDOWS,
         "halls": data["halls"],
         "restaurants": partners,
+        "places_checked": places_checked,
+        "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
         "menus": menus,
     }
 
@@ -140,6 +182,11 @@ def main():
     print(
         f"\nWrote {payload['menu_count']} menus "
         f"({payload['item_count']} items) to {OUTPUT_PATH}"
+    )
+    located = sum(1 for r in partners if r.get("address"))
+    hours = sum(1 for r in partners if r.get("hours"))
+    print(
+        f"Restaurants: {len(partners)} partners, {located} located, {hours} with hours"
     )
     print(
         f"Nutrition covers {covered}/{len(recipes)} of today's recipes "

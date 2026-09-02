@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+
+# Claude Code local tooling (preview server config, session state).
+.claude/
