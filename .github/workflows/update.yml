@@ -1,0 +1,56 @@
+name: Update Dining Menus
+
+on:
+  schedule:
+    # Menus change once a day, not once an hour — five off-the-hour slots is
+    # plenty and keeps us a polite guest on Vanderbilt's NetNutrition host.
+    # NOTE: avoid "0 * * * *". The top of the hour is the most congested slot
+    # on GitHub's free runners; those jobs get delayed 10-40 min and are
+    # sometimes silently dropped. Times below are UTC (Central + 5/6).
+    - cron: "23 9,13,17,21,1 * * *"   # ~4am, 8am, noon, 4pm, 8pm Central
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Stop a slow scheduled run and a manual run from clobbering each other.
+concurrency:
+  group: dining-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"                      # caches deps across runs (~30s saved)
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape the menus
+        run: python main.py
+
+      - name: Commit updated menus
+        run: |
+          git config user.name "dining-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/menu.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update menus $(date -u +'%Y-%m-%d %H:%M UTC')"
+            # Pull first in case a manual run committed while this one worked.
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      - name: Heartbeat
+        if: always()
+        run: echo "Dining run finished at $(date -u +'%Y-%m-%d %H:%M:%S UTC') — status ${{ job.status }}"
