@@ -15,6 +15,9 @@ envelope. Three calls, in this order:
   2. POST /Unit/SelectUnitFromUnitsList  {unitOid}  -> that hall's date/meal grid
   3. POST /Menu/SelectMenu               {menuOid}  -> the actual item table
 
+A fourth call, NutritionDetail/ShowItemNutritionLabel, fetches one item's FDA
+label; it is driven from nutrition.py, which caches the results.
+
 The IDs are not in any URL — unit OIDs live in onclick="unitsSelectUnit(N)"
 and menu OIDs in onclick="menuListSelectMenu(N)", both of which we regex out.
 
@@ -24,7 +27,7 @@ repeated before each hall's batch of step-3 calls.
 
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import requests
 from bs4 import BeautifulSoup
@@ -40,6 +43,9 @@ except ImportError:  # pragma: no cover - fallback for very old runtimes
 UNIT_OID_RE = re.compile(r"unitsSelectUnit\((\d+)\)")
 # onclick="javascript:NetNutrition.UI.menuListSelectMenu(9125337);"
 MENU_OID_RE = re.compile(r"menuListSelectMenu\((\d+)\)")
+# onclick="javascript:NetNutrition.UI.getItemNutritionLabelOnClick(event,282517631);"
+# That second argument is the item's detailOid — the key to its nutrition label.
+DETAIL_OID_RE = re.compile(r"getItemNutritionLabel(?:OnClick|FromKeyUp)\(event,\s*(\d+)\)")
 
 
 class NetNutrition:
@@ -144,6 +150,25 @@ class NetNutrition:
         panels = self._post_panels("Menu/SelectMenu", {"menuOid": menu_oid})
         return parse_items(panels.get("itemPanel", ""))
 
+    # -- step 4: one item's nutrition label -------------------------------
+
+    def fetch_nutrition_label(self, detail_oid: int, menu_oid: int) -> str:
+        """Fetch the raw FDA-label HTML for one item.
+
+        Unlike the other endpoints this one answers with a bare HTML fragment,
+        not the {"success":..., "panels":[...]} envelope, so it bypasses
+        _post_panels. Returns "" when the site has no label for the item.
+        """
+        time.sleep(config.REQUEST_DELAY)
+        resp = self.session.post(
+            f"{self.base}/NutritionDetail/ShowItemNutritionLabel",
+            data={"detailOid": detail_oid, "menuOid": menu_oid},
+            headers=self.ajax_headers,
+            timeout=config.TIMEOUT,
+        )
+        resp.raise_for_status()
+        return resp.text
+
 
 def parse_items(html: str) -> list[dict]:
     """Parse an itemPanel fragment into ordered categories of items.
@@ -170,6 +195,10 @@ def parse_items(html: str) -> list[dict]:
         link = row.select_one("a.cbo_nn_itemHover")
         if link is None:
             continue
+        # The detailOid identifies this food across every menu and date it
+        # appears on, which is what makes the nutrition cache worth keeping.
+        detail_match = DETAIL_OID_RE.search(link.get("onclick", ""))
+        detail_oid = int(detail_match.group(1)) if detail_match else None
         # The item name is the anchor's own text; the dietary icons that
         # follow it are <img> children whose alt/title carry the tag names.
         name = "".join(
@@ -191,7 +220,12 @@ def parse_items(html: str) -> list[dict]:
             current = {"name": "Menu", "items": []}
             categories.append(current)
         current["items"].append(
-            {"name": name, "serving_size": serving_size, "tags": tags}
+            {
+                "name": name,
+                "serving_size": serving_size,
+                "tags": tags,
+                "detail_oid": detail_oid,
+            }
         )
 
     return [c for c in categories if c["items"]]
@@ -209,10 +243,22 @@ def _parse_date(text: str) -> str | None:
 
 
 def campus_today():
-    """Today's date in Vanderbilt's timezone, not the runner's UTC."""
+    """Today's date in Vanderbilt's timezone, not the runner's UTC.
+
+    zoneinfo needs the IANA tz database, which ships with Linux but not with
+    Windows or slim containers — and there it raises ZoneInfoNotFoundError at
+    *lookup* time, not import time. requirements.txt pins `tzdata` so this
+    should never fire, but falling back to UTC would silently report tomorrow's
+    menu for the last five hours of every campus day, so fall back to a fixed
+    Central offset and say so loudly instead.
+    """
     if ZoneInfo is not None:
-        return datetime.now(ZoneInfo(config.CAMPUS_TZ)).date()
-    return datetime.utcnow().date()
+        try:
+            return datetime.now(ZoneInfo(config.CAMPUS_TZ)).date()
+        except Exception as exc:  # ZoneInfoNotFoundError and friends
+            print(f"  ! no tz database for {config.CAMPUS_TZ} ({exc}); "
+                  f"falling back to a fixed UTC-6 offset")
+    return (datetime.now(timezone.utc) - timedelta(hours=6)).date()
 
 
 def _meal_sort_key(meal: str):
@@ -267,6 +313,9 @@ def fetch_all() -> dict:
                 {
                     "hall": unit["name"],
                     "hall_id": unit["oid"],
+                    # Kept so the nutrition backfill has a menu to ask against;
+                    # a label POST needs both a detailOid and some menuOid.
+                    "menu_oid": menu["oid"],
                     "date": menu["date"],
                     "meal": menu["meal"],
                     "item_count": item_count,
@@ -279,4 +328,6 @@ def fetch_all() -> dict:
                 f"{item_count} items in {len(categories)} categories"
             )
 
-    return {"halls": halls, "menus": menus}
+    # The live session goes back with the data: the nutrition backfill reuses
+    # it rather than paying for a fresh handshake and unit list.
+    return {"halls": halls, "menus": menus, "session": nn}

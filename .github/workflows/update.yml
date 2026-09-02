@@ -2,12 +2,14 @@ name: Update Dining Menus
 
 on:
   schedule:
-    # Menus change once a day, not once an hour — five off-the-hour slots is
-    # plenty and keeps us a polite guest on Vanderbilt's NetNutrition host.
+    # Eight runs a day, every three hours. Menus themselves only change daily,
+    # but each run also backfills a slice of the nutrition cache (see
+    # nutrition.py), so more runs means the macro data fills in and stays
+    # current faster. Eight is comfortably inside a polite request rate.
     # NOTE: avoid "0 * * * *". The top of the hour is the most congested slot
     # on GitHub's free runners; those jobs get delayed 10-40 min and are
     # sometimes silently dropped. Times below are UTC (Central + 5/6).
-    - cron: "23 9,13,17,21,1 * * *"   # ~4am, 8am, noon, 4pm, 8pm Central
+    - cron: "23 */3 * * *"   # ~1,4,7,10am / 1,4,7,10pm Central
   workflow_dispatch:
 
 permissions:
@@ -21,6 +23,10 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # A cold nutrition cache makes the first few runs long (a full scrape plus
+    # a 400-label backfill is ~8 min). Cap it so a hung request can't burn an
+    # hour of the free-tier budget; the next run picks up where this one left off.
+    timeout-minutes: 25
     steps:
       - name: Check out repo
         uses: actions/checkout@v5
@@ -41,7 +47,7 @@ jobs:
         run: |
           git config user.name "dining-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add docs/menu.json
+          git add docs/menu.json docs/nutrition.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

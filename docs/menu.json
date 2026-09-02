@@ -1,9 +1,16 @@
 {
-  "generated_at": "2026-09-02T01:22:59.551038+00:00",
+  "generated_at": "2026-09-02T03:27:23.715253+00:00",
   "campus_date": "2026-09-01",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
+  "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 44,
   "item_count": 1266,
+  "nutrition": {
+    "cached_recipes": 462,
+    "with_macros": 461,
+    "recipes_covered": 461,
+    "recipes_total": 498
+  },
   "tags": [
     "Vegetarian",
     "Vegan",
@@ -32,7 +39,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "menu_count": 8
     },
     {
@@ -44,13 +51,13 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "menu_count": 4
     },
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "menu_count": 4
     },
     {
@@ -62,7 +69,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Open",
+      "status": "Closed",
       "menu_count": 2
     },
     {
@@ -86,7 +93,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "menu_count": 0
     },
     {
@@ -144,10 +151,157 @@
       "menu_count": 0
     }
   ],
+  "restaurants": [
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Biscuit Love"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Grain & Berry"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Sushi 88"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "The Grilled Cheeserie"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Hopdoddy Burger Bar"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Jeni’s Splendid Ice Creams"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "The Urban Juicer"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Taco Mama"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Dumpling House"
+    },
+    {
+      "neighborhood": "Hillsboro Village",
+      "name": "Meet Noodles"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "The Horn"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Ben & Jerry’s"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "8th and Roast"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Helen’s Hot Chicken"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Two Boots Pizza"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Sarabha’s Creamery"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "The Slider House"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Torchy’s Tacos"
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Hattie B's"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Sitar"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Wendy’s"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Sun & Fork"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Inchin’s Bamboo Garden"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Papa John’s Pizza"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Woodlands Indian Cuisine"
+    },
+    {
+      "neighborhood": "West End Avenue",
+      "name": "Nawabi Hyderabad House"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Elliston Place Soda Shop"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Wild Berry"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "I Love Sushi"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Roma Pizza & Pasta"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Michaelangelo’s Pizza"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Oscar’s Taco Shop"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Poke Bros."
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Satay Thai Grill"
+    },
+    {
+      "neighborhood": "Elliston Place",
+      "name": "Sweet Dots Bubble Tea"
+    },
+    {
+      "neighborhood": "On Campus",
+      "name": "Red Bicycle"
+    }
+  ],
   "menus": [
     {
       "hall": "Rand Dining Center",
       "hall_id": 1,
+      "menu_oid": 9141356,
       "date": "2026-09-01",
       "meal": "Breakfast",
       "item_count": 38,
@@ -541,6 +695,7 @@
     {
       "hall": "Rand Dining Center",
       "hall_id": 1,
+      "menu_oid": 9141830,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 118,
@@ -1644,6 +1799,7 @@
     {
       "hall": "Rand Dining Center",
       "hall_id": 1,
+      "menu_oid": 9141357,
       "date": "2026-09-02",
       "meal": "Breakfast",
       "item_count": 36,
@@ -2015,6 +2171,7 @@
     {
       "hall": "Rand Dining Center",
       "hall_id": 1,
+      "menu_oid": 9141831,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 117,
@@ -3111,6 +3268,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125336,
       "date": "2026-09-01",
       "meal": "Breakfast",
       "item_count": 27,
@@ -3391,6 +3549,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125337,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 50,
@@ -3900,6 +4059,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125338,
       "date": "2026-09-01",
       "meal": "Dinner",
       "item_count": 27,
@@ -4194,6 +4354,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125339,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 32,
@@ -4455,6 +4616,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125340,
       "date": "2026-09-02",
       "meal": "Breakfast",
       "item_count": 27,
@@ -4730,6 +4892,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125341,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 49,
@@ -5236,6 +5399,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125342,
       "date": "2026-09-02",
       "meal": "Dinner",
       "item_count": 27,
@@ -5533,6 +5697,7 @@
     {
       "hall": "The Commons Dining Center",
       "hall_id": 2,
+      "menu_oid": 9125343,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 31,
@@ -5793,6 +5958,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9204765,
       "date": "2026-09-01",
       "meal": "Breakfast",
       "item_count": 11,
@@ -5911,6 +6077,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9294200,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 13,
@@ -6047,6 +6214,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9294261,
       "date": "2026-09-01",
       "meal": "Dinner",
       "item_count": 9,
@@ -6152,6 +6320,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9204766,
       "date": "2026-09-02",
       "meal": "Breakfast",
       "item_count": 10,
@@ -6252,6 +6421,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9294201,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 20,
@@ -6448,6 +6618,7 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
+      "menu_oid": 9294262,
       "date": "2026-09-02",
       "meal": "Dinner",
       "item_count": 12,
@@ -6589,6 +6760,7 @@
     {
       "hall": "E. Bronson Ingram Dining Center",
       "hall_id": 11,
+      "menu_oid": 9161740,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 45,
@@ -6980,6 +7152,7 @@
     {
       "hall": "E. Bronson Ingram Dining Center",
       "hall_id": 11,
+      "menu_oid": 9161741,
       "date": "2026-09-01",
       "meal": "Dinner",
       "item_count": 33,
@@ -7281,6 +7454,7 @@
     {
       "hall": "E. Bronson Ingram Dining Center",
       "hall_id": 11,
+      "menu_oid": 9161742,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 44,
@@ -7666,6 +7840,7 @@
     {
       "hall": "E. Bronson Ingram Dining Center",
       "hall_id": 11,
+      "menu_oid": 9161743,
       "date": "2026-09-02",
       "meal": "Dinner",
       "item_count": 33,
@@ -7966,6 +8141,7 @@
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
       "hall_id": 19,
+      "menu_oid": 9155725,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 36,
@@ -8350,6 +8526,7 @@
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
       "hall_id": 19,
+      "menu_oid": 9155726,
       "date": "2026-09-01",
       "meal": "Dinner",
       "item_count": 26,
@@ -8640,6 +8817,7 @@
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
       "hall_id": 19,
+      "menu_oid": 9155727,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 37,
@@ -9038,6 +9216,7 @@
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
       "hall_id": 19,
+      "menu_oid": 9155728,
       "date": "2026-09-02",
       "meal": "Dinner",
       "item_count": 28,
@@ -9349,6 +9528,7 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 20,
+      "menu_oid": 9138340,
       "date": "2026-09-01",
       "meal": "Breakfast",
       "item_count": 13,
@@ -9518,6 +9698,7 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 20,
+      "menu_oid": 9138341,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 10,
@@ -9655,6 +9836,7 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 20,
+      "menu_oid": 9138344,
       "date": "2026-09-02",
       "meal": "Breakfast",
       "item_count": 13,
@@ -9826,6 +10008,7 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 20,
+      "menu_oid": 9138345,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 10,
@@ -9950,6 +10133,7 @@
     {
       "hall": "The Pub at Overcup Oak",
       "hall_id": 4,
+      "menu_oid": 9295119,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 25,
@@ -10183,6 +10367,7 @@
     {
       "hall": "The Pub at Overcup Oak",
       "hall_id": 4,
+      "menu_oid": 9295125,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 28,
@@ -10433,6 +10618,7 @@
     {
       "hall": "Zeppos Dining",
       "hall_id": 18,
+      "menu_oid": 9141672,
       "date": "2026-09-01",
       "meal": "Lunch",
       "item_count": 45,
@@ -10884,6 +11070,7 @@
     {
       "hall": "Zeppos Dining",
       "hall_id": 18,
+      "menu_oid": 9159477,
       "date": "2026-09-01",
       "meal": "Dinner",
       "item_count": 19,
@@ -11119,6 +11306,7 @@
     {
       "hall": "Zeppos Dining",
       "hall_id": 18,
+      "menu_oid": 9141675,
       "date": "2026-09-02",
       "meal": "Lunch",
       "item_count": 47,
@@ -11588,6 +11776,7 @@
     {
       "hall": "Zeppos Dining",
       "hall_id": 18,
+      "menu_oid": 9159481,
       "date": "2026-09-02",
       "meal": "Dinner",
       "item_count": 21,
@@ -11839,6 +12028,7 @@
     {
       "hall": "Commons Munchie",
       "hall_id": 12,
+      "menu_oid": 9360950,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 12,
@@ -11969,6 +12159,7 @@
     {
       "hall": "Commons Munchie",
       "hall_id": 12,
+      "menu_oid": 9360951,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 12,
@@ -12100,6 +12291,7 @@
     {
       "hall": "Highland Munchie",
       "hall_id": 14,
+      "menu_oid": 9380060,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 11,
@@ -12213,6 +12405,7 @@
     {
       "hall": "Highland Munchie",
       "hall_id": 14,
+      "menu_oid": 9380061,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 11,
@@ -12326,6 +12519,7 @@
     {
       "hall": "Kissam Munchie",
       "hall_id": 13,
+      "menu_oid": 9377315,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 11,
@@ -12442,6 +12636,7 @@
     {
       "hall": "Kissam Munchie",
       "hall_id": 13,
+      "menu_oid": 9377316,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 11,
@@ -12558,6 +12753,7 @@
     {
       "hall": "Local Java Cafe at Alumni",
       "hall_id": 16,
+      "menu_oid": 9294960,
       "date": "2026-09-01",
       "meal": "Daily Offerings",
       "item_count": 15,
@@ -12716,6 +12912,7 @@
     {
       "hall": "Local Java Cafe at Alumni",
       "hall_id": 16,
+      "menu_oid": 9397820,
       "date": "2026-09-02",
       "meal": "Daily Offerings",
       "item_count": 16,

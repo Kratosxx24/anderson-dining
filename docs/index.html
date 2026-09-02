@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Anderson Dining</title>
-<meta name="description" content="Today's Vanderbilt campus dining menus, in one place." />
+<meta name="description" content="Today's Vanderbilt campus dining menus, with calories and macros, in one place." />
 <script>try{var t=localStorage.getItem('dining-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +23,10 @@
        card shows its hall name, and the hue rides on the stripe and dot. */
     --h1:#2a78d6; --h2:#eb6834; --h3:#1baf7a; --h4:#eda100;
     --h5:#e87ba4; --h6:#008300; --h7:#4a3aa7; --h8:#e34948;
+
+    /* Macro identities. Reused by the badges, the goal bars and the charts so
+       protein is the same green everywhere it appears. */
+    --m-cal:#a68b2c; --m-pro:#2f8f55; --m-carb:#3f6dc7; --m-fat:#c0532c;
   }
   [data-theme="dark"] {
     --bg:#131312; --surface:#1c1c1a; --sunken:#232320; --text:#ededea; --muted:#8a8a81;
@@ -34,6 +38,8 @@
     /* Same eight hues re-stepped for the dark surface, not an automatic flip. */
     --h1:#3987e5; --h2:#d95926; --h3:#199e70; --h4:#c98500;
     --h5:#d55181; --h6:#008300; --h7:#9085e9; --h8:#e66767;
+
+    --m-cal:#d4b64a; --m-pro:#5cc483; --m-carb:#7aa0e8; --m-fat:#e08a5f;
   }
   * { box-sizing:border-box; }
   html { -webkit-text-size-adjust:100%; }
@@ -69,6 +75,17 @@
   .dash { display:flex; flex-wrap:wrap; align-items:center; justify-content:center;
     gap:6px 14px; font-family:"Space Mono",monospace; font-size:11.5px; color:var(--faint); }
   .dash b { color:var(--text); font-weight:700; }
+
+  /* View tabs */
+  .tabs { display:flex; justify-content:center; gap:6px; margin:18px 0 0; }
+  .tab { font-family:"Space Mono",monospace; font-size:11px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--muted); background:transparent;
+    border:1px solid var(--border); border-radius:100px; padding:7px 15px; cursor:pointer;
+    transition:border-color .15s,color .15s,background .15s; }
+  .tab:hover { border-color:var(--border-hov); color:var(--text); }
+  .tab:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .tab[aria-selected="true"] { background:var(--text); border-color:var(--text); color:var(--bg); }
+  .view[hidden] { display:none; }
 
   /* Filters */
   .filters { margin:22px 0 4px; display:flex; flex-direction:column; gap:12px; }
@@ -132,18 +149,147 @@
   li.item:last-child { border-bottom:none; }
   .item-name { font-size:14px; }
   .serving { font-family:"Space Mono",monospace; font-size:10.5px; color:var(--faint); }
+  /* Ranked lists drop the station headings, so each row carries its own. */
+  .station { font-size:10px; color:var(--muted); background:var(--sunken);
+    border-radius:100px; padding:2px 8px; white-space:nowrap; }
   .tags { display:flex; flex-wrap:wrap; gap:4px; margin-left:auto; }
   .tag { font-size:10px; letter-spacing:.04em; color:var(--muted);
     background:var(--sunken); border-radius:100px; padding:2px 8px; white-space:nowrap; }
   .tag.good { color:var(--veg); background:transparent; border:1px solid currentColor; }
 
+  /* Macros on an item row */
+  .macros { font-family:"Space Mono",monospace; font-size:10.5px; display:flex; gap:7px;
+    align-items:baseline; white-space:nowrap; }
+  .macros .kcal { color:var(--m-cal); font-weight:700; }
+  .macros .p { color:var(--m-pro); }
+  .macros .c { color:var(--m-carb); }
+  .macros .f { color:var(--m-fat); }
+  .macros.none { color:var(--faint); }
+  .add { font-family:"Space Mono",monospace; font-size:14px; line-height:1; color:var(--muted);
+    background:transparent; border:1px solid var(--border); border-radius:50%;
+    width:22px; height:22px; padding:0; cursor:pointer; flex:none;
+    transition:border-color .15s,color .15s,background .15s; }
+  .add:hover { border-color:var(--veg); color:var(--veg); }
+  .add:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .add.done { background:var(--veg); border-color:var(--veg); color:#fff; }
+
+  /* The full label, revealed by clicking an item name. Everything the scrape
+     captured that the one-line macro badge has no room for. */
+  .item-name.has-detail { cursor:pointer; border-bottom:1px dotted var(--border-hov); }
+  .item-name.has-detail:hover { color:var(--accent); }
+  .item-name.has-detail:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .detail { flex-basis:100%; margin:8px 0 4px; padding:12px 14px; background:var(--sunken);
+    border-radius:10px; font-size:12.5px; }
+  .detail dl { display:grid; grid-template-columns:repeat(auto-fit,minmax(112px,1fr));
+    gap:8px 14px; margin:0 0 10px; }
+  .detail dl div { display:flex; justify-content:space-between; gap:8px;
+    border-bottom:1px dashed var(--border); padding-bottom:3px; }
+  .detail dt { color:var(--muted); }
+  .detail dd { margin:0; font-family:"Space Mono",monospace; font-size:11.5px; }
+  .detail .ing { color:var(--muted); line-height:1.5; }
+  .detail .ing b { color:var(--text); }
+  .detail .contains { color:var(--alrt); font-weight:500; margin-bottom:8px; }
+
+  /* Taste of Nashville */
+  .hood { margin-top:22px; }
+  .hood-name { font-family:"Fraunces",Georgia,serif; font-size:19px; font-weight:600;
+    letter-spacing:-.01em; margin:0 0 10px; display:flex; align-items:baseline; gap:9px; }
+  .hood-name .n { font-family:"Space Mono",monospace; font-size:11px; color:var(--faint); }
+  .rests { display:grid; gap:8px;
+    grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
+  .rest { background:var(--surface); border:1px solid var(--border); border-radius:11px;
+    padding:11px 14px; font-size:14px; display:flex; align-items:center; gap:9px; }
+  .rest .pin { width:7px; height:7px; border-radius:50%; background:var(--hood-hue,var(--accent));
+    flex:none; }
+  .note { background:var(--sunken); border:1px solid var(--border); border-radius:12px;
+    padding:14px 16px; font-size:13px; color:var(--muted); margin-top:20px; }
+  .note b { color:var(--text); }
+
+  /* Tracker */
+  .panel { background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:18px 20px; margin-top:16px; }
+  .panel h2 { font-family:"Fraunces",Georgia,serif; font-size:18px; font-weight:600;
+    letter-spacing:-.01em; margin:0 0 4px; }
+  .panel .sub { font-size:12.5px; color:var(--faint); margin:0 0 14px; }
+  .goals { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); }
+  .goal .gtop { display:flex; justify-content:space-between; align-items:baseline;
+    font-family:"Space Mono",monospace; font-size:11px; margin-bottom:5px; }
+  .goal .glabel { letter-spacing:.1em; text-transform:uppercase; color:var(--faint); }
+  .goal .gval { color:var(--text); }
+  .goal .gval .of { color:var(--faint); }
+  .bar { height:7px; border-radius:100px; background:var(--sunken); overflow:hidden; }
+  .bar > i { display:block; height:100%; border-radius:100px; background:var(--gc,var(--accent));
+    transition:width .3s ease; }
+  .bar.over > i { background:var(--alrt); }
+
+  .goalform { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-end; margin-top:16px;
+    padding-top:16px; border-top:1px solid var(--border); }
+  .field { display:flex; flex-direction:column; gap:4px; }
+  .field label { font-family:"Space Mono",monospace; font-size:10px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); }
+  .field input { font:inherit; font-size:13px; width:88px; color:var(--text);
+    background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:6px 9px; }
+  .field input:focus { outline:2px solid var(--accent); outline-offset:1px; }
+
+  table.log { width:100%; border-collapse:collapse; font-size:13.5px; }
+  table.log th { font-family:"Space Mono",monospace; font-size:10px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); font-weight:400; text-align:left;
+    padding:0 8px 6px 0; }
+  table.log td { padding:6px 8px 6px 0; border-top:1px dashed var(--border); vertical-align:baseline; }
+  table.log td.num { font-family:"Space Mono",monospace; font-size:11.5px; text-align:right;
+    white-space:nowrap; }
+  table.log td.when { font-family:"Space Mono",monospace; font-size:11px; color:var(--faint);
+    white-space:nowrap; }
+  .del { background:transparent; border:none; color:var(--faint); cursor:pointer;
+    font-size:15px; line-height:1; padding:2px 4px; border-radius:6px; }
+  .del:hover { color:var(--alrt); }
+  .del:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+
+  /* Charts. Plain divs — a bar chart does not need a library. */
+  .chart { display:flex; align-items:flex-end; gap:3px; height:110px; margin-top:6px; }
+  .chart .col { flex:1; display:flex; flex-direction:column; justify-content:flex-end;
+    height:100%; min-width:0; }
+  /* Bars sit back a step so the highlighted peak column reads as the point of
+     the chart rather than as one more bar the same color as its neighbours. */
+  .chart .col > i { display:block; border-radius:3px 3px 0 0; min-height:2px;
+    background:var(--cc,color-mix(in srgb, var(--accent) 42%, var(--surface)));
+    transition:height .3s ease; }
+  .chart .col.empty > i { background:var(--sunken); }
+  .chart .col.peak > i { background:var(--accent); }
+  .axis { display:flex; gap:3px; margin-top:5px; font-family:"Space Mono",monospace;
+    font-size:9.5px; color:var(--faint); }
+  .axis span { flex:1; text-align:center; min-width:0; overflow:hidden; }
+  .legend { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px;
+    font-family:"Space Mono",monospace; font-size:10.5px; color:var(--muted); }
+  .legend i { display:inline-block; width:9px; height:9px; border-radius:2px;
+    margin-right:5px; vertical-align:-1px; }
+  .stat-row { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    margin-top:4px; }
+  .stat { background:var(--sunken); border-radius:11px; padding:12px 14px; }
+  .stat .sv { font-family:"Fraunces",Georgia,serif; font-size:24px; font-weight:600;
+    line-height:1.1; }
+  .stat .sl { font-family:"Space Mono",monospace; font-size:10px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); margin-top:2px; }
+
   .empty { text-align:center; color:var(--faint); padding:48px 0; font-size:14px; }
   footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--border);
     font-family:"Space Mono",monospace; font-size:11px; color:var(--faint); text-align:center; }
   footer a { color:var(--muted); }
+
+  /* Toast for "logged X" confirmations. */
+  .toast { position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(14px);
+    background:var(--text); color:var(--bg); font-size:13px; padding:9px 16px;
+    border-radius:100px; opacity:0; pointer-events:none; transition:opacity .2s,transform .2s;
+    z-index:60; max-width:90vw; }
+  .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
   @media (max-width:560px) {
     .flabel { min-width:100%; }
     .tags { margin-left:0; width:100%; }
+    .tabs { flex-wrap:wrap; }
+  }
+  @media (prefers-reduced-motion:reduce) {
+    * { animation:none !important; transition:none !important; }
   }
 </style>
 </head>
@@ -156,40 +302,146 @@
     </div>
     <h1 class="title">Anderson <span class="glow">Dining</span></h1>
     <div class="dash" id="dash"></div>
+    <div class="tabs" role="tablist" aria-label="Views">
+      <button class="tab" id="tab-menus" role="tab" aria-selected="true" aria-controls="view-menus">Menus</button>
+      <button class="tab" id="tab-nash" role="tab" aria-selected="false" aria-controls="view-nash">Taste of Nashville</button>
+      <button class="tab" id="tab-track" role="tab" aria-selected="false" aria-controls="view-track">Tracker</button>
+    </div>
   </header>
 
-  <section class="filters" aria-label="Filters">
-    <div class="frow">
-      <span class="flabel">Day</span>
-      <div class="chips" id="f-date"></div>
-    </div>
-    <div class="frow">
-      <span class="flabel">Meal</span>
-      <div class="chips" id="f-meal"></div>
-    </div>
-    <div class="frow">
-      <span class="flabel">Only show</span>
-      <div class="chips" id="f-include"></div>
-    </div>
-    <div class="frow">
-      <span class="flabel">Hide</span>
-      <div class="chips" id="f-exclude"></div>
-    </div>
-    <div class="frow">
-      <span class="flabel">Search</span>
-      <input class="search" id="q" type="search" placeholder="chicken, tofu, waffle…" />
-    </div>
-    <div class="frow"><span class="flabel"></span><span class="hint" id="hint"></span></div>
-  </section>
+  <!-- ── Menus ───────────────────────────────────────────────────────── -->
+  <div class="view" id="view-menus" role="tabpanel" aria-labelledby="tab-menus">
+    <section class="filters" aria-label="Filters">
+      <div class="frow">
+        <span class="flabel">Day</span>
+        <div class="chips" id="f-date"></div>
+      </div>
+      <div class="frow">
+        <span class="flabel">Meal</span>
+        <div class="chips" id="f-meal"></div>
+      </div>
+      <div class="frow">
+        <span class="flabel">Only show</span>
+        <div class="chips" id="f-include"></div>
+      </div>
+      <div class="frow">
+        <span class="flabel">Hide</span>
+        <div class="chips" id="f-exclude"></div>
+      </div>
+      <div class="frow">
+        <span class="flabel">Sort by</span>
+        <div class="chips" id="f-sort"></div>
+      </div>
+      <div class="frow">
+        <span class="flabel">Search</span>
+        <input class="search" id="q" type="search" placeholder="chicken, tofu, waffle…" />
+      </div>
+      <div class="frow"><span class="flabel"></span><span class="hint" id="hint"></span></div>
+    </section>
 
-  <main class="halls" id="halls"></main>
-  <div class="empty" id="empty" hidden>Nothing matches those filters.</div>
+    <main class="halls" id="halls"></main>
+    <div class="empty" id="empty" hidden>Nothing matches those filters.</div>
+  </div>
+
+  <!-- ── Taste of Nashville ──────────────────────────────────────────── -->
+  <div class="view" id="view-nash" role="tabpanel" aria-labelledby="tab-nash" hidden>
+    <section class="filters" aria-label="Restaurant search">
+      <div class="frow">
+        <span class="flabel">Search</span>
+        <input class="search" id="rq" type="search" placeholder="sushi, tacos, pizza…" />
+      </div>
+      <div class="frow"><span class="flabel"></span><span class="hint" id="rhint"></span></div>
+    </section>
+    <div id="hoods"></div>
+    <div class="note">
+      <b>Meal Money, off campus.</b> These are the Taste of Nashville partners — swipe your
+      Commodore Card like a debit card. Vanderbilt does not publish menus or nutrition for
+      them, so nothing here can be logged with macros; use the tracker's manual entry for
+      an off-campus meal.
+    </div>
+  </div>
+
+  <!-- ── Tracker ─────────────────────────────────────────────────────── -->
+  <div class="view" id="view-track" role="tabpanel" aria-labelledby="tab-track" hidden>
+    <section class="panel">
+      <h2 id="today-title">Today</h2>
+      <p class="sub" id="today-sub"></p>
+      <div class="goals" id="goals"></div>
+      <form class="goalform" id="goalform">
+        <div class="field"><label for="g-cal">Calories</label><input id="g-cal" type="number" min="0" step="10" inputmode="numeric" /></div>
+        <div class="field"><label for="g-pro">Protein g</label><input id="g-pro" type="number" min="0" step="5" inputmode="numeric" /></div>
+        <div class="field"><label for="g-carb">Carbs g</label><input id="g-carb" type="number" min="0" step="5" inputmode="numeric" /></div>
+        <div class="field"><label for="g-fat">Fat g</label><input id="g-fat" type="number" min="0" step="5" inputmode="numeric" /></div>
+        <button class="btn-ghost" type="submit">Save goals</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Add something by hand</h2>
+      <p class="sub">For a Taste of Nashville meal, or anything the menus don't cover.</p>
+      <form class="goalform" id="manual" style="border-top:none; padding-top:0; margin-top:0;">
+        <div class="field" style="flex:1; min-width:180px;">
+          <label for="m-name">What</label>
+          <input id="m-name" type="text" style="width:100%; min-width:170px;" placeholder="Hopdoddy burger" required />
+        </div>
+        <div class="field"><label for="m-cal">Calories</label><input id="m-cal" type="number" min="0" step="10" inputmode="numeric" /></div>
+        <div class="field"><label for="m-pro">Protein g</label><input id="m-pro" type="number" min="0" step="1" inputmode="numeric" /></div>
+        <div class="field"><label for="m-carb">Carbs g</label><input id="m-carb" type="number" min="0" step="1" inputmode="numeric" /></div>
+        <div class="field"><label for="m-fat">Fat g</label><input id="m-fat" type="number" min="0" step="1" inputmode="numeric" /></div>
+        <button class="btn-ghost" type="submit">Log it</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Today's log</h2>
+      <p class="sub" id="log-sub"></p>
+      <div id="logtable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>When you actually eat</h2>
+      <p class="sub" id="peak-sub"></p>
+      <div class="chart" id="peakchart"></div>
+      <div class="axis" id="peakaxis"></div>
+      <div class="legend" id="peaklegend" hidden>
+        <span><i style="background:var(--accent)"></i>Your busiest hour</span>
+        <span><i style="background:color-mix(in srgb, var(--accent) 42%, var(--surface))"></i>Other hours</span>
+      </div>
+      <div class="stat-row" id="peakstats"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Last two weeks</h2>
+      <p class="sub" id="hist-sub"></p>
+      <div class="chart" id="histchart"></div>
+      <div class="axis" id="histaxis"></div>
+      <div class="legend">
+        <span><i style="background:var(--m-cal)"></i>Calories per day</span>
+        <span><i style="background:var(--sunken)"></i>No entries</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Your data</h2>
+      <p class="sub">
+        Everything you log stays in this browser's local storage. It is never uploaded —
+        this site is a static page with no server and no account. Clearing your browser
+        data clears the log.
+      </p>
+      <div class="goalform" style="border-top:none; padding-top:0; margin-top:0;">
+        <button class="btn-ghost" id="wipe" type="button">Erase all logged entries</button>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    Scraped from <a id="src" href="#">Vanderbilt NetNutrition</a> · updates a few times a day ·
+    Menus and nutrition scraped from <a id="src" href="#">Vanderbilt NetNutrition</a> ·
+    restaurants from <a id="rsrc" href="#">Campus Dining</a> · updates every three hours ·
+    <span id="cov"></span> ·
     always confirm allergens with dining staff.
   </footer>
 </div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 
@@ -219,13 +471,42 @@ const HALL_HUE = {
 // Anything the site adds later still gets a stable color rather than none.
 const hallHue = id => HALL_HUE[id] || ((id % 8) + 1);
 
-const state = { data:null, date:null, meal:null, include:new Set(), exclude:new Set(), q:"" };
+const state = {
+  data:null, nutri:{}, view:"menus",
+  date:null, meal:null, include:new Set(), exclude:new Set(), q:"", sort:"menu", rq:"",
+};
 
 // Tags that read as "I want this" rather than "this contains an allergen".
 const POSITIVE = new Set(["Vegetarian","Vegan","Halal","Kosher","Features Local Ingredient"]);
 
+const SORTS = [
+  ["menu",     "Menu order"],
+  ["protein",  "Most protein"],
+  ["cal-asc",  "Fewest calories"],
+  ["cal-desc", "Most calories"],
+  ["pcal",     "Protein per calorie"],
+];
+
 const $ = id => document.getElementById(id);
-const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc = s => String(s == null ? "" : s)
+  .replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const round = n => (n == null ? null : Math.round(n));
+
+/* ── nutrition join ──────────────────────────────────────────────────────
+   nutrition.json is keyed by recipe, not by menu row, because one recipe
+   appears on many menus. This must produce byte-identical keys to
+   nutrition.recipe_key() in the Python — name and serving size, whitespace
+   collapsed and case-folded. */
+function nkey(name, serving) {
+  const norm = s => String(s == null ? "" : s).trim().split(/\s+/).join(" ").toLowerCase();
+  return norm(name) + "|" + norm(serving);
+}
+function macrosFor(item) {
+  const hit = state.nutri[nkey(item.name, item.serving_size)];
+  // An entry with only a _seen stamp means "asked, nothing published".
+  if (!hit || hit.calories == null) return null;
+  return hit;
+}
 
 function dayLabel(iso, today) {
   const d = new Date(iso + "T12:00:00");
@@ -244,6 +525,68 @@ function chip(text, pressed, onClick, extraClass) {
   b.addEventListener("click", onClick);
   return b;
 }
+
+let toastTimer = null;
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 1900);
+}
+
+/* ── the log ─────────────────────────────────────────────────────────────
+   One key in localStorage. Entries are flat and self-contained: a logged
+   item keeps the numbers it had when logged, so a menu change months later
+   never rewrites your history. */
+const STORE = "dining-log-v1";
+const DEFAULT_GOALS = { calories:2200, protein:140, carbs:250, fat:70 };
+let log = { goals:{ ...DEFAULT_GOALS }, entries:[] };
+
+function loadLog() {
+  try {
+    const raw = localStorage.getItem(STORE);
+    if (!raw) return;
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === "object") {
+      log.goals = { ...DEFAULT_GOALS, ...(parsed.goals || {}) };
+      log.entries = Array.isArray(parsed.entries) ? parsed.entries : [];
+    }
+  } catch (e) {
+    // A corrupt or unavailable store (private mode, quota) must not take the
+    // whole page down — the menus still work without a log.
+    console.warn("log unavailable:", e);
+  }
+}
+function saveLog() {
+  try { localStorage.setItem(STORE, JSON.stringify(log)); }
+  catch (e) { toast("Couldn't save — storage is unavailable."); }
+}
+
+// Local calendar day, not UTC: a 9pm dinner must not land on tomorrow.
+function dayKey(ts) {
+  const d = new Date(ts);
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") +
+         "-" + String(d.getDate()).padStart(2, "0");
+}
+const todayKey = () => dayKey(Date.now());
+
+function addEntry(entry) {
+  log.entries.push({ ts: Date.now(), ...entry });
+  saveLog();
+  if (state.view === "track") renderTracker();
+}
+
+function totalsFor(entries) {
+  return entries.reduce((t, e) => ({
+    calories: t.calories + (e.calories || 0),
+    protein:  t.protein  + (e.protein  || 0),
+    carbs:    t.carbs    + (e.carbs    || 0),
+    fat:      t.fat      + (e.fat      || 0),
+  }), { calories:0, protein:0, carbs:0, fat:0 });
+}
+
+/* ── menus view ─────────────────────────────────────────────────────── */
 
 function renderFilters() {
   const d = state.data;
@@ -272,6 +615,10 @@ function renderFilters() {
   allergens.forEach(t => fe.appendChild(chip(t, state.exclude.has(t), () => {
     state.exclude.has(t) ? state.exclude.delete(t) : state.exclude.add(t); render();
   }, "exclude")));
+
+  const fs = $("f-sort"); fs.innerHTML = "";
+  SORTS.forEach(([key, label]) => fs.appendChild(
+    chip(label, state.sort === key, () => { state.sort = key; render(); })));
 }
 
 function itemPasses(item) {
@@ -280,6 +627,38 @@ function itemPasses(item) {
   for (const t of state.exclude) if (item.tags.includes(t)) return false;
   if (state.q && !item.name.toLowerCase().includes(state.q)) return false;
   return true;
+}
+
+// Sorting by a nutrient has to put unknowns last rather than treating a
+// missing label as zero, which would rank uncatalogued items as "0 calories".
+function sortItems(items) {
+  if (state.sort === "menu") return items;
+  const scored = items.map(i => ({ i, m: macrosFor(i) }));
+  const val = ({ m }) => {
+    if (!m) return null;
+    if (state.sort === "protein") return m.protein;
+    if (state.sort === "pcal") return m.protein != null && m.calories ? m.protein / m.calories : null;
+    return m.calories;
+  };
+  const asc = state.sort === "cal-asc";
+  return scored.sort((a, b) => {
+    const av = val(a), bv = val(b);
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    return asc ? av - bv : bv - av;
+  }).map(s => s.i);
+}
+
+function macroHTML(item) {
+  const m = macrosFor(item);
+  if (!m) return `<span class="macros none" title="Vanderbilt has not published a label for this item">no label</span>`;
+  const bit = (cls, v, suffix) =>
+    v == null ? "" : `<span class="${cls}">${round(v)}${suffix}</span>`;
+  return `<span class="macros">` +
+    `<span class="kcal">${round(m.calories)} cal</span>` +
+    bit("p", m.protein, "p") + bit("c", m.carbs, "c") + bit("f", m.fat, "f") +
+    `</span>`;
 }
 
 function render() {
@@ -301,12 +680,19 @@ function render() {
     if (!menus.length) continue;
 
     // Filter down to what survives the tag/search filters before drawing.
-    const kept = menus.map(m => ({
-      meal: m.meal,
-      categories: m.categories
+    // Stations hold 2.5 items on average, so sorting *inside* a station would
+    // be meaningless — "most protein" is a question about the whole meal. When
+    // a nutrient sort is on, collapse the stations into one ranked list and
+    // carry each item's station along so it doesn't lose its provenance.
+    const ranked = state.sort !== "menu";
+    const kept = menus.map(m => {
+      const cats = m.categories
         .map(c => ({ name:c.name, items:c.items.filter(itemPasses) }))
-        .filter(c => c.items.length)
-    })).filter(m => m.categories.length);
+        .filter(c => c.items.length);
+      if (!ranked) return { meal:m.meal, categories:cats };
+      const flat = sortItems(cats.flatMap(c => c.items.map(i => ({ ...i, station:c.name }))));
+      return { meal:m.meal, categories: flat.length ? [{ name:null, items:flat }] : [] };
+    }).filter(m => m.categories.length);
     if (!kept.length) continue;
 
     const count = kept.reduce((n, m) =>
@@ -335,10 +721,22 @@ function render() {
       kept.map(m =>
         `<div class="meal"><div class="meal-head">${esc(m.meal)}</div>` +
         m.categories.map(c =>
-          `<div class="cat"><div class="cat-name">${esc(c.name)}</div><ul class="items">` +
+          `<div class="cat">` +
+          (c.name ? `<div class="cat-name">${esc(c.name)}</div>` : "") +
+          `<ul class="items">` +
           c.items.map(i =>
-            `<li class="item"><span class="item-name">${esc(i.name)}</span>` +
+            `<li class="item">` +
+            `<button class="add" type="button" title="Log ${esc(i.name)}"` +
+            ` aria-label="Log ${esc(i.name)}"` +
+            ` data-name="${esc(i.name)}" data-serving="${esc(i.serving_size)}"` +
+            ` data-hall="${esc(hall.name)}" data-meal="${esc(m.meal)}">+</button>` +
+            `<span class="item-name${macrosFor(i) ? " has-detail" : ""}"` +
+            (macrosFor(i) ? ` role="button" tabindex="0" aria-expanded="false"` +
+              ` title="Full nutrition label"` : "") +
+            `>${esc(i.name)}</span>` +
             (i.serving_size ? `<span class="serving">${esc(i.serving_size)}</span>` : "") +
+            (i.station ? `<span class="station">${esc(i.station)}</span>` : "") +
+            macroHTML(i) +
             (i.tags.length
               ? `<span class="tags">${i.tags.map(t =>
                   `<span class="tag${POSITIVE.has(t) ? " good" : ""}">${esc(t)}</span>`).join("")}</span>`
@@ -366,10 +764,331 @@ function render() {
     `${shownHalls} location${shownHalls === 1 ? "" : "s"}`;
 }
 
-function boot(d) {
+// The rows the macro badge has no room for, plus ingredients and the allergen
+// line. Built on demand so 1,200 hidden panels never enter the DOM.
+const DETAIL_ROWS = [
+  ["calories","Calories",""], ["protein","Protein","g"], ["carbs","Carbs","g"],
+  ["fat","Fat","g"], ["sat_fat","Sat. fat","g"], ["trans_fat","Trans fat","g"],
+  ["fiber","Fiber","g"], ["sugars","Sugars","g"],
+  ["sodium","Sodium","mg"], ["cholesterol","Cholesterol","mg"],
+];
+function detailHTML(m) {
+  const rows = DETAIL_ROWS
+    .filter(([k]) => m[k] != null)
+    .map(([k, label, unit]) =>
+      `<div><dt>${label}</dt><dd>${round(m[k])}${unit}</dd></div>`).join("");
+  return `<div class="detail">` +
+    (m.serving ? `<div class="ing" style="margin-bottom:8px"><b>Serving</b> ${esc(m.serving)}</div>` : "") +
+    (rows ? `<dl>${rows}</dl>` : "") +
+    (m.contains ? `<div class="contains">Contains: ${esc(m.contains)}</div>` : "") +
+    (m.ingredients ? `<div class="ing"><b>Ingredients</b> ${esc(m.ingredients)}</div>` : "") +
+    `</div>`;
+}
+
+function toggleDetail(nameEl) {
+  const li = nameEl.closest(".item");
+  const open = li.querySelector(".detail");
+  if (open) { open.remove(); nameEl.setAttribute("aria-expanded", "false"); return; }
+  const btn = li.querySelector(".add");
+  const m = state.nutri[nkey(btn.dataset.name, btn.dataset.serving)];
+  if (!m) return;
+  li.insertAdjacentHTML("beforeend", detailHTML(m));
+  nameEl.setAttribute("aria-expanded", "true");
+}
+
+$("halls").addEventListener("keydown", e => {
+  const nameEl = e.target.closest(".item-name.has-detail");
+  if (!nameEl) return;
+  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleDetail(nameEl); }
+});
+
+// One delegated listener rather than one per row — the menu redraws often.
+$("halls").addEventListener("click", e => {
+  const nameEl = e.target.closest(".item-name.has-detail");
+  if (nameEl) { toggleDetail(nameEl); return; }
+  const btn = e.target.closest(".add");
+  if (!btn) return;
+  const name = btn.dataset.name;
+  const m = state.nutri[nkey(name, btn.dataset.serving)] || {};
+  addEntry({
+    name,
+    serving: btn.dataset.serving || "",
+    hall: btn.dataset.hall,
+    meal: btn.dataset.meal,
+    calories: m.calories ?? null,
+    protein: m.protein ?? null,
+    carbs: m.carbs ?? null,
+    fat: m.fat ?? null,
+  });
+  btn.classList.add("done");
+  btn.textContent = "✓";
+  setTimeout(() => { btn.classList.remove("done"); btn.textContent = "+"; }, 1200);
+  toast(m.calories != null
+    ? `Logged ${name} — ${round(m.calories)} cal`
+    : `Logged ${name} (no published macros)`);
+});
+
+/* ── Taste of Nashville view ────────────────────────────────────────── */
+
+function renderNash() {
+  const list = state.data.restaurants || [];
+  const q = state.rq;
+  const shown = q ? list.filter(r =>
+    r.name.toLowerCase().includes(q) || r.neighborhood.toLowerCase().includes(q)) : list;
+
+  // Group in first-seen order so the page mirrors the dining site's own
+  // geography rather than an alphabetical reshuffle.
+  const hoods = [];
+  const byHood = new Map();
+  for (const r of shown) {
+    if (!byHood.has(r.neighborhood)) { byHood.set(r.neighborhood, []); hoods.push(r.neighborhood); }
+    byHood.get(r.neighborhood).push(r);
+  }
+
+  $("hoods").innerHTML = hoods.length
+    ? hoods.map((h, idx) =>
+        `<section class="hood" style="--hood-hue:var(--h${(idx % 8) + 1})">
+           <h2 class="hood-name">${esc(h)}<span class="n">${byHood.get(h).length}</span></h2>
+           <div class="rests">` +
+        byHood.get(h).map(r =>
+          `<div class="rest"><span class="pin"></span>${esc(r.name)}</div>`).join("") +
+        `</div></section>`).join("")
+    : `<div class="empty">No restaurant matches “${esc(q)}”.</div>`;
+
+  $("rhint").textContent = `${shown.length} restaurant${shown.length === 1 ? "" : "s"} across ` +
+    `${hoods.length} neighborhood${hoods.length === 1 ? "" : "s"}`;
+}
+
+/* ── tracker view ───────────────────────────────────────────────────── */
+
+const GOAL_ROWS = [
+  ["calories", "Calories", "var(--m-cal)", ""],
+  ["protein",  "Protein",  "var(--m-pro)", "g"],
+  ["carbs",    "Carbs",    "var(--m-carb)", "g"],
+  ["fat",      "Fat",      "var(--m-fat)", "g"],
+];
+
+function renderGoals(totals) {
+  $("goals").innerHTML = GOAL_ROWS.map(([key, label, color, unit]) => {
+    const have = Math.round(totals[key]);
+    const want = log.goals[key] || 0;
+    const pct = want > 0 ? Math.min(100, (have / want) * 100) : 0;
+    const over = want > 0 && have > want;
+    return `<div class="goal">
+      <div class="gtop">
+        <span class="glabel">${label}</span>
+        <span class="gval">${have}${unit} <span class="of">/ ${want}${unit}</span></span>
+      </div>
+      <div class="bar${over ? " over" : ""}" role="img"
+           aria-label="${label}: ${have}${unit} of ${want}${unit}">
+        <i style="width:${pct}%; --gc:${color}"></i>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderLogTable(entries) {
+  if (!entries.length) {
+    $("logtable").innerHTML =
+      `<div class="empty" style="padding:22px 0">Nothing logged yet today. ` +
+      `Hit <b>+</b> next to any menu item.</div>`;
+    return;
+  }
+  const rows = entries.slice().sort((a, b) => a.ts - b.ts).map(e => {
+    const time = new Date(e.ts).toLocaleTimeString(undefined, { hour:"numeric", minute:"2-digit" });
+    const where = [e.hall, e.meal].filter(Boolean).join(" · ");
+    const n = v => (v == null ? "—" : Math.round(v));
+    return `<tr>
+      <td class="when">${esc(time)}</td>
+      <td>${esc(e.name)}${where ? `<br><span class="serving">${esc(where)}</span>` : ""}</td>
+      <td class="num">${n(e.calories)}</td>
+      <td class="num">${n(e.protein)}</td>
+      <td class="num">${n(e.carbs)}</td>
+      <td class="num">${n(e.fat)}</td>
+      <td class="num"><button class="del" type="button" data-ts="${e.ts}"
+        aria-label="Remove ${esc(e.name)}">×</button></td>
+    </tr>`;
+  }).join("");
+  $("logtable").innerHTML =
+    `<table class="log"><thead><tr>
+       <th>Time</th><th>Item</th><th style="text-align:right">Cal</th>
+       <th style="text-align:right">P</th><th style="text-align:right">C</th>
+       <th style="text-align:right">F</th><th></th>
+     </tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+// Which hours you actually eat in, across the whole log. This is the thing
+// that needs history to mean anything, so it says so until there is some.
+function renderPeak() {
+  const buckets = new Array(24).fill(0);
+  for (const e of log.entries) buckets[new Date(e.ts).getHours()]++;
+  const max = Math.max(...buckets);
+  const peak = buckets.indexOf(max);
+
+  $("peakchart").innerHTML = buckets.map((n, h) => {
+    const pct = max > 0 ? (n / max) * 100 : 0;
+    const cls = n === 0 ? "empty" : (n === max && max > 0 ? "peak" : "");
+    return `<div class="col ${cls}" title="${hourLabel(h)}: ${n} item${n === 1 ? "" : "s"}">
+      <i style="height:${Math.max(pct, n ? 6 : 2)}%"></i></div>`;
+  }).join("");
+  $("peakaxis").innerHTML = buckets
+    .map((_, h) => `<span>${h % 6 === 0 ? hourLabel(h) : ""}</span>`).join("");
+
+  const total = log.entries.length;
+  $("peaklegend").hidden = !total;
+  $("peak-sub").textContent = total
+    ? `Every item you've logged, by hour of day. ${total} entr${total === 1 ? "y" : "ies"} so far.`
+    : "Log a few meals and your eating pattern shows up here.";
+
+  const days = new Set(log.entries.map(e => dayKey(e.ts))).size;
+  const totals = totalsFor(log.entries);
+  $("peakstats").innerHTML = total ? [
+    ["Peak hour", hourLabel(peak)],
+    ["Days logged", String(days)],
+    ["Avg calories / day", days ? String(Math.round(totals.calories / days)) : "—"],
+    ["Avg protein / day", days ? Math.round(totals.protein / days) + "g" : "—"],
+  ].map(([l, v]) => `<div class="stat"><div class="sv">${esc(v)}</div><div class="sl">${esc(l)}</div></div>`)
+   .join("") : "";
+}
+
+function hourLabel(h) {
+  if (h === 0) return "12a";
+  if (h === 12) return "12p";
+  return h < 12 ? h + "a" : (h - 12) + "p";
+}
+
+function renderHistory() {
+  const days = [];
+  const now = new Date();
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
+    days.push(dayKey(d.getTime()));
+  }
+  const byDay = new Map(days.map(k => [k, 0]));
+  for (const e of log.entries) {
+    const k = dayKey(e.ts);
+    if (byDay.has(k)) byDay.set(k, byDay.get(k) + (e.calories || 0));
+  }
+  const vals = days.map(k => byDay.get(k));
+  const max = Math.max(...vals, log.goals.calories || 0, 1);
+
+  $("histchart").innerHTML = days.map((k, i) => {
+    const v = vals[i];
+    const pct = (v / max) * 100;
+    return `<div class="col ${v ? "" : "empty"}" title="${k}: ${Math.round(v)} cal">
+      <i style="height:${Math.max(pct, v ? 3 : 2)}%; --cc:var(--m-cal)"></i></div>`;
+  }).join("");
+  $("histaxis").innerHTML = days.map((k, i) => {
+    const d = new Date(k + "T12:00:00");
+    return `<span>${i % 3 === 0 || i === 13 ? d.toLocaleDateString(undefined, { day:"numeric" }) : ""}</span>`;
+  }).join("");
+
+  const logged = vals.filter(v => v > 0).length;
+  $("hist-sub").textContent = logged
+    ? `Calories per day. ${logged} of the last 14 days have entries.`
+    : "Nothing logged in the last two weeks.";
+}
+
+function renderTracker() {
+  const key = todayKey();
+  const today = log.entries.filter(e => dayKey(e.ts) === key);
+  const totals = totalsFor(today);
+
+  $("today-sub").textContent = new Date().toLocaleDateString(undefined,
+    { weekday:"long", month:"long", day:"numeric" });
+  renderGoals(totals);
+  $("log-sub").textContent = today.length
+    ? `${today.length} item${today.length === 1 ? "" : "s"} · ` +
+      `${Math.round(totals.calories)} cal · ${Math.round(totals.protein)}g protein`
+    : "Nothing yet today.";
+  renderLogTable(today);
+  renderPeak();
+  renderHistory();
+
+  $("g-cal").value  = log.goals.calories;
+  $("g-pro").value  = log.goals.protein;
+  $("g-carb").value = log.goals.carbs;
+  $("g-fat").value  = log.goals.fat;
+}
+
+$("logtable").addEventListener("click", e => {
+  const btn = e.target.closest(".del");
+  if (!btn) return;
+  const ts = Number(btn.dataset.ts);
+  log.entries = log.entries.filter(x => x.ts !== ts);
+  saveLog();
+  renderTracker();
+  toast("Removed.");
+});
+
+$("goalform").addEventListener("submit", e => {
+  e.preventDefault();
+  const num = (id, fallback) => {
+    const v = Number($(id).value);
+    return Number.isFinite(v) && v >= 0 ? v : fallback;
+  };
+  log.goals = {
+    calories: num("g-cal", log.goals.calories),
+    protein:  num("g-pro", log.goals.protein),
+    carbs:    num("g-carb", log.goals.carbs),
+    fat:      num("g-fat", log.goals.fat),
+  };
+  saveLog();
+  renderTracker();
+  toast("Goals saved.");
+});
+
+$("manual").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("m-name").value.trim();
+  if (!name) return;
+  const num = id => {
+    const raw = $(id).value.trim();
+    if (raw === "") return null;
+    const v = Number(raw);
+    return Number.isFinite(v) && v >= 0 ? v : null;
+  };
+  addEntry({
+    name, serving:"", hall:"", meal:"",
+    calories:num("m-cal"), protein:num("m-pro"), carbs:num("m-carb"), fat:num("m-fat"),
+  });
+  e.target.reset();
+  toast(`Logged ${name}.`);
+});
+
+$("wipe").addEventListener("click", () => {
+  if (!log.entries.length) { toast("Nothing to erase."); return; }
+  if (!confirm(`Erase all ${log.entries.length} logged entries? Your goals are kept.`)) return;
+  log.entries = [];
+  saveLog();
+  renderTracker();
+  toast("Log erased.");
+});
+
+/* ── view switching ─────────────────────────────────────────────────── */
+
+const VIEWS = [["menus","tab-menus","view-menus"],["nash","tab-nash","view-nash"],
+               ["track","tab-track","view-track"]];
+function setView(name) {
+  state.view = name;
+  for (const [key, tabId, viewId] of VIEWS) {
+    const on = key === name;
+    $(tabId).setAttribute("aria-selected", String(on));
+    $(viewId).hidden = !on;
+  }
+  if (name === "nash") renderNash();
+  if (name === "track") renderTracker();
+  try { localStorage.setItem("dining-view", name); } catch (e) {}
+}
+VIEWS.forEach(([key, tabId]) => $(tabId).addEventListener("click", () => setView(key)));
+
+/* ── boot ───────────────────────────────────────────────────────────── */
+
+function boot(d, nutri) {
   // meal_order is derived here so the JSON stays purely data.
   d.meal_order = ["Breakfast", "Lunch", "Dinner", "Daily Offerings"];
   state.data = d;
+  state.nutri = nutri || {};
   const dates = [...new Set(d.menus.map(m => m.date))].sort();
   state.date = dates.includes(d.campus_date) ? d.campus_date : dates[0];
 
@@ -379,12 +1098,27 @@ function boot(d) {
   $("dash").innerHTML =
     `<span><b>${d.halls.filter(h => h.menu_count).length}</b> locations</span>` +
     `<span><b>${d.menu_count}</b> menus</span>` +
-    `<span><b>${d.item_count}</b> items</span>`;
+    `<span><b>${d.item_count}</b> items</span>` +
+    `<span><b>${(d.restaurants || []).length}</b> restaurants</span>`;
   $("src").href = d.source;
+  $("rsrc").href = d.restaurants_source || d.source;
+
+  // Say plainly how much of today's menu actually has a label behind it,
+  // rather than letting "no label" rows read as a bug.
+  const n = d.nutrition;
+  $("cov").textContent = n && n.recipes_total
+    ? `macros on ${Math.round((n.recipes_covered / n.recipes_total) * 100)}% of today's items`
+    : "macros loading";
+
   render();
+
+  let start = "menus";
+  try { start = localStorage.getItem("dining-view") || "menus"; } catch (e) {}
+  setView(VIEWS.some(v => v[0] === start) ? start : "menus");
 }
 
 $("q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+$("rq").addEventListener("input", e => { state.rq = e.target.value.trim().toLowerCase(); renderNash(); });
 
 const themeBtn = $("theme");
 function paintTheme() {
@@ -398,10 +1132,22 @@ themeBtn.addEventListener("click", () => {
   paintTheme();
 });
 paintTheme();
+loadLog();
 
-fetch("menu.json?t=" + Date.now())
-  .then(r => r.json())
-  .then(boot)
+// Menus are required; nutrition is an enhancement, so a failure to load it
+// leaves every item reading "no label" instead of breaking the page.
+const bust = "?t=" + Date.now();
+Promise.all([
+  fetch("menu.json" + bust).then(r => {
+    if (!r.ok) throw new Error("menu.json " + r.status);
+    return r.json();
+  }),
+  fetch("nutrition.json" + bust)
+    .then(r => (r.ok ? r.json() : null))
+    .then(j => (j && j.items) || {})
+    .catch(() => ({})),
+])
+  .then(([menu, nutri]) => boot(menu, nutri))
   .catch(err => {
     $("stamp").textContent = "failed to load";
     $("empty").hidden = false;
