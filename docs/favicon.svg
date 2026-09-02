@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#131312"/>
+
+  <!-- V arms: left = fork handle, right = spoon handle -->
+  <g fill="#d4b64a">
+    <path d="M22 12 L34 46 L28 50 L16 16 Z"/>
+    <path d="M42 12 L30 46 L36 50 L48 16 Z"/>
+  </g>
+
+  <!-- fork tines, top-left -->
+  <g fill="#d4b64a">
+    <rect x="11" y="6" width="3.4" height="14" rx="1.6"/>
+    <rect x="16" y="4" width="3.4" height="16" rx="1.6"/>
+    <rect x="21" y="6" width="3.4" height="14" rx="1.6"/>
+  </g>
+
+  <!-- spoon bowl, top-right -->
+  <ellipse cx="45" cy="11" rx="8.5" ry="7.5" fill="#d4b64a" transform="rotate(20 45 11)"/>
+</svg>
