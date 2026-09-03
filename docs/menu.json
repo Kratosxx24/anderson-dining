@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:33:32.243513+00:00",
+  "generated_at": "2026-09-03T21:08:56.293000+00:00",
   "campus_date": "2026-09-03",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -292,7 +292,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -361,7 +361,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -516,7 +516,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -681,7 +681,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -829,7 +829,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -989,7 +989,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1059,7 +1059,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
