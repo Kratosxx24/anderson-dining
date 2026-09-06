@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T23:00:29.079232+00:00",
+  "generated_at": "2026-09-06T04:50:25.304857+00:00",
   "campus_date": "2026-09-05",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -581,7 +581,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
