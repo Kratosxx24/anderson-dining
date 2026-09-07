@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T19:15:44.825092+00:00",
+  "generated_at": "2026-09-07T23:36:10.435037+00:00",
   "campus_date": "2026-09-07",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co Production",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -466,7 +466,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -869,7 +869,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -914,7 +914,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -959,7 +959,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1059,7 +1059,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
