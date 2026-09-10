@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T16:32:31.569858+00:00",
+  "generated_at": "2026-09-10T20:58:39.649035+00:00",
   "campus_date": "2026-09-10",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co Production",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -243,7 +243,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -332,7 +332,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -401,7 +401,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -556,7 +556,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -1029,7 +1029,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1099,7 +1099,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1293,16 +1293,6 @@
     },
     {
       "neighborhood": "Midtown",
-      "name": "8th and Roast",
-      "maps": "https://www.google.com/maps/search/?api=1&query=8th+and+Roast%2C+116+20th+Ave+S%2C+Nashville",
-      "hours": "Mo-Su 07:00-16:00",
-      "hours_source": "Google Maps",
-      "hours_checked": "2026-09-01",
-      "address": "116 20th Ave S, Nashville",
-      "note": "Monday showed Labor Day holiday hours (08:00-14:00); regular Monday assumed equal to the rest of the week."
-    },
-    {
-      "neighborhood": "Midtown",
       "name": "Helen’s Hot Chicken",
       "maps": "https://www.google.com/maps/search/?api=1&query=Helen%E2%80%99s+Hot+Chicken%2C+2010+Scarritt+Pl%2C+Nashville",
       "hours": "Mo-Fr 10:30-20:00; Sa 10:30-19:00; Su off",
@@ -1380,6 +1370,11 @@
       "hours_source": "Google Maps",
       "hours_checked": "2026-09-01",
       "note": "Monday showed a Labor Day holiday closure; regular Monday assumed equal to Tue-Thu."
+    },
+    {
+      "neighborhood": "Midtown",
+      "name": "Little Rey",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Little+Rey%2C+Nashville%2C+TN"
     },
     {
       "neighborhood": "West End Avenue",
