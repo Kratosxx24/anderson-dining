@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T20:58:39.649035+00:00",
+  "generated_at": "2026-09-10T23:15:50.516912+00:00",
   "campus_date": "2026-09-10",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -243,7 +243,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -332,7 +332,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -401,7 +401,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -466,7 +466,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -556,7 +556,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -869,7 +869,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -914,7 +914,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -959,7 +959,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1059,7 +1059,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
