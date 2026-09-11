@@ -6,6 +6,12 @@
 <title>Anderson Dining</title>
 <meta name="description" content="Today's Vanderbilt campus dining menus, with calories and macros, in one place." />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#131312" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="VU Dining" />
 <script>try{var t=localStorage.getItem('dining-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +21,7 @@
     --bg:#faf9f4; --surface:#fffefb; --sunken:#f2efe7; --text:#1a1a17; --muted:#6e6e66;
     --faint:#a0a097; --border:#e9e6dd; --border-hov:#d4d0c4;
     --accent:#a68b2c; --accent-soft:#f5efd8; --on-accent:#fcfcfb;
-    --veg:#2f8f55; --alrt:#c0532c; --maxw:1080px;
+    --veg:#2f8f55; --alrt:#c0532c; --maxw:1360px;
     --spectrum:linear-gradient(90deg,#c9a227,#2f8f55,#3f6dc7,#7d5bc0,#c94f93,#2f8f8f);
 
     /* Per-hall identity hues. Fixed-order categorical palette, validated
@@ -115,7 +121,7 @@
   /* Hall cards */
   .halls { margin-top:26px; display:flex; flex-direction:column; gap:16px; }
   .hall { background:var(--surface); border:1px solid var(--border); border-radius:14px;
-    overflow:hidden; border-left:4px solid var(--hall,var(--border)); }
+    overflow:hidden; }
   .hall-dot { width:9px; height:9px; border-radius:50%; background:var(--hall,var(--faint));
     display:inline-block; flex:none; }
   .hall-head:hover { background:color-mix(in srgb, var(--hall,var(--text)) 7%, var(--surface)); }
@@ -139,21 +145,23 @@
   .caret { transition:transform .2s ease; display:inline-block; }
   .hall[data-open="true"] .caret { transform:rotate(90deg); }
 
-  .meal { padding-top:14px; }
+  .meal { padding-top:14px;
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    column-gap:36px; align-items:start; }
   /* Meal headings stay in ink, not the hall hue: at small uppercase sizes
      several of the light-mode hues fall under readable contrast. */
-  .meal-head { font-family:"Space Mono",monospace; font-size:11px; letter-spacing:.12em;
-    text-transform:uppercase; color:var(--muted); margin-bottom:8px;
+  .meal-head { grid-column:1/-1; font-family:"Space Mono",monospace; font-size:11px;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;
     display:flex; align-items:center; gap:7px; }
   .meal-head::before { content:""; width:14px; height:2px; border-radius:2px;
     background:var(--hall,var(--accent)); flex:none; }
-  .cat { margin:10px 0 0; }
+  .cat { margin:10px 0 0; break-inside:avoid; }
   .cat-name { font-size:12px; font-weight:600; color:var(--muted); margin-bottom:4px; }
   ul.items { list-style:none; margin:0; padding:0; }
   li.item { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px;
     padding:5px 0; border-bottom:1px dashed var(--border); }
   li.item:last-child { border-bottom:none; }
-  .item-name { font-size:14px; }
+  .item-name { font-size:14px; flex-shrink:1; }
   .serving { font-family:"Space Mono",monospace; font-size:10.5px; color:var(--faint); }
   /* Ranked lists drop the station headings, so each row carries its own. */
   .station { font-size:10px; color:var(--muted); background:var(--sunken);
@@ -229,8 +237,7 @@
   .rests { display:grid; gap:10px;
     grid-template-columns:repeat(auto-fill,minmax(256px,1fr)); }
   .rest { background:var(--surface); border:1px solid var(--border); border-radius:12px;
-    padding:12px 14px; font-size:14px; display:flex; flex-direction:column; gap:5px;
-    border-left:3px solid var(--hood-hue,var(--accent)); }
+    padding:12px 14px; font-size:14px; display:flex; flex-direction:column; gap:5px; }
   .rest .rtop { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }
   .rest .rname { font-weight:500; }
   .rest .rmeta { font-size:11.5px; color:var(--faint); }
