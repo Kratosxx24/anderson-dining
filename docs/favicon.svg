@@ -2,7 +2,7 @@
   <circle cx="32" cy="32" r="32" fill="#131312"/>
   <circle cx="32" cy="32" r="29" fill="none" stroke="#d4b64a" stroke-width="1.5"/>
 
-  <g transform="translate(32,33) scale(0.8,-0.8)">
+  <g transform="translate(32,33) scale(0.8)">
     <!-- fork: left arm of V -->
     <g transform="translate(-9,0) rotate(-22)" fill="#d4b64a">
       <rect x="-8" y="-24" width="2.8" height="13" rx="1.3"/>
