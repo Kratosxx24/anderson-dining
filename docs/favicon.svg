@@ -4,19 +4,19 @@
 
   <g transform="translate(32,33) scale(0.8)">
     <!-- fork: left arm of V -->
-    <g transform="translate(-9,0) rotate(22)" fill="#d4b64a">
+    <g transform="translate(-9,0) rotate(34)" fill="#d4b64a">
       <rect x="-8" y="-24" width="2.8" height="13" rx="1.3"/>
       <rect x="-3.8" y="-25" width="2.8" height="14" rx="1.3"/>
       <rect x="1" y="-25" width="2.8" height="14" rx="1.3"/>
       <rect x="5.2" y="-24" width="2.8" height="13" rx="1.3"/>
       <path d="M-8 -12 L8 -12 L8 -9 Q8 -3 0 -1 Q-8 -3 -8 -9 Z"/>
-      <rect x="-3" y="-3" width="6" height="26" rx="3"/>
+      <rect x="-3" y="-3" width="6" height="34" rx="3"/>
     </g>
 
     <!-- spoon: right arm of V -->
-    <g transform="translate(9,0) rotate(-22)" fill="#d4b64a">
+    <g transform="translate(9,0) rotate(-34)" fill="#d4b64a">
       <ellipse cx="0" cy="-18" rx="8.5" ry="10.5"/>
-      <rect x="-3" y="-9" width="6" height="32" rx="3"/>
+      <rect x="-3" y="-9" width="6" height="40" rx="3"/>
     </g>
   </g>
 </svg>
