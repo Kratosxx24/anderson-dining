@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T23:22:46.588826+00:00",
+  "generated_at": "2026-09-12T04:45:01.726612+00:00",
   "campus_date": "2026-09-11",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +621,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -9404,15 +9404,16 @@
               ]
             },
             {
-              "name": "Shredded Cheddar Jack Cheese",
-              "serving_size": "1 oz. portion",
+              "name": "Sliced American Cheese",
+              "serving_size": "1 slice",
               "tags": [
                 "Dairy",
+                "Soy",
                 "Vegetarian"
               ]
             },
             {
-              "name": "Sliced Cheddar Cheese",
+              "name": "Sliced Pepper Jack Cheese",
               "serving_size": "1 slice",
               "tags": [
                 "Dairy",
@@ -9420,11 +9421,10 @@
               ]
             },
             {
-              "name": "Sliced Swiss Cheese",
-              "serving_size": "1 slice",
+              "name": "Taco Seasoned Chicken",
+              "serving_size": "3 oz. portion",
               "tags": [
-                "Dairy",
-                "Vegetarian"
+                "Halal"
               ]
             }
           ]
