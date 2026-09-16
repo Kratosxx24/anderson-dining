@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-16T11:49:41.070201+00:00",
- "item_count": 1030,
+ "generated_at": "2026-09-16T17:08:47.962248+00:00",
+ "item_count": 1032,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -2879,6 +2879,40 @@
    "_seen": "2026-09-15",
    "_v": 2
   },
+  "beef sandwich sloppy joe|1 sandwich": {
+   "name": "Beef Sandwich Sloppy Joe",
+   "serving": "1 sandwich (173g)",
+   "grams": 173.0,
+   "servings_per_container": 1.0,
+   "calories": 380.0,
+   "fat": 15.0,
+   "sat_fat": 3.5,
+   "trans_fat": null,
+   "cholesterol": 40.0,
+   "sodium": 520.0,
+   "carbs": 43.0,
+   "fiber": 4.0,
+   "sugars": 13.0,
+   "added_sugars": 9.0,
+   "protein": 20.0,
+   "vitamin_d": 0.4,
+   "calcium": 79.0,
+   "iron": 3.66,
+   "potassium": 480.0,
+   "vitamin_c": 37.7,
+   "ingredients": "Spare Burger Bulk Blend (GRASS FED GROUND BEEF (HALAL), SPARE STARTER (EGGPLANT, CAULIFLOWER, TOMATOES, ONIONS, APPLE CIDER VINEGAR, SALT, CRUSHED RED PEPPER, GARLIC POWDER, L-MALIC ACID), CARROT FIBER.), Hamburger Bun (UNBLEACHED ENRICHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, HIGH FRUCTOSE CORN SYRUP, CONTAINS 2% OR LESS OF EACH OF THE FOLLOWING: YEAST, SOYBEAN OIL, SALT, WHEAT GLUTEN, DOUGH CONDITIONERS (CONTAINS ONE OR MORE OF THE FOLLOWING: SODIUM STEAROYL LACTYLATE, CALCIUM STEAROYL LACTYLATE, MONOGLYCERIDES, MONO- AND DIGLYCERIDES, DISTILLED MONOGLYCERIDES, CALCIUM PEROXIDE, CALCIUM IODATE, DATEM, ETHOXYLATED MONO- AND DIGLYCERIDES, ENZYMES, ASCORBIC ACID), SESAME FLOUR, CALCIUM PROPIONATE (TO RETARD SPOILAGE).), Yellow Onion, Green Bell Pepper, Red Bell Pepper, Hickory BBQ Sauce (HIGH FRUCTOSE CORN SYRUP, DISTILLED VINEGAR, TOMATO PASTE, MODIFIED CORN STARCH, BROWN SUGAR, CONTAINS LESS THAN 2% OF SALT, FRUCTOSE, NATURAL SMOKE FLAVOR, PINEAPPLE JUICE CONCENTRATE, CARAMEL COLOR, MOLASSES, SPICE, SODIUM BENZOATE (PRESERVATIVE), GARLIC,* MUSTARD FLOUR, CORN SYRUP, SUGAR, TAMARIND, NATURAL FLAVOR, CELERY SEED.), Crushed Tomato (TOMATOES, LESS THAN 2% OF: SALT, CITRIC ACID.), Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.)",
+   "contains": "Gluten, Sesame",
+   "incomplete": [
+    "added_sugars",
+    "potassium",
+    "sat_fat",
+    "sugars",
+    "vitamin_c",
+    "vitamin_d"
+   ],
+   "_seen": "2026-09-16",
+   "_v": 2
+  },
   "beef shawarma|1 lb.": {
    "name": "Beef Shawarma",
    "serving": "1 lb. (329g)",
@@ -3131,7 +3165,7 @@
     "protein",
     "vitamin_c"
    ],
-   "_seen": "2026-09-15",
+   "_seen": "2026-09-16",
    "_v": 2
   },
   "beyond beef taco meat|4 oz. portion": {
@@ -7695,7 +7729,7 @@
     "iron",
     "potassium"
    ],
-   "_seen": "2026-09-02",
+   "_seen": "2026-09-16",
    "_v": 2
   },
   "chocolate cherry pudding|6 oz cup": {
@@ -9322,6 +9356,32 @@
    "_seen": "2026-09-16",
    "_v": 2
   },
+  "cranberry orange muffin|1 muffin": {
+   "name": "Cranberry Orange Muffin",
+   "serving": "1 muffin (65g)",
+   "grams": 65.0,
+   "servings_per_container": 1.0,
+   "calories": 190.0,
+   "fat": 8.0,
+   "sat_fat": 1.5,
+   "trans_fat": 0.0,
+   "cholesterol": 25.0,
+   "sodium": 180.0,
+   "carbs": 27.0,
+   "fiber": 0.5,
+   "sugars": 16.0,
+   "added_sugars": null,
+   "protein": 2.0,
+   "vitamin_d": null,
+   "calcium": 0.0,
+   "iron": 0.7,
+   "potassium": 70.0,
+   "vitamin_c": 0.0,
+   "ingredients": "Cranberry Orange Muffin Batter (WATER, SUGAR, ENRICHED FLOUR BLEACHED (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), CRANBERRIES, SOYBEAN OIL, ORANGES, EGGS, MODIFIED CORN STARCH, SALT, BAKING SODA, SODIUM ALUMINUM PHOSPHATE, DISTILLED MONOGLYCERIDES, XANTHAN GUM, NATURAL FLAVOR, PRESERVED WITH (MIXED TOCOPHEROLS, CITRIC ACID, ASCORBIC ACID).)",
+   "contains": "Egg, Gluten",
+   "_seen": "2026-09-16",
+   "_v": 2
+  },
   "cream cheese|1 packet": {
    "name": "Cream Cheese",
    "serving": "1 packet (21g)",
@@ -9686,7 +9746,7 @@
     "potassium",
     "sugars"
    ],
-   "_seen": "2026-09-13",
+   "_seen": "2026-09-16",
    "_v": 2
   },
   "crispy cube breakfast potatoes|4 oz. portion": {
@@ -9712,7 +9772,7 @@
    "vitamin_c": null,
    "ingredients": "Crispy Seasoned Cubed Hashbrown Potatoes (POTATOES, VEGETABLE OIL (CONTAINS ONE OR MORE OF THE FOLLOWING OILS: CANOLA, SOYBEAN, COTTONSEED, SUNFLOWER, CORN). CONTAINS 2% OR LESS OF DEXTROSE, SALT, SODIUM ACID PYROPHOSPHATE ADDED TO MAINTAIN COLOR. POTATOES, VEGETABLE OIL (CONTAINS ONE OR MORE OF THE FOLLOWING: CANOLA, PALM, SOYBEAN, SUNFLOWER), ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, IRON, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), SALT, MODIFIED CORN STARCH, SPICES, CORN MEAL, GARLIC POWDER, ONION POWDER, LEAVENING (DISODIUM DIHYDROGEN PYROPHOSPHATE, SODIUM BICARBONATE), DRIED YEAST, OLEORESIN PAPRIKA, DEXTROSE. POTATOES, VEGETABLE OIL (SOYBEAN, CANOLA, AND/OR COTTONSEED OILS), ENRICHED FLOUR (BLEACHED WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), CONTAINS LESS THAN 2% OF CELLULOSE GUM, COLOR (PAPRIKA OLEORESIN, TURMERIC OLEORESIN), DEGERMED YELLOW CORN MEAL, DEXTROSE, FOOD STARCH-MODIFIED, GARLIC POWDER, LEAVENING (SODIUM BICARBONATE, SODIUM ACID PYROPHOSPHATE), ONION POWDER, RICE FLOUR, SALT, SPICES, SUGAR, DISODIUM DIHYDROGEN PYROPHOSPHATE (TO MAINTAIN NATURAL COLOR).), Fryer Oil (CANOLA OIL WITH TBHQ, CITRIC ACID, AND DIMETHYLPOLYSILOXANE.)",
    "contains": "Gluten",
-   "_seen": "2026-09-12",
+   "_seen": "2026-09-16",
    "_v": 2
   },
   "crispy tofu|4 oz. portion": {
@@ -17112,7 +17172,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-09-03",
+   "_seen": "2026-09-16",
    "_v": 2
   },
   "mandarin orange dream pudding cup|4 oz. portion": {

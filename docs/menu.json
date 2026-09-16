@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-16T11:49:41.070201+00:00",
+  "generated_at": "2026-09-16T17:08:47.962248+00:00",
   "campus_date": "2026-09-16",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 46,
-  "item_count": 1309,
+  "item_count": 1303,
   "nutrition": {
-    "cached_recipes": 1030,
-    "with_macros": 1027,
-    "recipes_covered": 482,
-    "recipes_total": 513
+    "cached_recipes": 1032,
+    "with_macros": 1029,
+    "recipes_covered": 483,
+    "recipes_total": 514
   },
   "tags": [
     "Vegetarian",
@@ -56,7 +56,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co Production",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -243,7 +243,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -332,7 +332,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -401,7 +401,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -466,7 +466,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -511,7 +511,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -556,7 +556,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +621,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -671,7 +671,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -819,7 +819,7 @@
     {
       "id": 13,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -869,7 +869,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -914,7 +914,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -959,7 +959,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -999,7 +999,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1029,7 +1029,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1059,7 +1059,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1099,7 +1099,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1586,7 +1586,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-09-16T04:57:49.243939+00:00",
+  "places_checked": "2026-09-16T17:07:34.539994+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -1595,7 +1595,7 @@
       "menu_oid": 9141525,
       "date": "2026-09-16",
       "meal": "Breakfast",
-      "item_count": 38,
+      "item_count": 39,
       "categories": [
         {
           "name": "None",
@@ -1965,6 +1965,14 @@
               "serving_size": "1 patty",
               "tags": [
                 "Pork"
+              ]
+            },
+            {
+              "name": "Crispy Cube Breakfast Potatoes",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Gluten",
+                "Vegan"
               ]
             }
           ]
@@ -3236,13 +3244,11 @@
               ]
             },
             {
-              "name": "Mocha Muffin",
+              "name": "Cranberry Orange Muffin",
               "serving_size": "1 muffin",
               "tags": [
-                "Dairy",
                 "Egg",
                 "Gluten",
-                "Soy",
                 "Vegetarian"
               ]
             }
@@ -3423,7 +3429,7 @@
       "menu_oid": 9141864,
       "date": "2026-09-17",
       "meal": "Lunch",
-      "item_count": 122,
+      "item_count": 115,
       "categories": [
         {
           "name": "Fresh Mex Base",
@@ -3707,34 +3713,14 @@
           ]
         },
         {
-          "name": "Grill Bun",
-          "items": [
-            {
-              "name": "Brioche Bun",
-              "serving_size": "1 bun",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
           "name": "Grill Main",
           "items": [
             {
-              "name": "Beyond Burger Patty",
-              "serving_size": "1 patty",
+              "name": "Beef Sandwich Sloppy Joe",
+              "serving_size": "1 sandwich",
               "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Fried Chicken Tenders",
-              "serving_size": "2 tenders",
-              "tags": [
-                "Gluten"
+                "Gluten",
+                "Sesame"
               ]
             }
           ]
@@ -3743,53 +3729,12 @@
           "name": "Grill Side",
           "items": [
             {
-              "name": "Straight Cut Fries",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Grill Toppings",
-          "items": [
-            {
-              "name": "Dill Pickle Chips",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced American Cheese",
-              "serving_size": "1 slice",
+              "name": "Macaroni & Cheese",
+              "serving_size": "5 oz. portion",
               "tags": [
                 "Dairy",
-                "Soy",
+                "Gluten",
                 "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sliced Pepper Jack Cheese",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sliced Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Tomatoes",
-              "serving_size": "1 slice",
-              "tags": [
-                "Vegan"
               ]
             }
           ]
@@ -3798,8 +3743,8 @@
           "name": "Bakery",
           "items": [
             {
-              "name": "Caramel Apple Bread Pudding",
-              "serving_size": "7 oz. portion",
+              "name": "Chocolate Cheesecake",
+              "serving_size": "1 tart",
               "tags": [
                 "Dairy",
                 "Egg",
@@ -3809,22 +3754,19 @@
               ]
             },
             {
-              "name": "Froot Loop Bar",
-              "serving_size": "1 bar",
+              "name": "Vanilla Cupcake",
+              "serving_size": "1 cupcake",
               "tags": [
-                "Dairy",
-                "Gluten",
-                "Pork"
+                "Vegan"
               ]
             },
             {
-              "name": "Rand Cookie",
-              "serving_size": "1 cookie",
+              "name": "Berry Bar",
+              "serving_size": "1 bar",
               "tags": [
                 "Dairy",
                 "Egg",
                 "Gluten",
-                "Soy",
                 "Vegetarian"
               ]
             }
@@ -8122,7 +8064,7 @@
           "name": "Saute Bowls Main",
           "items": [
             {
-              "name": "Diced Steak",
+              "name": "Shredded Chicken",
               "serving_size": "1 oz. portion",
               "tags": [
                 "Halal"
@@ -9582,13 +9524,13 @@
               ]
             },
             {
-              "name": "Banana Pudding",
-              "serving_size": "4 oz. portion",
+              "name": "Crispy Coconut Cookies",
+              "serving_size": "1 cookie",
               "tags": [
+                "Alcohol",
                 "Dairy",
                 "Egg",
                 "Gluten",
-                "Soy",
                 "Vegetarian"
               ]
             }
@@ -9984,13 +9926,13 @@
               ]
             },
             {
-              "name": "Banana Pudding",
-              "serving_size": "4 oz. portion",
+              "name": "Crispy Coconut Cookies",
+              "serving_size": "1 cookie",
               "tags": [
+                "Alcohol",
                 "Dairy",
                 "Egg",
                 "Gluten",
-                "Soy",
                 "Vegetarian"
               ]
             }
