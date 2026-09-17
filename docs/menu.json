@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T05:01:39.088158+00:00",
+  "generated_at": "2026-09-17T11:52:35.030533+00:00",
   "campus_date": "2026-09-17",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -1577,7 +1577,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-09-16T17:07:34.539994+00:00",
+  "places_checked": "2026-09-17T11:51:27.990832+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
