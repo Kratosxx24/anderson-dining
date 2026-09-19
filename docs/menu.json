@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T23:23:05.232359+00:00",
+  "generated_at": "2026-09-19T04:46:09.240760+00:00",
   "campus_date": "2026-09-18",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 30,
-  "item_count": 944,
+  "item_count": 943,
   "nutrition": {
-    "cached_recipes": 1058,
-    "with_macros": 1055,
-    "recipes_covered": 413,
-    "recipes_total": 437
+    "cached_recipes": 1060,
+    "with_macros": 1057,
+    "recipes_covered": 414,
+    "recipes_total": 438
   },
   "tags": [
     "Vegetarian",
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +621,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -1861,7 +1861,7 @@
       "menu_oid": 9141865,
       "date": "2026-09-18",
       "meal": "Lunch",
-      "item_count": 121,
+      "item_count": 119,
       "categories": [
         {
           "name": "Fresh Mex Base",
@@ -2203,25 +2203,11 @@
               ]
             },
             {
-              "name": "Sliced Pepper Jack Cheese",
-              "serving_size": "1 slice",
+              "name": "1000 Island Dressing",
+              "serving_size": "2 oz. portion",
               "tags": [
-                "Dairy",
+                "Egg",
                 "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sliced Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Tomatoes",
-              "serving_size": "1 slice",
-              "tags": [
-                "Vegan"
               ]
             }
           ]
@@ -4909,17 +4895,19 @@
           "name": "Fresh Mex Side",
           "items": [
             {
-              "name": "Ancho Squash Medley",
-              "serving_size": "4 oz. portion",
+              "name": "Orzo Pilaf",
+              "serving_size": "3 oz. portion",
               "tags": [
+                "Gluten",
                 "Vegan"
               ]
             },
             {
-              "name": "Sauted Green Beans & Tomatoes",
-              "serving_size": "3 oz. portion",
+              "name": "Buttered Corn on the Cob",
+              "serving_size": "1 corn cob",
               "tags": [
-                "Vegan"
+                "Dairy",
+                "Vegetarian"
               ]
             }
           ]
@@ -8551,7 +8539,7 @@
       "menu_oid": 9155653,
       "date": "2026-09-18",
       "meal": "Lunch",
-      "item_count": 35,
+      "item_count": 36,
       "categories": [
         {
           "name": "Grill Bun",
@@ -8645,6 +8633,17 @@
                 "Dairy",
                 "Egg",
                 "Gluten",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Sugar Cookie w/ Sprinkles",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Soy",
                 "Vegetarian"
               ]
             }

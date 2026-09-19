@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-18T23:23:05.232359+00:00",
- "item_count": 1058,
+ "generated_at": "2026-09-19T04:46:09.240760+00:00",
+ "item_count": 1060,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -5347,7 +5347,7 @@
    "vitamin_c": null,
    "ingredients": "Corn Cob (SUPERSWEET CORN.), Unsalted Butter (PASTEURIZED CREAM (MILK), NATURAL FLAVORINGS. CREAM, NATURAL FLAVORING.)",
    "contains": "Dairy",
-   "_seen": "2026-09-12",
+   "_seen": "2026-09-18",
    "_v": 2
   },
   "buttered penne|4 oz. portion": {
@@ -19596,6 +19596,37 @@
    "_seen": "2026-09-18",
    "_v": 2
   },
+  "orzo pilaf|3 oz. portion": {
+   "name": "Orzo Pilaf",
+   "serving": "3 oz. portion (86g)",
+   "grams": 86.0,
+   "servings_per_container": 1.0,
+   "calories": 130.0,
+   "fat": 3.5,
+   "sat_fat": 0.0,
+   "trans_fat": null,
+   "cholesterol": 0.0,
+   "sodium": 55.0,
+   "carbs": 21.0,
+   "fiber": 2.0,
+   "sugars": 0.5,
+   "added_sugars": null,
+   "protein": 4.0,
+   "vitamin_d": null,
+   "calcium": 8.0,
+   "iron": 1.11,
+   "potassium": 70.0,
+   "vitamin_c": 3.2,
+   "ingredients": "Orzo Pasta (SEMOLINA WHEAT, DURUM FLOUR, NIACIN, IRON FERROUS SULFATE, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID. DURUM WHEAT SEMOLINA, NIACIN, IRON (FERROUS SULFATE), THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), Small Button Mushroom, Green Onion, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Fresh Parsley, Minced Garlic, Lemon Juice, Fresh Rosemary, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.), Water",
+   "contains": "Gluten",
+   "incomplete": [
+    "potassium",
+    "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-09-18",
+   "_v": 2
+  },
   "overnight chia oats|3 oz. portion": {
    "name": "Overnight Chia Oats",
    "serving": "3 oz. portion (85g)",
@@ -27136,6 +27167,37 @@
    "vitamin_c": 0.0,
    "ingredients": "OLIVES, WATER, MINCED PIMIENTO (PIMIENTO, SODIUM ALGINATE, GUAR GUM, CALCIUM CHLORIDE)",
    "_seen": "2026-09-05",
+   "_v": 2
+  },
+  "sugar cookie w/ sprinkles|1 cookie": {
+   "name": "Sugar Cookie w/ Sprinkles",
+   "serving": "1 cookie (79g)",
+   "grams": 79.0,
+   "servings_per_container": 1.0,
+   "calories": 340.0,
+   "fat": 15.0,
+   "sat_fat": 8.0,
+   "trans_fat": 0.0,
+   "cholesterol": 20.0,
+   "sodium": 280.0,
+   "carbs": 49.0,
+   "fiber": 0.0,
+   "sugars": 28.0,
+   "added_sugars": 26.0,
+   "protein": 4.0,
+   "vitamin_d": 0.2,
+   "calcium": 0.0,
+   "iron": 1.81,
+   "potassium": 40.0,
+   "vitamin_c": null,
+   "ingredients": "Dough Cookie Butter Sugar Fzn (ENRICHED BLEACHED FLOUR (BLEACHED WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), SUGAR, MARGARINE (PALM OIL, WATER, CONTAINS 2% OR LESS OF: SALT, NATURAL FLAVOR [CONTAINS MILK], CITRIC ACID, VITAMIN A PALMITATE ADDED, BETA CAROTENE [COLOR]), EGGS, BUTTER (CREAM [MILK], SALT), CONTAINS 2% OR LESS OF: INVERT SUGAR, SALT, BAKING SODA, SOY LECITHIN.), Rainbow Sprinkles (SUGAR, CORN STARCH, VEGETABLE OIL PALM KERNEL OIL AND/OR PALM OIL, SOY LECITHIN, DEXTRIN, CONFECTIONER'S GLAZE, RED 40 LAKE, NATURAL AND ARTIFICIAL FLAVOR, YELLOW 6 LAKE, CARNAUBA WAX, YELLOW 5 LAKE, BLUE 1 LAKE, RED 3, RED 40.)",
+   "contains": "Dairy, Egg, Gluten, Soy",
+   "incomplete": [
+    "added_sugars",
+    "potassium",
+    "vitamin_d"
+   ],
+   "_seen": "2026-09-18",
    "_v": 2
   },
   "sugar cookie|1 cookie": {
