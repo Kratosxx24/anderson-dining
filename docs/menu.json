@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T05:02:30.243386+00:00",
+  "generated_at": "2026-09-20T11:36:41.602445+00:00",
   "campus_date": "2026-09-20",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -721,7 +721,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -1577,7 +1577,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-09-19T23:14:04.227083+00:00",
+  "places_checked": "2026-09-20T11:35:40.225020+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
