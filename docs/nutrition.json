@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-22T21:28:31.699834+00:00",
- "item_count": 1142,
+ "generated_at": "2026-09-23T04:54:26.556486+00:00",
+ "item_count": 1143,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -6831,6 +6831,36 @@
    "_seen": "2026-09-22",
    "_v": 2
   },
+  "charred brussels sprouts|3 oz. poriton": {
+   "name": "Charred Brussels Sprouts",
+   "serving": "3 oz. poriton (88g)",
+   "grams": 88.0,
+   "servings_per_container": 1.0,
+   "calories": 45.0,
+   "fat": 2.0,
+   "sat_fat": 0.0,
+   "trans_fat": null,
+   "cholesterol": 0.0,
+   "sodium": 340.0,
+   "carbs": 7.0,
+   "fiber": 2.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 2.0,
+   "vitamin_d": null,
+   "calcium": 34.0,
+   "iron": 1.14,
+   "potassium": 300.0,
+   "vitamin_c": 58.9,
+   "ingredients": "Brussels Sprouts, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "incomplete": [
+    "potassium",
+    "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-09-22",
+   "_v": 2
+  },
   "charro beans|3 oz. portion": {
    "name": "Charro Beans",
    "serving": "3 oz. portion (90g)",
@@ -9611,7 +9641,7 @@
    "potassium": 25.0,
    "vitamin_c": null,
    "ingredients": "COCOA POWDER, SILICON DIOXIDE (ANTI-CAKING AGENT).",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "coconut beef korma|4 oz. portion": {
@@ -11298,7 +11328,7 @@
    "incomplete": [
     "calcium"
    ],
-   "_seen": "2026-09-17",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "deep fried sweet plantains|3 oz. portion": {
@@ -16158,7 +16188,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "HONEY",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "honey cup|1 packet": {
@@ -16183,7 +16213,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "HONEY",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "honey garlic green bean|3 oz. portion": {
@@ -16327,7 +16357,7 @@
    "iron": 0.1,
    "potassium": 180.0,
    "vitamin_c": null,
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "horseradish crusted salmon|5 oz. portion": {
@@ -17716,7 +17746,7 @@
    "potassium": null,
    "vitamin_c": 3.0,
    "ingredients": "TOMATO CONCENTRATE FROM RED RIPE TOMATOES, DISTILLED VINEGAR, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, SALT, SPICE, ONION POWDER, NATURAL FLAVORING.",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "ketchup|1 packet": {
@@ -18815,7 +18845,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "CANOLA OIL WITH TBHQ, CITRIC ACID, AND DIMETHYLPOLYSILOXANE.",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "loaded fries|10 oz portion": {
@@ -19369,7 +19399,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-09-21",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "masala fried rice|4 oz. portion": {
@@ -19546,7 +19576,7 @@
    "vitamin_c": null,
    "ingredients": "SOYBEAN OIL, WHITE DISTILLED VINEGAR, EGG YOLKS, SALT, SUGAR, MUSTARD FLOUR, ONION POWDER, LEMON JUICE CONCENTRATE, CALCIUM DISODIUM EDTA ADDED TO PROTECT FLAVOR, SPICE EXTRACTIVES.",
    "contains": "Egg",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "mayonnaise|1 packet": {
@@ -20785,7 +20815,7 @@
    "potassium": 170.0,
    "vitamin_c": null,
    "ingredients": "OATMILK (WATER, OATS), SUNFLOWER OIL, MINERALS (DIPOTASSIUM PHOSPHATE, CALCIUM CARBONATE, TRICALCIUM PHOSPHATE), SEA SALT.",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "oatmeal craisin cookie|1 cookie": {
@@ -21722,7 +21752,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "BLACK PEPPERCORNS.",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "peruvian aji verde|2 oz. portion": {
@@ -22789,7 +22819,7 @@
    "vitamin_c": null,
    "ingredients": "Sausage Patty Country 2.5 OZ Wide Raw (PORK, WATER, CONTAINS 2% OR LESS OF: SALT, SPICES, SUGAR, MONOSODIUM GLUTAMATE. PORK, WATER, SALT, SPICES, SUGAR, BHA, BHT, PROPYL GALLATE, AND CITRIC ACID)",
    "contains": "Pork",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "pork souvlaki|2 skewers": {
@@ -28087,7 +28117,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "DEXTROSE, MALTODEXTRIN, SPLENDA SUCRALOSE",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "split roasted chicken breast|1 piece": {
@@ -28830,7 +28860,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "DEXTROSE, STEVIA EXTRACT (REBIANA).",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "stir fried tempeh w/ broccoli|6 oz. portion": {
@@ -29016,7 +29046,7 @@
    "vitamin_c": 2.0,
    "ingredients": "PASTEURIZED MILK AND CREAM, SUGAR, STRAWBERRY PUREE, WHEY PROTEIN CONCENTRATE, WHEY, WATER, SALT, MODIFIED FOOD STARCH, CAROB BEAN GUM, VEGETABLE JUICE (COLOR), NATURAL FLAVOR, NATAMYCIN (A NATURAL MOLD INHIBITOR), VITAMIN A PALMITATE, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, WATER, SUGAR, STRAWBERRIES, CHEESE CULTURE, SALT, NATURAL FLAVOR, MODIFIED FOOD STARCH, GUAR GUM, FRUIT AND VEGETABLE JUICE (COLOR), CITRIC ACID, CAROB BEAN GUM, XANTHAN GUM, HONEY, NATAMYCIN (A NATURAL MOLD INHIBITOR).",
    "contains": "Dairy",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "strawberry halves|1 oz. portion": {
@@ -29462,7 +29492,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "TURBINADO SUGAR",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "sugar-free syrup|1 packet": {
@@ -29571,7 +29601,7 @@
    "potassium": 370.0,
    "vitamin_c": null,
    "ingredients": "ROASTED SUNFLOWER SEEDS, SUGAR, MONO-DIGLYCERIDES (VEGAN SOURCED), AND SALT.",
-   "_seen": "2026-09-18",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "sushi rice|6 oz. portion": {
@@ -30058,7 +30088,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "NUTRITIVE DEXTROSE, SACCHARIN, CREAM OF TARTAR, CALCIUM SILICATE (AN ANTI-CAKING AGENT)",
-   "_seen": "2026-09-19",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "syrup cup|1 packet": {
@@ -30397,7 +30427,7 @@
    "_v": 2
   },
   "tea assorted regular blend 6 flavors bigelow|6/18 ct": {
-   "_seen": "2026-09-17",
+   "_seen": "2026-09-22",
    "_v": 2
   },
   "tempura tofu|4 oz. portion": {

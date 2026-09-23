@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-22T21:28:31.699834+00:00",
+  "generated_at": "2026-09-23T04:54:26.556486+00:00",
   "campus_date": "2026-09-22",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 46,
-  "item_count": 1299,
+  "item_count": 1302,
   "nutrition": {
-    "cached_recipes": 1142,
-    "with_macros": 1139,
-    "recipes_covered": 492,
-    "recipes_total": 522
+    "cached_recipes": 1143,
+    "with_macros": 1140,
+    "recipes_covered": 491,
+    "recipes_total": 521
   },
   "tags": [
     "Vegetarian",
@@ -461,7 +461,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -506,7 +506,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -891,7 +891,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -936,7 +936,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1036,7 +1036,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1920,19 +1920,17 @@
               ]
             },
             {
-              "name": "Chicken Sausage Links",
-              "serving_size": "1 link",
+              "name": "Pork Sausage Patty",
+              "serving_size": "1 patty",
               "tags": [
-                "Halal"
+                "Pork"
               ]
             },
             {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
+              "name": "Tater Tots",
+              "serving_size": "3 oz. portion",
               "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
+                "Vegan"
               ]
             }
           ]
@@ -3393,11 +3391,12 @@
               ]
             },
             {
-              "name": "Crispy Cube Breakfast Potatoes",
+              "name": "Scrambled Eggs",
               "serving_size": "4 oz. portion",
               "tags": [
-                "Gluten",
-                "Vegan"
+                "Egg",
+                "Features Local Ingredient",
+                "Vegetarian"
               ]
             }
           ]
@@ -3422,7 +3421,7 @@
       "menu_oid": 9433290,
       "date": "2026-09-23",
       "meal": "Lunch",
-      "item_count": 117,
+      "item_count": 116,
       "categories": [
         {
           "name": "Fresh Mex Base",
@@ -3977,10 +3976,13 @@
           "name": "Mediterranean Side",
           "items": [
             {
-              "name": "Falafel",
-              "serving_size": "3 falafels",
+              "name": "Grilled Naan",
+              "serving_size": "1/2 naan",
               "tags": [
-                "Vegan"
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Vegetarian"
               ]
             }
           ]
@@ -3996,46 +3998,42 @@
               ]
             },
             {
-              "name": "Herb Chopped Basil Mix",
-              "serving_size": "1 tsp.",
+              "name": "Marinated Mushrooms",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Alcohol",
+                "Sesame",
+                "Soy",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Roasted Beet Hummus",
+              "serving_size": "4 oz. portion",
               "tags": [
                 "Vegan"
               ]
             },
             {
-              "name": "Pickled Red Onion",
+              "name": "Tabbouleh",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Gluten",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Pepperoncini",
               "serving_size": "1 oz. portion",
               "tags": [
                 "Vegan"
               ]
             },
             {
-              "name": "Roasted Red Pepper",
+              "name": "Grape Tomatoes",
               "serving_size": "1 oz. portion",
               "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Whipped Feta",
-              "serving_size": "2 oz",
-              "tags": [
-                "Dairy",
-                "Kosher",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Kalamata Olive",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Roasted Chickpeas",
-              "serving_size": "1 oz. portion",
-              "tags": [
+                "Features Local Ingredient",
                 "Vegan"
               ]
             }
@@ -6926,8 +6924,8 @@
               ]
             },
             {
-              "name": "Moroccan Roasted Carrots",
-              "serving_size": "3 oz. portion",
+              "name": "Charred Brussels Sprouts",
+              "serving_size": "3 oz. poriton",
               "tags": [
                 "Vegan"
               ]
@@ -9379,7 +9377,7 @@
       "menu_oid": 9449665,
       "date": "2026-09-22",
       "meal": "Lunch",
-      "item_count": 35,
+      "item_count": 37,
       "categories": [
         {
           "name": "Grill Bun",
@@ -9457,6 +9455,32 @@
               "serving_size": "1 slice",
               "tags": [
                 "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Snickerdoodle Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Soy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Angel Food Cake",
+              "serving_size": "1 slice",
+              "tags": [
+                "Egg",
+                "Gluten",
+                "Soy",
+                "Vegetarian"
               ]
             }
           ]
@@ -9750,7 +9774,7 @@
       "menu_oid": 9449666,
       "date": "2026-09-22",
       "meal": "Dinner",
-      "item_count": 24,
+      "item_count": 26,
       "categories": [
         {
           "name": "Chef's Table Main",
@@ -9823,6 +9847,32 @@
                 "Sesame",
                 "Soy",
                 "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Snickerdoodle Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Soy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Angel Food Cake",
+              "serving_size": "1 slice",
+              "tags": [
+                "Egg",
+                "Gluten",
+                "Soy",
+                "Vegetarian"
               ]
             }
           ]
