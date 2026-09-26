@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T11:35:00.378457+00:00",
+  "generated_at": "2026-09-26T16:31:38.894310+00:00",
   "campus_date": "2026-09-26",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -96,7 +96,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -608,7 +608,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -658,7 +658,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -708,7 +708,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -806,7 +806,7 @@
     {
       "id": 13,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -856,7 +856,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -901,7 +901,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
