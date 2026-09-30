@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-30T12:47:36.227626+00:00",
- "item_count": 1232,
+ "generated_at": "2026-09-30T20:09:08.062451+00:00",
+ "item_count": 1243,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -2021,6 +2021,32 @@
     "vitamin_c"
    ],
    "_seen": "2026-09-26",
+   "_v": 2
+  },
+  "banana nut muffin|1 muffin(s)": {
+   "name": "Banana Nut Muffin",
+   "serving": "1 muffin(s) (142g)",
+   "grams": 142.0,
+   "servings_per_container": 1.0,
+   "calories": 400.0,
+   "fat": 19.0,
+   "sat_fat": 11.0,
+   "trans_fat": 0.5,
+   "cholesterol": 20.0,
+   "sodium": 430.0,
+   "carbs": 58.0,
+   "fiber": 1.0,
+   "sugars": 33.0,
+   "added_sugars": 29.0,
+   "protein": 4.0,
+   "vitamin_d": 0.0,
+   "calcium": 70.0,
+   "iron": 0.2,
+   "potassium": 150.0,
+   "vitamin_c": null,
+   "ingredients": "SOUR CREAM, UNBLEACHED CAKE FLOUR (UNBLEACHED WHEAT FLOUR, IRON, NIACIN, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), BROWN SUGAR, BUTTER, WATER, SHELLED WALNUTS, BANANAS, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRATIVES), EGG WHITES, BAKING SODA, SALT, CINNAMON).",
+   "contains": "Alcohol, Dairy, Egg, Gluten, Tree Nut",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "banana pepper|1 oz. portion": {
@@ -5347,6 +5373,36 @@
    "vitamin_c": null,
    "ingredients": "UNBLEACHED ENRICHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, SUGAR, SOYBEAN OIL, CONTAINS 2% OR LESS OF EACH OF THE FOLLOWING: YEAST, SALT, WHEAT GLUTEN, CULTURED WHEAT FLOUR, NATURAL FLAVORS, GLAZE (WATER, VEGETABLE PROTEINS [PEA, POTATO, FABA BEAN], SUNFLOWER OIL AND/OR CANOLA OIL, CORN MALTODEXTRINS, CORN DEXTROSE, CORN STARCH), SESAME FLOUR, COLORED WITH ANNATTO AND TURMERIC, DOUGH CONDITIONERS (CONTAINS ONE OR MORE OF THE FOLLOWING: SODIUM STEAROYL LACTYLATE, CALCIUM STEAROYL LACTYLATE, MONOGLYCERIDES, MONO- AND DIGLYCERIDES, DISTILLED MONOGLYCERIDES, CALCIUM PEROXIDE, CALCIUM IODATE, DATEM, ETHOXYLATED MONO- AND DIGLYCERIDES, ENZYMES, ASCORBIC ACID).",
    "contains": "Gluten, Sesame",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
+  "broadway breakfast bagel|bagel": {
+   "name": "Broadway Breakfast Bagel",
+   "serving": "bagel (199g)",
+   "grams": 199.0,
+   "servings_per_container": 1.0,
+   "calories": 350.0,
+   "fat": 28.0,
+   "sat_fat": 5.0,
+   "trans_fat": null,
+   "cholesterol": 220.0,
+   "sodium": 1140.0,
+   "carbs": 13.0,
+   "fiber": 8.0,
+   "sugars": 4.0,
+   "added_sugars": null,
+   "protein": 10.0,
+   "vitamin_d": null,
+   "calcium": 42.0,
+   "iron": 1.59,
+   "potassium": 560.0,
+   "vitamin_c": 5.3,
+   "ingredients": "Avocado Pulp (HASS AVOCADOS.), Large Egg - Cage Free Grade A (FRESH SHELL EGGS.), Red Onion, Tomato 4x4, Apple Cider Vinegar (PURE APPLE CIDER VINEGAR, WATER. MADE FROM THE JUICE OF APPLES, DILUTED WITH WATER TO A UNIFORM PICKLING AND TABLE STRENGTH OF 5% (50 GRAINS) ACIDITY.), Lime Juice, Spice Seasoning Everything Bagel Ground (SESAME SEED, TOASTED GARLKIC, TOASTED ONION, BLACK SESAME SEED, POPPY SEED, SEA SALT.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Granulated Sugar (SUGAR.), Coarse Ground Black Pepper (BLACK PEPPER), Mustard Seed, Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Egg, Sesame",
+   "incomplete": [
+    "potassium",
+    "vitamin_c"
+   ],
    "_seen": "2026-09-30",
    "_v": 2
   },
@@ -9532,6 +9588,32 @@
    "_seen": "2026-09-30",
    "_v": 2
   },
+  "chocolate chip muffin|1 muffin(s)": {
+   "name": "Chocolate Chip Muffin",
+   "serving": "1 muffin(s) (158g)",
+   "grams": 158.0,
+   "servings_per_container": 1.0,
+   "calories": 550.0,
+   "fat": 26.0,
+   "sat_fat": 3.5,
+   "trans_fat": 0.0,
+   "cholesterol": 75.0,
+   "sodium": 620.0,
+   "carbs": 75.0,
+   "fiber": 1.0,
+   "sugars": 39.0,
+   "added_sugars": 37.0,
+   "protein": 7.0,
+   "vitamin_d": 0.4,
+   "calcium": 60.0,
+   "iron": 0.5,
+   "potassium": 90.0,
+   "vitamin_c": null,
+   "ingredients": "UNBLEACHED CAKE FLOUR (UNBLEACHED WHEAT FLOUR, IRON, NIACIN, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), SUGAR, WATER, CANOLA OIL, EGG (WHOLE, RAW, FRESH), DRIED MILK, SEMI-SWEET CHOCOLATE (SUGAR, CHOCOLATE, COCOA BUTTER, MILK FAT, LECITHIN, VANILLIN, ARTIFICIAL FLAVOR, MILK), BAKING POWDER/ARGO, MODIFIED FOOD STARCH, SALT, XANTHAN GUM.",
+   "contains": "Dairy, Egg, Gluten",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "chocolate chip pancake|1 pancake": {
    "name": "Chocolate Chip Pancake",
    "serving": "1 pancake (67g)",
@@ -10825,6 +10907,38 @@
    "_seen": "2026-09-29",
    "_v": 2
   },
+  "commodore lox bagel|bagel": {
+   "name": "Commodore Lox Bagel",
+   "serving": "bagel (196g)",
+   "grams": 196.0,
+   "servings_per_container": 1.0,
+   "calories": 400.0,
+   "fat": 30.0,
+   "sat_fat": 15.0,
+   "trans_fat": null,
+   "cholesterol": 105.0,
+   "sodium": 1290.0,
+   "carbs": 6.0,
+   "fiber": 0.5,
+   "sugars": 4.0,
+   "added_sugars": null,
+   "protein": 22.0,
+   "vitamin_d": 9.0,
+   "calcium": 465.0,
+   "iron": 1.58,
+   "potassium": 400.0,
+   "vitamin_c": 4.8,
+   "ingredients": "Fish Salmon Cold Smoked Sliced Bnls/Sknls FZ IVP (ATLANTIC SALMON, SALT, CANE SUGAR, SPICES, FRUITWOOD AND HARDWOOD SMOKE. ATLANTIC SALMON, SALT, ASTAXANTHIN (COLOR).), Cream Cheese (PASTEURIZED MILK AND CREAM, SALT, CAROB BEAN GUM, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CAROB BEAN GUM, XANTHAN GUM.), Red Onion, Tomato 4x4, Apple Cider Vinegar (PURE APPLE CIDER VINEGAR, WATER. MADE FROM THE JUICE OF APPLES, DILUTED WITH WATER TO A UNIFORM PICKLING AND TABLE STRENGTH OF 5% (50 GRAINS) ACIDITY.), Caper (CAPERS, WATER, SALT AND WINE VINEGAR.), Dill Weed (DILL WEED), Granulated Sugar (SUGAR.), Mustard Seed, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Dairy, Fish",
+   "incomplete": [
+    "fiber",
+    "potassium",
+    "vitamin_c",
+    "vitamin_d"
+   ],
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "commodore tso chicken bowl|1 bowl": {
    "name": "Commodore Tso Chicken Bowl",
    "serving": "1 bowl (443g)",
@@ -11718,7 +11832,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "VINEGAR, BROWN MUSTARD SEED, WATER, SALT & XANTHAN GUM (THICKENER).",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "crispy catfish|1 piece": {
@@ -12247,7 +12361,7 @@
    "incomplete": [
     "calcium"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "decaf coffee|8 oz. portion": {
@@ -13289,7 +13403,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "DEXTROSE WITH MALTODEXTRIN, ASPARTAME, ACESULFAME POTASSIUM. *CONTAINS A SOURCE OF PHENYLALANINE.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "everything bagel|1 bagel": {
@@ -13314,6 +13428,32 @@
    "potassium": 120.0,
    "vitamin_c": null,
    "ingredients": "ENRICHED WHEAT FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, BROWN SUGAR, DEHYDRATED ONION, SESAME SEEDS, POPPY SEEDS, SALT, YEAST, WHEAT GLUTEN, VINEGAR, DOUGH CONDITIONER (ENRICHED WHEAT FLOUR [WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID] HYDROLYZED WHEAT GLUTEN AND 2% OR LESS OF EACH OF THE FOLLOWING: CANOLA OIL, ASCORBIC ACID, ENZYMES, SALT), GARLIC. ENRICHED WHEAT FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, DEHYDRATED TOASTED ONION, SUGAR, SALT, VEGETABLE OIL (CANOLA OIL OR SOYBEAN OIL), SESAME SEEDS, YEAST, CORNMEAL, DEHYDRATED ROASTED GARLIC, WHEAT GLUTEN, DOUGH CONDITIONERS (MONOGLYCERIDES, ENZYMES), GARLIC POWDER, MALTED BARLEY FLOUR, POPPY SEEDS, PRESERVATIVES (CALCIUM PROPIONATE, POTASSIUM SORBATE), MODIFIED CORNSTARCH, SESAME FLOUR. FLOUR WHEAT FLOUR, MALTED BARLEY FLOUR, WATER, SUGAR, CONTAINS LESS THAN 2 OF EACH OF THE FOLLOWING: SALT, SESAME SEEDS, POPPY SEEDS, DEHYDRATED ONION, DEHYDRATED GARLIC, DEGERMINATED YELLOW CORN MEAL, YEAST, GUAR XANTHAN GUM BLEND, INACTIVE DRY YEAST, SOYBEAN OIL, ASCORBIC ACID ADDED AS A DOUGH CONDITIONER, ENZYMES.",
+   "contains": "Gluten, Sesame",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
+  "everything bagel|1 bagel(s)": {
+   "name": "Everything Bagel",
+   "serving": "1 bagel(s) (144g)",
+   "grams": 144.0,
+   "servings_per_container": 1.0,
+   "calories": 380.0,
+   "fat": 1.5,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 330.0,
+   "carbs": 79.0,
+   "fiber": 3.0,
+   "sugars": 7.0,
+   "added_sugars": 7.0,
+   "protein": 10.0,
+   "vitamin_d": 0.0,
+   "calcium": 40.0,
+   "iron": 4.59,
+   "potassium": 130.0,
+   "vitamin_c": null,
+   "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, BROWN SUGAR (CANE SUGAR, CANE SYRUPS), LESS THAN 2% OF: SALT, MALT, MOLASSES, SPICES, POPPY SEED, SESAME SEEDS, STEEL CUT OATS, BAKER'S DRY ACTIVE YEAST, DEHYDRATED GARLIC, ONION, KOSHER SALT.",
    "contains": "Gluten, Sesame",
    "_seen": "2026-09-30",
    "_v": 2
@@ -17740,7 +17880,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "WATER, PEPPERS (ARBOL & PIQUIN), SALT, ACETIC ACID, XANTHAN GUM (THICKENER), SPICES, APPLE CIDER VINEGAR, GARLIC POWDER & NATURAL FLAVOR.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "hot dog bun|1 bun": {
@@ -18132,7 +18272,7 @@
     "sat_fat",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "housemade salsa verde|1 oz. portion": {
@@ -20479,7 +20619,7 @@
    "potassium": 320.0,
    "vitamin_c": 31.8,
    "ingredients": "FULLY AGED PEPPERS, DISTILLED VINEGAR AND SALT. WATER, CANOLA OIL, BROWN SUGAR, CAYENNE PEPPER, SALT, MODIFIED CORN STARCH, DRIED GARLIC, CHILI POWDER, SPICE EXTRACT, LACTIC ACID, POTASSIUM SORBATE (PRESERVATIVE).",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "low country boiled potatoes|4 oz. portion": {
@@ -23505,6 +23645,35 @@
    "_seen": "2026-09-30",
    "_v": 2
   },
+  "pepperoni pizza bagel|bagel": {
+   "name": "Pepperoni Pizza Bagel",
+   "serving": "bagel (152g)",
+   "grams": 152.0,
+   "servings_per_container": 1.0,
+   "calories": 280.0,
+   "fat": 15.0,
+   "sat_fat": 8.0,
+   "trans_fat": null,
+   "cholesterol": 40.0,
+   "sodium": 1010.0,
+   "carbs": 14.0,
+   "fiber": 2.0,
+   "sugars": 6.0,
+   "added_sugars": null,
+   "protein": 23.0,
+   "vitamin_d": null,
+   "calcium": 429.0,
+   "iron": 1.18,
+   "potassium": 270.0,
+   "vitamin_c": 2.8,
+   "ingredients": "Marinara Sauce (TOMATO PUREE (WATER, TOMATO PASTE), TOMATOES, ONIONS, LESS THAN 2% OF: BROWN SUGAR, EXTRA VIRGIN OLIVE OIL, SALT, CALCIUM CHLORIDE, DRIED BASIL, GARLIC POWDER, DRIED OREGANO, ONION POWDER, NATURAL FLAVOR, BLACK PEPPER, DRIED PARSLEY, GROUND FENNEL, GROUND SAVORY, GROUND THYME, CITRIC ACID*. TOMATO PUREE, DICED TOMATOES, SOYBEAN OIL, SALT, SUGAR, SPICES, DRIED GARLIC, DRIED ONIONS, NATURAL FLAVORS, OLIVE OIL, CITRIC ACID. TOMATO PUREE, DICED TOMATOES, CORN SYRUP, EXTRA VIRGIN OLIVE OIL, SOYBEAN OIL, NATURAL FLAVOR, SEA SALT, DEHYDRATED ONIONS, GARLIC PUREE, SPICES, XANTHAN GUM, CITRIC ACID.), Shredded Provolone & Mozzarella Blend (LOW-MOISTURE MOZZARELLA CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES), NOT SMOKED PROVOLONE CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES), POTATO STARCH, CORN STARCH AND POWDERED CELLULOSE (TO PREVENT CAKING), NATAMYCIN (A NATURAL MOLD INHIBITOR). WHOLE MILK LOW MOISTURE MOZZARELLA CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES), PROVOLONE CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES), CELLULOSE POWDER ADDED TO PREVENT CAKING, NATAMYCIN (A NATURAL MOLD INHIBITOR).), Vegan Pepperoni (VITAL WHEAT GLUTEN, FILTERED WATER, CANOLA OIL, BEANS (GREAT NORTHERN BEANS, WATER, SALT, CALCIUM CHLORIDE), SUNDRIED TOMATO (SUN DRIED TOMATOES, WATER, SULPHUR DIOXIDE, CITRIC ACID, GLUCOSE), SALT, APPLE CIDER VINEGAR, SUGAR, RED WINE VINEGAR, TOMATO PASTE, GARLIC POWDER, NUTRITIONAL YEAST, LACTIC ACID, FENNEL SEEDS, PAPRIKA, MUSTARD SEEDS, SMOKED PAPRIKA, RED PEPPER FLAKES, ONION POWDER, BLACK PEPPER, SOY SAUCE (WATER, WHEAT, SOYBEANS, SALT, SODIUM BENZOATE, LESS THAN 1/10 OF 1% AS A PRESERVATIVE).), Grated Parmesan Cheese (FILTERED WATER, POTATO & RICE STARCH, FOOD STARCH-MODIFIED (POTATO), COCONUT OIL, SALT (SEA SALT), RICE PROTEIN, PARMEZAN FLAVOR (VEGAN SOURCES), OLIVE EXTRACT, BETA CAROTENE (COLOR), VITAMIN B12.), Fresh Basil, Italian Seasoning (OREGANO, MARJORAM, THYME, BASIL, ROSEMARY, SAGE.)",
+   "contains": "Coconut, Dairy, Gluten, Soy",
+   "incomplete": [
+    "vitamin_c"
+   ],
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "pepperoni pizza|2 slices": {
    "name": "Pepperoni Pizza",
    "serving": "2 slices (274g)",
@@ -24390,6 +24559,32 @@
    "_seen": "2026-09-14",
    "_v": 2
   },
+  "poppy seed bagel|1 bagel(s)": {
+   "name": "Poppy Seed Bagel",
+   "serving": "1 bagel(s) (144g)",
+   "grams": 144.0,
+   "servings_per_container": 1.0,
+   "calories": 370.0,
+   "fat": 1.5,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 650.0,
+   "carbs": 79.0,
+   "fiber": 3.0,
+   "sugars": 7.0,
+   "added_sugars": 7.0,
+   "protein": 10.0,
+   "vitamin_d": 0.0,
+   "calcium": 40.0,
+   "iron": 4.55,
+   "potassium": 130.0,
+   "vitamin_c": null,
+   "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, BROWN SUGAR (CANE SUGAR, CANE SYRUPS), SALT, SPICES, POPPY SEED, MALT, MOLASSES, BAKER'S DRY ACTIVE YEAST.",
+   "contains": "Gluten",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "pork & vegetable eggroll|1 eggroll": {
    "name": "Pork & Vegetable Eggroll",
    "serving": "1 eggroll (61g)",
@@ -25254,7 +25449,7 @@
     "calcium",
     "iron"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "raspberries|1 oz. portion": {
@@ -25825,7 +26020,7 @@
    "vitamin_c": null,
    "ingredients": "Ice Cream Mix Soft Serve Choc Non-Dairy (OAT MILK, SUGAR, RICE SYRUP, PALM KERNEL AND COCONUT OILS, WATER, COCOA ALKALI PROCESSED, CONTAINS LESS THAN 2% OF THE FOLLOWING: FABA BEAN PROTEIN, SUNFLOWER LECITHIN, NATURAL FLAVOR, CARBOHYDRATE GUM, LOCUST BEAN GUM.)",
    "contains": "Coconut",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "roast beef|1 slice": {
@@ -27630,7 +27825,7 @@
    "vitamin_c": 0.0,
    "ingredients": "ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMIN MONONITRATE [VITAMIN B1], RIBOFLAVIN [VITAMIN B2], FOLIC ACID), SOYBEAN OIL (WITH TBHQ FOR FRESHNESS), SALT, CORN SYRUP, CONTAINS 2% OR LESS OF BAKING SODA, YEAST, SOY LECITHIN. ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), VEGETABLE OILS (CANOLA, PALM AND/OR SOYBEAN), SALT, SODIUM BICARBONATE, YEAST, MALTED BARLEY FLOUR.",
    "contains": "Gluten, Soy",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "salt|2.12 oz": {
@@ -27655,7 +27850,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "SEA SALT.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "sauce avocado crema|1 oz. portion": {
@@ -28118,6 +28313,36 @@
    "incomplete": [
     "potassium",
     "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
+  "scallion cream cheese|2 oz portion": {
+   "name": "Scallion Cream Cheese",
+   "serving": "2 oz portion (62g)",
+   "grams": 62.0,
+   "servings_per_container": 1.0,
+   "calories": 200.0,
+   "fat": 18.0,
+   "sat_fat": 12.0,
+   "trans_fat": 0.0,
+   "cholesterol": 60.0,
+   "sodium": 290.0,
+   "carbs": 2.0,
+   "fiber": 0.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 4.0,
+   "vitamin_d": null,
+   "calcium": 2.0,
+   "iron": 1.48,
+   "potassium": 5.0,
+   "vitamin_c": 0.6,
+   "ingredients": "Cream Cheese (PASTEURIZED MILK AND CREAM, SALT, CAROB BEAN GUM, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CAROB BEAN GUM, XANTHAN GUM.), Green Onion, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Garlic Powder (GRANULATED GARLIC.), Coarse Ground Black Pepper (BLACK PEPPER)",
+   "contains": "Dairy",
+   "incomplete": [
+    "potassium",
     "vitamin_c"
    ],
    "_seen": "2026-09-30",
@@ -29622,6 +29847,32 @@
    "_seen": "2026-09-30",
    "_v": 2
   },
+  "sourdough bagel|1 bagel(s)": {
+   "name": "Sourdough Bagel",
+   "serving": "1 bagel(s) (144g)",
+   "grams": 144.0,
+   "servings_per_container": 1.0,
+   "calories": 280.0,
+   "fat": 0.5,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 500.0,
+   "carbs": 61.0,
+   "fiber": 2.0,
+   "sugars": 7.0,
+   "added_sugars": 7.0,
+   "protein": 7.0,
+   "vitamin_d": 0.0,
+   "calcium": 10.0,
+   "iron": 3.14,
+   "potassium": 80.0,
+   "vitamin_c": null,
+   "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, SOURDOUGH STARTER CULTURE, BROWN SUGAR, SALT, MALT, MOLASSES, BAKER'S DRY ACTIVE YEAST.",
+   "contains": "Gluten",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "sourdough bread|1 slice": {
    "name": "Sourdough Bread",
    "serving": "1 slice (53g)",
@@ -30692,7 +30943,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "CHILI, SUGAR, GARLIC, SALT, DISTILLED VINEGAR, POTASSIUM SORBATE, AND SODIUM BISULFATE AS PRESERVATIVES, AND XANTHAN GUM. SALTED RED CHILI PEPPER RED CHILI PEPPER, SALT, SUGAR, GARLIC, SALT, WATER, ACETIC ACID, LACTIC ACID, XANTHAN GUM, CITRIC ACID, POTASSIUM SORBATE PRESERVATIVE, ASCORBIC ACID. RED JALAPEÑO PEPPER, WATER, SUGAR, SALT, GARLIC, DISTILLED VINEGAR, XANTHAN GUM AND TABASCO® BRAND PEPPER SAUCE (DISTILLED VINEGAR, RED PEPPER AND SALT).",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "ssamjang sauteed cabbage|4 oz. portion": {
@@ -31379,6 +31630,32 @@
    "_seen": "2026-09-07",
    "_v": 2
   },
+  "strawberry cream cheese|1 oz. portion": {
+   "name": "Strawberry Cream Cheese",
+   "serving": "1 oz. portion (28g)",
+   "grams": 28.0,
+   "servings_per_container": 1.0,
+   "calories": 90.0,
+   "fat": 7.0,
+   "sat_fat": 4.5,
+   "trans_fat": 0.0,
+   "cholesterol": 25.0,
+   "sodium": 85.0,
+   "carbs": 5.0,
+   "fiber": 0.0,
+   "sugars": 5.0,
+   "added_sugars": null,
+   "protein": 1.0,
+   "vitamin_d": null,
+   "calcium": 0.0,
+   "iron": 0.55,
+   "potassium": null,
+   "vitamin_c": null,
+   "ingredients": "Cream Cheese (PASTEURIZED MILK AND CREAM, SALT, CAROB BEAN GUM, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CAROB BEAN GUM, XANTHAN GUM.), Strawberry Preserves (STRAWBERRIES, SUGAR, CORN SYRUP, PECTIN, CITRIC ACID. STRAWBERRIES, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, SUGAR, FRUIT PECTIN, CITRIC ACID.)",
+   "contains": "Dairy",
+   "_seen": "2026-09-30",
+   "_v": 2
+  },
   "strawberry cream cheese|1 packet": {
    "name": "Strawberry Cream Cheese",
    "serving": "1 packet (28g)",
@@ -31898,7 +32175,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "WATER, SORBITOL, CELLULOSE GUM, SALT, XANTHAN GUM, SORBIC ACID AND SODIUM BENZOATE (PRESERVATIVES), CARAMEL COLOR, ACESULFAME POTASSIUM (NONNUTRITIVE SWEETENER), SODIUM HEXAMETAPHOSPHATE, PHOSPHORIC ACID, SUCRALOSE (NON-NUTRITIVE SWEETENER), NATURAL AND ARTIFICIAL FLAVOR.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "sugar|1 packet": {
@@ -31923,7 +32200,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "SUGAR",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "summer shrimp boil|8 oz. portion": {
@@ -32218,7 +32495,7 @@
    "potassium": 15.0,
    "vitamin_c": null,
    "ingredients": "Dough Cookie Choc Chunk GF Sweet Loren (GLUTEN FREE FLOUR BLEND (OAT, TAPIOCA, POTATO STARCH), CANE SUGAR, PALM OIL, CHOCOLATE CHUNKS (SUGAR, UNSWEETENED CHOCOLATE, COCOA BUTTER, VANILLA, SALT), FILTERED WATER, MOLASSES, NATURAL VANILLA FLAVOR, SEA SALT, BAKING SODA.)",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "sweet loren's fudgy brownie cookie|1 cookie": {
@@ -32580,7 +32857,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "CORN SYRUP, HIGH FRUCTOSE CORN SYRUP, WATER, SALT, CARAMEL COLOR, NATURAL AND ARTIFICIAL FLAVORS.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "szechuan simmered fish|6 oz. portion": {
@@ -33176,6 +33453,36 @@
     "vitamin_c"
    ],
    "_seen": "2026-09-18",
+   "_v": 2
+  },
+  "the morning melt|bagel": {
+   "name": "The Morning Melt",
+   "serving": "bagel (118g)",
+   "grams": 118.0,
+   "servings_per_container": 1.0,
+   "calories": 410.0,
+   "fat": 34.0,
+   "sat_fat": 20.0,
+   "trans_fat": 0.0,
+   "cholesterol": 310.0,
+   "sodium": 580.0,
+   "carbs": 3.0,
+   "fiber": 0.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 17.0,
+   "vitamin_d": null,
+   "calcium": 187.0,
+   "iron": 2.52,
+   "potassium": 5.0,
+   "vitamin_c": 0.6,
+   "ingredients": "Cream Cheese (PASTEURIZED MILK AND CREAM, SALT, CAROB BEAN GUM, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CAROB BEAN GUM, XANTHAN GUM.), Large Egg - Cage Free Grade A (FRESH SHELL EGGS.), Cheddar Cheese (CULTURED MILK, SALT, ENZYMES, ANNATTO (COLOR).), Green Onion, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Garlic Powder (GRANULATED GARLIC.), Coarse Ground Black Pepper (BLACK PEPPER)",
+   "contains": "Dairy, Egg",
+   "incomplete": [
+    "potassium",
+    "vitamin_c"
+   ],
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "tikka tofu & vegetables|5 oz. portion": {
@@ -34111,7 +34418,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "Water, Iced Tea (BLACK TEA)",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "unsweetened coconut milk|4 oz. portion": {
@@ -35957,7 +36264,7 @@
    "potassium": 5.0,
    "vitamin_c": null,
    "ingredients": "WATER, DISTILLED WHITE VINEGAR, MUSTARD SEED, SALT, TURMERIC, SPICES.",
-   "_seen": "2026-09-29",
+   "_seen": "2026-09-30",
    "_v": 2
   },
   "yellow rice|5 oz. portion": {

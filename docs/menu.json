@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-30T12:47:36.227626+00:00",
+  "generated_at": "2026-09-30T20:09:08.062451+00:00",
   "campus_date": "2026-09-30",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 46,
-  "item_count": 1315,
+  "menu_count": 48,
+  "item_count": 1353,
   "nutrition": {
-    "cached_recipes": 1232,
-    "with_macros": 1227,
-    "recipes_covered": 487,
-    "recipes_total": 518
+    "cached_recipes": 1243,
+    "with_macros": 1238,
+    "recipes_covered": 497,
+    "recipes_total": 529
   },
   "tags": [
     "Vegetarian",
@@ -54,49 +54,9 @@
   },
   "halls": [
     {
-      "id": 21,
-      "name": "West End Bagel Co Production",
-      "status": "Closed",
-      "hours": {
-        "Sunday": [],
-        "Monday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Tuesday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Wednesday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Thursday": [
-          [
-            "08:00",
-            "13:30"
-          ]
-        ],
-        "Friday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Saturday": []
-      },
-      "menu_count": 0
-    },
-    {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -145,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -243,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -511,7 +471,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -708,7 +668,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -899,9 +859,49 @@
       "menu_count": 2
     },
     {
+      "id": 21,
+      "name": "West End Bagel Co Production",
+      "status": "Open",
+      "hours": {
+        "Sunday": [],
+        "Monday": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "Tuesday": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "Wednesday": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "Thursday": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "Friday": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "Saturday": []
+      },
+      "menu_count": 2
+    },
+    {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -946,7 +946,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -986,7 +986,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1046,7 +1046,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -3344,10 +3344,12 @@
           "name": "Fresh Mex Main",
           "items": [
             {
-              "name": "Beef Barbacoa",
-              "serving_size": "5 oz. portion",
+              "name": "Plant-Based Chipotle Chorizo",
+              "serving_size": "1 oz. portion",
               "tags": [
-                "Halal"
+                "Gluten",
+                "Soy",
+                "Vegan"
               ]
             }
           ]
@@ -9208,10 +9210,9 @@
               ]
             },
             {
-              "name": "Grape Tomatoes",
+              "name": "Fresh Cilantro",
               "serving_size": "1 oz. portion",
               "tags": [
-                "Features Local Ingredient",
                 "Vegan"
               ]
             },
@@ -14640,6 +14641,414 @@
                 "Dairy",
                 "Egg",
                 "Pork"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "West End Bagel Co Production",
+      "hall_id": 21,
+      "menu_oid": 9491337,
+      "date": "2026-09-30",
+      "meal": "Daily Offerings",
+      "item_count": 19,
+      "categories": [
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Banana Nut Muffin",
+              "serving_size": "1 muffin(s)",
+              "tags": [
+                "Alcohol",
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Tree Nut",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Chocolate Chip Muffin",
+              "serving_size": "1 muffin(s)",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Kosher",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Condiments",
+          "items": [
+            {
+              "name": "Assorted Jelly",
+              "serving_size": "1 packet",
+              "tags": []
+            },
+            {
+              "name": "Cream Cheese",
+              "serving_size": "1 packet",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Honey Cup",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Pepper",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Splenda",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sugar",
+              "serving_size": "1 packet",
+              "tags": []
+            },
+            {
+              "name": "Sweet-N-Low",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Main",
+          "items": [
+            {
+              "name": "Everything Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Sesame",
+                "Kosher",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Poppy Seed Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Kosher",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sourdough Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Kosher",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Signature",
+          "items": [
+            {
+              "name": "The Morning Melt",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Broadway Breakfast Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Egg",
+                "Sesame",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Commodore Lox Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Fish",
+                "Kosher"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Pizza",
+          "items": [
+            {
+              "name": "Pepperoni Pizza Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Gluten",
+                "Soy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Spreads",
+          "items": [
+            {
+              "name": "Scallion Cream Cheese",
+              "serving_size": "2 oz portion",
+              "tags": [
+                "Dairy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Whipped Feta",
+              "serving_size": "2 oz",
+              "tags": [
+                "Dairy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Strawberry Cream Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "West End Bagel Co Production",
+      "hall_id": 21,
+      "menu_oid": 9491342,
+      "date": "2026-10-01",
+      "meal": "Daily Offerings",
+      "item_count": 19,
+      "categories": [
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Banana Nut Muffin",
+              "serving_size": "1 muffin(s)",
+              "tags": [
+                "Alcohol",
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Tree Nut",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Chocolate Chip Muffin",
+              "serving_size": "1 muffin(s)",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Gluten",
+                "Kosher",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Condiments",
+          "items": [
+            {
+              "name": "Assorted Jelly",
+              "serving_size": "1 packet",
+              "tags": []
+            },
+            {
+              "name": "Cream Cheese",
+              "serving_size": "1 packet",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Honey Cup",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Pepper",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Splenda",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sugar",
+              "serving_size": "1 packet",
+              "tags": []
+            },
+            {
+              "name": "Sweet-N-Low",
+              "serving_size": "1 packet",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Main",
+          "items": [
+            {
+              "name": "Everything Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Sesame",
+                "Kosher",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Poppy Seed Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Kosher",
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sourdough Bagel",
+              "serving_size": "1 bagel(s)",
+              "tags": [
+                "Gluten",
+                "Kosher",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Signature",
+          "items": [
+            {
+              "name": "The Morning Melt",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Broadway Breakfast Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Egg",
+                "Sesame",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Commodore Lox Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Fish",
+                "Kosher"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Pizza",
+          "items": [
+            {
+              "name": "Pepperoni Pizza Bagel",
+              "serving_size": "bagel",
+              "tags": [
+                "Dairy",
+                "Gluten",
+                "Soy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bagel Spreads",
+          "items": [
+            {
+              "name": "Scallion Cream Cheese",
+              "serving_size": "2 oz portion",
+              "tags": [
+                "Dairy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Whipped Feta",
+              "serving_size": "2 oz",
+              "tags": [
+                "Dairy",
+                "Kosher",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Strawberry Cream Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
               ]
             }
           ]
