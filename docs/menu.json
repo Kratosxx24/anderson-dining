@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T13:06:24.914546+00:00",
+  "generated_at": "2026-10-11T19:37:02.969807+00:00",
   "campus_date": "2026-10-11",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -361,7 +361,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -426,7 +426,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -516,9 +516,18 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
-        "Sunday": [],
+        "Sunday": [
+          [
+            "08:00",
+            "15:00"
+          ],
+          [
+            "17:00",
+            "20:00"
+          ]
+        ],
         "Monday": [],
         "Tuesday": [
           [
@@ -1537,7 +1546,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-10-11T05:59:54.952097+00:00",
+  "places_checked": "2026-10-11T19:35:55.337607+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
