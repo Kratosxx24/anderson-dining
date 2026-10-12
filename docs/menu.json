@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T11:05:44.171198+00:00",
+  "generated_at": "2026-10-12T21:20:18.730840+00:00",
   "campus_date": "2026-10-12",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -426,7 +426,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -471,7 +471,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -528,7 +528,16 @@
             "20:00"
           ]
         ],
-        "Monday": [],
+        "Monday": [
+          [
+            "11:00",
+            "15:00"
+          ],
+          [
+            "17:00",
+            "20:00"
+          ]
+        ],
         "Tuesday": [
           [
             "11:00",
@@ -572,7 +581,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -622,7 +631,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -770,7 +779,7 @@
     {
       "id": 13,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -905,7 +914,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -950,7 +959,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1050,7 +1059,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
