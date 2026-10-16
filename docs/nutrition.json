@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-16T11:37:16.870675+00:00",
- "item_count": 1329,
+ "generated_at": "2026-10-16T16:47:31.111249+00:00",
+ "item_count": 1330,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -11494,7 +11494,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-10-09",
+   "_seen": "2026-10-16",
    "_v": 2
   },
   "coconut chia seed pudding|2 oz. portion": {
@@ -35730,6 +35730,41 @@
     "vitamin_c"
    ],
    "_seen": "2026-09-21",
+   "_v": 2
+  },
+  "teriyaki tofu stir fry|4 oz. portion": {
+   "name": "Teriyaki Tofu Stir Fry",
+   "serving": "4 oz. portion (120g)",
+   "grams": 120.0,
+   "servings_per_container": 1.0,
+   "calories": 120.0,
+   "fat": 8.0,
+   "sat_fat": 1.0,
+   "trans_fat": null,
+   "cholesterol": null,
+   "sodium": 260.0,
+   "carbs": 7.0,
+   "fiber": 2.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 5.0,
+   "vitamin_d": null,
+   "calcium": 73.0,
+   "iron": 1.08,
+   "potassium": 160.0,
+   "vitamin_c": 34.2,
+   "ingredients": "Firm Tofu (WATER, SOYBEANS, CALCIUM SULFATE, MAGNESIUM CHLORIDE.), Broccoli Florettes, Yellow Onion (ONION,), Green Bell Pepper, Red Bell Pepper (BELL PEPPER.), Tamari Soy Sauce (WATER, SOYBEANS, SUGAR, SALT, VINEGAR, ALCOHOL, LACTIC ACID.), Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Agave Sweetener (ORGANIC BLUE WEBER AGAVE. ORGANIC AGAVE NECTAR, WATER.), Water, Seasoned Rice Vinegar (RICE VINEGAR (WATER, RICE), SALT, SUGAR, DILUTED WITH WATER TO 4.1% ACIDITY RICE VINEGAR, INVERT SUGAR, SALT, BROWN SUGAR, DILUTED WITH WATER TO 4.3% ACIDITY.), Ginger Root, Minced Garlic, Corn Starch (CORN STARCH.)",
+   "contains": "Alcohol, Soy",
+   "incomplete": [
+    "calcium",
+    "fiber",
+    "iron",
+    "potassium",
+    "sat_fat",
+    "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-10-16",
    "_v": 2
   },
   "texas toast|1 slice": {
