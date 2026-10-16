@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-15T21:32:25.600943+00:00",
+  "generated_at": "2026-10-16T04:43:51.229807+00:00",
   "campus_date": "2026-10-15",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 50,
-  "item_count": 1353,
+  "item_count": 1354,
   "nutrition": {
     "cached_recipes": 1327,
     "with_macros": 1322,
@@ -426,7 +426,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -471,7 +471,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -914,7 +914,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -959,7 +959,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -999,7 +999,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -5809,7 +5809,7 @@
       "menu_oid": 9436328,
       "date": "2026-10-15",
       "meal": "Dinner",
-      "item_count": 26,
+      "item_count": 27,
       "categories": [
         {
           "name": "Pizza",
@@ -5844,6 +5844,15 @@
                 "Gluten",
                 "Soy",
                 "Vegan"
+              ]
+            },
+            {
+              "name": "Bruschetta Baked Tilapia",
+              "serving_size": "6 oz. portion",
+              "tags": [
+                "Dairy",
+                "Fish",
+                "Gluten"
               ]
             }
           ]
@@ -5899,13 +5908,10 @@
           "name": "Grill Side",
           "items": [
             {
-              "name": "Onion Rings",
+              "name": "Straight Cut Fries",
               "serving_size": "3 oz. portion",
               "tags": [
-                "Dairy",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
+                "Vegan"
               ]
             }
           ]
@@ -6067,6 +6073,13 @@
               "tags": [
                 "Vegan"
               ]
+            },
+            {
+              "name": "Chickpea Tagine w/ Chermoula Sauce",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
             }
           ]
         },
@@ -6080,14 +6093,6 @@
                 "Alcohol",
                 "Soy",
                 "Vegan"
-              ]
-            },
-            {
-              "name": "Saag Paneer",
-              "serving_size": "6 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
               ]
             }
           ]
