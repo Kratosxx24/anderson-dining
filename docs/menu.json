@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T15:44:12.274851+00:00",
+  "generated_at": "2026-10-17T20:45:09.072270+00:00",
   "campus_date": "2026-10-17",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -111,16 +111,7 @@
       "name": "The Commons Dining Center",
       "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "08:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "21:00"
-          ]
-        ],
+        "Sunday": [],
         "Monday": [
           [
             "07:00",
@@ -419,12 +410,7 @@
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "09:00",
-            "17:00"
-          ]
-        ],
+        "Sunday": [],
         "Monday": [
           [
             "07:00",
@@ -569,12 +555,7 @@
       "name": "Commons Munchie",
       "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "08:00",
-            "23:59"
-          ]
-        ],
+        "Sunday": [],
         "Monday": [
           [
             "07:00",
@@ -805,7 +786,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -885,7 +866,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
