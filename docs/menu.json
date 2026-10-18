@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-18T20:56:13.598118+00:00",
+  "generated_at": "2026-10-18T23:22:52.472862+00:00",
   "campus_date": "2026-10-18",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 53,
-  "item_count": 1325,
+  "menu_count": 55,
+  "item_count": 1355,
   "nutrition": {
     "cached_recipes": 1336,
     "with_macros": 1331,
-    "recipes_covered": 525,
-    "recipes_total": 554
+    "recipes_covered": 535,
+    "recipes_total": 564
   },
   "tags": [
     "Vegetarian",
@@ -22,6 +22,7 @@
     "Peanut",
     "Pork",
     "Sesame",
+    "Shellfish",
     "Soy",
     "Tree Nut",
     "Alcohol",
@@ -269,7 +270,7 @@
         ],
         "Saturday": []
       },
-      "menu_count": 4
+      "menu_count": 6
     },
     {
       "id": 11,
@@ -343,7 +344,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -478,7 +479,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -637,7 +638,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -7553,6 +7554,309 @@
               "serving_size": "2 oz. portion",
               "tags": [
                 "Vegan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9521316,
+      "date": "2026-10-19",
+      "meal": "Breakfast",
+      "item_count": 10,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Bacon, Egg, & Cheese Sandwich",
+              "serving_size": "1 sandwich",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Pork"
+              ]
+            },
+            {
+              "name": "Scrambled Eggs",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Egg",
+                "Features Local Ingredient",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Hashbrown Casserole",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Bacon",
+              "serving_size": "2 strips",
+              "tags": [
+                "Pork"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fruit & Yogurt Bar",
+          "items": [
+            {
+              "name": "Blueberries",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Diced Cantaloupe",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Low Fat Strawberry Yogurt",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Plain Greek Yogurt",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Toasted Coconut",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Craisins",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9521317,
+      "date": "2026-10-19",
+      "meal": "Lunch",
+      "item_count": 20,
+      "categories": [
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Sweet Loren's Fudgy Brownie Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Soup",
+          "items": [
+            {
+              "name": "Broccoli & Cheese Soup",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Veggies & Legumes",
+          "items": [
+            {
+              "name": "Black Beans",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Chopped Romaine Lettuce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Diced Tomato",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Shredded Carrot",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sliced Peppers",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Spinach",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Dairy/Egg/Cheese",
+          "items": [
+            {
+              "name": "Shredded Cheddar Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Chopped Egg",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Egg",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Meats & Tofus",
+          "items": [
+            {
+              "name": "Chipotle Orange Chicken Thigh",
+              "serving_size": "1 piece",
+              "tags": [
+                "Halal"
+              ]
+            },
+            {
+              "name": "Steamed Shrimp",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Shellfish"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Composed",
+          "items": [
+            {
+              "name": "Tri-Colored Quinoa",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Toppings",
+          "items": [
+            {
+              "name": "Avocado Pulp",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Tri Color Tortilla Strips",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chop Chop Dressing",
+          "items": [
+            {
+              "name": "Asian Ginger Dressing",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Alcohol",
+                "Soy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Caesar Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Fish"
+              ]
+            },
+            {
+              "name": "Honey Mustard Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Alcohol",
+                "Egg",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Red Wine Vinegar",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Chipotle Ranch Dressing",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Vegetarian"
               ]
             }
           ]
