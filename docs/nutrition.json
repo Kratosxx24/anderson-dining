@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-17T23:13:28.550560+00:00",
- "item_count": 1331,
+ "generated_at": "2026-10-18T04:46:32.739692+00:00",
+ "item_count": 1332,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -30319,6 +30319,37 @@
    "_seen": "2026-10-11",
    "_v": 2
   },
+  "sauteed mushrooms|1 oz. portion": {
+   "name": "Sauteed Mushrooms",
+   "serving": "1 oz. portion (34g)",
+   "grams": 34.0,
+   "servings_per_container": 1.0,
+   "calories": 10.0,
+   "fat": 0.5,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 15.0,
+   "carbs": 1.0,
+   "fiber": 0.0,
+   "sugars": 0.5,
+   "added_sugars": null,
+   "protein": 1.0,
+   "vitamin_d": 0.1,
+   "calcium": 1.0,
+   "iron": 0.17,
+   "potassium": 105.0,
+   "vitamin_c": 0.7,
+   "ingredients": "Small Button Mushroom, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Coarse Ground Black Pepper (BLACK PEPPER)",
+   "incomplete": [
+    "potassium",
+    "sugars",
+    "vitamin_c",
+    "vitamin_d"
+   ],
+   "_seen": "2026-10-17",
+   "_v": 2
+  },
   "sauteed peppers & onions|1 oz. portion": {
    "name": "Sauteed Peppers & Onions",
    "serving": "1 oz. portion (39g)",
@@ -32710,7 +32741,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-17",
    "_v": 2
   },
   "spicy pork & vegetable|6 oz. portion": {

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-17T23:13:28.550560+00:00",
+  "generated_at": "2026-10-18T04:46:32.739692+00:00",
   "campus_date": "2026-10-17",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 41,
-  "item_count": 998,
+  "item_count": 996,
   "nutrition": {
-    "cached_recipes": 1331,
-    "with_macros": 1326,
-    "recipes_covered": 418,
-    "recipes_total": 441
+    "cached_recipes": 1332,
+    "with_macros": 1327,
+    "recipes_covered": 419,
+    "recipes_total": 442
   },
   "tags": [
     "Vegetarian",
@@ -55,7 +55,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -1507,7 +1507,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-10-17T15:43:07.968356+00:00",
+  "places_checked": "2026-10-18T04:45:30.316921+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -3354,14 +3354,14 @@
       "menu_oid": 9530454,
       "date": "2026-10-18",
       "meal": "Lunch",
-      "item_count": 64,
+      "item_count": 65,
       "categories": [
         {
           "name": "Fresh Mex Base",
           "items": [
             {
-              "name": "Cilantro-Lime Rice",
-              "serving_size": "5 oz. portion",
+              "name": "Corn Tortilla Chips",
+              "serving_size": "2 oz. portion",
               "tags": [
                 "Vegan"
               ]
@@ -3372,22 +3372,17 @@
           "name": "Fresh Mex Main",
           "items": [
             {
-              "name": "Beef Taco Meat",
+              "name": "Citrus Chicken",
               "serving_size": "4 oz. portion",
-              "tags": []
+              "tags": [
+                "Halal"
+              ]
             }
           ]
         },
         {
           "name": "Fresh Mex Toppings",
           "items": [
-            {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
             {
               "name": "Fire Roasted Jalapeno Salsa",
               "serving_size": "1 oz. portion",
@@ -3417,6 +3412,13 @@
                 "Dairy",
                 "Vegetarian"
               ]
+            },
+            {
+              "name": "Avocado Pulp",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
             }
           ]
         },
@@ -3424,7 +3426,7 @@
           "name": "Fresh Mex Side",
           "items": [
             {
-              "name": "Charro Beans",
+              "name": "Roasted Corn",
               "serving_size": "3 oz. portion",
               "tags": [
                 "Vegan"
@@ -3894,6 +3896,47 @@
           ]
         },
         {
+          "name": "Mongolian Base",
+          "items": [
+            {
+              "name": "Fried Rice",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Alcohol",
+                "Soy",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mongolian Main",
+          "items": [
+            {
+              "name": "Spicy Glazed Eggplant & Tofu",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Alcohol",
+                "Soy",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mongolian Side",
+          "items": [
+            {
+              "name": "Sauteed Bok Choy",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Sesame",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
           "name": "Pasta Base",
           "items": [
             {
@@ -3907,28 +3950,13 @@
           ]
         },
         {
-          "name": "Pasta Sauces",
-          "items": [
-            {
-              "name": "Marinara Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
           "name": "Pasta Meat",
           "items": [
             {
-              "name": "Beef Meatballs",
-              "serving_size": "2 meatballs",
+              "name": "Chicken w/ Cacciatore Sauce",
+              "serving_size": "6 oz. portion",
               "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy"
+                "Halal"
               ]
             }
           ]
@@ -3937,34 +3965,16 @@
           "name": "Pasta Veggies",
           "items": [
             {
-              "name": "Roasted Broccoli w/ Garlic",
+              "name": "Sauteed Mushrooms",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Italian Roasted Vegetables",
               "serving_size": "3 oz. portion",
               "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Toppings",
-          "items": [
-            {
-              "name": "Crushed Red Pepper",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Bread",
-          "items": [
-            {
-              "name": "Garlic Breadstick",
-              "serving_size": "1 breadstick",
-              "tags": [
-                "Gluten",
                 "Vegan"
               ]
             }
@@ -3978,7 +3988,7 @@
       "menu_oid": 9530458,
       "date": "2026-10-18",
       "meal": "Dinner",
-      "item_count": 47,
+      "item_count": 44,
       "categories": [
         {
           "name": "None",
@@ -4424,37 +4434,6 @@
               "serving_size": "1 breadstick",
               "tags": [
                 "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Grain",
-          "items": [
-            {
-              "name": "Brown Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Protein",
-          "items": [
-            {
-              "name": "Grilled Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            },
-            {
-              "name": "Roasted Portobello Mushrooms",
-              "serving_size": "3 oz. portion",
-              "tags": [
                 "Vegan"
               ]
             }
