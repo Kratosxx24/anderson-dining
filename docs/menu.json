@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:23:22.560473+00:00",
+  "generated_at": "2026-10-18T15:59:50.601717+00:00",
   "campus_date": "2026-10-18",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -186,7 +186,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -275,7 +275,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -344,7 +344,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -451,12 +451,7 @@
       "name": "The Pub at Overcup Oak",
       "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "15:00",
-            "22:00"
-          ]
-        ],
+        "Sunday": [],
         "Monday": [
           [
             "11:00",
@@ -489,7 +484,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -589,7 +584,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -639,7 +634,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -737,7 +732,7 @@
     {
       "id": 13,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
