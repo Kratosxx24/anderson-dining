@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T17:23:07.647349+00:00",
+  "generated_at": "2026-10-21T21:50:34.889195+00:00",
   "campus_date": "2026-10-21",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,14 +56,9 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "08:00",
-            "20:00"
-          ]
-        ],
+        "Sunday": [],
         "Monday": [
           [
             "07:00",
@@ -110,9 +105,18 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
-        "Sunday": [],
+        "Sunday": [
+          [
+            "08:00",
+            "15:00"
+          ],
+          [
+            "17:00",
+            "21:00"
+          ]
+        ],
         "Monday": [
           [
             "07:00",
@@ -166,7 +170,7 @@
           ],
           [
             "17:00",
-            "21:00"
+            "20:00"
           ]
         ],
         "Friday": [
@@ -177,16 +181,29 @@
           [
             "11:00",
             "15:00"
+          ],
+          [
+            "17:00",
+            "20:00"
           ]
         ],
-        "Saturday": []
+        "Saturday": [
+          [
+            "08:00",
+            "15:00"
+          ],
+          [
+            "17:00",
+            "20:00"
+          ]
+        ]
       },
       "menu_count": 8
     },
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -275,7 +292,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -328,7 +345,7 @@
           ],
           [
             "17:00",
-            "21:00"
+            "20:00"
           ]
         ],
         "Friday": [
@@ -344,7 +361,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -397,7 +414,12 @@
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "status": "Open",
       "hours": {
-        "Sunday": [],
+        "Sunday": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
         "Monday": [
           [
             "07:00",
@@ -465,7 +487,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -511,22 +533,8 @@
             "20:00"
           ]
         ],
-        "Thursday": [
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "20:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "11:00",
-            "15:00"
-          ]
-        ],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 2
@@ -624,7 +632,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -772,7 +780,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -802,7 +810,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co.",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -957,7 +965,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -987,7 +995,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1027,7 +1035,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
