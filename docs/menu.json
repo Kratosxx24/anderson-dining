@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:20:32.238203+00:00",
+  "generated_at": "2026-10-22T21:45:53.639611+00:00",
   "campus_date": "2026-10-22",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -275,16 +275,7 @@
             "20:00"
           ]
         ],
-        "Friday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ]
-        ],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 3
@@ -292,7 +283,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -564,7 +555,16 @@
             "23:59"
           ]
         ],
-        "Friday": [],
+        "Friday": [
+          [
+            "07:00",
+            "22:00"
+          ],
+          [
+            "08:00",
+            "22:00"
+          ]
+        ],
         "Saturday": []
       },
       "menu_count": 2
@@ -607,13 +607,13 @@
         "Friday": [
           [
             "07:00",
-            "23:59"
+            "22:00"
           ]
         ],
         "Saturday": [
           [
             "08:00",
-            "23:59"
+            "22:00"
           ]
         ]
       },
@@ -622,7 +622,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -706,12 +706,12 @@
         ],
         "Saturday": [
           [
-            "08:00",
-            "23:59"
-          ],
-          [
             "17:00",
             "22:00"
+          ],
+          [
+            "08:00",
+            "15:00"
           ]
         ]
       },
@@ -755,13 +755,13 @@
         "Friday": [
           [
             "07:00",
-            "23:59"
+            "09:59"
           ]
         ],
         "Saturday": [
           [
             "08:00",
-            "23:59"
+            "09:59"
           ]
         ]
       },
@@ -800,7 +800,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co.",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -955,7 +955,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -985,7 +985,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1025,7 +1025,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
