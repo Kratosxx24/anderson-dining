@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T11:17:08.225357+00:00",
+  "generated_at": "2026-10-24T16:05:24.167597+00:00",
   "campus_date": "2026-10-24",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -55,7 +55,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -104,7 +104,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -571,7 +571,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +621,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -839,7 +839,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
