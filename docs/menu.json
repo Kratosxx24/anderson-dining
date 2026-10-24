@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T16:05:24.167597+00:00",
+  "generated_at": "2026-10-24T20:59:12.753754+00:00",
   "campus_date": "2026-10-24",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -104,7 +104,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +621,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -839,7 +839,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
