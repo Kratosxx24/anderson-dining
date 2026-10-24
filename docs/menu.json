@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-23T21:31:36.363079+00:00",
+  "generated_at": "2026-10-24T04:48:29.195631+00:00",
   "campus_date": "2026-10-23",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 28,
-  "item_count": 795,
+  "item_count": 785,
   "nutrition": {
     "cached_recipes": 1350,
     "with_macros": 1345,
-    "recipes_covered": 348,
-    "recipes_total": 370
+    "recipes_covered": 344,
+    "recipes_total": 366
   },
   "tags": [
     "Vegetarian",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -523,7 +523,7 @@
     {
       "id": 12,
       "name": "Commons Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -572,7 +572,7 @@
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -840,7 +840,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -885,7 +885,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1776,10 +1776,10 @@
           "name": "Fresh Mex Main",
           "items": [
             {
-              "name": "California Herbed Chicken Thigh",
-              "serving_size": "4 oz. portion",
+              "name": "Lentil Taco Filling",
+              "serving_size": "3 oz. portion",
               "tags": [
-                "Halal"
+                "Vegan"
               ]
             }
           ]
@@ -2423,10 +2423,10 @@
           "name": "Soup",
           "items": [
             {
-              "name": "Chicken Noodle Soup",
-              "serving_size": "6 oz. portion",
+              "name": "Butternut Squash Bisque",
+              "serving_size": "5 oz. portion",
               "tags": [
-                "Gluten"
+                "Vegan"
               ]
             }
           ]
@@ -2623,7 +2623,7 @@
       "menu_oid": 9543881,
       "date": "2026-10-23",
       "meal": "Dinner",
-      "item_count": 50,
+      "item_count": 41,
       "categories": [
         {
           "name": "Pizza",
@@ -2938,96 +2938,6 @@
           ]
         },
         {
-          "name": "Mediterranean Base",
-          "items": [
-            {
-              "name": "Grilled Naan",
-              "serving_size": "1/2 naan",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Main",
-          "items": [
-            {
-              "name": "Chicken Shawarma",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Side",
-          "items": [
-            {
-              "name": "Falafel",
-              "serving_size": "3 falafels",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Toppings",
-          "items": [
-            {
-              "name": "Baby Arugula",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Herb Chopped Basil Mix",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Marinated Mushrooms",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Sesame",
-                "Soy",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Roasted Red Pepper",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Whipped Feta",
-              "serving_size": "2 oz",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
           "name": "Pasta Base",
           "items": [
             {
@@ -3141,7 +3051,7 @@
       "menu_oid": 9433402,
       "date": "2026-10-24",
       "meal": "Breakfast",
-      "item_count": 27,
+      "item_count": 26,
       "categories": [
         {
           "name": "Bakery",
@@ -3369,15 +3279,8 @@
           "name": "Southern Breakfast",
           "items": [
             {
-              "name": "BEYOND Meat Sausage Patty",
-              "serving_size": "1 patty",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Breakfast Gravy",
-              "serving_size": "1 oz. portion",
+              "name": "Biscuit",
+              "serving_size": "1 biscuit",
               "tags": [
                 "Dairy",
                 "Gluten",
@@ -3385,11 +3288,10 @@
               ]
             },
             {
-              "name": "Crispy Cube Breakfast Potatoes",
-              "serving_size": "4 oz. portion",
+              "name": "Chicken Sausage Links",
+              "serving_size": "1 link",
               "tags": [
-                "Gluten",
-                "Vegan"
+                "Halal"
               ]
             },
             {
