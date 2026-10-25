@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T23:23:34.349410+00:00",
+  "generated_at": "2026-10-25T04:56:44.816840+00:00",
   "campus_date": "2026-10-24",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -55,7 +55,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -104,7 +104,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -526,8 +526,8 @@
       "hours": {
         "Sunday": [
           [
-            "14:00",
-            "22:00"
+            "08:00",
+            "23:59"
           ]
         ],
         "Monday": [
@@ -558,20 +558,21 @@
           [
             "07:00",
             "22:00"
-          ],
+          ]
+        ],
+        "Saturday": [
           [
             "08:00",
             "22:00"
           ]
-        ],
-        "Saturday": []
+        ]
       },
       "menu_count": 2
     },
     {
       "id": 14,
       "name": "Highland Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -621,7 +622,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -724,7 +725,7 @@
         "Sunday": [
           [
             "08:00",
-            "20:00"
+            "23:59"
           ]
         ],
         "Monday": [
@@ -760,7 +761,7 @@
         "Saturday": [
           [
             "08:00",
-            "09:59"
+            "22:00"
           ]
         ]
       },
@@ -5608,13 +5609,12 @@
           "name": "Bodega Hot Line Main",
           "items": [
             {
-              "name": "Hoisin Marinated Tofu",
-              "serving_size": "3 oz. portion",
+              "name": "Teriyaki Chicken Stir Fry",
+              "serving_size": "4 oz. portion",
               "tags": [
                 "Alcohol",
-                "Sesame",
                 "Soy",
-                "Vegan"
+                "Halal"
               ]
             }
           ]
