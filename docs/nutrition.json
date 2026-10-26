@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T05:00:22.497610+00:00",
- "item_count": 1365,
+ "generated_at": "2026-10-26T13:19:30.612069+00:00",
+ "item_count": 1371,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -132,7 +132,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "3 cheese grilled cheese|1 sandwich": {
@@ -261,7 +261,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "al pastor chicken|4 oz. portion": {
@@ -905,7 +905,35 @@
     "added_sugars",
     "potassium"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
+   "_v": 2
+  },
+  "arepa|1 arepa": {
+   "name": "Arepa",
+   "serving": "1 arepa (115g)",
+   "grams": 115.0,
+   "servings_per_container": 1.0,
+   "calories": 210.0,
+   "fat": 2.0,
+   "sat_fat": 0.0,
+   "trans_fat": null,
+   "cholesterol": 0.0,
+   "sodium": 190.0,
+   "carbs": 44.0,
+   "fiber": 2.0,
+   "sugars": null,
+   "added_sugars": null,
+   "protein": 4.0,
+   "vitamin_d": null,
+   "calcium": 2.0,
+   "iron": 17.78,
+   "potassium": 75.0,
+   "vitamin_c": null,
+   "ingredients": "Water, Corn Meal White (WHITE CORN MEAL ENRICHED WITH IRON (FERROUS FUMARATE), NIACIN, THIAMINE, RIBOFLAVIN, FOLIC ACID.), Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.)",
+   "incomplete": [
+    "potassium"
+   ],
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "arnold palmer sweet tea|8 oz. portion": {
@@ -1990,7 +2018,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "banana muffin|1 muffin": {
@@ -2161,7 +2189,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "banana slices|1 oz. portion": {
@@ -2863,7 +2891,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "bean sprout|1 oz. portion": {
@@ -3083,7 +3111,7 @@
     "sat_fat",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "beef birria|4 oz. portion": {
@@ -3415,7 +3443,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-07",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "beef meatballs|2 meatballs": {
@@ -3852,7 +3880,7 @@
     "protein",
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "beyond beef taco meat|4 oz. portion": {
@@ -4169,7 +4197,7 @@
     "iron",
     "potassium"
    ],
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "biscuit gravy|1 oz portion": {
@@ -4886,7 +4914,7 @@
    "iron": 1.27,
    "potassium": 350.0,
    "vitamin_c": 44.0,
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "blueberry bagel|1 bagel": {
@@ -5245,7 +5273,7 @@
     "potassium",
     "sugars"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "bostock|1 piece": {
@@ -5305,7 +5333,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "braised cauliflower curry|3 oz. portion": {
@@ -5526,7 +5554,7 @@
     "sugars",
     "vitamin_d"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "breakfast gravy|1 oz. portion": {
@@ -5733,7 +5761,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "broccoli cheddar soup|5 oz. portion": {
@@ -6189,7 +6217,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "brussels & butternut squash roasted|3 oz. portion": {
@@ -6320,7 +6348,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "buffalo grilled chicken|1 piece": {
@@ -6607,7 +6635,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "butter|1 packet": {
@@ -6789,6 +6817,37 @@
    "_seen": "2026-10-16",
    "_v": 2
   },
+  "cajun cream sauce|1 oz. portion": {
+   "name": "Cajun Cream Sauce",
+   "serving": "1 oz. portion (29g)",
+   "grams": 29.0,
+   "servings_per_container": 1.0,
+   "calories": 45.0,
+   "fat": 4.0,
+   "sat_fat": 2.5,
+   "trans_fat": null,
+   "cholesterol": 15.0,
+   "sodium": 180.0,
+   "carbs": 2.0,
+   "fiber": 0.0,
+   "sugars": 0.0,
+   "added_sugars": null,
+   "protein": null,
+   "vitamin_d": null,
+   "calcium": 1.0,
+   "iron": 0.04,
+   "potassium": 35.0,
+   "vitamin_c": 0.3,
+   "ingredients": "Water, Heavy Cream 40% (HEAVY CREAM (MILK), CONTAINS LESS THAN 0.5% OF: CARRAGEENAN, MONO AND DIGLYCERIDES, POLYSORBATE 80.), Small Button Mushroom, Yellow Onion, Unsalted Butter (PASTEURIZED CREAM (MILK), NATURAL FLAVORINGS. CREAM, NATURAL FLAVORING.), Cajun Seasoning (DEHYDRATED GARLIC, SPICES, SALT, PAPRIKA (COLOR), DEHYDRATED ONION, RED PEPPER. GARLIC, SPICES (INCLUDING PAPRIKA, OREGANO, RED PEPPER), SALT, AND ONION.), Corn Starch (CORN STARCH.), GF Vegetable Base (SAUTEED VEGETABLE PUREE MIX (CARROTS, ONIONS, CELERY), SALT, SUGAR, MALTODEXTRIN, VEGETABLE OIL (CORN AND/OR CANOLA OIL), 2% OR LESS OF YEAST EXTRACT, WATER, POTATO STARCH, XANTHAN GUM, NATURAL FLAVORS, CARROT JUICE CONCENTRATE. RECONSTITUTED VEGETABLE JUICE BLEND WATER AND CONCENTRATED JUICES OF CARROT, CELERY, TOMATO, MALTODEXTRIN, SALT, SUGAR, ONION JUICE CONCENTRATE, YEAST EXTRACT, CABBAGE JUICE, GARLIC POWDER, MUSHROOM EXTRACT, SPICE, NATURAL FLAVOR.), Granulated Garlic (GRANULATED GARLIC.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Dairy",
+   "incomplete": [
+    "potassium",
+    "sat_fat",
+    "vitamin_c"
+   ],
+   "_seen": "2026-10-26",
+   "_v": 2
+  },
   "cajun garlic yukon potatoes|4 oz. portion": {
    "name": "Cajun Garlic Yukon Potatoes",
    "serving": "4 oz. portion (151g)",
@@ -6912,7 +6971,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "california herbed chicken thigh|4 oz. portion": {
@@ -7864,7 +7923,7 @@
    "vitamin_c": null,
    "ingredients": "Pasta Cavatappi Dry (SEMOLINA (WHEAT), DURUM WHEAT FLOUR, VITAMIN B3 (NIACIN), IRON (FERROUS SULFATE), VITAMIN B1 (THIAMINE MONONITRATE), VITAMIN B2 (RIBOFLAVIN), FOLIC ACID.), Water",
    "contains": "Gluten",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "celery stick|1 celery stick": {
@@ -7951,7 +8010,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "charred broccoli|3 oz. portion": {
@@ -8211,7 +8270,7 @@
    "vitamin_c": null,
    "ingredients": "12\" Flour Tortilla (ENRICHED UNBLEACHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN AND FOLIC ACID), WATER, VEGETABLE SHORTENING (CONTAINS ONE OR MORE OF THE FOLLOWING: PALM OIL AND/OR OLIVE OIL), CONTAINS 2% OR LESS OF THE FOLLOWING: SALT, ALUMINUM-FREE LEAVENING (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), WHEAT PROTEIN, PRESERVATIVES (CALCIUM PROPIONATE, SORBIC ACID), DOUGH CONDITIONER (FUMARIC ACID, XANTHAN GUM, MONO- AND DIGLYCERIDES, SODIUM METABISULPHITE). ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, PALM OIL, CONTAINS 2% OR LESS OF: TORTILLA MIX (SALT, VITAL WHEAT GLUTEN, LEAVENING [SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, SODIUM ALUMINUM PHOSPHATE], PRESERVATIVE [CALCIUM PROPIONATE], DEXTROSE, DOUGH CONDITIONERS [MONOGLYCERIDES, MONO- AND DIGLYCERIDES, ENZYMES AND SODIUM METABISULFITE], FUMARIC ACID, GUAR GUM AND SORBIC ACID).), Shredded Cheddar Jack Cheese (CHEDDAR CHEESE (PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, COLOR ADDED), MONTEREY JACK CHEESE (PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES), POTATO STARCH AND POWDERED CELLULOSE ADDED TO PREVENT CAKING, NATAMYCIN (A NATURAL MOLD INHIBITOR).)",
    "contains": "Dairy, Gluten",
-   "_seen": "2026-10-16",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "cheese ravioli w/ mushrooms & peas|6 oz. portion": {
@@ -8863,7 +8922,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chicken enchilada casserole|5 oz. portion": {
@@ -9029,7 +9088,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chicken fried tofu|3 oz. portion": {
@@ -9584,7 +9643,7 @@
    "potassium": 90.0,
    "vitamin_c": null,
    "ingredients": "Sausage Chicken Link (HALAL CHICKEN THIGH MEAT WITH SKIN, CHICKEN BREAST MEAT WITH RIB MEAT, WATER, CONTAINS 2% OR LESS OF SALT, SPICES, DEXTROSE, SUGAR, YEAST EXTRACT, NATURAL FLAVORS, LACTIC ACID. IN COLLAGEN CASING.)",
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chicken sausage link|1 oz. portion": {
@@ -9609,7 +9668,7 @@
    "potassium": 70.0,
    "vitamin_c": null,
    "ingredients": "Sausage Chicken Link (HALAL CHICKEN THIGH MEAT WITH SKIN, CHICKEN BREAST MEAT WITH RIB MEAT, WATER, CONTAINS 2% OR LESS OF SALT, SPICES, DEXTROSE, SUGAR, YEAST EXTRACT, NATURAL FLAVORS, LACTIC ACID. IN COLLAGEN CASING.)",
-   "_seen": "2026-10-18",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chicken shawarma|3 oz. portion": {
@@ -10209,7 +10268,7 @@
    "potassium": 135.0,
    "vitamin_c": null,
    "ingredients": "CHILI, SALT, GARLIC, ACETIC ACID, POTASSIUM SORBATE & SODIUM BISULFITE AS PRESERVATIVES, XANTHAN GUM.",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chili sauce|1 tbsp.": {
@@ -10702,7 +10761,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "chocolate chunk brownie|1 brownie": {
@@ -11864,7 +11923,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-10-18",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "coconut mango rice|4 oz. portion": {
@@ -11992,7 +12051,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "commodore lox bagel|bagel": {
@@ -12741,7 +12800,7 @@
    "vitamin_c": 0.0,
    "ingredients": "PASTEURIZED MILK AND CREAM, WHEY PROTEIN CONCENTRATE, WHEY, SALT, CAROB BEAN GUM, XANTHAN GUM, GUAR GUM, NATAMYCIN A NATURAL MOLD INHIBITOR, VITAMIN A PALMITATE, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, WHEY PROTEIN CONCENTRATE, WHEY, SALT, CAROB BEAN GUM, NATAMYCIN (A NATURAL MOLD INHIBITOR), VITAMIN A PALMITATE, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CITRIC ACID, CAROB BEAN GUM, XANTHAN GUM, NATAMYCIN (A NATURAL MOLD INHIBITOR).",
    "contains": "Dairy",
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "creamed corn w/ fresh thyme|3 oz. portion": {
@@ -12900,7 +12959,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "creamy lemon dill sauce|1 oz. portion": {
@@ -13911,7 +13970,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "diced ham|1 oz. portion": {
@@ -14441,7 +14500,7 @@
    "potassium": 55.0,
    "vitamin_c": 1.8,
    "ingredients": "ORGANIC DRAGON FRUIT.",
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "dried fruit blend|1 oz. portion": {
@@ -14906,7 +14965,7 @@
    "vitamin_c": null,
    "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, BROWN SUGAR (CANE SUGAR, CANE SYRUPS), LESS THAN 2% OF: SALT, MALT, MOLASSES, SPICES, POPPY SEED, SESAME SEEDS, STEEL CUT OATS, BAKER'S DRY ACTIVE YEAST, DEHYDRATED GARLIC, ONION, KOSHER SALT.",
    "contains": "Gluten, Sesame",
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "fagioli all’olio (tuscan white beans)|4 oz. portion": {
@@ -15144,6 +15203,38 @@
    "_seen": "2026-10-02",
    "_v": 2
   },
+  "fish tacos w/ slaw|2 tacos": {
+   "name": "Fish Tacos w/ Slaw",
+   "serving": "2 tacos (170g)",
+   "grams": 170.0,
+   "servings_per_container": 1.0,
+   "calories": 390.0,
+   "fat": 17.0,
+   "sat_fat": 3.0,
+   "trans_fat": 0.0,
+   "cholesterol": 20.0,
+   "sodium": 1020.0,
+   "carbs": 45.0,
+   "fiber": 2.0,
+   "sugars": 5.0,
+   "added_sugars": null,
+   "protein": 15.0,
+   "vitamin_d": null,
+   "calcium": 126.0,
+   "iron": 2.97,
+   "potassium": 220.0,
+   "vitamin_c": 7.4,
+   "ingredients": "Fish Cod Battered 2 OZ IQF FZ (ALASKA COD, VEGETABLE OIL (SOYBEAN AND/OR CANOLA), WATER, MODIFIED CORN STARCH, YELLOW CORN FLOUR, BLEACHED AND UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), WHEAT FLOUR, CONTAINS 2% OR LESS OF: SALT, CORN STARCH, RICE FLOUR, BEER (WATER, MALTED BARLEY, YEAST, HOPS), DEGERMINATED YELLOW CORN FLOUR, MALTODEXTRIN, LEAVENING (SODIUM ALUMINUM PHOSPHATE, BAKING SODA, CALCIUM LACTATE), DEXTRIN, SUGAR, TAPIOCA DEXTRIN, ONION POWDER, SPICES, BEER FLAVOR (MALT POWDER [MALTED BARLEY, WHEAT FLOUR, DEXTROSE], BEER SOLIDS [MALT, CORN, GRITS, RICE HOPS], DRIED YEAST, MALTODEXTRIN, NATURAL AND ARTIFICIAL FLAVORS, MODIFIED CORN STARCH), DEXTROSE, DISODIUM INOSINATE AND DISODIUM GUANYLATE, DRIED TORULA YEAST, NATURAL AND ARTIFICIAL FLAVORS, MALT EXTRACT, YEAST EXTRACT, SODIUM ALGINATE, NATURAL BEER FLAVOR, CELLULOSE GUM, GARLIC POWDER, METHYLCELLULOSE, L-CYSTEINE HYDROCHLORIDE, YELLOW 5, GUAR GUM. COD, WHEAT FLOUR, WATER, MODIFIED TAPIOCA STARCH, SALT, CORN STARCH, SUGAR, GARLIC POWDER, SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, ONION POWDER, YEAST, DEXTROSE, SUNFLOWER OIL, SPICE.), Flour Tortilla 6\", Cole Slaw Mix (GREEN CABBAGE, CARROT, RED CABBAGE.), Mayonnaise Substitute (SOYBEAN OIL, WATER, SUGAR, DISTILLED VINEGAR, SALT, CONTAINS 2 OR LESS OF EACH OF THE FOLLOWING: MODIFIED FOOD STARCH CORN, POTATO, LEMON JUICE CONCENTRATE, NATURAL FLAVOR, CALCIUM DISODIUM EDTA USED TO PROTECT QUALITY, PAPRIKA OLEORESIN. SOYBEAN OIL, WATER, ORGANIC DISTILLED VINEGAR, CONTAINS LESS THAN 2% OF SALT, FOOD STARCH-MODIFIED*, CANE SUGAR, SPICE, NATURAL FLAVOR, LEMON JUICE CONCENTRATE, CALCIUM DISODIUM EDTA ADDED TO PROTECT FLAVOR, OLEORESIN PAPRIKA* (COLOR).), Apple Cider Vinegar (PURE APPLE CIDER VINEGAR, WATER. MADE FROM THE JUICE OF APPLES, DILUTED WITH WATER TO A UNIFORM PICKLING AND TABLE STRENGTH OF 5% (50 GRAINS) ACIDITY.), Granulated Sugar (SUGAR.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Alcohol, Fish, Gluten, Soy",
+   "incomplete": [
+    "calcium",
+    "iron",
+    "potassium",
+    "vitamin_c"
+   ],
+   "_seen": "2026-10-26",
+   "_v": 2
+  },
   "flour tortilla 6\"|1 tortilla": {
    "name": "Flour Tortilla 6\"",
    "serving": "1 tortilla (14g)",
@@ -15369,7 +15460,7 @@
    "vitamin_c": null,
    "ingredients": "Tortilla Dough Balls FZ (ENRICHED UNBLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, SHORTENING (PALM OIL, MONO & DIGLYCERIDES, POLYSORBATE 60, CITRIC ACID), SALT, BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORN STARCH, AND MONOCALCIUM PHOSPHATE), NON-FAT DRY MILK, WHEY, SOY FLOUR, CALCIUM SULFATE, MONOCALCIUM PHOSPHATE, FUNGAL AMYLASE, MALTODEXTRIN AND POTASSIUM IODATE.)",
    "contains": "Dairy, Gluten, Soy",
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "fresh semolina pasta|6 oz. portion": {
@@ -15481,7 +15572,7 @@
     "protein",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "fried chicken tenders|2 tenders": {
@@ -15757,7 +15848,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-18",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "fried rice|6 oz. portion": {
@@ -16001,7 +16092,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "fruit tea punch|8 oz. portion": {
@@ -17125,7 +17216,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "green bean casserole|4 oz. portion": {
@@ -18117,7 +18208,7 @@
    "vitamin_c": null,
    "ingredients": "Tart Shell Unsweet 4\" Raw Frozen (LARD, WHEAT FLOUR (UNENRICHED, UNBLEACHED), WATER, SALT, DEXTROSE, BAKING SODA.), Liquid Egg (WHOLE EGG, CITRIC ACID, 0.15% WATER ADDED AS CARRIER FOR CITRIC ACID. CITRIC ACID ADDED TO PRESERVE COLOR.), Heavy Cream 40% (HEAVY CREAM (MILK), CONTAINS LESS THAN 0.5% OF: CARRAGEENAN, MONO AND DIGLYCERIDES, POLYSORBATE 80.), Boneless Ham (PORK CURED WITH: WATER, DEXTROSE, SALT, CONTAINS 2% OR LESS OF POTASSIUM LACTATE, SODIUM LACTATE, SODIUM PHOSPHATES, SODIUM DIACETATE, SODIUM ERYTHORBATE, SODIUM NITRITE.), Shredded Mozzarella Cheese (WHOLE MILK LOW MOISTURE MOZZARELLA CHEESE PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES, CELLULOSE POWDER ADDED TO PREVENT CAKING, NATAMYCIN A NATURAL MOLD INHIBITOR. LOW-MOISTURE MOZZARELLA CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT, ENZYMES), POTATO STARCH, CORN STARCH AND POWDERED CELLULOSE (TO PREVENT CAKING), NATAMYCIN (A NATURAL MOLD INHIBITOR).)",
    "contains": "Dairy, Egg, Gluten, Pork",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "hamburger bun|1 bun": {
@@ -18205,7 +18296,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "hand breaded fried chicken|pound": {
@@ -18576,7 +18667,7 @@
     "sat_fat",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "hawaiian style tuna poke|4 oz. portion": {
@@ -18960,7 +19051,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "hickory bbq kettle chip|1 bag": {
@@ -19404,7 +19495,7 @@
     "sat_fat",
     "sugars"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "honey glaze bbq pork spare ribs|6 oz. portion": {
@@ -20045,7 +20136,7 @@
     "sat_fat",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "housemade salsa verde|1 oz. portion": {
@@ -20339,7 +20430,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "italian crumbles|3 oz. portion": {
@@ -20365,7 +20456,7 @@
    "vitamin_c": 0.0,
    "ingredients": "Vegan Italian Crumbles (VITAL WHEAT GLUTEN, FILTERED WATER, SOY SAUCE, NUTRITIONAL YEAST, SAGE, GARLIC POWDER, COCONUT AMINOS, APPLE CIDER VINEGAR, MOLASSES, OREGANO, BASIL, LEMON JUICE, ONION POWDER, RED PEPPER FLAKES, SALT.)",
    "contains": "Coconut, Gluten, Soy",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "italian dressing|2 oz. portion": {
@@ -20483,7 +20574,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "italian roasted vegetables|3 oz. portion": {
@@ -20767,7 +20858,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "jamaican jerk chicken|4 oz. portion": {
@@ -20988,7 +21079,7 @@
    "potassium": 50.0,
    "vitamin_c": 0.0,
    "ingredients": "Jasmine Rice, Water",
-   "_seen": "2026-10-19",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "java rice|3 oz. portion": {
@@ -21251,7 +21342,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "kidney beans|1 lb.": {
@@ -21960,7 +22051,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "lemon honey ginger juice|2 oz. portion": {
@@ -22185,7 +22276,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "lemon rosemary chilled chicken|1 piece": {
@@ -22430,7 +22521,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "liquid shortening oil|pound": {
@@ -22827,7 +22918,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "MANGO.",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "mango habanero salsa|1 oz. portion": {
@@ -23213,7 +23304,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-08",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "mashed sweet potatoes|4 oz. portion": {
@@ -23419,7 +23510,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "mediterranean vegetables|3 oz. portion": {
@@ -23864,6 +23955,41 @@
    "_seen": "2026-10-09",
    "_v": 2
   },
+  "miso chicken noodle soup|5 oz. portion": {
+   "name": "Miso Chicken Noodle Soup",
+   "serving": "5 oz. portion (155g)",
+   "grams": 155.0,
+   "servings_per_container": 1.0,
+   "calories": 80.0,
+   "fat": 2.0,
+   "sat_fat": null,
+   "trans_fat": null,
+   "cholesterol": 5.0,
+   "sodium": 470.0,
+   "carbs": 12.0,
+   "fiber": 1.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 4.0,
+   "vitamin_d": null,
+   "calcium": 10.0,
+   "iron": 0.51,
+   "potassium": 40.0,
+   "vitamin_c": 7.3,
+   "ingredients": "Water, Orzo Pasta (SEMOLINA WHEAT, DURUM FLOUR, NIACIN, IRON FERROUS SULFATE, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID. DURUM WHEAT SEMOLINA, NIACIN, IRON (FERROUS SULFATE), THIAMIN MONONITRATE, RIBOFLAVIN, FOLIC ACID), Chicken Breast B/S Rdm (HALAL BONELESS, SKINLESS CHICKEN BREAST.), Yellow Onion, Carrot, Red Bell Pepper, Shiitake Cap Mushrooms, Gluten Free Chicken Base (CHICKEN MEAT, SALT, CHICKEN BROTH, CHICKEN FAT, SUGAR, CANOLA OIL, CORN STARCH, 2% OR LESS OF NATURAL FLAVORS, POTATO STARCH, TURMERIC (COLOR). CHICKEN BROTH, SALT, SUGAR, YEAST EXTRACT, CHICKEN FAT, CORN STARCH, CITRIC ACID, NATURAL FLAVOR.), Miso Paste White, Sherry Cooking Wine (SHERRY WINE, SALT, POTASSIUM METABISULFITE (PRESERVATIVE). WINE, WATER, NEUTRAL SPIRITS, SALT, HIGH FRUCTOSE CORN SYRUP, TARTARIC ACID, CARAMEL COLOR, CITRIC ACID, POTASSIUM SORBATE (PRESERVATIVE), POTASSIUM METABISULFITE.), Bok Choy, Minced Garlic, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Tamari Soy Sauce (WATER, SOYBEANS, SUGAR, SALT, VINEGAR, ALCOHOL, LACTIC ACID.), Sambal Chili Sauce (RED CHILI PEPPERS, SALT, SUGAR, ACETIC ACID, POTASSIUM SORBATE PRESERVATIVE, XANTHAM GUM, ASCORBIC ACID. SALTED RED CHILI PEPPERS (RED CHILI PEPPERS, SALT), WATER, SALT, SUGAR, ACETIC ACID, XANTHAN GUM, CITRIC ACID, POTASSIUM SORBATE (PRESERVATIVE).), Seasoned Rice Vinegar (RICE VINEGAR (WATER, RICE), SALT, SUGAR, DILUTED WITH WATER TO 4.1% ACIDITY RICE VINEGAR, INVERT SUGAR, SALT, BROWN SUGAR, DILUTED WITH WATER TO 4.3% ACIDITY.), Ginger Root, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Alcohol, Gluten, Soy",
+   "incomplete": [
+    "calcium",
+    "cholesterol",
+    "fiber",
+    "iron",
+    "potassium",
+    "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-10-26",
+   "_v": 2
+  },
   "mixed berry compote|2 oz. portion": {
    "name": "Mixed Berry Compote",
    "serving": "2 oz. portion (38g)",
@@ -24291,7 +24417,7 @@
    "vitamin_c": null,
    "ingredients": "ORGANIC WHOLE WHEAT (ORGANIC SPROUTED WHOLE WHEAT FLOUR, ORGANIC CRACKED WHOLE WHEAT), WATER, ORGANIC WHEAT FLOUR, ORGANIC CANE SUGAR, ORGANIC WHOLE GRAIN AND SEED MIX (ORGANIC WHOLE FLAX SEEDS, ORGANIC SUNFLOWER SEEDS, ORGANIC GROUND FLAX, ORGANIC SESAME SEEDS, ORGANIC PUMPKIN SEEDS, ORGANIC BLACK SESAME SEEDS, ORGANIC MILLET, ORGANIC ROLLED OATS, ORGANIC ROLLED SPELT, ORGANIC ROLLED BARLEY, ORGANIC ROLLED RYE, ORGANIC ROLLED WHOLE WHEAT, ORGANIC QUINOA, ORGANIC TRITICALE FLOUR, ORGANIC YELLOW CORN FLOUR, ORGANIC KHORASAN FLOUR, ORGANIC AMARANTH FLOUR, ORGANIC BUCKWHEAT FLOUR, ORGANIC SORGHUM FLOUR, POPPYSEED, ORGANIC BROWN RICE FLOUR, ORGANIC PURPLE CORN FLOUR), ORGANIC VITAL WHEAT GLUTEN, CULTURED WHEAT FLOUR, ORGANIC OAT FIBER, YEAST, WHEAT FIBER, SEA SALT, ORGANIC MOLASSES.",
    "contains": "Gluten, Sesame",
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "mushroom & onion just egg scrambler|4 oz. portion": {
@@ -24356,7 +24482,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "mushroom bulgogi|4 oz. portion": {
@@ -24693,7 +24819,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "SRIRACHA CHILI SAUCE (RED CHILI, DISTILLED VINEGAR, SUGAR, SALT, GARLIC, ACETIC ACID, LACTIC ACID, RED CHILI POWDER, XANTHAN GUM), WATER, VEGETABLE OIL (SOYBEAN AND/OR CANOLOA), SUGAR, DISTILLED VINEGAR, CHILI POWDER (CHILI PEPPER, SPICES, SALT, GARLIC), BROWN SUGAR, CONTAINS LESS THAN 2% OF AGED CAYENNE RED PEPPER, SMOKED PAPRIKA, SALT, OLEORESIN PAPRIKA (COLOR), SPICE, POTASSIUM SORBATE AND SODIUM BENZOATE (PRESSEVATIVES), PHOSPHORIC ACID, PROPYLENE GLYCOL ALGINATE, XANTHAN GUM, GARLIC, CALCIUM DISODIUM EDTA (TO PROTECT FLAVOR), SULFITING AGENT. WATER, CANOLA OIL, BROWN SUGAR, CAYENNE PEPPER, SALT, MODIFIED CORN STARCH, DRIED GARLIC, CHILI POWDER, SPICE EXTRACT, LACTIC ACID, POTASSIUM SORBATE (PRESERVATIVE).",
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "nasi lemak coconut rice|4 oz. portion": {
@@ -25757,7 +25883,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "pea protein powder|2 scoops": {
@@ -25895,7 +26021,7 @@
    "vitamin_c": null,
    "ingredients": "Penne Rigate Pasta (SEMOLINA (WHEAT), DURUM WHEAT FLOUR, VITAMIN B3 (NIACIN), IRON (FERROUS SULFATE), VITAMIN B1 (THIAMINE MONONITRATE), VITAMIN B2 (RIBOFLAVIN), FOLIC ACID. DURUM WHEAT SEMOLINA, NIACIN, FERROUS LACTATE (IRON), THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID.), Water",
    "contains": "Gluten",
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "penne pasta|3 oz. portion": {
@@ -25949,7 +26075,7 @@
    "potassium": null,
    "vitamin_c": 2.7,
    "ingredients": "Pepperoncini (PEPPERONCINI PEPPERS, WATER, SALT, VINEGAR, CITRIC ACID, SODIUM BENZOATE (AS A PRESERVATIVE), SODIUM METABISULFITE BISULFITE (TO ENHANCE COLOR) AND FDC YELLOW #5.)",
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "pepperoni pizza bagel|bagel": {
@@ -26097,7 +26223,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-05",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "peruvian beef|3 oz. portion": {
@@ -26157,7 +26283,7 @@
     "fiber",
     "iron"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "peruvian green rice|3 oz. portion": {
@@ -26922,7 +27048,7 @@
    "vitamin_c": null,
    "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, BROWN SUGAR (CANE SUGAR, CANE SYRUPS), SALT, SPICES, POPPY SEED, MALT, MOLASSES, BAKER'S DRY ACTIVE YEAST.",
    "contains": "Gluten",
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "pork & vegetable eggroll|1 eggroll": {
@@ -27074,7 +27200,7 @@
     "sat_fat",
     "sugars"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "pork belly char siu|4 oz. portion": {
@@ -27107,6 +27233,36 @@
     "sugars"
    ],
    "_seen": "2026-09-10",
+   "_v": 2
+  },
+  "pork bulgogi|5 oz. portion": {
+   "name": "Pork Bulgogi",
+   "serving": "5 oz. portion (133g)",
+   "grams": 133.0,
+   "servings_per_container": 1.0,
+   "calories": 210.0,
+   "fat": 8.0,
+   "sat_fat": 3.5,
+   "trans_fat": null,
+   "cholesterol": 80.0,
+   "sodium": 280.0,
+   "carbs": 3.0,
+   "fiber": null,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 26.0,
+   "vitamin_d": null,
+   "calcium": null,
+   "iron": null,
+   "potassium": null,
+   "vitamin_c": null,
+   "ingredients": "Boneless Pork Loin (PORK LOIN.), Tamari Soy Sauce (WATER, SOYBEANS, SUGAR, SALT, VINEGAR, ALCOHOL, LACTIC ACID.), Sherry Cooking Wine (SHERRY WINE, SALT, POTASSIUM METABISULFITE (PRESERVATIVE). WINE, WATER, NEUTRAL SPIRITS, SALT, HIGH FRUCTOSE CORN SYRUP, TARTARIC ACID, CARAMEL COLOR, CITRIC ACID, POTASSIUM SORBATE (PRESERVATIVE), POTASSIUM METABISULFITE.), Granulated Sugar (SUGAR.), Sesame Oil (SESAME SEED OIL), Minced Garlic, Crushed Red Pepper (RED PEPPER.)",
+   "contains": "Alcohol, Pork, Sesame, Soy",
+   "incomplete": [
+    "cholesterol",
+    "sat_fat"
+   ],
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "pork carnitas|4 oz. portion": {
@@ -27821,7 +27977,7 @@
    "vitamin_c": null,
    "ingredients": "Chocolate Chunk Cookie Dough (ENRICHED UNBLEACHED AND BLEACHED WHEAT FLOUR (UNBLEACHED AND BLEACHED FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE [VITAMIN B1], RIBOFLAVIN [VITAMIN B2], FOLIC ACID), SEMISWEET CHOCOLATE (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, SOY LECITHIN, SALT, ARTIFICIAL FLAVOR), BROWN SUGAR, SHORTENING (PARTIALLY HYDROGENATED SOYBEAN AND COTTONSEED OILS), SUGAR, BUTTER (CREAM, SALT), EGGS, PALM OIL, WATER. CONTAINS 2% OR LESS OF SOYBEAN OIL, INVERT SUGAR, WHEY AND SODIUM CASEINATE (A MILK PRODUCT), LEAVENINGS (SODIUM BICARBONATE AND SODIUM ALUMINUM PHOSPHATE), SALT, NONFAT MILK, EMULSIFIER (SOY LECITHIN, MONO AND DIGLYCERIDES), NATURAL AND ARTIFICIAL FLAVOR.)",
    "contains": "Dairy, Egg, Gluten, Soy",
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "ras el hanout spice|1 tsp.": {
@@ -28030,7 +28186,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "red grapes|1 oz. portion": {
@@ -28894,7 +29050,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "roasted broccolini|3 oz. portion": {
@@ -29297,7 +29453,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "roasted chickpeas|1 oz. portion": {
@@ -29447,7 +29603,7 @@
    "incomplete": [
     "vitamin_c"
    ],
-   "_seen": "2026-10-13",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "roasted garlic potatoes|5 oz. portion": {
@@ -30031,7 +30187,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "roasted sweet potato chunks maple season|2 oz. portion": {
@@ -30665,7 +30821,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "Buffalo Wing Sauce (DISTILLED VINEGAR, AGED CAYENNE RED PEPPERS, SALT, WATER, CANOLA OIL, PAPRIKA, XANTHAN GUM (THICKENER), GARLIC POWDER & NATURAL FLAVOR.), Minced Garlic, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Dried Oregano (OREGANO.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
-   "_seen": "2026-10-18",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "sauce soy sweet|1 qt.": {
@@ -31199,7 +31355,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-15",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "scallion cream cheese|2 oz portion": {
@@ -31933,6 +32089,36 @@
     "vitamin_c"
    ],
    "_seen": "2026-10-16",
+   "_v": 2
+  },
+  "shrimp scampi|6 oz. portion": {
+   "name": "Shrimp Scampi",
+   "serving": "6 oz. portion (170g)",
+   "grams": 170.0,
+   "servings_per_container": 1.0,
+   "calories": 210.0,
+   "fat": 13.0,
+   "sat_fat": 8.0,
+   "trans_fat": null,
+   "cholesterol": 135.0,
+   "sodium": 530.0,
+   "carbs": 5.0,
+   "fiber": 0.5,
+   "sugars": 0.0,
+   "added_sugars": null,
+   "protein": 9.0,
+   "vitamin_d": null,
+   "calcium": 54.0,
+   "iron": 0.11,
+   "potassium": 85.0,
+   "vitamin_c": 1.5,
+   "ingredients": "Shrimp 41-50 (SHRIMP, WATER, SODIUM CARBONATE, SODIUM CITRATE (TO RETAIN MOISTURE), SALT), Water, Unsalted Butter (PASTEURIZED CREAM (MILK), NATURAL FLAVORINGS. CREAM, NATURAL FLAVORING.), White Wine Vinegar (WHITE WINE VINEGAR, POTASIUM METABISULFUTE (ADDED TO PROTECT COLOR)), Gluten Free Flour (SWEET WHITE RICE FLOUR, WHOLE GRAIN BROWN RICE FLOUR, POTATO STARCH, WHOLE GRAIN SWEET WHITE SORGHUM FLOUR, TAPIOCA FLOUR, XANTHAN GUM.), Minced Garlic, Lemon Juice, Peeled Shallot, GF Vegetable Base (SAUTEED VEGETABLE PUREE MIX (CARROTS, ONIONS, CELERY), SALT, SUGAR, MALTODEXTRIN, VEGETABLE OIL (CORN AND/OR CANOLA OIL), 2% OR LESS OF YEAST EXTRACT, WATER, POTATO STARCH, XANTHAN GUM, NATURAL FLAVORS, CARROT JUICE CONCENTRATE. RECONSTITUTED VEGETABLE JUICE BLEND WATER AND CONCENTRATED JUICES OF CARROT, CELERY, TOMATO, MALTODEXTRIN, SALT, SUGAR, ONION JUICE CONCENTRATE, YEAST EXTRACT, CABBAGE JUICE, GARLIC POWDER, MUSHROOM EXTRACT, SPICE, NATURAL FLAVOR.), Fresh Parsley, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "contains": "Dairy, Shellfish",
+   "incomplete": [
+    "potassium",
+    "vitamin_c"
+   ],
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "simple lemonade|8 oz. portions": {
@@ -32972,7 +33158,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED CREAM, ENZYME",
    "contains": "Dairy",
-   "_seen": "2026-10-19",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "sourdough bagel|1 bagel(s)": {
@@ -32998,7 +33184,7 @@
    "vitamin_c": null,
    "ingredients": "UNBLEACHED ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID, MALTED BARLEY, FLOUR), WATER, SOURDOUGH STARTER CULTURE, BROWN SUGAR, SALT, MALT, MOLASSES, BAKER'S DRY ACTIVE YEAST.",
    "contains": "Gluten",
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "sourdough bread|1 slice": {
@@ -33087,7 +33273,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "southern green beans|3 oz. portion": {
@@ -33618,7 +33804,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-18",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "spicy pork & vegetable|6 oz. portion": {
@@ -34036,7 +34222,7 @@
    "vitamin_c": null,
    "ingredients": "Vegetable Spring Roll (CABBAGE, WATER, WHEAT FLOUR, CELERY, CANOLA OIL, CARROT, ONION, PRECOOKED LONG GRAIN RICE, CONTAINS LESS THAN 2% OF: SHIITAKE MUSHROOM POWDER, DEHYDRATED SOY SAUCE (SOY SAUCE [WHEAT, SOYBEANS, SALT], MALTODEXTRIN, SALT), GARLIC, SPICE, SOY LECITHIN, FLAVOR ENHANCER (YEAST EXTRACT), VERMICELLI (GREEN MUNG BEANS, WATER), MODIFIED FOOD STARCH, CORN STARCH, MONO AND DIGLYCERIDES, SUGAR, FLAVORING (DISODIUM INOSINATE, DISODIUM GUANYLATE), XANTHAN GUM, SALT. DOUGH (BLEACHED WHEAT FLOUR, WATER, SALT, DISODIUM PHOSPHATE, SODIUM BICARBONATE, SOYBEAN OIL), ONIONS, CABBAGE, CARROTS, RED PEPPERS, CELERY, ZUCCHINI, MUSHROOMS (MUSHROOMS, WATER, SALT, CITRIC ACID), GREEN PEPPERS, BROCCOLI, SCALLIONS, BROWN SUGAR, GARLIC, MODIFIED FOOD STARCH, SOYBEAN OIL, CILANTRO, GINGER, SOY SAUCE (WATER, SOYBEANS, WHEAT, SALT, SODIUM BENZOATE LESS THAN 1/10 OF 1% [PRESERVATIVE]), FRYING OIL (SOYBEAN OIL, FULLY HYDROGENATED SOYBEAN OIL, TBHQ, DIMETHYLPOLYSILOXANE), SESAME SEED OIL, SALT, GARLIC POWDER, ONION POWDER, SPICES.), Fryer Oil (CANOLA OIL WITH TBHQ, CITRIC ACID, AND DIMETHYLPOLYSILOXANE.)",
    "contains": "Gluten, Sesame, Soy",
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "spring salad mix|1 oz. portion": {
@@ -34470,7 +34656,7 @@
    "incomplete": [
     "potassium"
    ],
-   "_seen": "2026-10-02",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "steamed edamame|1 oz. portion": {
@@ -34752,7 +34938,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-03",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "stir fried tempeh w/ broccoli|6 oz. portion": {
@@ -34973,7 +35159,7 @@
    "vitamin_c": null,
    "ingredients": "Cream Cheese (PASTEURIZED MILK AND CREAM, SALT, CAROB BEAN GUM, CHEESE CULTURE. PASTEURIZED MILK AND CREAM, CHEESE CULTURE, SALT, GUAR GUM, CAROB BEAN GUM, XANTHAN GUM.), Strawberry Preserves (STRAWBERRIES, SUGAR, CORN SYRUP, PECTIN, CITRIC ACID. STRAWBERRIES, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, SUGAR, FRUIT PECTIN, CITRIC ACID.)",
    "contains": "Dairy",
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "strawberry cream cheese|1 packet": {
@@ -35080,7 +35266,7 @@
    "incomplete": [
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "strawberry limeade|8 oz. portions": {
@@ -35417,7 +35603,7 @@
    "potassium": null,
    "vitamin_c": 0.0,
    "ingredients": "OLIVES, WATER, MINCED PIMIENTO (PIMIENTO, SODIUM ALGINATE, GUAR GUM, CALCIUM CHLORIDE)",
-   "_seen": "2026-10-17",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "sugar cookie w/ sprinkles|1 cookie": {
@@ -35662,7 +35848,7 @@
    "incomplete": [
     "sugars"
    ],
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "swedish meatballs|7 oz. portion": {
@@ -36159,7 +36345,7 @@
    "vitamin_c": null,
    "ingredients": "HIGH FRUCTOSE CORN SYRUP, SOY SAUCE (WATER, WHEAT, SOYBEANS, SALT, SODIUM BENZOATE [PRESERVATIVE]), SUGAR, WATER, DISTILLED VINEGAR, MODIFIED CORN STARCH, CONTAINS LESS THAN 2% OF SESAME SEED, VEGETABLE OIL (SOYBEAN AND/OR CANOLA), PINEAPPLE JUICE CONCENTRATE, GINGER, RICE VINEGAR, SALT, SPICE, SODIUM BISULFATE, GARLIC*, XANTHAN GUM, CARAMEL COLOR, POTASSIUM SORBATE AND SODIUM BENZOATE (PRESERVATIVES), GREEN ONION*, CITRIC ACID.",
    "contains": "Gluten, Sesame, Soy",
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "sweet thai chili sauce|1 oz. portion": {
@@ -36300,7 +36486,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "taco seasoned chicken|3 oz. portion": {
@@ -37450,7 +37636,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-10-22",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "tres leches|1 slice": {
@@ -38340,7 +38526,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "vegetable alfredo lasagna|8 oz. portion": {
@@ -38542,7 +38728,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-21",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "vegetable fried rice|5 oz. portion": {
@@ -38851,7 +39037,7 @@
    "vitamin_c": null,
    "ingredients": "Vegetable Spring Roll (CABBAGE, WATER, WHEAT FLOUR, CELERY, CANOLA OIL, CARROT, ONION, PRECOOKED LONG GRAIN RICE, CONTAINS LESS THAN 2% OF: SHIITAKE MUSHROOM POWDER, DEHYDRATED SOY SAUCE (SOY SAUCE [WHEAT, SOYBEANS, SALT], MALTODEXTRIN, SALT), GARLIC, SPICE, SOY LECITHIN, FLAVOR ENHANCER (YEAST EXTRACT), VERMICELLI (GREEN MUNG BEANS, WATER), MODIFIED FOOD STARCH, CORN STARCH, MONO AND DIGLYCERIDES, SUGAR, FLAVORING (DISODIUM INOSINATE, DISODIUM GUANYLATE), XANTHAN GUM, SALT. DOUGH (BLEACHED WHEAT FLOUR, WATER, SALT, DISODIUM PHOSPHATE, SODIUM BICARBONATE, SOYBEAN OIL), ONIONS, CABBAGE, CARROTS, RED PEPPERS, CELERY, ZUCCHINI, MUSHROOMS (MUSHROOMS, WATER, SALT, CITRIC ACID), GREEN PEPPERS, BROCCOLI, SCALLIONS, BROWN SUGAR, GARLIC, MODIFIED FOOD STARCH, SOYBEAN OIL, CILANTRO, GINGER, SOY SAUCE (WATER, SOYBEANS, WHEAT, SALT, SODIUM BENZOATE LESS THAN 1/10 OF 1% [PRESERVATIVE]), FRYING OIL (SOYBEAN OIL, FULLY HYDROGENATED SOYBEAN OIL, TBHQ, DIMETHYLPOLYSILOXANE), SESAME SEED OIL, SALT, GARLIC POWDER, ONION POWDER, SPICES.)",
    "contains": "Gluten, Sesame, Soy",
-   "_seen": "2026-10-16",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "vegetable stir fry|3 oz. portion": {
@@ -39164,7 +39350,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-09-29",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "wasabi aioli|2 tbsp.": {
@@ -39407,7 +39593,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-10-23",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "whipped topping|2 tbsp.": {
@@ -39433,7 +39619,7 @@
    "vitamin_c": null,
    "ingredients": "WATER, MALTITOL SYRUP, HYDROGENATED VEGETABLE OIL (PALM, PALM KERNEL, COCONUT AND/OR COTTONSEED), CONTAINS LESS THAN 2% OF THE FOLLOWING: *SODIUM CASEINATE (A MILK DERIVATIVE), ARTIFICIAL FLAVOR, **MALTODEXTRIN, POLYSORBATE 60, SORBITAN MONOSTEARATE, GUAR GUM, XANTHAN GUM, COLORED WITH TURMERIC AND ANNATTO EXTRACTS.",
    "contains": "Coconut, Dairy",
-   "_seen": "2026-10-20",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "white beans w/ spinach & dijon|4 oz. portion": {
@@ -39775,7 +39961,7 @@
    "incomplete": [
     "added_sugars"
    ],
-   "_seen": "2026-10-24",
+   "_seen": "2026-10-26",
    "_v": 2
   },
   "yellow cake w/ fudge icing|1 slice": {
