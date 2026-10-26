@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-26T13:19:30.612069+00:00",
+  "generated_at": "2026-10-26T20:37:16.872979+00:00",
   "campus_date": "2026-10-26",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 56,
-  "item_count": 1474,
+  "item_count": 1475,
   "nutrition": {
     "cached_recipes": 1371,
     "with_macros": 1366,
-    "recipes_covered": 551,
-    "recipes_total": 582
+    "recipes_covered": 552,
+    "recipes_total": 583
   },
   "tags": [
     "Vegetarian",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -451,7 +451,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -636,7 +636,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -814,7 +814,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co.",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -899,7 +899,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1495,7 +1495,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-10-26T04:58:50.111078+00:00",
+  "places_checked": "2026-10-26T20:36:02.391658+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -2802,11 +2802,10 @@
           "name": "Soup",
           "items": [
             {
-              "name": "Tomato Basil Bisque",
+              "name": "Butternut Squash Bisque",
               "serving_size": "5 oz. portion",
               "tags": [
-                "Dairy",
-                "Gluten"
+                "Vegan"
               ]
             }
           ]
@@ -13451,7 +13450,7 @@
       "menu_oid": 9521581,
       "date": "2026-10-27",
       "meal": "Lunch",
-      "item_count": 44,
+      "item_count": 45,
       "categories": [
         {
           "name": "Deli Bread",
@@ -13635,6 +13634,19 @@
               "serving_size": "1 oz. portion",
               "tags": [
                 "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Meats & Tofu",
+          "items": [
+            {
+              "name": "Chicken Salad",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Soy",
+                "Kosher"
               ]
             }
           ]
