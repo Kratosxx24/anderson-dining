@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-27T15:26:53.925164+00:00",
+  "generated_at": "2026-10-27T22:25:28.401916+00:00",
   "campus_date": "2026-10-27",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 56,
-  "item_count": 1461,
+  "item_count": 1459,
   "nutrition": {
-    "cached_recipes": 1379,
-    "with_macros": 1374,
-    "recipes_covered": 542,
-    "recipes_total": 572
+    "cached_recipes": 1380,
+    "with_macros": 1375,
+    "recipes_covered": 543,
+    "recipes_total": 573
   },
   "tags": [
     "Vegetarian",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -365,7 +365,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -416,7 +416,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -451,7 +451,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -481,7 +481,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -636,7 +636,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -784,7 +784,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -814,7 +814,7 @@
     {
       "id": 21,
       "name": "West End Bagel Co.",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -854,7 +854,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -899,7 +899,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -999,7 +999,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1495,7 +1495,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-10-27T09:09:35.723456+00:00",
+  "places_checked": "2026-10-27T22:24:14.224817+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -2777,12 +2777,11 @@
           "name": "Soup",
           "items": [
             {
-              "name": "Miso Chicken Noodle Soup",
+              "name": "Broccoli Cheddar Soup",
               "serving_size": "5 oz. portion",
               "tags": [
-                "Alcohol",
-                "Gluten",
-                "Soy"
+                "Dairy",
+                "Vegetarian"
               ]
             }
           ]
@@ -4375,11 +4374,12 @@
           "name": "Soup",
           "items": [
             {
-              "name": "Broccoli Cheddar Soup",
+              "name": "Miso Chicken Noodle Soup",
               "serving_size": "5 oz. portion",
               "tags": [
-                "Dairy",
-                "Vegetarian"
+                "Alcohol",
+                "Gluten",
+                "Soy"
               ]
             }
           ]
@@ -5117,7 +5117,7 @@
       "menu_oid": 9502323,
       "date": "2026-10-27",
       "meal": "Lunch",
-      "item_count": 60,
+      "item_count": 58,
       "categories": [
         {
           "name": "Pizza",
@@ -5158,7 +5158,7 @@
           "name": "Fresh Mex Main",
           "items": [
             {
-              "name": "Peruvian Chicken",
+              "name": "Citrus Chicken",
               "serving_size": "4 oz. portion",
               "tags": [
                 "Halal"
@@ -5202,18 +5202,11 @@
               ]
             },
             {
-              "name": "Shredded Cheddar Jack Cheese",
+              "name": "Queso Fresco",
               "serving_size": "1 oz. portion",
               "tags": [
                 "Dairy",
                 "Vegetarian"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
               ]
             }
           ]
@@ -5222,22 +5215,15 @@
           "name": "Fresh Mex Side",
           "items": [
             {
-              "name": "Jasmine Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Charro Beans",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Corn Tortilla Chips",
+              "name": "Tostones (Fried Plantains)",
               "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Spiced Black Beans",
+              "serving_size": "1 oz. portion",
               "tags": [
                 "Vegan"
               ]
@@ -15626,12 +15612,10 @@
               ]
             },
             {
-              "name": "Vegetable & Potato Breakfast Burrito",
-              "serving_size": "1 burrito",
+              "name": "Strawberry Cream Cheese",
+              "serving_size": "1 packet",
               "tags": [
                 "Dairy",
-                "Egg",
-                "Gluten",
                 "Vegetarian"
               ]
             }
@@ -15779,30 +15763,29 @@
               ]
             },
             {
-              "name": "Strawberry Cream Cheese",
-              "serving_size": "1 packet",
+              "name": "Sea Salt Kettle Chip",
+              "serving_size": "1 bag",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Vegetable & Potato Breakfast Burrito",
+              "serving_size": "1 burrito",
               "tags": [
                 "Dairy",
+                "Egg",
+                "Gluten",
                 "Vegetarian"
               ]
             },
             {
-              "name": "Chicken Caesar Wrap",
-              "serving_size": "1 wrap",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish",
-                "Gluten"
-              ]
-            },
-            {
-              "name": "Bacon & Sausage Egg Bites",
+              "name": "3 Cheese Egg Bites",
               "serving_size": "3 oz. portion",
               "tags": [
                 "Dairy",
                 "Egg",
-                "Pork"
+                "Vegetarian"
               ]
             }
           ]
