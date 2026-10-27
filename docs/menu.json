@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-26T20:37:16.872979+00:00",
+  "generated_at": "2026-10-27T00:35:46.787682+00:00",
   "campus_date": "2026-10-26",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 56,
-  "item_count": 1475,
+  "item_count": 1472,
   "nutrition": {
     "cached_recipes": 1371,
     "with_macros": 1366,
-    "recipes_covered": 552,
-    "recipes_total": 583
+    "recipes_covered": 550,
+    "recipes_total": 581
   },
   "tags": [
     "Vegetarian",
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -365,7 +365,7 @@
     {
       "id": 19,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -416,7 +416,7 @@
     {
       "id": 20,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -481,7 +481,7 @@
     {
       "id": 18,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -636,7 +636,7 @@
     {
       "id": 15,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -784,7 +784,7 @@
     {
       "id": 16,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -854,7 +854,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -899,7 +899,7 @@
     {
       "id": 17,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -999,7 +999,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -5832,7 +5832,7 @@
       "menu_oid": 9502320,
       "date": "2026-10-26",
       "meal": "Dinner",
-      "item_count": 33,
+      "item_count": 32,
       "categories": [
         {
           "name": "Pizza",
@@ -5915,13 +5915,6 @@
               "tags": [
                 "Gluten",
                 "Vegan"
-              ]
-            },
-            {
-              "name": "Fried Chicken Tenders",
-              "serving_size": "2 tenders",
-              "tags": [
-                "Gluten"
               ]
             }
           ]
@@ -7381,11 +7374,13 @@
           "name": "Pasta Meat",
           "items": [
             {
-              "name": "Shrimp Scampi",
-              "serving_size": "6 oz. portion",
+              "name": "Beef Meatballs",
+              "serving_size": "2 meatballs",
               "tags": [
                 "Dairy",
-                "Shellfish"
+                "Egg",
+                "Gluten",
+                "Soy"
               ]
             }
           ]
@@ -8345,7 +8340,7 @@
       "menu_oid": 9544132,
       "date": "2026-10-26",
       "meal": "Dinner",
-      "item_count": 14,
+      "item_count": 13,
       "categories": [
         {
           "name": "Bodega Hot Line Main",
@@ -8355,13 +8350,6 @@
               "serving_size": "5 oz. portion",
               "tags": [
                 "Vegan"
-              ]
-            },
-            {
-              "name": "Grilled Montreal Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
               ]
             }
           ]
@@ -12656,12 +12644,9 @@
               ]
             },
             {
-              "name": "White Queso",
+              "name": "Yellow Mustard",
               "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
+              "tags": []
             }
           ]
         },
@@ -12686,7 +12671,7 @@
       "menu_oid": 9520045,
       "date": "2026-10-27",
       "meal": "Daily Offerings",
-      "item_count": 26,
+      "item_count": 25,
       "categories": [
         {
           "name": "Grill Main",
@@ -12896,11 +12881,6 @@
                 "Sesame",
                 "Soy"
               ]
-            },
-            {
-              "name": "Yellow Mustard",
-              "serving_size": "1 oz. portion",
-              "tags": []
             }
           ]
         },
