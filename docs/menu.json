@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-29T10:12:15.607315+00:00",
+  "generated_at": "2026-10-29T18:34:00.242093+00:00",
   "campus_date": "2026-10-29",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 51,
-  "item_count": 1400,
+  "item_count": 1401,
   "nutrition": {
     "cached_recipes": 1394,
     "with_macros": 1389,
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -363,9 +363,9 @@
       "menu_count": 3
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -407,14 +407,28 @@
             "21:00"
           ]
         ],
-        "Thursday": [],
-        "Friday": [],
+        "Thursday": [
+          [
+            "11:00",
+            "15:00"
+          ],
+          [
+            "17:00",
+            "21:00"
+          ]
+        ],
+        "Friday": [
+          [
+            "11:00",
+            "15:00"
+          ]
+        ],
         "Saturday": []
       },
       "menu_count": 3
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "status": "Closed",
       "hours": {
@@ -479,7 +493,7 @@
       "menu_count": 2
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Zeppos Dining",
       "status": "Closed",
       "hours": {
@@ -535,58 +549,58 @@
     },
     {
       "id": 12,
-      "name": "Commons Munchie",
-      "status": "Closed",
+      "name": "Rand Grab & Go Market",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
-            "08:00",
-            "23:59"
+            "17:00",
+            "22:00"
           ]
         ],
         "Monday": [
           [
             "07:00",
-            "23:59"
+            "22:00"
           ]
         ],
         "Tuesday": [
           [
             "07:00",
-            "23:59"
+            "22:00"
           ]
         ],
         "Wednesday": [
           [
             "07:00",
-            "23:59"
+            "22:00"
           ]
         ],
         "Thursday": [
           [
             "07:00",
-            "23:59"
+            "22:00"
           ]
         ],
         "Friday": [
           [
             "07:00",
-            "23:59"
+            "20:00"
           ]
         ],
         "Saturday": [
           [
             "08:00",
-            "23:59"
+            "20:00"
           ]
         ]
       },
-      "menu_count": 2
+      "menu_count": 0
     },
     {
-      "id": 14,
-      "name": "Highland Munchie",
-      "status": "Closed",
+      "id": 13,
+      "name": "Commons Munchie",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -635,8 +649,58 @@
     },
     {
       "id": 15,
+      "name": "Highland Munchie",
+      "status": "Open",
+      "hours": {
+        "Sunday": [
+          [
+            "08:00",
+            "23:59"
+          ]
+        ],
+        "Monday": [
+          [
+            "07:00",
+            "23:59"
+          ]
+        ],
+        "Tuesday": [
+          [
+            "07:00",
+            "23:59"
+          ]
+        ],
+        "Wednesday": [
+          [
+            "07:00",
+            "23:59"
+          ]
+        ],
+        "Thursday": [
+          [
+            "07:00",
+            "23:59"
+          ]
+        ],
+        "Friday": [
+          [
+            "07:00",
+            "23:59"
+          ]
+        ],
+        "Saturday": [
+          [
+            "08:00",
+            "23:59"
+          ]
+        ]
+      },
+      "menu_count": 2
+    },
+    {
+      "id": 16,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -732,9 +796,9 @@
       "menu_count": 6
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -782,7 +846,7 @@
       "menu_count": 2
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Local Java Cafe at Alumni",
       "status": "Closed",
       "hours": {
@@ -812,9 +876,9 @@
       "menu_count": 2
     },
     {
-      "id": 21,
+      "id": 22,
       "name": "West End Bagel Co.",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -854,7 +918,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -897,9 +961,9 @@
       "menu_count": 0
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -939,7 +1003,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -969,7 +1033,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -999,7 +1063,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1039,7 +1103,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -8334,16 +8398,23 @@
       "menu_oid": 9544141,
       "date": "2026-10-29",
       "meal": "Dinner",
-      "item_count": 14,
+      "item_count": 15,
       "categories": [
         {
           "name": "Bodega Hot Line Main",
           "items": [
             {
-              "name": "Southwest Jackfruit",
-              "serving_size": "4 oz. portion",
+              "name": "Ground Beef",
+              "serving_size": "3 oz. portion",
               "tags": [
-                "Vegan"
+                "Halal"
+              ]
+            },
+            {
+              "name": "Split Roasted Chicken Breast",
+              "serving_size": "1 piece",
+              "tags": [
+                "Halal"
               ]
             }
           ]
@@ -9876,7 +9947,7 @@
     },
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "hall_id": 19,
+      "hall_id": 20,
       "menu_oid": 9526433,
       "date": "2026-10-29",
       "meal": "Lunch",
@@ -10294,7 +10365,7 @@
     },
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "hall_id": 19,
+      "hall_id": 20,
       "menu_oid": 9526434,
       "date": "2026-10-29",
       "meal": "Dinner",
@@ -10604,7 +10675,7 @@
     },
     {
       "hall": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "hall_id": 19,
+      "hall_id": 20,
       "menu_oid": 9526435,
       "date": "2026-10-30",
       "meal": "Lunch",
@@ -11002,7 +11073,7 @@
     },
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "hall_id": 20,
+      "hall_id": 21,
       "menu_oid": 9466790,
       "date": "2026-10-29",
       "meal": "Breakfast",
@@ -11172,7 +11243,7 @@
     },
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "hall_id": 20,
+      "hall_id": 21,
       "menu_oid": 9466791,
       "date": "2026-10-29",
       "meal": "Lunch",
@@ -11301,7 +11372,7 @@
     },
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "hall_id": 20,
+      "hall_id": 21,
       "menu_oid": 9466792,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -11473,7 +11544,7 @@
     },
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "hall_id": 20,
+      "hall_id": 21,
       "menu_oid": 9466794,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
@@ -11625,7 +11696,7 @@
     },
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "hall_id": 20,
+      "hall_id": 21,
       "menu_oid": 9466793,
       "date": "2026-10-30",
       "meal": "Brunch",
@@ -12238,7 +12309,7 @@
     },
     {
       "hall": "Zeppos Dining",
-      "hall_id": 18,
+      "hall_id": 19,
       "menu_oid": 9521585,
       "date": "2026-10-29",
       "meal": "Lunch",
@@ -12675,7 +12746,7 @@
     },
     {
       "hall": "Zeppos Dining",
-      "hall_id": 18,
+      "hall_id": 19,
       "menu_oid": 9521586,
       "date": "2026-10-29",
       "meal": "Dinner",
@@ -12885,7 +12956,7 @@
     },
     {
       "hall": "Zeppos Dining",
-      "hall_id": 18,
+      "hall_id": 19,
       "menu_oid": 9521587,
       "date": "2026-10-30",
       "meal": "Lunch",
@@ -13334,7 +13405,7 @@
     },
     {
       "hall": "Commons Munchie",
-      "hall_id": 12,
+      "hall_id": 13,
       "menu_oid": 9538058,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -13466,7 +13537,7 @@
     },
     {
       "hall": "Commons Munchie",
-      "hall_id": 12,
+      "hall_id": 13,
       "menu_oid": 9538059,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
@@ -13599,7 +13670,7 @@
     },
     {
       "hall": "Highland Munchie",
-      "hall_id": 14,
+      "hall_id": 15,
       "menu_oid": 9538065,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -13740,7 +13811,7 @@
     },
     {
       "hall": "Highland Munchie",
-      "hall_id": 14,
+      "hall_id": 15,
       "menu_oid": 9538066,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
@@ -13854,7 +13925,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552383,
       "date": "2026-10-29",
       "meal": "Breakfast",
@@ -13961,7 +14032,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552384,
       "date": "2026-10-29",
       "meal": "Lunch",
@@ -14070,7 +14141,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552385,
       "date": "2026-10-29",
       "meal": "Dinner",
@@ -14179,7 +14250,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552386,
       "date": "2026-10-30",
       "meal": "Breakfast",
@@ -14286,7 +14357,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552387,
       "date": "2026-10-30",
       "meal": "Lunch",
@@ -14395,7 +14466,7 @@
     },
     {
       "hall": "Highland Hotline",
-      "hall_id": 15,
+      "hall_id": 16,
       "menu_oid": 9552388,
       "date": "2026-10-30",
       "meal": "Dinner",
@@ -14504,7 +14575,7 @@
     },
     {
       "hall": "Kissam Munchie",
-      "hall_id": 13,
+      "hall_id": 14,
       "menu_oid": 9538073,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -14621,7 +14692,7 @@
     },
     {
       "hall": "Kissam Munchie",
-      "hall_id": 13,
+      "hall_id": 14,
       "menu_oid": 9538074,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
@@ -14738,7 +14809,7 @@
     },
     {
       "hall": "Local Java Cafe at Alumni",
-      "hall_id": 16,
+      "hall_id": 17,
       "menu_oid": 9295047,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -14895,7 +14966,7 @@
     },
     {
       "hall": "Local Java Cafe at Alumni",
-      "hall_id": 16,
+      "hall_id": 17,
       "menu_oid": 9295048,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
@@ -15064,7 +15135,7 @@
     },
     {
       "hall": "West End Bagel Co.",
-      "hall_id": 21,
+      "hall_id": 22,
       "menu_oid": 9491338,
       "date": "2026-10-29",
       "meal": "Daily Offerings",
@@ -15268,7 +15339,7 @@
     },
     {
       "hall": "West End Bagel Co.",
-      "hall_id": 21,
+      "hall_id": 22,
       "menu_oid": 9491343,
       "date": "2026-10-30",
       "meal": "Daily Offerings",
