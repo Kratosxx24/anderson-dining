@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T10:14:28.979777+00:00",
+  "generated_at": "2026-10-30T18:05:40.339207+00:00",
   "campus_date": "2026-10-30",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -365,7 +365,7 @@
     {
       "id": 20,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -430,7 +430,7 @@
     {
       "id": 21,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -456,8 +456,18 @@
             "17:00"
           ]
         ],
-        "Thursday": [],
-        "Friday": [],
+        "Thursday": [
+          [
+            "07:00",
+            "17:00"
+          ]
+        ],
+        "Friday": [
+          [
+            "07:00",
+            "14:00"
+          ]
+        ],
         "Saturday": []
       },
       "menu_count": 2
@@ -465,7 +475,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -510,7 +520,7 @@
     {
       "id": 19,
       "name": "Zeppos Dining",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -582,8 +592,8 @@
     },
     {
       "id": 12,
-      "name": "Rand Grab & Go Market",
-      "status": "Closed",
+      "name": "Rand Munchie",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -633,7 +643,7 @@
     {
       "id": 13,
       "name": "Commons Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -683,7 +693,7 @@
     {
       "id": 15,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -733,7 +743,7 @@
     {
       "id": 16,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -831,7 +841,7 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -881,7 +891,7 @@
     {
       "id": 17,
       "name": "Local Java Cafe at Alumni",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -926,7 +936,7 @@
     {
       "id": 22,
       "name": "West End Bagel Co.",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -966,7 +976,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1011,7 +1021,7 @@
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1051,7 +1061,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1081,7 +1091,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1111,7 +1121,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1151,7 +1161,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1607,7 +1617,7 @@
       "note": "The on-campus Red Bicycle has no Google Maps listing of its own; only the Germantown / Woodbine branches are listed, and their hours would be wrong here."
     }
   ],
-  "places_checked": "2026-10-30T01:07:53.070640+00:00",
+  "places_checked": "2026-10-30T18:04:41.481237+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
