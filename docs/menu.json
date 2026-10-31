@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T12:48:06.837752+00:00",
+  "generated_at": "2026-10-31T19:23:27.652767+00:00",
   "campus_date": "2026-10-31",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -56,7 +56,7 @@
     {
       "id": 1,
       "name": "Rand Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -593,7 +593,7 @@
     {
       "id": 12,
       "name": "Rand Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -643,7 +643,7 @@
     {
       "id": 13,
       "name": "Commons Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -693,7 +693,7 @@
     {
       "id": 15,
       "name": "Highland Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -743,7 +743,7 @@
     {
       "id": 16,
       "name": "Highland Hotline",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -841,7 +841,7 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
