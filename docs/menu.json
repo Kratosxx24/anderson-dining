@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-13T19:52:53.205052+00:00",
+  "generated_at": "2026-11-14T01:30:32.521141+00:00",
   "campus_date": "2026-11-13",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 36,
-  "item_count": 1033,
+  "menu_count": 35,
+  "item_count": 1007,
   "nutrition": {
     "cached_recipes": 1507,
     "with_macros": 1502,
-    "recipes_covered": 443,
-    "recipes_total": 465
+    "recipes_covered": 435,
+    "recipes_total": 457
   },
   "tags": [
     "Vegetarian",
@@ -198,7 +198,7 @@
           ]
         ]
       },
-      "menu_count": 8
+      "menu_count": 7
     },
     {
       "id": 3,
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -365,7 +365,7 @@
     {
       "id": 20,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -430,7 +430,7 @@
     {
       "id": 21,
       "name": "Café Carmichael - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -475,7 +475,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -520,7 +520,7 @@
     {
       "id": 19,
       "name": "Zeppos Dining",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -891,7 +891,7 @@
     {
       "id": 17,
       "name": "Local Java Cafe at Alumni",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -936,7 +936,7 @@
     {
       "id": 22,
       "name": "West End Bagel Co.",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -976,7 +976,7 @@
     {
       "id": 5,
       "name": "VandyBlenz",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1021,7 +1021,7 @@
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1061,7 +1061,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1091,7 +1091,7 @@
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -1121,7 +1121,7 @@
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1161,7 +1161,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -6166,280 +6166,6 @@
               "tags": [
                 "Alcohol",
                 "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Commons Dining Center",
-      "hall_id": 2,
-      "menu_oid": 9534762,
-      "date": "2026-11-13",
-      "meal": "Dinner",
-      "item_count": 26,
-      "categories": [
-        {
-          "name": "Pizza",
-          "items": [
-            {
-              "name": "Cheese Pizza",
-              "serving_size": "2 slices",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Pumpkin Pizza",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chef's Table Main",
-          "items": [
-            {
-              "name": "German Schnitzel",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Egg",
-                "Gluten",
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chef's Table Side",
-          "items": [
-            {
-              "name": "Braised Red Cabbage w/ Apple",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Wonton Soup",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Gluten",
-                "Pork",
-                "Sesame",
-                "Soy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chef's Table Toppings",
-          "items": [
-            {
-              "name": "Dijon Cream Sauce",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Honey Bun Cake",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sweet Loren's Fudgy Brownie Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Black Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Broccoli Florettes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Chopped Romaine Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Garbanzo Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Cucumber",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spring Salad Mix",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Feta Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Diced Tofu",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "1000 Island Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Caesar Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish"
-              ]
-            },
-            {
-              "name": "Italian Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Common Table Main",
-          "items": [
-            {
-              "name": "Coq Au Vin",
-              "serving_size": "6 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Common Table Side",
-          "items": [
-            {
-              "name": "Green Beans w/ Leeks, Tomatoes & Basil",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Jasmine Rice Pilaf",
-              "serving_size": "3 oz. portion",
-              "tags": [
                 "Vegan"
               ]
             }
