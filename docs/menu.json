@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:28:10.609456+00:00",
+  "generated_at": "2026-11-15T22:59:07.715892+00:00",
   "campus_date": "2026-11-15",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "The Commons Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -203,7 +203,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -296,7 +296,7 @@
     {
       "id": 11,
       "name": "E. Bronson Ingram Dining Center",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -365,7 +365,7 @@
     {
       "id": 20,
       "name": "Rothschild Dining Center - Contains Peanuts & Tree Nuts",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -475,7 +475,7 @@
     {
       "id": 4,
       "name": "The Pub at Overcup Oak",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -520,7 +520,7 @@
     {
       "id": 19,
       "name": "Zeppos Dining",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -743,7 +743,7 @@
     {
       "id": 16,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -1611,7 +1611,7 @@
       "address": "2217 Elliston Pl, Nashville"
     }
   ],
-  "places_checked": "2026-11-15T06:48:11.888945+00:00",
+  "places_checked": "2026-11-15T22:58:02.507807+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
