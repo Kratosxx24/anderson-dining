@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from scraper import config, fetcher, nutrition, places, restaurants
+from scraper import campus_geo, config, fetcher, nutrition, places, restaurants
 
 OUTPUT_PATH = os.path.join("docs", "menu.json")
 
@@ -134,6 +134,16 @@ def main():
             for item in cat["items"]:
                 item.pop("detail_oid", None)
 
+    # -- campus geo (dining hall + schedule-building coordinates) ----------
+    try:
+        campus_buildings = campus_geo.fetch_buildings()
+    except Exception as exc:
+        print(f"  ! Campus building lookup failed ({exc})")
+        campus_buildings = []
+    print(f"Campus geo: {len(campus_buildings)} named buildings/POIs to match against")
+    data["halls"] = campus_geo.locate_halls(data["halls"], campus_buildings)
+    schedule_buildings = campus_geo.locate_buildings(config.SCHEDULE_BUILDINGS, campus_buildings)
+
     # -- taste of nashville ------------------------------------------------
     partners = scrape_restaurants(previous.get("restaurants", []))
     partners, places_checked = enrich_places(partners, previous, started)
@@ -170,6 +180,7 @@ def main():
         "all_day_meals": config.ALL_DAY_MEALS,
         "meal_windows": config.MEAL_WINDOWS,
         "halls": data["halls"],
+        "buildings": schedule_buildings,
         "restaurants": partners,
         "places_checked": places_checked,
         "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",

@@ -366,6 +366,7 @@
     <div class="tabs" role="tablist" aria-label="Views">
       <button class="tab" id="tab-menus" role="tab" aria-selected="true" aria-controls="view-menus">Menus</button>
       <button class="tab" id="tab-nash" role="tab" aria-selected="false" aria-controls="view-nash">Taste of Nashville</button>
+      <button class="tab" id="tab-nearby" role="tab" aria-selected="false" aria-controls="view-nearby">Nearby</button>
       <button class="tab" id="tab-track" role="tab" aria-selected="false" aria-controls="view-track">Tracker</button>
     </div>
   </header>
@@ -440,6 +441,36 @@
   </div>
 
   <!-- ── Tracker ─────────────────────────────────────────────────────── -->
+  <!-- ── Nearby ──────────────────────────────────────────────────────── -->
+  <div class="view" id="view-nearby" role="tabpanel" aria-labelledby="tab-nearby" hidden>
+    <section class="panel">
+      <h2>Right now</h2>
+      <p class="sub" id="nearby-sub"></p>
+      <div id="nearby-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Your schedule</h2>
+      <p class="sub">Add a class's building and meeting time. Nothing leaves your browser.</p>
+      <form class="goalform" id="schedform" style="border-top:none; padding-top:0; margin-top:0; align-items:flex-end;">
+        <div class="field" style="flex:1; min-width:200px;">
+          <label for="s-building">Building</label>
+          <input id="s-building" list="s-buildings" type="text" style="width:100%; min-width:190px;"
+                 placeholder="Start typing…" required />
+          <datalist id="s-buildings"></datalist>
+        </div>
+        <div class="field"><label for="s-start">Starts</label><input id="s-start" type="time" required /></div>
+        <div class="field"><label for="s-end">Ends</label><input id="s-end" type="time" required /></div>
+        <button class="btn-ghost" type="submit">Add class</button>
+      </form>
+      <div class="frow" style="margin-top:4px;">
+        <span class="flabel">Days</span>
+        <div class="chips" id="s-days"></div>
+      </div>
+      <div id="sched-list" style="margin-top:16px;"></div>
+    </section>
+  </div>
+
   <div class="view" id="view-track" role="tabpanel" aria-labelledby="tab-track" hidden>
     <section class="panel">
       <h2 id="today-title">Today</h2>
@@ -1541,10 +1572,217 @@ $("wipe").addEventListener("click", () => {
   toast("Log erased.");
 });
 
+/* ── schedule & nearby ────────────────────────────────────────────────────
+   "What's open, close to my next class, with decent macros." Everything here
+   is local: a class list in localStorage, and distance math against the
+   lat/lon main.py already attached to each hall (scraper/campus_geo.py). No
+   accounts, no server — same architecture as the tracker. */
+const SCHED_STORE = "dining-schedule-v1";
+const SCHED_DAYS = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+// Vanderbilt's own campus center, same point config.py anchors building
+// matches to — used only as a fallback when no class is in session.
+const CAMPUS_LAT = 36.1447, CAMPUS_LON = -86.8027;
+
+let schedule = [];
+let schedDays = new Set(["Mon","Tue","Wed","Thu","Fri"]);
+
+function loadSchedule() {
+  try {
+    const raw = localStorage.getItem(SCHED_STORE);
+    const parsed = raw ? JSON.parse(raw) : [];
+    schedule = Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    console.warn("schedule unavailable:", e);
+  }
+}
+function saveSchedule() {
+  try { localStorage.setItem(SCHED_STORE, JSON.stringify(schedule)); }
+  catch (e) { toast("Couldn't save — storage is unavailable."); }
+}
+
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const r = 6371, p1 = lat1 * Math.PI / 180, p2 = lat2 * Math.PI / 180;
+  const dp = (lat2 - lat1) * Math.PI / 180, dl = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dp / 2) ** 2 + Math.cos(p1) * Math.cos(p2) * Math.sin(dl / 2) ** 2;
+  return 2 * r * Math.asin(Math.sqrt(a));
+}
+
+function findBuilding(name) {
+  const norm = s => String(s || "").trim().toLowerCase();
+  return (state.data.buildings || []).find(b => norm(b.name) === norm(name));
+}
+
+function fmtTime(hhmm) {
+  const m = hallMins(hhmm);
+  return m == null ? hhmm : clockLabel(m);
+}
+
+function renderBuildingList() {
+  $("s-buildings").innerHTML = (state.data.buildings || [])
+    .map(b => `<option value="${esc(b.name)}">`).join("");
+}
+
+function renderDayChips() {
+  const el = $("s-days");
+  el.innerHTML = "";
+  for (const d of SCHED_DAYS) {
+    el.appendChild(chip(d, schedDays.has(d), () => {
+      if (schedDays.has(d)) schedDays.delete(d); else schedDays.add(d);
+      renderDayChips();
+    }));
+  }
+}
+
+function renderSchedList() {
+  const el = $("sched-list");
+  if (!schedule.length) {
+    el.innerHTML = `<div class="empty" style="padding:16px 0">No classes added yet.</div>`;
+    return;
+  }
+  el.innerHTML = schedule.map((c, i) => `
+    <div class="frow" style="justify-content:space-between; padding:8px 0; border-top:1px solid var(--border)">
+      <span><b>${esc(c.building)}</b> · ${esc(c.days.join(", "))} · ${esc(fmtTime(c.start))}–${esc(fmtTime(c.end))}</span>
+      <button class="btn-ghost" type="button" data-i="${i}" data-del-class>Remove</button>
+    </div>`).join("");
+}
+
+$("sched-list").addEventListener("click", e => {
+  const btn = e.target.closest("[data-del-class]");
+  if (!btn) return;
+  schedule.splice(Number(btn.dataset.i), 1);
+  saveSchedule();
+  renderSchedList();
+  renderNearby();
+  toast("Removed.");
+});
+
+$("schedform").addEventListener("submit", e => {
+  e.preventDefault();
+  const building = $("s-building").value.trim();
+  const start = $("s-start").value, end = $("s-end").value;
+  if (!building || !start || !end || !schedDays.size || hallMins(start) >= hallMins(end)) {
+    toast("Pick a building, at least one day, and a start time before the end time.");
+    return;
+  }
+  schedule.push({
+    building, start, end,
+    days: SCHED_DAYS.filter(d => schedDays.has(d)),
+  });
+  saveSchedule();
+  renderSchedList();
+  renderNearby();
+  e.target.reset();
+  toast(`Added ${building}.`);
+});
+
+// The class in session right now, or (failing that) the soonest one later
+// today — both are worth routing around, so "nearby" never just goes quiet
+// between classes.
+function currentClassBlock() {
+  const now = new Date();
+  const day = SCHED_DAYS[(now.getDay() + 6) % 7]; // JS getDay() is Sun-first
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const today = schedule.filter(c => c.days.includes(day));
+  const active = today.find(c => mins >= hallMins(c.start) && mins < hallMins(c.end));
+  if (active) return { block: active, status: "in" };
+  const upcoming = today
+    .filter(c => hallMins(c.start) > mins)
+    .sort((a, b) => hallMins(a.start) - hallMins(b.start))[0];
+  return upcoming ? { block: upcoming, status: "next" } : null;
+}
+
+// Which published meal window contains right now, so "nearby" surfaces what's
+// actually being served this minute rather than the whole day's menu.
+function currentMeal() {
+  const mins = new Date().getHours() * 60 + new Date().getMinutes();
+  for (const [meal, win] of Object.entries(state.data.meal_windows || {})) {
+    if (mins >= hallMins(win[0]) && mins < hallMins(win[1])) return meal;
+  }
+  return null;
+}
+
+// The highest-protein items on offer right now at one hall, for a quick "is
+// it worth the walk" glance rather than a full menu browse.
+function topItemsFor(hallName, meal, iso, n) {
+  if (!meal) return [];
+  const allDay = new Set(state.data.all_day_meals || []);
+  const rows = [];
+  for (const m of state.data.menus) {
+    if (m.hall !== hallName || m.date !== iso) continue;
+    if (m.meal !== meal && !allDay.has(m.meal)) continue;
+    for (const c of m.categories) for (const it of c.items) {
+      const macros = macrosFor(it);
+      if (macros && macros.protein != null) rows.push({ item: it, macros });
+    }
+  }
+  rows.sort((a, b) => (b.macros.protein || 0) - (a.macros.protein || 0));
+  return rows.slice(0, n);
+}
+
+function renderNearby() {
+  if (!state.data) return;
+  renderBuildingList();
+  renderDayChips();
+  renderSchedList();
+
+  const picked = currentClassBlock();
+  const anchorBuilding = picked ? findBuilding(picked.block.building) : null;
+  const originLat = anchorBuilding ? anchorBuilding.lat : CAMPUS_LAT;
+  const originLon = anchorBuilding ? anchorBuilding.lon : CAMPUS_LON;
+
+  if (!picked) {
+    $("nearby-sub").textContent = schedule.length
+      ? "No class scheduled right now — here's what's closest to campus and open."
+      : "Add your schedule below, and this fills in with what's closest to your next class.";
+  } else if (!anchorBuilding) {
+    $("nearby-sub").textContent =
+      `${picked.status === "in" ? "In class at" : "Next class at"} ${picked.block.building} — ` +
+      `that building's location isn't in this site's list yet, so distances below are from campus center instead.`;
+  } else {
+    $("nearby-sub").textContent =
+      `${picked.status === "in" ? "In class at" : "Next class at"} ${picked.block.building}, ` +
+      `${picked.status === "in" ? "until" : "starts"} ${fmtTime(picked.status === "in" ? picked.block.end : picked.block.start)}.`;
+  }
+
+  const meal = currentMeal();
+  const halls = (state.data.halls || []).filter(h => h.lat != null && h.lon != null);
+  const ranked = halls.map(h => ({
+    hall: h,
+    dist: haversineKm(originLat, originLon, h.lat, h.lon),
+    open: hallOpenState(h),
+  }));
+  const openOnes = ranked.filter(r => r.open.open);
+  const list = (openOnes.length ? openOnes : ranked)
+    .sort((a, b) => a.dist - b.dist)
+    .slice(0, 6);
+
+  const el = $("nearby-list");
+  if (!list.length) {
+    el.innerHTML = `<div class="empty" style="padding:16px 0">` +
+      `No dining hall locations yet — they're matched from OpenStreetMap on each scrape, check back after the next run.</div>`;
+    return;
+  }
+  el.innerHTML = (openOnes.length ? "" : `<p class="sub">Nothing nearby is open right now — closest places are below.</p>`) +
+    list.map(r => {
+      const items = meal ? topItemsFor(r.hall.name, meal, state.date, 2) : [];
+      const walk = `${Math.max(1, Math.round(r.dist * 12))} min walk`;
+      const macroLine = items.length
+        ? items.map(x => `${esc(x.item.name)} — ${round(x.macros.protein)}g protein, ${round(x.macros.calories)} cal`).join(" · ")
+        : (meal ? "no macro data for the current menu yet" : "no meal being served right now");
+      return `<div style="padding:10px 0; border-top:1px solid var(--border)">
+        <div class="frow" style="justify-content:space-between">
+          <b>${esc(r.hall.name)}</b>
+          <span style="color:${r.open.open ? "var(--veg)" : "var(--faint)"}">${esc(r.open.text)} · ${esc(walk)}</span>
+        </div>
+        <p class="sub" style="margin:4px 0 0">${macroLine}</p>
+      </div>`;
+    }).join("");
+}
+
 /* ── view switching ─────────────────────────────────────────────────── */
 
 const VIEWS = [["menus","tab-menus","view-menus"],["nash","tab-nash","view-nash"],
-               ["track","tab-track","view-track"]];
+               ["nearby","tab-nearby","view-nearby"],["track","tab-track","view-track"]];
 function setView(name) {
   state.view = name;
   for (const [key, tabId, viewId] of VIEWS) {
@@ -1553,6 +1791,7 @@ function setView(name) {
     $(viewId).hidden = !on;
   }
   if (name === "nash") renderNash();
+  if (name === "nearby") renderNearby();
   if (name === "track") renderTracker();
   try { localStorage.setItem("dining-view", name); } catch (e) {}
 }
@@ -1613,6 +1852,7 @@ themeBtn.addEventListener("click", () => {
 });
 paintTheme();
 loadLog();
+loadSchedule();
 
 // Menus are required; nutrition is an enhancement, so a failure to load it
 // leaves every item reading "no label" instead of breaking the page.

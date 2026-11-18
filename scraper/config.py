@@ -159,6 +159,60 @@ PLACES_FALLBACK_KM = 2.5
 PLACES_REFRESH_HOURS = 12
 
 # ---------------------------------------------------------------------------
+# Campus geo — dining-hall coordinates and the schedule's building picker
+# ---------------------------------------------------------------------------
+#
+# Powers the "Nearby" view: given a class's building, which open dining hall is
+# closest. Coordinates come from OpenStreetMap (scraper/campus_geo.py), the
+# same free/keyless source places.py already uses for restaurants.
+
+# Vanderbilt's main campus, tight enough that an off-campus building of the
+# same name (there's more than one "Commons" in Nashville) doesn't win a match.
+CAMPUS_LAT, CAMPUS_LON = 36.1447, -86.8027
+
+# (south, west, north, east). Tighter than PLACES_BBOX, which has to reach
+# Hillsboro Village and the Gulch — this only needs campus itself.
+CAMPUS_BBOX = (36.136, -86.815, 36.153, -86.790)
+
+# How far a matched building may sit from campus center before it's rejected.
+CAMPUS_MAX_KM = 2.0
+
+# Hand-checked overrides, (lat, lon). Needed where OSM either doesn't carry the
+# name NetNutrition uses, or its point sits at a building entrance rather than
+# the servery — e.g. a food truck stop or a Munchie Mart inside a residence
+# hall isn't its own named building at all. Keyed by the exact name as it
+# appears in menu.json / the schedule picker.
+DINING_HALL_COORDS = {
+    "Rand Dining Center": (36.144841, -86.803168),
+    "The Commons Dining Center": (36.141792, -86.797115),
+    "The Kitchen at Kissam": (36.149440, -86.801799),
+    "E. Bronson Ingram Dining Center": (36.148647, -86.803378),
+    "Rothschild Dining Center - Contains Peanuts & Tree Nuts": (36.148315, -86.805472),
+    "Café Carmichael - Contains Peanuts & Tree Nuts": (36.147585, -86.805679),
+    "Zeppos Dining": (36.146809, -86.807275),
+    # Not its own building — a counter inside Sarratt Student Center.
+    "The Pub at Overcup Oak": (36.146419, -86.803567),
+}
+
+# Classroom/residential buildings offered in the schedule picker, resolved to
+# coordinates on each run the same way dining halls are. A short, curated list
+# rather than every building OSM knows (a dorm's laundry room doesn't belong
+# next to Buttrick Hall in a dropdown) — add to this as students ask for a
+# building that's missing.
+SCHEDULE_BUILDINGS = [
+    "Buttrick Hall", "Furman Hall", "Wilson Hall", "Calhoun Hall",
+    "Garland Hall", "Kirkland Hall", "Memorial Gym", "Featheringill Hall",
+    "Jacobs Believed in Me Building", "Olin Hall", "Stevenson Center",
+    "Wilson Student Teaching Center", "Sarratt Student Center",
+    "Alumni Hall", "Cohen Memorial Hall", "Owen Graduate School of Management",
+    "Vanderbilt Law School", "Divinity School", "Peabody Library",
+    "Hill Center for Measurement Science", "Engineering and Science Building",
+    "Vanderbilt Recreation and Wellness Center", "Central Library",
+    "Blair School of Music", "Student Life Center", "E. Bronson Ingram College",
+    "Commons Center", "Rand Hall", "Kissam Center",
+]
+
+# ---------------------------------------------------------------------------
 # Taste of Nashville
 # ---------------------------------------------------------------------------
 

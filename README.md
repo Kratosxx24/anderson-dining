@@ -38,10 +38,16 @@ restaurants where Meal Money works — from Vanderbilt's dining site, and
 `scraper/places.py` looks each one up in OpenStreetMap for a street address,
 website, phone and opening hours.
 
+`scraper/campus_geo.py` locates each dining hall and a curated list of campus
+buildings via OpenStreetMap, so the **Nearby** view can tell you which open
+hall is closest to your next class.
+
 `main.py` writes `docs/menu.json` and `docs/nutrition.json`. `docs/index.html`
-reads both and renders three views: **Menus** (filter by day, meal, open-now,
+reads both and renders four views: **Menus** (filter by day, meal, open-now,
 traits, allergens and text; sort by protein or calories), **Taste of
-Nashville**, and **Tracker**.
+Nashville**, **Nearby** (your class schedule, kept in the browser, matched
+against which dining hall is closest and open right now, with its
+highest-protein item for the current meal), and **Tracker**.
 
 ## How the menu scrape works
 
@@ -229,6 +235,25 @@ comma-separated ranges, semicolon rules, windows crossing midnight
 (`Mo-Su 11:00-14:30; 17:00-21:30`). It returns null on anything it does not
 understand, and an unparsed string is displayed verbatim rather than being
 silently misread as "closed".
+
+## Nearby: schedule-aware recommendations
+
+Dining halls don't carry coordinates in NetNutrition, so `scraper/campus_geo.py`
+gets them the same way `places.py` gets restaurant addresses: a single Overpass
+query for every named building on campus, matched against each hall's name
+(`config.DINING_HALL_COORDS` overrides a handful OSM doesn't carry correctly,
+e.g. a dining hall that isn't its own named building). A curated list of
+classroom/residential buildings (`config.SCHEDULE_BUILDINGS`) is resolved the
+same way and shipped in `menu.json` as `buildings`, for the schedule form's
+picker.
+
+The schedule itself — building, days, start and end time per class — lives in
+`localStorage` under `dining-schedule-v1`, same as the tracker's log: nothing
+leaves the browser. The Nearby view finds the class in session right now (or
+the next one today), ranks open dining halls by straight-line distance to that
+building, and shows each one's highest-protein item for whatever meal period
+is live this minute. With no class in session, or no schedule entered yet, it
+falls back to ranking from campus center.
 
 ## The tracker
 
