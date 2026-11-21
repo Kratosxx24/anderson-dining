@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T02:31:00.034993+00:00",
-  "campus_date": "2026-11-20",
+  "generated_at": "2026-11-21T11:25:19.084031+00:00",
+  "campus_date": "2026-11-21",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 13,
-  "item_count": 391,
+  "menu_count": 7,
+  "item_count": 85,
   "nutrition": {
-    "cached_recipes": 1055,
-    "with_macros": 1053,
-    "recipes_covered": 248,
-    "recipes_total": 269
+    "cached_recipes": 1060,
+    "with_macros": 1058,
+    "recipes_covered": 50,
+    "recipes_total": 64
   },
   "tags": [
     "Vegetarian",
@@ -18,16 +18,10 @@
     "Dairy",
     "Egg",
     "Fish",
-    "Gluten",
-    "Peanut",
     "Pork",
-    "Sesame",
-    "Shellfish",
     "Soy",
-    "Tree Nut",
     "Alcohol",
-    "Features Local Ingredient",
-    "Kosher"
+    "Features Local Ingredient"
   ],
   "meal_order": [
     "Breakfast",
@@ -75,7 +69,7 @@
         ],
         "Saturday": []
       },
-      "menu_count": 3,
+      "menu_count": 0,
       "lat": 36.144841,
       "lon": -86.803168
     },
@@ -92,7 +86,7 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 3,
+      "menu_count": 0,
       "lat": 36.141792,
       "lon": -86.797115
     },
@@ -187,7 +181,7 @@
         ],
         "Saturday": []
       },
-      "menu_count": 5,
+      "menu_count": 6,
       "lat": 36.14944,
       "lon": -86.801799
     },
@@ -258,7 +252,7 @@
         ],
         "Saturday": []
       },
-      "menu_count": 1,
+      "menu_count": 0,
       "lat": 36.148647,
       "lon": -86.803378
     },
@@ -403,7 +397,7 @@
     {
       "id": 15,
       "name": "Highland Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -443,7 +437,7 @@
     {
       "id": 16,
       "name": "Highland Hotline",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -523,7 +517,7 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Open",
+      "status": "Closed",
       "hours": {
         "Sunday": [
           [
@@ -583,7 +577,9 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.151974,
+      "lon": -86.796884
     },
     {
       "id": 22,
@@ -623,7 +619,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.145906,
+      "lon": -86.79933
     },
     {
       "id": 5,
@@ -738,7 +736,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.151974,
+      "lon": -86.796884
     },
     {
       "id": 7,
@@ -768,7 +768,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.138635,
+      "lon": -86.806048
     },
     {
       "id": 8,
@@ -856,7 +858,118 @@
       "menu_count": 0
     }
   ],
-  "buildings": [],
+  "buildings": [
+    {
+      "name": "Buttrick Hall",
+      "lat": 36.145823,
+      "lon": -86.802564
+    },
+    {
+      "name": "Furman Hall",
+      "lat": 36.147949,
+      "lon": -86.801328
+    },
+    {
+      "name": "Wilson Hall",
+      "lat": 36.148945,
+      "lon": -86.800705
+    },
+    {
+      "name": "Calhoun Hall",
+      "lat": 36.147263,
+      "lon": -86.801422
+    },
+    {
+      "name": "Garland Hall",
+      "lat": 36.146535,
+      "lon": -86.80148
+    },
+    {
+      "name": "Kirkland Hall",
+      "lat": 36.148231,
+      "lon": -86.802809
+    },
+    {
+      "name": "Memorial Gym",
+      "lat": 36.144525,
+      "lon": -86.807241
+    },
+    {
+      "name": "Featheringill Hall",
+      "lat": 36.144891,
+      "lon": -86.803138
+    },
+    {
+      "name": "Olin Hall",
+      "lat": 36.14295,
+      "lon": -86.805263
+    },
+    {
+      "name": "Stevenson Center",
+      "lat": 36.144648,
+      "lon": -86.8019
+    },
+    {
+      "name": "Sarratt Student Center",
+      "lat": 36.146419,
+      "lon": -86.803567
+    },
+    {
+      "name": "Alumni Hall",
+      "lat": 36.147943,
+      "lon": -86.803351
+    },
+    {
+      "name": "Cohen Memorial Hall",
+      "lat": 36.141542,
+      "lon": -86.799402
+    },
+    {
+      "name": "Owen Graduate School of Management",
+      "lat": 36.147179,
+      "lon": -86.800105
+    },
+    {
+      "name": "Peabody Library",
+      "lat": 36.142494,
+      "lon": -86.799202
+    },
+    {
+      "name": "Hill Center for Measurement Science",
+      "lat": 36.141722,
+      "lon": -86.796525
+    },
+    {
+      "name": "Vanderbilt Recreation and Wellness Center",
+      "lat": 36.140208,
+      "lon": -86.808528
+    },
+    {
+      "name": "Blair School of Music",
+      "lat": 36.138635,
+      "lon": -86.806048
+    },
+    {
+      "name": "Student Life Center",
+      "lat": 36.144403,
+      "lon": -86.805842
+    },
+    {
+      "name": "Commons Center",
+      "lat": 36.141792,
+      "lon": -86.797115
+    },
+    {
+      "name": "Rand Hall",
+      "lat": 36.146426,
+      "lon": -86.80304
+    },
+    {
+      "name": "Kissam Center",
+      "lat": 36.14944,
+      "lon": -86.801799
+    }
+  ],
   "restaurants": [
     {
       "neighborhood": "Hillsboro Village",
@@ -1151,2868 +1264,6 @@
   "places_checked": "2026-11-21T02:30:16.067812+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
-    {
-      "hall": "Rand Dining Center",
-      "hall_id": 1,
-      "menu_oid": 9574241,
-      "date": "2026-11-20",
-      "meal": "Breakfast",
-      "item_count": 38,
-      "categories": [
-        {
-          "name": "Fresh Mex Base",
-          "items": [
-            {
-              "name": "Sauteed Kale & Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Main",
-          "items": [
-            {
-              "name": "BEYOND Meat Sausage Patty",
-              "serving_size": "1 patty",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Toppings",
-          "items": [
-            {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Fire Roasted Jalapeno Salsa",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sour Cream Drizzle",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Side",
-          "items": [
-            {
-              "name": "Blistered Cherry Tomatoes w/ Basil",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chef's Table Main",
-          "items": [
-            {
-              "name": "Chicken Fried Biscuit",
-              "serving_size": "1 biscuit",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Soy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chef's Table Side",
-          "items": [
-            {
-              "name": "Hashbrown Patty",
-              "serving_size": "4.5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Meat",
-          "items": [
-            {
-              "name": "Diced Ham",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Blueberry Bagel",
-              "serving_size": "1 bagel",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Everything Bagel",
-              "serving_size": "1 bagel",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Mocha Muffin",
-              "serving_size": "1 muffin",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Wheat Bagel",
-              "serving_size": "1 bagel",
-              "tags": [
-                "Gluten",
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Fruit",
-          "items": [
-            {
-              "name": "Diced Cantaloupe",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Red Seedless Grapes",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Cottage Cheese",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Hard Boiled Egg",
-              "serving_size": "1 egg",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Plain Greek Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Composed",
-          "items": [
-            {
-              "name": "Overnight Chia Oats",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Light Brown Sugar",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Toasted Coconut",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Omelet Egg",
-          "items": [
-            {
-              "name": "Cracked Eggs",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient"
-              ]
-            },
-            {
-              "name": "Vegan Egg",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Omelet Meat",
-          "items": [
-            {
-              "name": "Crumbled Bacon",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Plant-Based Chipotle Chorizo",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Gluten",
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Omelet Veggies",
-          "items": [
-            {
-              "name": "Diced Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Housemade Pico de Gallo",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Mushroom",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Omelet Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Southern Breakfast",
-          "items": [
-            {
-              "name": "Bacon",
-              "serving_size": "2 strips",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Breakfast Gravy",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Self-Serve",
-          "items": [
-            {
-              "name": "Maple Pancake Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "Rand Dining Center",
-      "hall_id": 1,
-      "menu_oid": 9574253,
-      "date": "2026-11-20",
-      "meal": "Lunch",
-      "item_count": 118,
-      "categories": [
-        {
-          "name": "Fresh Mex Base",
-          "items": [
-            {
-              "name": "Cilantro-Lime Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Main",
-          "items": [
-            {
-              "name": "Guajillo-Lime Grilled Chicken",
-              "serving_size": "1 piece",
-              "tags": [
-                "Alcohol",
-                "Soy",
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Toppings",
-          "items": [
-            {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Fire Roasted Jalapeno Salsa",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Mango Habanero Salsa",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Salsa Verde",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sour Cream Drizzle",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Side",
-          "items": [
-            {
-              "name": "Charro Beans",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Mexican Street Corn",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Soy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Bread",
-          "items": [
-            {
-              "name": "12\" Spinach Tortilla",
-              "serving_size": "1 tortilla",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "GF White Bread",
-              "serving_size": "1 slice",
-              "tags": []
-            },
-            {
-              "name": "Pretzel Roll",
-              "serving_size": "1 roll",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Whole Wheat Tortilla",
-              "serving_size": "1 tortilla",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Meat",
-          "items": [
-            {
-              "name": "Bacon",
-              "serving_size": "2 strips",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Deli Ham",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Deli Salami",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Vegan Deli Slices",
-              "serving_size": "2.5 oz. portion",
-              "tags": [
-                "Gluten",
-                "Soy",
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Cheese",
-          "items": [
-            {
-              "name": "Sliced American Cheese",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sliced Pepper Jack Cheese",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sliced Swiss Cheese",
-              "serving_size": "1 slice",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Topping",
-          "items": [
-            {
-              "name": "Banana Pepper",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Hummus",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Sesame",
-                "Soy",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Tomatoes",
-              "serving_size": "1 slice",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Dressings",
-          "items": [
-            {
-              "name": "Basil Aioli",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Honey Mustard Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Oil & Vinegar Blend",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Yellow Mustard",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Deli Side",
-          "items": [
-            {
-              "name": "Dill Pickle Spear",
-              "serving_size": "1 spear",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Grill Bun",
-          "items": [
-            {
-              "name": "Cornbread Cakes",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Grill Main",
-          "items": [
-            {
-              "name": "Beef Stroganoff",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Dairy",
-                "Gluten"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Grill Side",
-          "items": [
-            {
-              "name": "Fried Okra",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Yukon Gold Mashed Potatoes",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Coconut Cake",
-              "serving_size": "1 slice",
-              "tags": [
-                "Alcohol",
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Rand Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Banana Pepper",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Cherry Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Edamame",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Cucumber",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Stuffed Olive",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Chopped Egg",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Feta Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Plain Greek Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Vegan Coconut Mozzarella Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Crumbled Bacon",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Grilled Tofu",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "Balsamic Vinaigrette",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Caesar Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish"
-              ]
-            },
-            {
-              "name": "Ranch Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Base",
-          "items": [
-            {
-              "name": "Baby Arugula",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Main",
-          "items": [
-            {
-              "name": "Chicken Shawarma",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Side",
-          "items": [
-            {
-              "name": "Falafel",
-              "serving_size": "3 falafels",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Toppings",
-          "items": [
-            {
-              "name": "Bruschetta",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Grape Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Herb Chopped Basil Mix",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Marinated Mushrooms",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Sesame",
-                "Soy",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Roasted Red Pepper",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Whipped Feta",
-              "serving_size": "2 oz",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mediterranean Sauces",
-          "items": [
-            {
-              "name": "Basil Pesto",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Harissa Vinaigrette",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Base",
-          "items": [
-            {
-              "name": "Rice Noodles",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Main",
-          "items": [
-            {
-              "name": "Stir Fried Tempeh w/ Broccoli",
-              "serving_size": "6 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Veggies",
-          "items": [
-            {
-              "name": "Baby Corn",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Broccoli Floret",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Mushroom",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Scallions",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Side",
-          "items": [
-            {
-              "name": "Vegetable Spring Roll",
-              "serving_size": "1 spring roll",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Sauces",
-          "items": [
-            {
-              "name": "Sweet Thai Chili Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Yum Yum Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Egg"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Sauces",
-          "items": [
-            {
-              "name": "Alfredo Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Meat",
-          "items": [
-            {
-              "name": "Cavatappi Chicken Alfredo",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Veggies",
-          "items": [
-            {
-              "name": "Cavatappi Alfredo w/ Broccoli",
-              "serving_size": "6 oz. portion",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Toppings",
-          "items": [
-            {
-              "name": "Crushed Red Pepper",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Bread",
-          "items": [
-            {
-              "name": "Garlic Breadstick",
-              "serving_size": "1 breadstick",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Grain",
-          "items": [
-            {
-              "name": "Green Lentils Cooked",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Protein",
-          "items": [
-            {
-              "name": "Grilled Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Veggies",
-          "items": [
-            {
-              "name": "Roasted Cauliflower",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Soup",
-          "items": [
-            {
-              "name": "Tomato Basil Bisque",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Dairy",
-                "Gluten"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Beverages",
-          "items": [
-            {
-              "name": "2% Reduced Fat Milk",
-              "serving_size": "Cup",
-              "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Caramel Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Cranberry Juice",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Dispenser Stubborn Cola",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "English Breakfast Tea",
-              "serving_size": "1 tea bag",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Fruit Punch Gatorade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Herbal Mint Tea",
-              "serving_size": "1 tea bag",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Light Roast Coffee",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Monin Vanilla Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Orange Gatorade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Original Coffee Creamer",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Stubborn Agave Vanilla Cream Soda",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Stubborn Zero Sugar Cola",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Tropicana Lemonade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Whole Milk",
-              "serving_size": "Cup",
-              "tags": [
-                "Dairy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit",
-          "items": [
-            {
-              "name": "Banana",
-              "serving_size": "1 banana",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Alternative Cooler",
-          "items": [
-            {
-              "name": "Chocolate Chunk Brownie",
-              "serving_size": "1 brownie",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Peanut",
-                "Soy",
-                "Tree Nut"
-              ]
-            },
-            {
-              "name": "GF Double Chocolate Muffin",
-              "serving_size": "1 muffin",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "GF Tortilla Wrap",
-              "serving_size": "1 tortilla",
-              "tags": [
-                "Soy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Condiments",
-          "items": [
-            {
-              "name": "Assorted Jelly",
-              "serving_size": "1 packet",
-              "tags": []
-            },
-            {
-              "name": "Butter",
-              "serving_size": "1 packet",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Equal",
-              "serving_size": "1 packet",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Hot Cholula Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Louisiana Hot Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Saltine Crackers",
-              "serving_size": "1 packet",
-              "tags": [
-                "Gluten",
-                "Soy",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sriracha Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sugar",
-              "serving_size": "1 packet",
-              "tags": []
-            },
-            {
-              "name": "Sugar-Free Syrup",
-              "serving_size": "1 packet",
-              "tags": []
-            },
-            {
-              "name": "Syrup Cup",
-              "serving_size": "1 packet",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Self-Serve",
-          "items": [
-            {
-              "name": "Cheerios",
-              "serving_size": "2 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Frosted Flakes",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Gluten",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Raisin Bran",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "Rand Dining Center",
-      "hall_id": 1,
-      "menu_oid": 9613696,
-      "date": "2026-11-20",
-      "meal": "Dinner",
-      "item_count": 41,
-      "categories": [
-        {
-          "name": "Fresh Mex Base",
-          "items": [
-            {
-              "name": "Corn Tortilla Chips",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "White Rice",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Main",
-          "items": [
-            {
-              "name": "Beyond Beef Taco Meat",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Toppings",
-          "items": [
-            {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Fire Roasted Jalapeno Salsa",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Cheddar Jack Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sour Cream Drizzle",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Side",
-          "items": [
-            {
-              "name": "Charro Beans",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Rice Krispie Bar",
-              "serving_size": "1 bar",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Pork",
-                "Soy"
-              ]
-            },
-            {
-              "name": "Vanilla Cupcake",
-              "serving_size": "1 cupcake",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Banana Pepper",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Cherry Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Garbanzo Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Beets",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Mushroom",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Chopped Egg",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Feta Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Plain Greek Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Vegan Coconut Mozzarella Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Bacon Crumbles",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Diced Tofu",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Tri-Colored Quinoa",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "Balsamic Vinaigrette",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Caesar Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish"
-              ]
-            },
-            {
-              "name": "Ranch Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Main",
-          "items": [
-            {
-              "name": "Roasted Turkey Breast",
-              "serving_size": "5 oz. portion",
-              "tags": []
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Veggies",
-          "items": [
-            {
-              "name": "Roasted Broccoli w/ Garlic",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Side",
-          "items": [
-            {
-              "name": "Creamy Mashed Potatoes",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Mongolian Sauces",
-          "items": [
-            {
-              "name": "Gravy",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Gluten"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Base",
-          "items": [
-            {
-              "name": "Penne Cooked",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Sauces",
-          "items": [
-            {
-              "name": "Marinara Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Meat",
-          "items": [
-            {
-              "name": "Beef Meatballs",
-              "serving_size": "2 meatballs",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Soy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Toppings",
-          "items": [
-            {
-              "name": "Crushed Red Pepper",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Pasta Bread",
-          "items": [
-            {
-              "name": "Garlic Breadstick",
-              "serving_size": "1 breadstick",
-              "tags": [
-                "Gluten",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Grain",
-          "items": [
-            {
-              "name": "Brown Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Protein",
-          "items": [
-            {
-              "name": "Grilled Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Simply Made Veggies",
-          "items": [
-            {
-              "name": "Roasted Carrot",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Commons Dining Center",
-      "hall_id": 2,
-      "menu_oid": 9534788,
-      "date": "2026-11-20",
-      "meal": "Breakfast",
-      "item_count": 20,
-      "categories": [
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Blueberry Bagel",
-              "serving_size": "1 bagel",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Cherry Chocolate Muffin",
-              "serving_size": "1 muffin",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Everything Bagel",
-              "serving_size": "1 bagel",
-              "tags": [
-                "Gluten",
-                "Sesame",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Monkey Bread",
-              "serving_size": "1 piece",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Fruit",
-          "items": [
-            {
-              "name": "Blackberries",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Cantaloupe",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Pineapple",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Peach Slices",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Red Seedless Grapes",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "White Seedless Grapes",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Cottage Cheese",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Hard Boiled Egg",
-              "serving_size": "1 egg",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Overnight Chia Oats",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Vanilla Yogurt",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Toasted Coconut",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hot Line Main",
-          "items": [
-            {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hot Line Side",
-          "items": [
-            {
-              "name": "BEYOND Meat Sausage Patty",
-              "serving_size": "1 patty",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Snicker Doodle Pancake",
-              "serving_size": "2 pancakes",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Hashbrown Patty",
-              "serving_size": "4.5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Commons Dining Center",
-      "hall_id": 2,
-      "menu_oid": 9534789,
-      "date": "2026-11-20",
-      "meal": "Lunch",
-      "item_count": 25,
-      "categories": [
-        {
-          "name": "Fresh Mex Base",
-          "items": [
-            {
-              "name": "Cilantro-Lime Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Main",
-          "items": [
-            {
-              "name": "Tofu Taco Filling",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Toppings",
-          "items": [
-            {
-              "name": "Chipotle Lime Crema",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Pickled Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Queso Fresco",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "White Queso",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fresh Mex Side",
-          "items": [
-            {
-              "name": "Charro Beans",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Grilled Corn w/ Ancho Butter",
-              "serving_size": "1 corn cob",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Sugar Cookie w/ Sprinkles",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Gluten",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Sweet Loren's Fudgy Brownie Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Broccoli Florettes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Corn",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Garbanzo Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Romaine Lettuce",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Cucumber",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Red Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spring Salad Mix",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Kidney Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Feta Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Toppings",
-          "items": [
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "1000 Island Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Caesar Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish"
-              ]
-            },
-            {
-              "name": "Honey Mustard Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Commons Dining Center",
-      "hall_id": 2,
-      "menu_oid": 9534791,
-      "date": "2026-11-20",
-      "meal": "Daily Offerings",
-      "item_count": 23,
-      "categories": [
-        {
-          "name": "Self-Serve",
-          "items": [
-            {
-              "name": "Oyster Crackers",
-              "serving_size": "1 packet",
-              "tags": [
-                "Dairy",
-                "Gluten",
-                "Soy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Soft Serve Ice Cream",
-          "items": [
-            {
-              "name": "Ice Cream Cone",
-              "serving_size": "1 cone",
-              "tags": [
-                "Gluten",
-                "Soy"
-              ]
-            },
-            {
-              "name": "Rich's Vanilla Soft Serve",
-              "serving_size": "4 oz portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Beverages",
-          "items": [
-            {
-              "name": "2% Reduced Fat Milk",
-              "serving_size": "Cup",
-              "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Chocolate Milk 1% Low Fat",
-              "serving_size": "Cup",
-              "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Dispenser Stubborn Cola",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Lemon Lime Gatorade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Medium Roast Coffee",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Orange Gatorade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Original Coffee Creamer",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Stubborn Agave Vanilla Cream Soda",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Stubborn Zero Sugar Cola",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Tropicana Lemonade",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Whole Milk",
-              "serving_size": "Cup",
-              "tags": [
-                "Dairy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit",
-          "items": [
-            {
-              "name": "Kiwi",
-              "serving_size": "1 kiwi",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Alternative Cooler",
-          "items": [
-            {
-              "name": "Chocolate Chunk Brownie",
-              "serving_size": "1 brownie",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Peanut",
-                "Soy",
-                "Tree Nut"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Condiments",
-          "items": [
-            {
-              "name": "Caramel Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Equal",
-              "serving_size": "1 packet",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Hot Cholula Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Monin Vanilla Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": []
-            },
-            {
-              "name": "Sugar",
-              "serving_size": "1 packet",
-              "tags": []
-            },
-            {
-              "name": "Sweet-N-Low",
-              "serving_size": "1 packet",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Tabasco Pepper Hot Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9597046,
-      "date": "2026-11-20",
-      "meal": "Breakfast",
-      "item_count": 10,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "Bacon, Egg, & Cheese Sandwich",
-              "serving_size": "1 sandwich",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Pork"
-              ]
-            },
-            {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Bacon",
-              "serving_size": "2 strips",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Turkey Bacon",
-              "serving_size": "2 slices",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit & Yogurt Bar",
-          "items": [
-            {
-              "name": "Blueberries",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Low Fat Strawberry Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Overnight Chia Oats",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Strawberry Halves",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Vanilla Greek Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9597047,
-      "date": "2026-11-20",
-      "meal": "Lunch",
-      "item_count": 19,
-      "categories": [
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Sweet Loren's Fudgy Brownie Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Veggies & Legumes",
-          "items": [
-            {
-              "name": "Black Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Chopped Romaine Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Tomato",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Chopped Egg",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Meats & Tofus",
-          "items": [
-            {
-              "name": "Chipotle Orange Chicken Thigh",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            },
-            {
-              "name": "Steamed Shrimp",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Shellfish"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Composed",
-          "items": [
-            {
-              "name": "Tri-Colored Quinoa",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Toppings",
-          "items": [
-            {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Tri Color Tortilla Strips",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Dressing",
-          "items": [
-            {
-              "name": "Asian Ginger Dressing",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Soy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Caesar Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Fish"
-              ]
-            },
-            {
-              "name": "Honey Mustard Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Alcohol",
-                "Egg",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Red Wine Vinegar",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Chipotle Ranch Dressing",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
@@ -4386,25 +1637,161 @@
       ]
     },
     {
-      "hall": "E. Bronson Ingram Dining Center",
-      "hall_id": 11,
-      "menu_oid": 9592154,
-      "date": "2026-11-20",
-      "meal": "Lunch",
-      "item_count": 46,
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9597048,
+      "date": "2026-11-22",
+      "meal": "Breakfast",
+      "item_count": 9,
       "categories": [
         {
-          "name": "Bakery",
+          "name": "Bodega Hot Line Main",
           "items": [
             {
-              "name": "Brownies",
-              "serving_size": "Brownie(s)",
+              "name": "Mushroom & Onion JUST Egg Scrambler",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Bacon",
+              "serving_size": "2 strips",
+              "tags": [
+                "Pork"
+              ]
+            },
+            {
+              "name": "Hashbrown Casserole",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fruit & Yogurt Bar",
+          "items": [
+            {
+              "name": "Blueberries",
+              "serving_size": "1 oz. portion",
               "tags": [
                 "Vegan"
               ]
             },
             {
-              "name": "Sweet Loren's Oatmeal Cranberry Cookie",
+              "name": "Craisins",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Low Fat Strawberry Yogurt",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Overnight Chia Oats",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Strawberry Halves",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Vanilla Greek Yogurt",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9597432,
+      "date": "2026-11-22",
+      "meal": "Lunch",
+      "item_count": 16,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Ground Beef",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Halal"
+              ]
+            },
+            {
+              "name": "Beyond Meat Beef Sub Crumbles",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Blanched Green Beans",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Penne Pasta",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Toppings",
+          "items": [
+            {
+              "name": "Alfredo Sauce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Sweet Loren's Fudgy Brownie Cookie",
               "serving_size": "1 cookie",
               "tags": [
                 "Vegan"
@@ -4413,92 +1800,18 @@
           ]
         },
         {
-          "name": "Saute Bowls Main",
+          "name": "Salad Bar Veggies & Legumes",
           "items": [
             {
-              "name": "Shredded Chicken",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Saute Bowls Veggies",
-          "items": [
-            {
-              "name": "Banana Pepper",
+              "name": "Chopped Romaine Lettuce",
               "serving_size": "1 oz. portion",
               "tags": [
                 "Vegan"
               ]
             },
             {
-              "name": "Broccoli Florettes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Garbanzo Beans",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pineapple Tidbit Chunks",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Napa Cabbage",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spinach",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Saute Bowls Toppings",
-          "items": [
-            {
-              "name": "Grape Tomatoes",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sesame Free Hummus",
-              "serving_size": "1 oz. portion",
+              "name": "Shredded Carrot",
+              "serving_size": "2 oz. portion",
               "tags": [
                 "Vegan"
               ]
@@ -4511,104 +1824,7 @@
               ]
             },
             {
-              "name": "Avocado Pulp",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Lime Wedges",
-              "serving_size": "1 wedge",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Yellow Onion",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Saute Bowls Sauces",
-          "items": [
-            {
-              "name": "Basil Oil",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Japanese Ginger Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Salsa Verde",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Power Plant Grains",
-          "items": [
-            {
-              "name": "Brown Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Mexican Rice",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Power Plant Mains",
-          "items": [
-            {
-              "name": "Southwest Black Beans",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Carne Asada",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Smoothie Add-Ins",
-          "items": [
-            {
-              "name": "Cocoa Powder",
-              "serving_size": "1 tsp.",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sunflower Seed Sunbutter",
+              "name": "Baby Corn",
               "serving_size": "2 oz. portion",
               "tags": [
                 "Vegan"
@@ -4617,167 +1833,200 @@
           ]
         },
         {
-          "name": "Smoothie Fruits & Veggies",
+          "name": "Salad Bar Dairy/Egg/Cheese",
           "items": [
             {
-              "name": "Banana Slices",
+              "name": "Shredded Cheddar Cheese",
               "serving_size": "1 oz. portion",
               "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Diced Strawberry",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pineapple Pieces",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peaches",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Smoothie Base",
-          "items": [
-            {
-              "name": "Apple Juice",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Pasteurized Orange Juice",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Unsweetened Coconut Milk",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Daily Juices",
-          "items": [
-            {
-              "name": "Lemon Honey Ginger Juice",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Beverages",
-          "items": [
-            {
-              "name": "Arnold Palmer Sweet Tea",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Cucumber Mint Water",
-              "serving_size": "12 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Liquid Shortening Oil",
-              "serving_size": "Pound",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Oat Milk",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sweet Tea",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Unsweet Tea",
-              "serving_size": "8 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit",
-          "items": [
-            {
-              "name": "Banana",
-              "serving_size": "1 banana",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Honeycrisp Apple",
-              "serving_size": "1 apple",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Condiments",
-          "items": [
-            {
-              "name": "Honey Clove",
-              "serving_size": "1 tbsp.",
-              "tags": [
+                "Dairy",
                 "Vegetarian"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Meats & Tofu",
+          "items": [
             {
-              "name": "Pepper",
-              "serving_size": "1.24 OZ",
-              "tags": []
-            },
-            {
-              "name": "Stevia In The Raw",
-              "serving_size": "1 packet",
-              "tags": []
-            },
-            {
-              "name": "Vegan Feta Cheese",
+              "name": "Bacon Crumbles Cooked",
               "serving_size": "1 oz. portion",
               "tags": [
-                "Kosher",
+                "Pork"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Composed",
+          "items": [
+            {
+              "name": "Basil Pesto",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Toppings",
+          "items": [
+            {
+              "name": "Black Olive",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dressings",
+          "items": [
+            {
+              "name": "Balsamic Vinaigrette",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Classic Ranch Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Vegetarian"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9597050,
+      "date": "2026-11-22",
+      "meal": "Dinner",
+      "item_count": 10,
+      "categories": [
+        {
+          "name": "None",
+          "items": [
+            {
+              "name": "Diced Pineapple",
+              "serving_size": "1 lb.",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Spinach Enchiladas",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Deep Fried Sweet Plantains",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Cuban Black Beans",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Toppings",
+          "items": [
+            {
+              "name": "White Queso",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Sweet Loren's Fudgy Brownie Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Fruit",
+          "items": [
+            {
+              "name": "Mango Cubes",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Veggies & Legumes",
+          "items": [
+            {
+              "name": "Sliced Cucumber",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Features Local Ingredient",
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dairy/Egg/Cheese",
+          "items": [
+            {
+              "name": "Sour Cream",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Composed",
+          "items": [
+            {
+              "name": "Housemade Guacamole",
+              "serving_size": "1 oz. portion",
+              "tags": [
                 "Vegan"
               ]
             }
@@ -4788,10 +2037,10 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 21,
-      "menu_oid": 9527473,
-      "date": "2026-11-20",
+      "menu_oid": 9596824,
+      "date": "2026-11-22",
       "meal": "Daily Offerings",
-      "item_count": 16,
+      "item_count": 15,
       "categories": [
         {
           "name": "Salad Bar Dressings",
@@ -4884,23 +2133,14 @@
               ]
             },
             {
-              "name": "Maypop Tangerine Sparkling Water",
-              "serving_size": "12 oz. can",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Unsweetened Almond Milk",
+              "name": "Skim Milk",
               "serving_size": "8 oz. portion",
               "tags": [
-                "Tree Nut",
-                "Vegan"
+                "Dairy"
               ]
             },
             {
-              "name": "Walker Brothers Citrus Kombucha",
+              "name": "Walker Brothers Blueberry-Jas Kombucha",
               "serving_size": "12 oz. can",
               "tags": [
                 "Features Local Ingredient",
@@ -4908,16 +2148,17 @@
               ]
             },
             {
-              "name": "Walker Brothers Ginger Kombucha",
+              "name": "Walker Brothers Cucumber Melon Kombucha",
               "serving_size": "12 oz. can",
               "tags": [
+                "Features Local Ingredient",
                 "Vegan"
               ]
             }
           ]
         },
         {
-          "name": "Fruit",
+          "name": "Fruits",
           "items": [
             {
               "name": "Banana",
