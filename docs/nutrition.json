@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-22T01:26:16.539411+00:00",
- "item_count": 1060,
+ "generated_at": "2026-11-22T11:40:42.501995+00:00",
+ "item_count": 1065,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -1156,7 +1156,7 @@
    "vitamin_c": null,
    "ingredients": "Pork Bacon Crumbled Topping (PORK CURED WITH: WATER, SALT, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY CONTAIN 2% OR LESS OF: SUGAR, SODIUM PHOSPHATES, NATURAL SMOKE FLAVORING, FLAVORINGS, BROWN SUGAR, MAPLE FLAVORING AND SEASONING (CORN SYRUP, NATURAL AND ARTIFICIAL FLAVOR, CARAMEL COLOR, SUGAR, MAPLE SUGAR, GLUCOSE SYRUP SOLIDS, ORGANIC INVERT SUGAR SYRUP, LACTIC ACID, MAPLE SYRUP), SODIUM DIACETATE, DEXTROSE. SMOKE FLAVORING ADDEDINGREDIENTS: BACON (CURED WITH WATER, SALT, SUGAR, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY ALSO CONTAIN SMOKE FLAVORING, DEXTROSE, SODIUM PHOSPHATE, POTASSIUM CHLORIDE, SODIUM DIACETATE, FLAVORING, HONEY). BACON CURED WITH: WATER, SALT, SODIUM PHOSPHATES, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY ALSO CONTAIN: SUGAR, BROWN SUGAR, AND NATURAL SMOKE FLAVOR)",
    "contains": "Pork",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "bacon crumbles|1 oz. portion": {
@@ -1244,7 +1244,7 @@
     "added_sugars",
     "potassium"
    ],
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "bacon|2 strips": {
@@ -1270,7 +1270,7 @@
    "vitamin_c": null,
    "ingredients": "Pork Bacon C/C Applewood Smoked (PORK CURED WITH WATER, SALT, SUGAR, SODIUM PHOSPHATE, SODIUM ERYTHORBATE, SODIUM NITRITE.)",
    "contains": "Pork",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "bagel egg & cheese sandwich|1 bagel": {
@@ -1470,7 +1470,7 @@
    "potassium": 840.0,
    "vitamin_c": 27.6,
    "ingredients": "Idaho Potatoes",
-   "_seen": "2026-09-06",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "baked trout w/ lemon|6 oz. portion": {
@@ -1586,7 +1586,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "WATER, HIGH FRUCTOSE CORN SYRUP, BALSAMIC VINEGAR, RED WINE VINEGAR, VEGETABLE OIL (SOYBEAN AND/OR CANOLA), OLIVE OIL, CONTAINS LESS THAN 2% OF SALT, DRIED GARLIC, XANTHAN GUM, SPICE, SODIUM ALGINATE, PROPYLENE GLYCOL ALGINATE, CALCIUM DISODIUM EDTA (TO PROTECT FLAVOR), SULFITING AGENTS.",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "balsamic vinegar|1 oz. portion": {
@@ -1846,7 +1846,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-11-19",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "banana quick bread|1 slice": {
@@ -2292,6 +2292,36 @@
     "vitamin_c"
    ],
    "_seen": "2026-11-18",
+   "_v": 2
+  },
+  "bbq jackfruit|5 oz. portion": {
+   "name": "BBQ Jackfruit",
+   "serving": "5 oz. portion (143g)",
+   "grams": 143.0,
+   "servings_per_container": 1.0,
+   "calories": 140.0,
+   "fat": 0.0,
+   "sat_fat": 0.0,
+   "trans_fat": null,
+   "cholesterol": 0.0,
+   "sodium": 410.0,
+   "carbs": 34.0,
+   "fiber": 8.0,
+   "sugars": 24.0,
+   "added_sugars": 23.0,
+   "protein": 2.0,
+   "vitamin_d": null,
+   "calcium": 52.0,
+   "iron": null,
+   "potassium": 230.0,
+   "vitamin_c": 7.1,
+   "ingredients": "Jackfruit Meat Alternative (YOUNG JACKFRUIT, WATER.), Hickory BBQ Sauce (HIGH FRUCTOSE CORN SYRUP, DISTILLED VINEGAR, TOMATO PASTE, MODIFIED CORN STARCH, BROWN SUGAR, CONTAINS LESS THAN 2% OF SALT, FRUCTOSE, NATURAL SMOKE FLAVOR, PINEAPPLE JUICE CONCENTRATE, CARAMEL COLOR, MOLASSES, SPICE, SODIUM BENZOATE (PRESERVATIVE), GARLIC,* MUSTARD FLOUR, CORN SYRUP, SUGAR, TAMARIND, NATURAL FLAVOR, CELERY SEED.)",
+   "incomplete": [
+    "added_sugars",
+    "potassium",
+    "vitamin_c"
+   ],
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "bbq pulled chicken|6 oz. portion": {
@@ -3840,7 +3870,7 @@
    "iron": 0.08,
    "potassium": 20.0,
    "vitamin_c": 2.7,
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "blueberries|pound": {
@@ -4745,7 +4775,7 @@
    "potassium": 110.0,
    "vitamin_c": 0.0,
    "ingredients": "Brown Rice (WHOLE GRAIN PARBOILED BROWN RICE.), Water",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "brown sugar glazed carrots|3 oz. portion": {
@@ -5201,7 +5231,7 @@
    "vitamin_c": null,
    "ingredients": "PASTEURIZED CREAM (MILK), SALT.",
    "contains": "Dairy",
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "cabbage napa stir fry|3 oz. portion": {
@@ -8069,7 +8099,7 @@
    "potassium": 75.0,
    "vitamin_c": 1.4,
    "ingredients": "Romaine Lettuce",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "chorizo & egg breakfast burrito|1 burrito": {
@@ -8629,7 +8659,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "cocoa powder|1 tsp.": {
@@ -8842,7 +8872,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-11-19",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "collard greens|3 oz. portion": {
@@ -9402,7 +9432,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "CRANBERRIES, SUGAR, SUNFLOWER OIL.",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "cranberry juice|8 oz. portion": {
@@ -10051,7 +10081,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "cucumber mint water|12 oz. portion": {
@@ -10245,7 +10275,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "deli ham|1 oz. portion": {
@@ -10557,7 +10587,7 @@
    "potassium": 950.0,
    "vitamin_c": 417.0,
    "ingredients": "Pineapple",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "diced pineapple|1 oz. portion": {
@@ -14210,7 +14240,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "hashbrown patty|4.5 oz. portion": {
@@ -14416,7 +14446,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "herb roasted lamb|3 oz. portion": {
@@ -15318,7 +15348,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "housemade lemon rosemary scone|1 scone": {
@@ -17499,7 +17529,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED PASTEURIZED GRADE A LOW FAT MILK, SUGAR, MODIFIED CORN STARCH, KOSHER GELATIN, CITRIC ACID, NATURAL FLAVOR, POTASSIUM SORBATE ADDED TO MAINTAIN FRESHNESS, COLORED WITH CARMINE, VITAMIN A ACETATE, VITAMIN D3.",
    "contains": "Dairy",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "macaroni & cheese|5 oz. portion": {
@@ -17583,6 +17613,56 @@
    "_seen": "2026-11-19",
    "_v": 2
   },
+  "mandarin orange|1 lb.": {
+   "name": "Mandarin Orange",
+   "serving": "1 lb. (454g)",
+   "grams": 454.0,
+   "servings_per_container": 1.0,
+   "calories": 260.0,
+   "fat": 0.0,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 50.0,
+   "carbs": 62.0,
+   "fiber": 3.0,
+   "sugars": 52.0,
+   "added_sugars": null,
+   "protein": 3.0,
+   "vitamin_d": 0.0,
+   "calcium": 0.0,
+   "iron": 1.17,
+   "potassium": 360.0,
+   "vitamin_c": 0.0,
+   "ingredients": "MANDARIN ORANGES, WATER, CITRIC ACID, SUGAR. MANDARIN ORANGE, WATER, PEAR JUICE CONCENTRATE",
+   "_seen": "2026-11-22",
+   "_v": 2
+  },
+  "mandarin orange|1 oz. portion": {
+   "name": "Mandarin Orange",
+   "serving": "1 oz. portion (28g)",
+   "grams": 28.0,
+   "servings_per_container": 1.0,
+   "calories": 15.0,
+   "fat": 0.0,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 0.0,
+   "carbs": 4.0,
+   "fiber": 0.0,
+   "sugars": 3.0,
+   "added_sugars": null,
+   "protein": 0.0,
+   "vitamin_d": 0.0,
+   "calcium": 0.0,
+   "iron": 0.07,
+   "potassium": 20.0,
+   "vitamin_c": 0.0,
+   "ingredients": "Mandarin Orange (MANDARIN ORANGES, WATER, CITRIC ACID, SUGAR. MANDARIN ORANGE, WATER, PEAR JUICE CONCENTRATE)",
+   "_seen": "2026-11-22",
+   "_v": 2
+  },
   "mandarin orange|2 oz. portion": {
    "name": "Mandarin Orange",
    "serving": "2 oz. portion (55g)",
@@ -17630,7 +17710,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "MANGO.",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "mango habanero salsa|1 oz. portion": {
@@ -18370,6 +18450,32 @@
    "_seen": "2026-09-06",
    "_v": 2
   },
+  "mini chocolate chips|2 tbsp.": {
+   "name": "Mini Chocolate Chips",
+   "serving": "2 tbsp. (21g)",
+   "grams": 21.0,
+   "servings_per_container": 1.0,
+   "calories": 100.0,
+   "fat": 6.0,
+   "sat_fat": 3.5,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 0.0,
+   "carbs": 14.0,
+   "fiber": 1.0,
+   "sugars": 11.0,
+   "added_sugars": null,
+   "protein": 0.5,
+   "vitamin_d": null,
+   "calcium": 8.0,
+   "iron": 0.43,
+   "potassium": 90.0,
+   "vitamin_c": null,
+   "ingredients": "SEMI-SWEET CHOCOLATE (SUGAR, CHOCOLATE, COCOA BUTTER, MILK FAT, LECITHIN (SOY), NATURAL FLAVOR).",
+   "contains": "Dairy, Soy",
+   "_seen": "2026-11-22",
+   "_v": 2
+  },
   "mini croissant|1 croissant": {
    "name": "Mini Croissant",
    "serving": "1 croissant (47g)",
@@ -18726,7 +18832,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "mushroom al pastor|4 oz. portion": {
@@ -19405,7 +19511,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "paella|1/2 cup portion": {
@@ -20590,7 +20696,7 @@
    "vitamin_c": null,
    "ingredients": "CULTURED NONFAT MILK. CONTAINS LIVE AND ACTIVE CULTURES: S. THERMOPHILUS, L. BULGARICUS, L. ACIDOPHILUS, BIFIDUS, L. CASEI, AND L. RHAMNOSUS. NONFAT YOGURT CULTURED PASTEURIZED NONFAT MILK, CONTAINS LIVE AND ACTIVE CULTURES: S. THERMOPHILUS, L. BULGARICUS, L. ACIDOPHILUS, BIFIDUS AND L. CASEI. CULTURED GRADE A MILK; LIVE AND ACTIVE CULTURES: S. THERMOPHILUS & L. BULGARICUS. CULTURED GRADE A NON FAT MILK, FOOD STARCH, LIVE & ACTIVE YOGURT CULTURES S. THERMOPHILUS, L. BULGARICUS & L. ACIDOPHILUS",
    "contains": "Dairy",
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "plant-based chipotle chorizo|1 oz. portion": {
@@ -21373,7 +21479,7 @@
    "incomplete": [
     "sugars"
    ],
-   "_seen": "2026-09-07",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "red coconut curry chicken|4 oz. portion": {
@@ -22192,7 +22298,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-19",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "roasted carrots & parsnips|3 oz. portion": {
@@ -23682,7 +23788,7 @@
    "vitamin_c": null,
    "ingredients": "Large Egg - Cage Free Grade A (FRESH SHELL EGGS.), Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.)",
    "contains": "Egg",
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "scrambled just eggs|4 oz. portion": {
@@ -23961,7 +24067,7 @@
    "potassium": 90.0,
    "vitamin_c": 1.7,
    "ingredients": "Carrot",
-   "_seen": "2026-11-19",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "shredded carrot|1 oz. portion": {
@@ -24009,7 +24115,7 @@
    "iron": 0.17,
    "potassium": 180.0,
    "vitamin_c": 3.3,
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "shredded cheddar cheese|1 oz. portion": {
@@ -24035,7 +24141,7 @@
    "vitamin_c": 0.0,
    "ingredients": "PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO, POWDERED CELLULOSE (ANTI CAKING AGENT)",
    "contains": "Dairy",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "shredded cheddar jack cheese|1 oz. portion": {
@@ -24377,7 +24483,7 @@
    "potassium": 45.0,
    "vitamin_c": 0.8,
    "ingredients": "Cucumber Select",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "sliced jalapeno peppers|1 oz. portion": {
@@ -24528,7 +24634,7 @@
    "potassium": 55.0,
    "vitamin_c": 28.4,
    "ingredients": "Green Bell Pepper, Red Bell Pepper (BELL PEPPER.)",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "sliced pickled jalapenos|1 oz. portion": {
@@ -25077,7 +25183,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED CREAM, ENZYME",
    "contains": "Dairy",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "sourdough bagel|1 bagel(s)": {
@@ -25822,7 +25928,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "spinach feta danish|danish(s)": {
@@ -26014,7 +26120,7 @@
    "iron": 0.12,
    "potassium": 40.0,
    "vitamin_c": 0.8,
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "squash & zucchini medley|4 oz. portion": {
@@ -26597,7 +26703,7 @@
    "potassium": 30.0,
    "vitamin_c": 17.6,
    "ingredients": "Strawberries",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "strawberry lemon basil water|8 oz. portions": {
@@ -27215,7 +27321,7 @@
    "potassium": 110.0,
    "vitamin_c": null,
    "ingredients": "Dough Cookie Fudgy Brownie GF Sweet Lore (CANE SUGAR, GLUTEN FREE FLOUR BLEND (OAT, TAPIOCA STARCH), CHOCOLATE CHUNKS (SUGAR, UNSWEETENED CHOCOLATE, COCOA BUTTER, VANILLA, SALT), PALM OIL, FILTERED WATER, COCOA POWDER, MOLASSES, SEA SALT, BAKING SODA.)",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "sweet loren's oatmeal cranberry cookie|1 cookie": {
@@ -27396,6 +27502,31 @@
     "vitamin_c"
    ],
    "_seen": "2026-11-18",
+   "_v": 2
+  },
+  "sweet potato|1 potato": {
+   "name": "Sweet Potato",
+   "serving": "1 potato (117g)",
+   "grams": 117.0,
+   "servings_per_container": 1.0,
+   "calories": 100.0,
+   "fat": 0.0,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 40.0,
+   "carbs": 24.0,
+   "fiber": 4.0,
+   "sugars": 8.0,
+   "added_sugars": 0.0,
+   "protein": 2.0,
+   "vitamin_d": 0.0,
+   "calcium": 44.0,
+   "iron": 0.81,
+   "potassium": 560.0,
+   "vitamin_c": 22.9,
+   "ingredients": "Sweet Potato",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "sweet sriracha sauce|1 oz. portion": {
@@ -28253,7 +28384,7 @@
    "vitamin_c": 0.0,
    "ingredients": "Shredded Coconut (COCONUT, SODIUM METABISULFITE (ADDED TO RETAIN COLOR), SUGAR, WATER, PROPYLENE GLYCOL, SALT. DESICCATED COCONUT PROCESSED WITH SUGAR, WATER, PROPYLENE GLYCOL (PRESERVES FRESHNESS) AND SALT. SODIUM METABISULFITE ADDED AS PRESERVATIVE (RETAINS COCONUT WHITENESS).)",
    "contains": "Coconut",
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "tofu & vegetable stir fry|4 oz. portion": {
@@ -29188,7 +29319,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED PASTEURIZED GRADE A NONFAT MILK, FRUCTOSE, SUGAR, CORN STARCH, NATURAL FLAVOR, PECTIN, MALIC ACID.",
    "contains": "Dairy",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "vanilla ice cream|1 scoop": {
@@ -30328,7 +30459,7 @@
    "vitamin_c": null,
    "ingredients": "Cheese Queso Hatch RTU FZ (WATER, CHEDDAR CHEESE (PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES), CREAM (MILK), POBLANO PEPPERS, HATCH GREEN CHILES, CONTAINS LESS THAN 2% OF MODIFIED FOOD STARCH, JALAPENO PEPPERS (WITH SALT, ACETIC ACID, WATER, CALCIUM CHLORIDE), SODIUM PHOSPHATES, SALT, DEHYDRATED RED BELL PEPPERS, JALAPENO EXTRACTIVES. CULTURED PASTEURIZED MILK AND SKIM MILK, BUTTERMILK, MALTODEXTRIN, MILKFAT, CONTAINS LESS THAN 2% OF SALT, SODIUM PHOSPHATE, JALAPENO PEPPERS, RED BELL PEPPERS, VINEGAR, SORBIC ACID (PRESERVATIVE), GUAR GUM, XANTHAN GUM, LACTIC ACID, OLEORESIN CAPSICUM, ARTIFICIAL COLOR, ENZYMES.)",
    "contains": "Dairy",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-22",
    "_v": 2
   },
   "white rice|3 oz. portion": {
