@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T11:40:42.501995+00:00",
+  "generated_at": "2026-11-22T19:50:59.435523+00:00",
   "campus_date": "2026-11-22",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 7,
-  "item_count": 86,
+  "menu_count": 8,
+  "item_count": 102,
   "nutrition": {
     "cached_recipes": 1065,
     "with_macros": 1063,
-    "recipes_covered": 47,
-    "recipes_total": 65
+    "recipes_covered": 56,
+    "recipes_total": 74
   },
   "tags": [
     "Vegetarian",
@@ -92,16 +92,16 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
-            "08:00",
+            "09:00",
             "11:00"
           ],
           [
             "12:00",
-            "16:00"
+            "14:00"
           ],
           [
             "17:00",
@@ -110,12 +110,12 @@
         ],
         "Monday": [
           [
-            "07:00",
-            "10:00"
+            "09:00",
+            "11:00"
           ],
           [
-            "11:00",
-            "15:00"
+            "12:00",
+            "14:00"
           ],
           [
             "17:00",
@@ -124,12 +124,12 @@
         ],
         "Tuesday": [
           [
-            "07:00",
-            "10:00"
+            "09:00",
+            "11:00"
           ],
           [
-            "11:00",
-            "15:00"
+            "12:00",
+            "14:00"
           ],
           [
             "17:00",
@@ -138,49 +138,36 @@
         ],
         "Wednesday": [
           [
-            "07:00",
-            "10:00"
+            "09:00",
+            "11:00"
           ],
           [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "20:00"
-          ]
-        ],
-        "Thursday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
+            "12:00",
+            "14:00"
           ],
           [
             "17:00",
             "20:00"
           ]
         ],
-        "Friday": [
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": [
           [
-            "07:00",
-            "10:00"
+            "09:00",
+            "11:00"
           ],
           [
-            "11:00",
-            "15:00"
+            "12:00",
+            "14:00"
           ],
           [
             "17:00",
             "20:00"
           ]
-        ],
-        "Saturday": []
+        ]
       },
-      "menu_count": 5,
+      "menu_count": 6,
       "lat": 36.14944,
       "lon": -86.801799
     },
@@ -299,42 +286,12 @@
       "name": "Commons Munchie",
       "status": "Closed",
       "hours": {
-        "Sunday": [
-          [
-            "08:00",
-            "23:59"
-          ]
-        ],
-        "Monday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Tuesday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Wednesday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Thursday": [
-          [
-            "07:00",
-            "22:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "07:00",
-            "13:00"
-          ]
-        ],
+        "Sunday": [],
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0
@@ -345,36 +302,11 @@
       "status": "Closed",
       "hours": {
         "Sunday": [],
-        "Monday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Tuesday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Wednesday": [
-          [
-            "07:00",
-            "23:59"
-          ]
-        ],
-        "Thursday": [
-          [
-            "07:00",
-            "22:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "07:00",
-            "22:00"
-          ]
-        ],
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0
@@ -385,76 +317,11 @@
       "status": "Closed",
       "hours": {
         "Sunday": [],
-        "Monday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "22:00"
-          ]
-        ],
-        "Tuesday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "22:00"
-          ]
-        ],
-        "Wednesday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "22:00"
-          ]
-        ],
-        "Thursday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "22:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "07:00",
-            "10:00"
-          ],
-          [
-            "11:00",
-            "15:00"
-          ],
-          [
-            "17:00",
-            "22:00"
-          ]
-        ],
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0
@@ -462,44 +329,34 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
-            "08:00",
-            "23:59"
+            "09:00",
+            "20:00"
           ]
         ],
         "Monday": [
           [
-            "07:00",
-            "23:59"
+            "09:00",
+            "20:00"
           ]
         ],
         "Tuesday": [
           [
-            "07:00",
-            "23:59"
+            "09:00",
+            "20:00"
           ]
         ],
         "Wednesday": [
           [
-            "07:00",
-            "23:59"
+            "09:00",
+            "20:00"
           ]
         ],
-        "Thursday": [
-          [
-            "07:00",
-            "22:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "07:00",
-            "22:00"
-          ]
-        ],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": [
           [
             "09:00",
@@ -522,7 +379,9 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.151974,
+      "lon": -86.796884
     },
     {
       "id": 22,
@@ -562,7 +421,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.145906,
+      "lon": -86.79933
     },
     {
       "id": 5,
@@ -677,7 +538,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.151974,
+      "lon": -86.796884
     },
     {
       "id": 7,
@@ -707,7 +570,9 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0
+      "menu_count": 0,
+      "lat": 36.138635,
+      "lon": -86.806048
     },
     {
       "id": 8,
@@ -795,7 +660,118 @@
       "menu_count": 0
     }
   ],
-  "buildings": [],
+  "buildings": [
+    {
+      "name": "Buttrick Hall",
+      "lat": 36.145823,
+      "lon": -86.802564
+    },
+    {
+      "name": "Furman Hall",
+      "lat": 36.147949,
+      "lon": -86.801328
+    },
+    {
+      "name": "Wilson Hall",
+      "lat": 36.148945,
+      "lon": -86.800705
+    },
+    {
+      "name": "Calhoun Hall",
+      "lat": 36.147263,
+      "lon": -86.801422
+    },
+    {
+      "name": "Garland Hall",
+      "lat": 36.146535,
+      "lon": -86.80148
+    },
+    {
+      "name": "Kirkland Hall",
+      "lat": 36.148231,
+      "lon": -86.802809
+    },
+    {
+      "name": "Memorial Gym",
+      "lat": 36.144525,
+      "lon": -86.807241
+    },
+    {
+      "name": "Featheringill Hall",
+      "lat": 36.144891,
+      "lon": -86.803138
+    },
+    {
+      "name": "Olin Hall",
+      "lat": 36.14295,
+      "lon": -86.805263
+    },
+    {
+      "name": "Stevenson Center",
+      "lat": 36.144648,
+      "lon": -86.8019
+    },
+    {
+      "name": "Sarratt Student Center",
+      "lat": 36.146419,
+      "lon": -86.803567
+    },
+    {
+      "name": "Alumni Hall",
+      "lat": 36.147943,
+      "lon": -86.803351
+    },
+    {
+      "name": "Cohen Memorial Hall",
+      "lat": 36.141542,
+      "lon": -86.799402
+    },
+    {
+      "name": "Owen Graduate School of Management",
+      "lat": 36.147179,
+      "lon": -86.800105
+    },
+    {
+      "name": "Peabody Library",
+      "lat": 36.142494,
+      "lon": -86.799202
+    },
+    {
+      "name": "Hill Center for Measurement Science",
+      "lat": 36.141722,
+      "lon": -86.796525
+    },
+    {
+      "name": "Vanderbilt Recreation and Wellness Center",
+      "lat": 36.140208,
+      "lon": -86.808528
+    },
+    {
+      "name": "Blair School of Music",
+      "lat": 36.138635,
+      "lon": -86.806048
+    },
+    {
+      "name": "Student Life Center",
+      "lat": 36.144403,
+      "lon": -86.805842
+    },
+    {
+      "name": "Commons Center",
+      "lat": 36.141792,
+      "lon": -86.797115
+    },
+    {
+      "name": "Rand Hall",
+      "lat": 36.146426,
+      "lon": -86.80304
+    },
+    {
+      "name": "Kissam Center",
+      "lat": 36.14944,
+      "lon": -86.801799
+    }
+  ],
   "restaurants": [
     {
       "neighborhood": "Hillsboro Village",
@@ -1175,6 +1151,183 @@
               "serving_size": "1 oz. portion",
               "tags": [
                 "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9597432,
+      "date": "2026-11-22",
+      "meal": "Lunch",
+      "item_count": 16,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Ground Beef",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Halal"
+              ]
+            },
+            {
+              "name": "Beyond Meat Beef Sub Crumbles",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Blanched Green Beans",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Penne Pasta",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Toppings",
+          "items": [
+            {
+              "name": "Alfredo Sauce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Sweet Loren's Fudgy Brownie Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Veggies & Legumes",
+          "items": [
+            {
+              "name": "Chopped Romaine Lettuce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Shredded Carrot",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sliced Red Onion",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Baby Corn",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dairy/Egg/Cheese",
+          "items": [
+            {
+              "name": "Shredded Cheddar Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Meats & Tofu",
+          "items": [
+            {
+              "name": "Bacon Crumbles Cooked",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Pork"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Composed",
+          "items": [
+            {
+              "name": "Basil Pesto",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Toppings",
+          "items": [
+            {
+              "name": "Black Olive",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dressings",
+          "items": [
+            {
+              "name": "Balsamic Vinaigrette",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Classic Ranch Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Dairy",
+                "Egg",
                 "Vegetarian"
               ]
             }
