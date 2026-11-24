@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T02:20:57.832145+00:00",
-  "campus_date": "2026-11-23",
+  "generated_at": "2026-11-24T13:57:36.803476+00:00",
+  "campus_date": "2026-11-24",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 8,
   "item_count": 102,
   "nutrition": {
-    "cached_recipes": 1065,
-    "with_macros": 1063,
-    "recipes_covered": 52,
-    "recipes_total": 69
+    "cached_recipes": 1067,
+    "with_macros": 1065,
+    "recipes_covered": 49,
+    "recipes_total": 66
   },
   "tags": [
     "Vegetarian",
@@ -1027,383 +1027,6 @@
     {
       "hall": "The Kitchen at Kissam",
       "hall_id": 3,
-      "menu_oid": 9603807,
-      "date": "2026-11-23",
-      "meal": "Breakfast",
-      "item_count": 10,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "Bacon, Egg, & Cheese Sandwich",
-              "serving_size": "1 sandwich",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Pork"
-              ]
-            },
-            {
-              "name": "Scrambled Eggs",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Egg",
-                "Features Local Ingredient",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Hashbrown Casserole",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Bacon",
-              "serving_size": "2 strips",
-              "tags": [
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit & Yogurt Bar",
-          "items": [
-            {
-              "name": "Blueberries",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Low Fat Strawberry Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Plain Greek Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Toasted Coconut",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Craisins",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Mini Chocolate Chips",
-              "serving_size": "2 tbsp.",
-              "tags": [
-                "Dairy",
-                "Soy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9603808,
-      "date": "2026-11-23",
-      "meal": "Lunch",
-      "item_count": 13,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "Herb Roasted Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Brown Rice",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Roasted Butternut Squash",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Features Local Ingredient",
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Sweet Loren's Fudgy Brownie Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Fruit",
-          "items": [
-            {
-              "name": "Mandarin Orange",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Chopped Romaine Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spring Salad Mix",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Bacon Crumbles Cooked",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Chop Chop Dressing",
-          "items": [
-            {
-              "name": "Balsamic Vinaigrette",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Classic Ranch Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9603809,
-      "date": "2026-11-23",
-      "meal": "Dinner",
-      "item_count": 11,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "BBQ Jackfruit",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Herb Roasted Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Baked Potato",
-              "serving_size": "1 potato",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sweet Potato",
-              "serving_size": "1 potato",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Banana Pudding",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Soy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Fruit",
-          "items": [
-            {
-              "name": "Mandarin Orange",
-              "serving_size": "1 lb.",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Butter",
-              "serving_size": "1 packet",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Shredded Carrots",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Red & Yellow Cherry Tomatos",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Composed",
-          "items": [
-            {
-              "name": "Coleslaw",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Soy",
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
       "menu_oid": 9603810,
       "date": "2026-11-24",
       "meal": "Breakfast",
@@ -1737,10 +1360,380 @@
       ]
     },
     {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9603813,
+      "date": "2026-11-25",
+      "meal": "Breakfast",
+      "item_count": 8,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Bacon, Egg, & Cheese Sandwich",
+              "serving_size": "1 sandwich",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Pork"
+              ]
+            },
+            {
+              "name": "Scrambled Eggs",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Egg",
+                "Features Local Ingredient",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Bacon",
+              "serving_size": "2 strips",
+              "tags": [
+                "Pork"
+              ]
+            },
+            {
+              "name": "Turkey Bacon",
+              "serving_size": "2 slices",
+              "tags": [
+                "Halal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fruit & Yogurt Bar",
+          "items": [
+            {
+              "name": "Blueberries",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Dairy Free Vanilla Yogurt",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Overnight Chia Oats",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Strawberry Halves",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9606045,
+      "date": "2026-11-25",
+      "meal": "Lunch",
+      "item_count": 14,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Herb Roasted Chicken Breast",
+              "serving_size": "1 piece",
+              "tags": [
+                "Halal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Lemon Herbed Quinoa",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Roasted Cauliflower",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bakery",
+          "items": [
+            {
+              "name": "Sweet Loren's Oatmeal Cranberry Cookie",
+              "serving_size": "1 cookie",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Fruit",
+          "items": [
+            {
+              "name": "Mandarin Orange",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Veggies & Legumes",
+          "items": [
+            {
+              "name": "Chopped Romaine Lettuce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Shredded Carrot",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sliced Peppers",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Spring Salad Mix",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dairy/Egg/Cheese",
+          "items": [
+            {
+              "name": "Shredded Cheddar Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            },
+            {
+              "name": "Grated Parmesan Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Meats & Tofu",
+          "items": [
+            {
+              "name": "Bacon Crumbles Cooked",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Pork"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dressings",
+          "items": [
+            {
+              "name": "Balsamic Vinaigrette",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Classic Ranch Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Vegetarian"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hall": "The Kitchen at Kissam",
+      "hall_id": 3,
+      "menu_oid": 9603815,
+      "date": "2026-11-25",
+      "meal": "Dinner",
+      "item_count": 12,
+      "categories": [
+        {
+          "name": "Bodega Hot Line Main",
+          "items": [
+            {
+              "name": "Herb Roasted Chicken Breast",
+              "serving_size": "1 piece",
+              "tags": [
+                "Halal"
+              ]
+            },
+            {
+              "name": "Nashville Hot Chicken Tenders",
+              "serving_size": "4 oz. portion",
+              "tags": [
+                "Halal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bodega Hot Line Side",
+          "items": [
+            {
+              "name": "Roasted Brussels Sprouts",
+              "serving_size": "3 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Cornbread",
+              "serving_size": "1 piece",
+              "tags": [
+                "Dairy",
+                "Egg",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Veggies & Legumes",
+          "items": [
+            {
+              "name": "Chopped Romaine Lettuce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Shredded Carrot",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Sliced Peppers",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dairy/Egg/Cheese",
+          "items": [
+            {
+              "name": "Shredded Cheddar Cheese",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Dairy",
+                "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Meats & Tofu",
+          "items": [
+            {
+              "name": "Bacon Crumbles Cooked",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Pork"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Salad Bar Dressings",
+          "items": [
+            {
+              "name": "Balsamic Vinaigrette",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            },
+            {
+              "name": "Italian Dressing",
+              "serving_size": "2 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot Line Topping",
+          "items": [
+            {
+              "name": "Nashville Hot Sauce",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Vegan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 21,
-      "menu_oid": 9596827,
-      "date": "2026-11-23",
+      "menu_oid": 9596830,
+      "date": "2026-11-24",
       "meal": "Daily Offerings",
       "item_count": 19,
       "categories": [
@@ -1911,8 +1904,8 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 21,
-      "menu_oid": 9596830,
-      "date": "2026-11-24",
+      "menu_oid": 9596833,
+      "date": "2026-11-25",
       "meal": "Daily Offerings",
       "item_count": 19,
       "categories": [
