@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T13:14:14.380613+00:00",
+  "generated_at": "2026-11-24T02:20:57.832145+00:00",
   "campus_date": "2026-11-23",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 8,
-  "item_count": 100,
+  "item_count": 102,
   "nutrition": {
     "cached_recipes": 1065,
     "with_macros": 1063,
-    "recipes_covered": 51,
-    "recipes_total": 68
+    "recipes_covered": 52,
+    "recipes_total": 69
   },
   "tags": [
     "Vegetarian",
@@ -56,16 +56,7 @@
         "Tuesday": [],
         "Wednesday": [],
         "Thursday": [],
-        "Friday": [
-          [
-            "16:00",
-            "20:00"
-          ],
-          [
-            "07:00",
-            "15:00"
-          ]
-        ],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0,
@@ -198,12 +189,7 @@
         "Tuesday": [],
         "Wednesday": [],
         "Thursday": [],
-        "Friday": [
-          [
-            "11:00",
-            "15:00"
-          ]
-        ],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0,
@@ -249,7 +235,12 @@
       "name": "Zeppos Dining",
       "status": "Closed",
       "hours": {
-        "Sunday": [],
+        "Sunday": [
+          [
+            "17:00",
+            "20:00"
+          ]
+        ],
         "Monday": [],
         "Tuesday": [],
         "Wednesday": [],
@@ -271,12 +262,7 @@
         "Tuesday": [],
         "Wednesday": [],
         "Thursday": [],
-        "Friday": [
-          [
-            "07:00",
-            "20:00"
-          ]
-        ],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0
@@ -387,36 +373,11 @@
       "status": "Closed",
       "hours": {
         "Sunday": [],
-        "Monday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Tuesday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Wednesday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Thursday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "08:00",
-            "15:00"
-          ]
-        ],
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
         "Saturday": []
       },
       "menu_count": 0
@@ -1060,7 +1021,7 @@
       "address": "2217 Elliston Pl, Nashville"
     }
   ],
-  "places_checked": "2026-11-23T01:49:52.115658+00:00",
+  "places_checked": "2026-11-24T02:20:22.095445+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -1318,7 +1279,7 @@
       "menu_oid": 9603809,
       "date": "2026-11-23",
       "meal": "Dinner",
-      "item_count": 10,
+      "item_count": 11,
       "categories": [
         {
           "name": "Bodega Hot Line Main",
@@ -1328,6 +1289,13 @@
               "serving_size": "5 oz. portion",
               "tags": [
                 "Vegan"
+              ]
+            },
+            {
+              "name": "Herb Roasted Chicken Breast",
+              "serving_size": "1 piece",
+              "tags": [
+                "Halal"
               ]
             }
           ]
@@ -1517,7 +1485,7 @@
       "menu_oid": 9606040,
       "date": "2026-11-24",
       "meal": "Lunch",
-      "item_count": 13,
+      "item_count": 14,
       "categories": [
         {
           "name": "Bodega Hot Line Main",
@@ -1527,6 +1495,13 @@
               "serving_size": "4 oz. portion",
               "tags": [
                 "Vegan"
+              ]
+            },
+            {
+              "name": "Lemon Pepper Salmon",
+              "serving_size": "5 oz. portion",
+              "tags": [
+                "Fish"
               ]
             }
           ]
