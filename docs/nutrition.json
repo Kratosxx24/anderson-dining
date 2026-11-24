@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T13:57:36.803476+00:00",
- "item_count": 1067,
+ "generated_at": "2026-11-24T23:57:34.060485+00:00",
+ "item_count": 1068,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -22974,6 +22974,37 @@
     "vitamin_c"
    ],
    "_seen": "2026-09-06",
+   "_v": 2
+  },
+  "roasted shiitake mushrooms|1 oz. portion": {
+   "name": "Roasted Shiitake Mushrooms",
+   "serving": "1 oz. portion (29g)",
+   "grams": 29.0,
+   "servings_per_container": 1.0,
+   "calories": 20.0,
+   "fat": 0.0,
+   "sat_fat": 0.0,
+   "trans_fat": 0.0,
+   "cholesterol": 0.0,
+   "sodium": 20.0,
+   "carbs": 4.0,
+   "fiber": 0.5,
+   "sugars": 1.0,
+   "added_sugars": null,
+   "protein": 0.0,
+   "vitamin_d": 0.2,
+   "calcium": 1.0,
+   "iron": 0.13,
+   "potassium": 35.0,
+   "vitamin_c": 0.1,
+   "ingredients": "Shiitake Cap Mushrooms, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.)",
+   "incomplete": [
+    "potassium",
+    "sugars",
+    "vitamin_c",
+    "vitamin_d"
+   ],
+   "_seen": "2026-11-24",
    "_v": 2
   },
   "roasted spiced corn|3 oz. portion": {

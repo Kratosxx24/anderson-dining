@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24T13:57:36.803476+00:00",
+  "generated_at": "2026-11-24T23:57:34.060485+00:00",
   "campus_date": "2026-11-24",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
   "menu_count": 8,
   "item_count": 102,
   "nutrition": {
-    "cached_recipes": 1067,
-    "with_macros": 1065,
+    "cached_recipes": 1068,
+    "with_macros": 1066,
     "recipes_covered": 49,
     "recipes_total": 66
   },
@@ -83,7 +83,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -315,7 +315,7 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -430,7 +430,7 @@
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -1021,7 +1021,7 @@
       "address": "2217 Elliston Pl, Nashville"
     }
   ],
-  "places_checked": "2026-11-24T02:20:22.095445+00:00",
+  "places_checked": "2026-11-24T23:56:58.335641+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
@@ -1113,13 +1113,6 @@
         {
           "name": "Bodega Hot Line Main",
           "items": [
-            {
-              "name": "Braised Bok Choy & Shiitake Mushrooms",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
             {
               "name": "Lemon Pepper Salmon",
               "serving_size": "5 oz. portion",
@@ -1247,6 +1240,19 @@
                 "Dairy",
                 "Egg",
                 "Vegetarian"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot Line Main",
+          "items": [
+            {
+              "name": "Roasted Shiitake Mushrooms",
+              "serving_size": "1 oz. portion",
+              "tags": [
+                "Features Local Ingredient",
+                "Vegan"
               ]
             }
           ]
