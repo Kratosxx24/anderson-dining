@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:51:24.781228+00:00",
+  "generated_at": "2026-11-25T19:26:28.221170+00:00",
   "campus_date": "2026-11-25",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -82,7 +82,7 @@
     {
       "id": 3,
       "name": "The Kitchen at Kissam",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -314,7 +314,7 @@
     {
       "id": 14,
       "name": "Kissam Munchie",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [
           [
@@ -364,9 +364,7 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.151974,
-      "lon": -86.796884
+      "menu_count": 0
     },
     {
       "id": 22,
@@ -381,9 +379,7 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.145906,
-      "lon": -86.79933
+      "menu_count": 0
     },
     {
       "id": 5,
@@ -403,37 +399,17 @@
             "17:00"
           ]
         ],
-        "Wednesday": [
-          [
-            "08:00",
-            "17:00"
-          ]
-        ],
-        "Thursday": [
-          [
-            "08:00",
-            "17:00"
-          ]
-        ],
-        "Friday": [
-          [
-            "08:00",
-            "17:00"
-          ]
-        ],
-        "Saturday": [
-          [
-            "09:00",
-            "14:00"
-          ]
-        ]
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
       },
       "menu_count": 0
     },
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -473,7 +449,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -498,14 +474,12 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.151974,
-      "lon": -86.796884
+      "menu_count": 0
     },
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -530,14 +504,12 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.138635,
-      "lon": -86.806048
+      "menu_count": 0
     },
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -577,7 +549,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -620,118 +592,7 @@
       "menu_count": 0
     }
   ],
-  "buildings": [
-    {
-      "name": "Buttrick Hall",
-      "lat": 36.145823,
-      "lon": -86.802564
-    },
-    {
-      "name": "Furman Hall",
-      "lat": 36.147949,
-      "lon": -86.801328
-    },
-    {
-      "name": "Wilson Hall",
-      "lat": 36.148945,
-      "lon": -86.800705
-    },
-    {
-      "name": "Calhoun Hall",
-      "lat": 36.147263,
-      "lon": -86.801422
-    },
-    {
-      "name": "Garland Hall",
-      "lat": 36.146535,
-      "lon": -86.80148
-    },
-    {
-      "name": "Kirkland Hall",
-      "lat": 36.148231,
-      "lon": -86.802809
-    },
-    {
-      "name": "Memorial Gym",
-      "lat": 36.144525,
-      "lon": -86.807241
-    },
-    {
-      "name": "Featheringill Hall",
-      "lat": 36.144891,
-      "lon": -86.803138
-    },
-    {
-      "name": "Olin Hall",
-      "lat": 36.14295,
-      "lon": -86.805263
-    },
-    {
-      "name": "Stevenson Center",
-      "lat": 36.144648,
-      "lon": -86.8019
-    },
-    {
-      "name": "Sarratt Student Center",
-      "lat": 36.146419,
-      "lon": -86.803567
-    },
-    {
-      "name": "Alumni Hall",
-      "lat": 36.147943,
-      "lon": -86.803351
-    },
-    {
-      "name": "Cohen Memorial Hall",
-      "lat": 36.141542,
-      "lon": -86.799402
-    },
-    {
-      "name": "Owen Graduate School of Management",
-      "lat": 36.147179,
-      "lon": -86.800105
-    },
-    {
-      "name": "Peabody Library",
-      "lat": 36.142494,
-      "lon": -86.799202
-    },
-    {
-      "name": "Hill Center for Measurement Science",
-      "lat": 36.141722,
-      "lon": -86.796525
-    },
-    {
-      "name": "Vanderbilt Recreation and Wellness Center",
-      "lat": 36.140208,
-      "lon": -86.808528
-    },
-    {
-      "name": "Blair School of Music",
-      "lat": 36.138635,
-      "lon": -86.806048
-    },
-    {
-      "name": "Student Life Center",
-      "lat": 36.144403,
-      "lon": -86.805842
-    },
-    {
-      "name": "Commons Center",
-      "lat": 36.141792,
-      "lon": -86.797115
-    },
-    {
-      "name": "Rand Hall",
-      "lat": 36.146426,
-      "lon": -86.80304
-    },
-    {
-      "name": "Kissam Center",
-      "lat": 36.14944,
-      "lon": -86.801799
-    }
-  ],
+  "buildings": [],
   "restaurants": [
     {
       "neighborhood": "Hillsboro Village",
@@ -1139,7 +1000,7 @@
       "address": "2217 Elliston Pl, Nashville"
     }
   ],
-  "places_checked": "2026-11-24T23:56:58.335641+00:00",
+  "places_checked": "2026-11-25T19:25:53.598210+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
