@@ -1,24 +1,23 @@
 {
-  "generated_at": "2026-11-26T03:39:15.043395+00:00",
-  "campus_date": "2026-11-25",
+  "generated_at": "2026-11-26T17:05:39.830451+00:00",
+  "campus_date": "2026-11-26",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
-  "menu_count": 5,
-  "item_count": 70,
+  "menu_count": 2,
+  "item_count": 35,
   "nutrition": {
     "cached_recipes": 1071,
     "with_macros": 1069,
-    "recipes_covered": 28,
-    "recipes_total": 45
+    "recipes_covered": 2,
+    "recipes_total": 23
   },
   "tags": [
     "Vegetarian",
     "Vegan",
-    "Halal",
     "Dairy",
     "Egg",
     "Fish",
-    "Pork",
+    "Tree Nut",
     "Features Local Ingredient"
   ],
   "meal_order": [
@@ -157,7 +156,7 @@
           ]
         ]
       },
-      "menu_count": 3,
+      "menu_count": 0,
       "lat": 36.14944,
       "lon": -86.801799
     },
@@ -364,9 +363,7 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.151974,
-      "lon": -86.796884
+      "menu_count": 0
     },
     {
       "id": 22,
@@ -381,9 +378,7 @@
         "Friday": [],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.145906,
-      "lon": -86.79933
+      "menu_count": 0
     },
     {
       "id": 5,
@@ -413,7 +408,7 @@
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -453,7 +448,7 @@
     {
       "id": 6,
       "name": "Suzie's Food for Thought Cafe",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -478,14 +473,12 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.151974,
-      "lon": -86.796884
+      "menu_count": 0
     },
     {
       "id": 7,
       "name": "Suzie's Blair School of Music",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -510,14 +503,12 @@
         ],
         "Saturday": []
       },
-      "menu_count": 0,
-      "lat": 36.138635,
-      "lon": -86.806048
+      "menu_count": 0
     },
     {
       "id": 8,
       "name": "Suzie's MRB III",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
@@ -557,7 +548,7 @@
     {
       "id": 9,
       "name": "Suzie’s Featheringill",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [],
@@ -600,118 +591,7 @@
       "menu_count": 0
     }
   ],
-  "buildings": [
-    {
-      "name": "Buttrick Hall",
-      "lat": 36.145823,
-      "lon": -86.802564
-    },
-    {
-      "name": "Furman Hall",
-      "lat": 36.147949,
-      "lon": -86.801328
-    },
-    {
-      "name": "Wilson Hall",
-      "lat": 36.148945,
-      "lon": -86.800705
-    },
-    {
-      "name": "Calhoun Hall",
-      "lat": 36.147263,
-      "lon": -86.801422
-    },
-    {
-      "name": "Garland Hall",
-      "lat": 36.146535,
-      "lon": -86.80148
-    },
-    {
-      "name": "Kirkland Hall",
-      "lat": 36.148231,
-      "lon": -86.802809
-    },
-    {
-      "name": "Memorial Gym",
-      "lat": 36.144525,
-      "lon": -86.807241
-    },
-    {
-      "name": "Featheringill Hall",
-      "lat": 36.144891,
-      "lon": -86.803138
-    },
-    {
-      "name": "Olin Hall",
-      "lat": 36.14295,
-      "lon": -86.805263
-    },
-    {
-      "name": "Stevenson Center",
-      "lat": 36.144648,
-      "lon": -86.8019
-    },
-    {
-      "name": "Sarratt Student Center",
-      "lat": 36.146419,
-      "lon": -86.803567
-    },
-    {
-      "name": "Alumni Hall",
-      "lat": 36.147943,
-      "lon": -86.803351
-    },
-    {
-      "name": "Cohen Memorial Hall",
-      "lat": 36.141542,
-      "lon": -86.799402
-    },
-    {
-      "name": "Owen Graduate School of Management",
-      "lat": 36.147179,
-      "lon": -86.800105
-    },
-    {
-      "name": "Peabody Library",
-      "lat": 36.142494,
-      "lon": -86.799202
-    },
-    {
-      "name": "Hill Center for Measurement Science",
-      "lat": 36.141722,
-      "lon": -86.796525
-    },
-    {
-      "name": "Vanderbilt Recreation and Wellness Center",
-      "lat": 36.140208,
-      "lon": -86.808528
-    },
-    {
-      "name": "Blair School of Music",
-      "lat": 36.138635,
-      "lon": -86.806048
-    },
-    {
-      "name": "Student Life Center",
-      "lat": 36.144403,
-      "lon": -86.805842
-    },
-    {
-      "name": "Commons Center",
-      "lat": 36.141792,
-      "lon": -86.797115
-    },
-    {
-      "name": "Rand Hall",
-      "lat": 36.146426,
-      "lon": -86.80304
-    },
-    {
-      "name": "Kissam Center",
-      "lat": 36.14944,
-      "lon": -86.801799
-    }
-  ],
+  "buildings": [],
   "restaurants": [
     {
       "neighborhood": "Hillsboro Village",
@@ -1119,365 +999,14 @@
       "address": "2217 Elliston Pl, Nashville"
     }
   ],
-  "places_checked": "2026-11-25T19:25:53.598210+00:00",
+  "places_checked": "2026-11-26T17:05:10.968086+00:00",
   "places_source": "Google Maps hours (hand-checked) + OpenStreetMap via Overpass",
   "menus": [
     {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9603813,
-      "date": "2026-11-25",
-      "meal": "Breakfast",
-      "item_count": 7,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "JUST Egg Greek Breakfast Scramble",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Bacon",
-              "serving_size": "2 strips",
-              "tags": [
-                "Pork"
-              ]
-            },
-            {
-              "name": "Turkey Bacon",
-              "serving_size": "2 slices",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Fruit & Yogurt Bar",
-          "items": [
-            {
-              "name": "Blueberries",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Dairy Free Vanilla Yogurt",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Overnight Chia Oats",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            },
-            {
-              "name": "Strawberry Halves",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9606045,
-      "date": "2026-11-25",
-      "meal": "Lunch",
-      "item_count": 13,
-      "categories": [
-        {
-          "name": "Bakery",
-          "items": [
-            {
-              "name": "Sweet Loren's Oatmeal Cranberry Cookie",
-              "serving_size": "1 cookie",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Fruit",
-          "items": [
-            {
-              "name": "Mandarin Orange",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Chopped Romaine Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Spring Salad Mix",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Bacon Crumbles Cooked",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "Balsamic Vinaigrette",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Classic Ranch Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hot Line Main",
-          "items": [
-            {
-              "name": "BBQ Chicken Thighs",
-              "serving_size": "5 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hot Line Side",
-          "items": [
-            {
-              "name": "Braised Kale w/ Tomato & Onion",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "O'Brien Potatoes",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "hall": "The Kitchen at Kissam",
-      "hall_id": 3,
-      "menu_oid": 9603815,
-      "date": "2026-11-25",
-      "meal": "Dinner",
-      "item_count": 12,
-      "categories": [
-        {
-          "name": "Bodega Hot Line Main",
-          "items": [
-            {
-              "name": "Herb Roasted Chicken Breast",
-              "serving_size": "1 piece",
-              "tags": [
-                "Halal"
-              ]
-            },
-            {
-              "name": "Nashville Hot Chicken Tenders",
-              "serving_size": "4 oz. portion",
-              "tags": [
-                "Halal"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Bodega Hot Line Side",
-          "items": [
-            {
-              "name": "Roasted Brussels Sprouts",
-              "serving_size": "3 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Cornbread",
-              "serving_size": "1 piece",
-              "tags": [
-                "Dairy",
-                "Egg",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Veggies & Legumes",
-          "items": [
-            {
-              "name": "Chopped Romaine Lettuce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Shredded Carrot",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Sliced Peppers",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dairy/Egg/Cheese",
-          "items": [
-            {
-              "name": "Shredded Cheddar Cheese",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Meats & Tofu",
-          "items": [
-            {
-              "name": "Bacon Crumbles Cooked",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Pork"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Salad Bar Dressings",
-          "items": [
-            {
-              "name": "Balsamic Vinaigrette",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Italian Dressing",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hot Line Topping",
-          "items": [
-            {
-              "name": "Nashville Hot Sauce",
-              "serving_size": "1 oz. portion",
-              "tags": [
-                "Vegan"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 21,
-      "menu_oid": 9596833,
-      "date": "2026-11-25",
+      "menu_oid": 9596836,
+      "date": "2026-11-26",
       "meal": "Daily Offerings",
       "item_count": 19,
       "categories": [
@@ -1648,10 +1177,10 @@
     {
       "hall": "Café Carmichael - Contains Peanuts & Tree Nuts",
       "hall_id": 21,
-      "menu_oid": 9596836,
-      "date": "2026-11-26",
+      "menu_oid": 9596838,
+      "date": "2026-11-27",
       "meal": "Daily Offerings",
-      "item_count": 19,
+      "item_count": 16,
       "categories": [
         {
           "name": "Salad Bar Dressings",
@@ -1672,10 +1201,12 @@
               ]
             },
             {
-              "name": "Italian Dressing",
+              "name": "Ranch Dressing",
               "serving_size": "1 packet",
               "tags": [
-                "Vegan"
+                "Dairy",
+                "Egg",
+                "Vegetarian"
               ]
             }
           ]
@@ -1700,13 +1231,6 @@
               "serving_size": "16 oz. portion",
               "tags": [
                 "Features Local Ingredient",
-                "Vegan"
-              ]
-            },
-            {
-              "name": "Chocolate Syrup",
-              "serving_size": "1 oz. portion",
-              "tags": [
                 "Vegan"
               ]
             },
@@ -1757,21 +1281,15 @@
               ]
             },
             {
-              "name": "Skim Milk",
+              "name": "Unsweetened Almond Milk",
               "serving_size": "8 oz. portion",
               "tags": [
-                "Dairy"
-              ]
-            },
-            {
-              "name": "Syrup Pumpkin Pie Italian Style",
-              "serving_size": "1 oz",
-              "tags": [
+                "Tree Nut",
                 "Vegan"
               ]
             },
             {
-              "name": "Walker Brothers Blueberry-Jas Kombucha",
+              "name": "Walker Brothers Citrus Kombucha",
               "serving_size": "12 oz. can",
               "tags": [
                 "Features Local Ingredient",
@@ -1779,19 +1297,10 @@
               ]
             },
             {
-              "name": "Walker Brothers Cucumber Melon Kombucha",
+              "name": "Walker Brothers Ginger Kombucha",
               "serving_size": "12 oz. can",
               "tags": [
-                "Features Local Ingredient",
                 "Vegan"
-              ]
-            },
-            {
-              "name": "Whole Milk",
-              "serving_size": "2 oz. portion",
-              "tags": [
-                "Dairy",
-                "Vegetarian"
               ]
             }
           ]
