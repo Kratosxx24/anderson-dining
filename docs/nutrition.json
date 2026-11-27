@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T01:48:38.374856+00:00",
- "item_count": 1071,
+ "generated_at": "2026-11-27T12:46:30.197646+00:00",
+ "item_count": 1072,
  "items": {
   "1000 island dressing|2 oz. portion": {
    "name": "1000 Island Dressing",
@@ -1156,7 +1156,7 @@
    "vitamin_c": null,
    "ingredients": "Pork Bacon Crumbled Topping (PORK CURED WITH: WATER, SALT, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY CONTAIN 2% OR LESS OF: SUGAR, SODIUM PHOSPHATES, NATURAL SMOKE FLAVORING, FLAVORINGS, BROWN SUGAR, MAPLE FLAVORING AND SEASONING (CORN SYRUP, NATURAL AND ARTIFICIAL FLAVOR, CARAMEL COLOR, SUGAR, MAPLE SUGAR, GLUCOSE SYRUP SOLIDS, ORGANIC INVERT SUGAR SYRUP, LACTIC ACID, MAPLE SYRUP), SODIUM DIACETATE, DEXTROSE. SMOKE FLAVORING ADDEDINGREDIENTS: BACON (CURED WITH WATER, SALT, SUGAR, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY ALSO CONTAIN SMOKE FLAVORING, DEXTROSE, SODIUM PHOSPHATE, POTASSIUM CHLORIDE, SODIUM DIACETATE, FLAVORING, HONEY). BACON CURED WITH: WATER, SALT, SODIUM PHOSPHATES, SODIUM ERYTHORBATE, SODIUM NITRITE. MAY ALSO CONTAIN: SUGAR, BROWN SUGAR, AND NATURAL SMOKE FLAVOR)",
    "contains": "Pork",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "bacon crumbles|1 oz. portion": {
@@ -1270,7 +1270,7 @@
    "vitamin_c": null,
    "ingredients": "Pork Bacon C/C Applewood Smoked (PORK CURED WITH WATER, SALT, SUGAR, SODIUM PHOSPHATE, SODIUM ERYTHORBATE, SODIUM NITRITE.)",
    "contains": "Pork",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "bagel egg & cheese sandwich|1 bagel": {
@@ -1586,7 +1586,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "WATER, HIGH FRUCTOSE CORN SYRUP, BALSAMIC VINEGAR, RED WINE VINEGAR, VEGETABLE OIL (SOYBEAN AND/OR CANOLA), OLIVE OIL, CONTAINS LESS THAN 2% OF SALT, DRIED GARLIC, XANTHAN GUM, SPICE, SODIUM ALGINATE, PROPYLENE GLYCOL ALGINATE, CALCIUM DISODIUM EDTA (TO PROTECT FLAVOR), SULFITING AGENTS.",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "balsamic vinegar|1 oz. portion": {
@@ -3265,7 +3265,7 @@
    "vitamin_c": 0.0,
    "ingredients": "Sausage Vegan Beyond Brat Original (WATER, PEA PROTEIN*, COCOA BUTTER, EXPELLER PRESSED CANOLA OIL, RICE PROTEIN, YEAST EXTRACT, INULIN, METHYLCELLULOSE, NATURAL FLAVORS, AND LESS THAN 1% OF POTATO STARCH, REFINED COCONUT OIL, SALT, SPICES,VINEGAR, LEMON JUICE CONCENTRATE, SUNFLOWER LECITHIN, FRUIT AND VEGETABLE JUICE COLOR, APPLE EXTRACT,PSYLLIUM FIBER, ONION POWDER, POTASSIUM SALT, CITRIC ACID, POMEGRANATE CONCENTRATE, CALCIUM CHLORIDE,VITAMINS (NIACINAMIDE [B3], PYRIDOXINE HYDROCHLORIDE [B6], THIAMINE HYDROCHLORIDE [B1], CALCIUMPANTOTHENATE [B5], CYANOCOBALAMIN [B12]), PAPRIKA EXTRACT. SODIUM ALGINATE CASING.)",
    "contains": "Coconut",
-   "_seen": "2026-09-06",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "bhindi masala|4 oz. portion": {
@@ -3701,7 +3701,7 @@
    "potassium": 40.0,
    "vitamin_c": 2.8,
    "ingredients": "Haricot Vert",
-   "_seen": "2026-11-22",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "blanco pizza|2 slices": {
@@ -3870,7 +3870,7 @@
    "iron": 0.08,
    "potassium": 20.0,
    "vitamin_c": 2.7,
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "blueberries|pound": {
@@ -7242,7 +7242,7 @@
    "potassium": 70.0,
    "vitamin_c": null,
    "ingredients": "Sausage Chicken Link (HALAL CHICKEN THIGH MEAT WITH SKIN, CHICKEN BREAST MEAT WITH RIB MEAT, WATER, CONTAINS 2% OR LESS OF SALT, SPICES, DEXTROSE, SUGAR, YEAST EXTRACT, NATURAL FLAVORS, LACTIC ACID. IN COLLAGEN CASING.)",
-   "_seen": "2026-11-24",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "chicken shawarma|3 oz. portion": {
@@ -7493,6 +7493,39 @@
    "_seen": "2026-09-06",
    "_v": 2
   },
+  "chili con carne|6 oz. portion": {
+   "name": "Chili Con Carne",
+   "serving": "6 oz. portion (161g)",
+   "grams": 161.0,
+   "servings_per_container": 1.0,
+   "calories": 200.0,
+   "fat": 11.0,
+   "sat_fat": 3.5,
+   "trans_fat": 0.0,
+   "cholesterol": 45.0,
+   "sodium": 580.0,
+   "carbs": 8.0,
+   "fiber": 3.0,
+   "sugars": 2.0,
+   "added_sugars": null,
+   "protein": 15.0,
+   "vitamin_d": null,
+   "calcium": 30.0,
+   "iron": 1.84,
+   "potassium": 530.0,
+   "vitamin_c": 0.7,
+   "ingredients": "Spare Burger Bulk Blend (GRASS FED GROUND BEEF (HALAL), SPARE STARTER (EGGPLANT, CAULIFLOWER, TOMATOES, ONIONS, APPLE CIDER VINEGAR, SALT, CRUSHED RED PEPPER, GARLIC POWDER, L-MALIC ACID), CARROT FIBER.), Tomato Diced In Juice (TOMATOES, TOMATO JUICE, LESS THAN 2% OF: SALT, CALCIUM CHLORIDE, CITRIC ACID. VINE-RIPENED TOMATOES, TOMATO JUICE, LESS THAN 2% OF: SALT, CALCIUM CHLORIDE, CITRIC ACID), Tomato Puree (TOMATO PUREE, CITRIC ACID. TOMATO PUREE (WATER, TOMATO PASTE), LESS THAN 2% OF: CITRIC ACID.), Canned Diced Green Chili Pepper (GREEN CHILE PEPPERS, WATER, CONTAINS LESS THAN 2% OF CALCIUM CHLORIDE, CITRIC ACID, SALT.), Yellow Onion, Olive Oil Blend (90 CANOLA OIL 10 EXTRA VIRGIN OLIVE OIL.), Chili Powder (CHILI PEPPER AND OTHER SPICES, SALT, AND GARLIC POWDER.), Chipotle Pepper in Adobo (CHIPOTLE PEPPERS, VINEGAR, TOMATOES, ONIONS, SUGAR, IODIZED SALT, PAPRIKA, SOYBEAN OIL AND SPICES. WATER, TOMATO PASTE, DRIED CHIPOTLE PEPPERS, DISTILLED VINEGAR, CORN OIL, CONTAINS 2% OR LESS OF IODIZED SALT (CONTAINS POTASSIUM IODATE), CORN STARCH, ONION POWDER, GARLIC POWDER, SPICES.), Ground Cumin (CUMIN), Minced Garlic, Kosher Salt (SALT. SALT, YELLOW PRUSSIATE OF SODA.), Ground Black Pepper (BLACK PEPPER.), Dried Oregano (OREGANO.)",
+   "incomplete": [
+    "calcium",
+    "iron",
+    "potassium",
+    "sat_fat",
+    "sugars",
+    "vitamin_c"
+   ],
+   "_seen": "2026-11-27",
+   "_v": 2
+  },
   "chili garlic green beans|3 oz. portion": {
    "name": "Chili Garlic Green Beans",
    "serving": "3 oz. portion (97g)",
@@ -7635,7 +7668,7 @@
     "potassium",
     "sugars"
    ],
-   "_seen": "2026-11-20",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "chipotle ranch dressing|1 oz. portion": {
@@ -8129,7 +8162,7 @@
    "potassium": 75.0,
    "vitamin_c": 1.4,
    "ingredients": "Romaine Lettuce",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "chorizo & egg breakfast burrito|1 burrito": {
@@ -8689,7 +8722,7 @@
     "vitamin_c",
     "vitamin_d"
    ],
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "cocoa powder|1 tsp.": {
@@ -9462,7 +9495,7 @@
    "potassium": null,
    "vitamin_c": null,
    "ingredients": "CRANBERRIES, SUGAR, SUNFLOWER OIL.",
-   "_seen": "2026-11-23",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "cranberry juice|8 oz. portion": {
@@ -10457,7 +10490,7 @@
    "potassium": 40.0,
    "vitamin_c": 0.8,
    "ingredients": "Cucumber Select",
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "diced fried potatoes|3 oz. portion": {
@@ -15819,7 +15852,7 @@
    "potassium": 0.0,
    "vitamin_c": null,
    "ingredients": "WATER, DISTILLED VINEGAR, VEGETABLE OIL (SOYBEAN AND/OR CANOLA), SUGAR, APPLE CIDER VINEGAR, CONTAINS LESS THAN 2% OF SALT, XANTHAN GUM, GARLIC*, ONION*, NATURAL FLAVOR, MALTODEXTRIN, PROPYLENE GLYCOL ALGINATE, DISODIUM INOSINATE AND DISODIUM GUANYLATE, SODIUM BENZOATE AND SORBIC ACID (PRESERVATIVES), RED BELL PEPPER*, SPICE, AUTOLYZED YEAST EXTRACT, CALCIUM DISODIUM EDTA (TO PROTECT FLAVOR), CARAMEL COLOR, YELLOW 5, YELLOW 6. WATER, VINEGAR, SOYBEAN OIL, SUGAR, SALT, CONTAINS LESS THAN 2% OF GARLIC*, XANTHAN GUM, SPICE, ONIONS*, RED BELL PEPPERS*, PAPRIKA, BETA-CAROTENE (COLOR), POTASSIUM SORBATE AND CALCIUM DISODIUM EDTA (TO PROTECT FLAVOR) SOYBEAN OIL, DISTILLED VINEGAR, WATER, SUGAR, SALT, CONTAINS LESS THAN 2% OF GARLIC, XANTHAN GUM, ONION, RED BELL PEPPER, SPICE, LEMON JUICE CONCENTRATE, NATURAL FLAVOR, BETA CAROTENE AND OLEORESIN PAPRIKA (COLOR).",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "italian roasted squash & zucchini|3 oz. portion": {
@@ -17616,7 +17649,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED PASTEURIZED GRADE A LOW FAT MILK, SUGAR, MODIFIED CORN STARCH, KOSHER GELATIN, CITRIC ACID, NATURAL FLAVOR, POTASSIUM SORBATE ADDED TO MAINTAIN FRESHNESS, COLORED WITH CARMINE, VITAMIN A ACETATE, VITAMIN D3.",
    "contains": "Dairy",
-   "_seen": "2026-11-24",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "macaroni & cheese|5 oz. portion": {
@@ -17722,7 +17755,7 @@
    "potassium": 360.0,
    "vitamin_c": 0.0,
    "ingredients": "MANDARIN ORANGES, WATER, CITRIC ACID, SUGAR. MANDARIN ORANGE, WATER, PEAR JUICE CONCENTRATE",
-   "_seen": "2026-11-23",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "mandarin orange|1 oz. portion": {
@@ -18919,7 +18952,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-24",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "mushroom al pastor|4 oz. portion": {
@@ -19655,7 +19688,7 @@
     "potassium",
     "vitamin_d"
    ],
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "paella|1/2 cup portion": {
@@ -21623,7 +21656,7 @@
    "incomplete": [
     "sugars"
    ],
-   "_seen": "2026-11-23",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "red coconut curry chicken|4 oz. portion": {
@@ -22595,7 +22628,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-21",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "roasted corn|3 oz. portion": {
@@ -22686,7 +22719,7 @@
     "sugars",
     "vitamin_c"
    ],
-   "_seen": "2026-11-18",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "roasted garlic mayonnaise|1 oz. portion": {
@@ -23816,7 +23849,7 @@
     "potassium",
     "vitamin_c"
    ],
-   "_seen": "2026-11-17",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "sauteed snow peas|1 oz. portion": {
@@ -24316,7 +24349,7 @@
    "vitamin_c": 0.0,
    "ingredients": "PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO, POWDERED CELLULOSE (ANTI CAKING AGENT)",
    "contains": "Dairy",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "shredded cheddar jack cheese|1 oz. portion": {
@@ -24809,7 +24842,7 @@
    "potassium": 55.0,
    "vitamin_c": 28.4,
    "ingredients": "Green Bell Pepper, Red Bell Pepper (BELL PEPPER.)",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "sliced pickled jalapenos|1 oz. portion": {
@@ -26878,7 +26911,7 @@
    "potassium": 30.0,
    "vitamin_c": 17.6,
    "ingredients": "Strawberries",
-   "_seen": "2026-11-25",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "strawberry lemon basil water|8 oz. portions": {
@@ -27496,7 +27529,7 @@
    "potassium": 110.0,
    "vitamin_c": null,
    "ingredients": "Dough Cookie Fudgy Brownie GF Sweet Lore (CANE SUGAR, GLUTEN FREE FLOUR BLEND (OAT, TAPIOCA STARCH), CHOCOLATE CHUNKS (SUGAR, UNSWEETENED CHOCOLATE, COCOA BUTTER, VANILLA, SALT), PALM OIL, FILTERED WATER, COCOA POWDER, MOLASSES, SEA SALT, BAKING SODA.)",
-   "_seen": "2026-11-23",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "sweet loren's oatmeal cranberry cookie|1 cookie": {
@@ -29494,7 +29527,7 @@
    "vitamin_c": 0.0,
    "ingredients": "CULTURED PASTEURIZED GRADE A NONFAT MILK, FRUCTOSE, SUGAR, CORN STARCH, NATURAL FLAVOR, PECTIN, MALIC ACID.",
    "contains": "Dairy",
-   "_seen": "2026-11-24",
+   "_seen": "2026-11-27",
    "_v": 2
   },
   "vanilla ice cream|1 scoop": {
