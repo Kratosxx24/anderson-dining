@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:46:30.197646+00:00",
+  "generated_at": "2026-11-27T23:33:36.371884+00:00",
   "campus_date": "2026-11-27",
   "source": "https://netnutrition.cbord.com/nn-prod/vucampusdining",
   "restaurants_source": "https://www.vanderbilt.edu/dining/where-to-dine/off-campus-dining/",
@@ -410,7 +410,7 @@
     {
       "id": 18,
       "name": "Wasabi",
-      "status": "Closed",
+      "status": "Open",
       "hours": {
         "Sunday": [],
         "Monday": [
